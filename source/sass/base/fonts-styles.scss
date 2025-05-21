@@ -1,0 +1,209 @@
+.title-hero {
+  // перенести в .hero ???
+  @include font ($size: 22px, $line-height: 26px, $color: $color-title);
+
+  @include media-tablet {
+    font-size: 36px;
+    line-height: 34px;
+  }
+
+  @include media-desktop {
+    font-size: 54px;
+    line-height: 62px;
+  }
+}
+
+.text-base {
+  @include font ($size: 16px, $line-height: 20px);
+
+  @include media-desktop {
+    line-height: 26px;
+  }
+}
+
+.text-button {
+  @include font ($size: 12px, $line-height: 100%, $color: $color-title);
+  text-transform: uppercase;
+  letter-spacing: 0.024em;
+
+  @include media-tablet {
+    font-size: 14px;
+    letter-spacing: 0.028em;
+  }
+}
+
+.title-section {
+  @include font ($size: 20px, $line-height: 20px, $color: $color-title);
+
+  @include media-tablet {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @include media-desktop {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.text-big {
+  @include font ($size: 16px, $line-height: 22px);
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @include media-desktop {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+.subtitle {
+  @include font ($size: 18px, $line-height: 22px);
+
+  @include media-tablet {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @include media-desktop {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.text-mini {
+  @include font ($size: 14px, $line-height: 20px);
+
+  @include media-tablet {
+    font-size: 16px;
+  }
+
+  @include media-desktop {
+    line-height: 26px;
+  }
+}
+
+.title-property {
+  // перенести в H4 ???
+  @include font ($size: 16px, $line-height: 20px, $color: $color-title);
+
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.026em;
+  }
+
+  @include media-desktop {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+.text-ligth {
+  @include font ($size: 14px, $line-height: 20px, $weight: 300);
+
+  @include media-tablet {
+    font-size: 16px;
+  }
+}
+
+.title-part { //часть
+  @include font ($size: 16px, $line-height: 18px, $color: $color-title);
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 24px; // у programm - 14???
+  }
+
+  @include media-desktop {
+    font-size: 24px;
+    line-height: 26px; // у programm - 17???
+  }
+}
+
+.text-part {
+  @include font ($size: 12px, $line-height: 14px);
+
+  @include media-tablet {
+    font-size: 14px;
+    line-height: 20px; 
+  }
+
+  @include media-desktop {
+    line-height: 18px;
+  }
+}
+
+.text-data {
+  @include font ($size: 12px, $line-height: 100%, $color: $color-white-80);
+  letter-spacing: 0.012em;
+}
+
+.title-faq { //перенести в faq
+  @include font ($size: 16px, $line-height: 18px, $color: $color-title);
+
+  @include media-tablet {
+    font-size: 22px;
+    line-height: 26px; 
+  }
+
+  @include media-desktop {
+    font-size: 28px;
+    line-height: 34px; 
+  }
+}
+
+.text-name {
+  @include font ($size: 14px, $line-height: 18px);
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 24px; 
+  }
+
+  @include media-desktop {
+    font-size: 18px;
+  }
+}
+
+.text-approval { // согласие - перенести а тег???
+  @include font ($size: 12px, $line-height: 14px);
+
+  @include media-tablet {
+    line-height: 12px; 
+  }
+}
+
+.text-other { // другое - - перенести а тег???
+  @include font ($size: 12px, $line-height: 14px);
+
+  @include media-tablet {
+    line-height: 12px; 
+  }
+
+  @include media-desktop {
+    font-size: 14px;
+    line-height: 18px; 
+  }
+}
+
+.text-pagination {
+  @include font ($size: 14px, $line-height: 14px, $color: $color-accent-50);
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 20px; 
+  }
+
+}
+
+// ++++++++++++++++=
+.text-revers {
+  color: $color-white;
+}
