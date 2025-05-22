@@ -1,0 +1,38 @@
+.contacts {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $color-accent;
+}
+
+.contacts__wrapp {
+  border-bottom:1px solid $color-line ;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.contacts__title {
+color: $color-white;  
+}
+
+.contacts__list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.contacts__data {
+margin-bottom: 15px;
+}
+
+.contacts__property {
+  color: $color-white;
+  margin-bottom: 20px;
+  margin-left: 0;
+
+  text-decoration: none;
+}
+
+.contacts__map {
+display: block;  
+width: 290px;
+height: 240px;
+object-fit: cover;
+}

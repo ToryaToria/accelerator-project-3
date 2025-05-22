@@ -1,0 +1,15 @@
+.logo {
+  width: 52px;
+  height: 52px;
+  background-color: $color-white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}

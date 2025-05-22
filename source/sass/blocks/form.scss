@@ -1,0 +1,79 @@
+.form {
+  padding: 43px 10px 40px 10px;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  background-image: url(../../img/tmp/bg-form.png);
+}
+
+.form__container {
+  padding: 15px 15px 27px 15px;
+  background-color: $color-accent;
+  border-radius: 16px;
+}
+
+.form__form {
+display: flex;  
+flex-direction: column;
+gap: 20px;
+}
+
+.form__title {
+  color: $color-white;
+  margin-bottom: 10px;
+}
+
+.form__text {
+color: $color-white;  
+margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__text-field {
+  display: block;
+  color: $color-white;  
+margin-bottom: 12px;
+}
+
+.form__field {
+  box-sizing: border-box;
+  min-height: 50px;
+  border: 1px solid $color-field-line;
+  border-radius: 8px;
+
+  background-color: transparent;
+  width: 100%;
+}
+
+// .form__select {
+//  // иконка с уголком
+// }
+
+.form__label-check {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form__text-approval {
+  color: $color-white;
+}
+
+.form__check {
+  display: none;
+}
+
+.form__checkbox {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: $color-white;
+}
+
+.form_button {
+  width: fit-content;
+}

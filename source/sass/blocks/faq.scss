@@ -1,0 +1,21 @@
+.faq {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.faq__title {
+  margin-bottom: 30px;
+}
+
+.faq__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq__item {
+  padding: 22px 17px;
+  border: 1px solid $color-accent;
+  border-radius: 14px;
+}

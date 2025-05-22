@@ -1,0 +1,32 @@
+.hero__list {
+  @include list-reset;
+}
+
+.hero__item {
+  padding-top: 201px;
+  padding-bottom: 20px;
+  min-width: 320px;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+
+  &--slid1 {
+  background-image: url('../../img/tmp/bg-hero1.png');
+  }
+
+}
+
+.hero__card {
+  background-color: $color-white;
+  padding: 20px 14px 10px 15px;
+  border-radius: 18px;
+
+}
+
+.hero__title {
+  margin-bottom: 16px;
+}
+
+.hero__text {
+  margin-bottom: 15px;
+}

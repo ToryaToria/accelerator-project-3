@@ -1,0 +1,55 @@
+.programs {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.programs__wrapp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.programs__list {
+  @include list-reset;
+  display: flex;
+}
+
+.programs__item {
+  box-sizing: border-box;
+  padding: 10px 10px 18px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  width: fit-content;
+ flex-shrink: 0;
+ flex-grow: 0;
+
+ border-radius: 12px;
+ min-height: 400px;
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+  &--slid1 {
+    background-image: url(../../img/tmp/progr1.png);
+  }
+
+  &--slid2 {
+    background-image: url(../../img/tmp/progr2.png);
+  }
+
+  &--slid3 {
+    background-image: url(../../img/tmp/progr3.png);
+  }
+}
+
+.programs__card {
+  background-color: $color-white;
+  border-radius: 18px;
+  padding: 18px 18px 15px 18px;
+
+  flex-shrink: 0;
+ flex-grow: 0;
+
+}

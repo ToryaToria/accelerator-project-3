@@ -61,7 +61,7 @@
 }
 
 .subtitle {
-  @include font ($size: 18px, $line-height: 22px);
+  @include font ($size: 18px, $line-height: 22px, $color: $color-title);
 
   @include media-tablet {
     font-size: 28px;
@@ -143,6 +143,8 @@
 .text-data {
   @include font ($size: 12px, $line-height: 100%, $color: $color-white-80);
   letter-spacing: 0.012em;
+
+  text-transform: uppercase;
 }
 
 .title-faq { //перенести в faq
@@ -160,7 +162,7 @@
 }
 
 .text-name {
-  @include font ($size: 14px, $line-height: 18px);
+  @include font ($size: 14px, $line-height: 18px, $color: $color-title);
 
   @include media-tablet {
     font-size: 20px;

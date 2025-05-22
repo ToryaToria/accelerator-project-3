@@ -1,0 +1,41 @@
+.grant {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $color-accent;
+}
+
+.grant__title {
+margin-bottom: 15px;  
+}
+
+.grant__text {
+  margin-bottom: 30px;
+}
+
+.grant__img {
+display: block;  
+width: 290px;
+height: 200px;
+border-radius: 16px;
+margin-bottom: 30px;
+}
+
+.grant__subtitle {
+margin-bottom: 15px;  
+}
+
+.grant__list {
+  color: $color-white;
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.grant__item {
+  margin-left: 15px;
+  padding: 25px 26px;
+  border: 1px solid $color-white;
+  border-radius: 16px;
+}
