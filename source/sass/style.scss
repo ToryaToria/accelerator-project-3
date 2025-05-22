@@ -13,6 +13,12 @@
 @import "./base/container";
 
 // Blocks ---------------------------------
+@import "./blocks/button.scss";
+@import "./blocks/button-mini.scss";
+@import "./blocks/button-arrow.scss";
+@import "./blocks/button-plus.scss";
+
+@import "./blocks/pagination.scss";
 
 @import "./blocks/header";
 @import "./blocks/hero";

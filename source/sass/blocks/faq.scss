@@ -19,3 +19,8 @@
   border: 1px solid $color-accent;
   border-radius: 14px;
 }
+
+.faq__wrapp {
+  display: flex;
+  justify-content: space-between;
+}

@@ -39,9 +39,44 @@
 }
 
 .footer__social-link {
-display: block;  
-width: 26px;
-height: 26px;
-border-radius: 50%;
-background-color: $color-accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: $color-accent;
+
+  &::after {
+    content: '';
+    width: 12px;
+    height: 17px;
+    background-color: $color-white;
+
+    mask-position: center;
+    mask-size: auto;
+    mask-repeat: no-repeat;
+ 
+  }
+
+  &--vk {
+    &::after {
+
+    mask-image: url("../__spritemap#sprite-vk-view");
+    }
+  }
+
+  &--ok {
+    &::after {
+
+    mask-image: url("../__spritemap#sprite-ok-view");
+    }
+  }
+
+  &--reddit {
+    &::after {
+
+    mask-image: url("../__spritemap#sprite-reddit-view");
+    }
+  }
 }

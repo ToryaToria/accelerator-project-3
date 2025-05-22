@@ -1,0 +1,26 @@
+.button-plus {
+  display: block;
+  flex-shrink: 0;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $color-accent;
+  border: 1px solid $color-accent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: $color-white;
+
+    mask-position: center;
+    mask-size: 10px 10px;
+    mask-repeat: no-repeat;
+    mask-image: url('../../__spritemap#sprite-plus-view');
+  }
+}

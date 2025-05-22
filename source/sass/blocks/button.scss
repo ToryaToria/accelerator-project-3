@@ -1,0 +1,31 @@
+.button {
+  padding: 4px 5px 4px 21px;
+  background-color: $color-white;
+  border: 1px solid $color-accent;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+
+  &::after {
+    content: '';
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: $color-accent;
+  }
+
+  &--dark {
+    background-color: $color-accent;
+    border: 1px solid $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+

@@ -1,8 +1,8 @@
 .form {
   padding: 43px 10px 40px 10px;
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url(../../img/tmp/bg-form.png);
 }
 
@@ -13,9 +13,11 @@ background-repeat: no-repeat;
 }
 
 .form__form {
-display: flex;  
-flex-direction: column;
-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-start;
+  gap: 20px;
+  align-items: stretch;
 }
 
 .form__title {
@@ -24,18 +26,22 @@ gap: 20px;
 }
 
 .form__text {
-color: $color-white;  
-margin-bottom: 20px;
+  color: $color-white;
+  margin-bottom: 20px;
 }
 
 .form__label {
   display: block;
+
+  &--right {
+    padding-right: 10px;
+  }
 }
 
 .form__text-field {
   display: block;
-  color: $color-white;  
-margin-bottom: 12px;
+  color: $color-white;
+  margin-bottom: 12px;
 }
 
 .form__field {
@@ -48,9 +54,11 @@ margin-bottom: 12px;
   width: 100%;
 }
 
-// .form__select {
-//  // иконка с уголком
-// }
+.form__select {
+  box-sizing: border-box;
+  // иконка с уголком
+  // margin-right: 10px;
+}
 
 .form__label-check {
   display: flex;
@@ -75,5 +83,9 @@ margin-bottom: 12px;
 }
 
 .form_button {
+  box-sizing: border-box;
   width: fit-content;
+  color: $color-white;
+  width: 260px;
+  margin-right: 10px;
 }

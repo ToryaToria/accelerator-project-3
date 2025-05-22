@@ -195,15 +195,15 @@
   }
 }
 
-.text-pagination {
-  @include font ($size: 14px, $line-height: 14px, $color: $color-accent-50);
+// .text-pagination {
+//   @include font ($size: 14px, $line-height: 14px, $color: $color-accent-50);
 
-  @include media-tablet {
-    font-size: 16px;
-    line-height: 20px; 
-  }
+//   @include media-tablet {
+//     font-size: 16px;
+//     line-height: 20px; 
+//   }
 
-}
+// }
 
 // ++++++++++++++++=
 .text-revers {

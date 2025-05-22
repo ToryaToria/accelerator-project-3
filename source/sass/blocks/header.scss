@@ -1,14 +1,17 @@
 .header {
   position: relative;
+  min-height: 568px;
+
 }
 
 .header__header {
-  // position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding-top: 21px;
   padding-bottom: 4px;
+
 }
 
 .header__wrapp {

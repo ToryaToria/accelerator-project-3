@@ -12,6 +12,7 @@
 .programs__list {
   @include list-reset;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .programs__item {
@@ -51,5 +52,19 @@
 
   flex-shrink: 0;
  flex-grow: 0;
-
 }
+
+.programs__button {
+  background-color: $color-bg-light;
+}
+
+.programs__card-wrapp {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  }
+
+  .programs__button-mini {
+    flex-shrink: 0;
+  }
