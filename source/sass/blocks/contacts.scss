@@ -2,38 +2,63 @@
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: $color-accent;
+
+  @include media-tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .contacts__wrapp {
-  border-bottom:1px solid $color-line ;
-  padding-bottom: 10px;
+  border-bottom: 2px solid $color-line ;
+  padding-bottom: 30px;
   margin-bottom: 30px;
 }
 
 .contacts__title {
-color: $color-white;  
-margin-bottom: 30px;
+  color: $color-white;
+  margin-bottom: 30px;
 }
 
 .contacts__list {
   margin-top: 0;
   margin-bottom: 0;
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+  @include media-tablet {
+  flex-direction: row;
+  gap: 20.5px;
+  }
+
 }
+
 .contacts__data {
-margin-bottom: 15px;
+  margin-bottom: 15px;
+
+  @include media-tablet {
+  margin-bottom: 24px;
+  }
 }
 
 .contacts__property {
   color: $color-white;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   margin-left: 0;
 
   text-decoration: none;
 }
 
 .contacts__map {
-display: block;  
-width: 290px;
-height: 240px;
-object-fit: cover;
+  display: block;
+  width: 290px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 16px;
+
+  @include media-tablet {
+    width: 678px;
+    height: 500px;
+  }
 }

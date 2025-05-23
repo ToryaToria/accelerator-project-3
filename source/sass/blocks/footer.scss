@@ -3,6 +3,37 @@
   padding-bottom: 40px;
 }
 
+.footer__container {
+  display: grid;
+
+  grid-template-areas:
+    'logo'
+    'nav'
+    'conf'
+    'copy'
+    'social'
+
+  ;
+
+  @include media-tablet {
+    // grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'logo nav'
+      'conf social'
+      'copy social'
+    ;
+  }
+
+  @include media-desktop {
+    // grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      'logo nav social'
+      'copy . conf'
+    ;
+  }
+}
+
 .footer__nav {
   @include list-reset;
   display: flex;
@@ -17,21 +48,28 @@
 }
 
 .footer__logo {
+  grid-area: logo;
   margin: 0 auto 20px;
 }
 
 .footer__conf {
+  grid-area: conf;
+
   display: block;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .footer_copy {
+  grid-area: copy;
+
   margin-bottom: 15px;
   text-align: center;
 }
 
 .footer__social {
+  grid-area: social;
+
   @include list-reset;
   display: flex;
   justify-content: center;
@@ -56,27 +94,27 @@
     mask-position: center;
     mask-size: auto;
     mask-repeat: no-repeat;
- 
+
   }
 
   &--vk {
     &::after {
 
-    mask-image: url("../__spritemap#sprite-vk-view");
+      mask-image: url("../__spritemap#sprite-vk-view");
     }
   }
 
   &--ok {
     &::after {
 
-    mask-image: url("../__spritemap#sprite-ok-view");
+      mask-image: url("../__spritemap#sprite-ok-view");
     }
   }
 
   &--reddit {
     &::after {
 
-    mask-image: url("../__spritemap#sprite-reddit-view");
+      mask-image: url("../__spritemap#sprite-reddit-view");
     }
   }
 }

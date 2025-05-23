@@ -4,12 +4,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../../img/tmp/bg-form.png);
+
+  @include media-tablet {
+    padding: 0 210px 0 0;
+    margin: 50px 58px;
+    border-radius: 16px;
+
+  }
 }
 
 .form__container {
   padding: 15px 15px 27px 15px;
   background-color: $color-accent;
   border-radius: 16px;
+
+  @include media-tablet {
+    padding: 30px 40px 36px 40px;
+  }
 }
 
 .form__form {
@@ -23,11 +34,19 @@
 .form__title {
   color: $color-white;
   margin-bottom: 10px;
+
+  @include media-tablet {
+    margin-bottom: 30px;
+  }
 }
 
 .form__text {
   color: $color-white;
   margin-bottom: 20px;
+
+  @include media-tablet {
+    margin-bottom: 40px;
+  }
 }
 
 .form__label {
@@ -35,6 +54,10 @@
 
   &--right {
     padding-right: 10px;
+
+    @include media-tablet {
+      padding-right: 0;
+    }
   }
 }
 
@@ -64,6 +87,10 @@
   display: flex;
   gap: 10px;
   align-items: center;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+  }
 }
 
 .form__text-approval {
@@ -87,5 +114,9 @@
   width: fit-content;
   color: $color-white;
   width: 260px;
-  margin-right: 10px;
+  // margin-right: 10px;
+
+  @include media-tablet {
+  width: 352px;
+  }
 }

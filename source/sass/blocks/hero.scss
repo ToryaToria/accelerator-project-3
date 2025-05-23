@@ -1,6 +1,6 @@
 .hero {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .hero__list {
@@ -22,7 +22,12 @@ height: 100%;
   justify-content: flex-end;
 
   &--slid1 {
-  background-image: url('../../img/tmp/bg-hero1.png');
+    background-image: url('../../img/tmp/bg-hero1.png');
+  }
+
+  @include media-tablet {
+    padding-bottom: 60px;
+    min-height: 1024px;
   }
 
 }
@@ -36,6 +41,22 @@ height: 100%;
 
 .hero__title {
   margin-bottom: 16px;
+
+  @include media-tablet {
+    margin-bottom: 24px;
+  }
+}
+
+
+.hero__wrapp {
+  display: flex;
+  flex-direction: column;
+
+  @include media-tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
 }
 
 .hero__text {

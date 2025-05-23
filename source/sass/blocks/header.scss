@@ -1,6 +1,11 @@
 .header {
   position: relative;
-  min-height: 568px;
+ 
+
+  // @include media-desktop {
+  //   min-height: 568px;
+
+  // }
 
 }
 
@@ -12,10 +17,12 @@
   padding-top: 21px;
   padding-bottom: 4px;
 
+  @include media-tablet {
+    padding-top: 30px;
+    }
 }
 
 .header__wrapp {
   display: flex;
   justify-content: space-between;
-
 }
