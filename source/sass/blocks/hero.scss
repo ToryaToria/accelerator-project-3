@@ -8,6 +8,7 @@
 }
 
 .hero__item {
+  box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
   min-width: 320px;
@@ -28,6 +29,10 @@
   @include media-tablet {
     padding-bottom: 60px;
     min-height: 1024px;
+  }
+
+  @include media-desktop {
+    min-height: 800px;
   }
 
 }

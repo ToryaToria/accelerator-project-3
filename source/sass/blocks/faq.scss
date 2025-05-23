@@ -1,6 +1,17 @@
 .faq {
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @include media-desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.faq__container {
+  @include media-desktop {
+  width: 1028px;
+  }
 }
 
 .faq__title {
@@ -9,6 +20,10 @@
 
   @include media-tablet {
     margin-bottom: 40px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 60px;
   }
 }
 

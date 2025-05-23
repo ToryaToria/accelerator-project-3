@@ -1,6 +1,11 @@
 .news {
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @include media-desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .news__title {
@@ -9,6 +14,10 @@
 
   @include media-tablet {
     margin-bottom: 30px;
+  }
+
+  @include media-desktop {
+  margin-bottom: 40px;
   }
 }
 
@@ -21,6 +30,11 @@
   @include media-tablet {
     margin-bottom: 30px;
   }
+
+  @include media-desktop {
+    width: 720px;
+    margin: 0 auto 40px;
+    }
 }
 
 .news__list {
@@ -37,6 +51,11 @@
     flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
+  }
+
+  @include media-desktop {
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
   }
 }
 
@@ -78,6 +97,12 @@
   @include media-tablet {
   width: 324px;
   min-height: 350px;
+  }
+
+  @include media-desktop {
+    width: 604px;
+    min-height: 400px;
+    flex-shrink: 0;
   }
 }
 
