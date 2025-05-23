@@ -1,17 +1,11 @@
 .button-arrow {
-  display: block;
-  width: 22px;
-  height: 22px;
+  @include btn-circle ($width: 22px, $height: 22px, $background-color: $color-white);
 
-  border: none;
-  background-color: $color-accent;
-
-  mask-position: center;
-  mask-size: 10px 10px;
-  mask-repeat: no-repeat;
-  mask-image: url('../../__spritemap#sprite-arrow-view');
+  &:after {
+    @include btn-icon ($background-color: $color-accent, $mask-image: url('../../__spritemap#sprite-arrow-view'));
+  }
 
   &--left {
-  transform: rotate(180deg);  
+    transform: rotate(180deg);
   }
 }

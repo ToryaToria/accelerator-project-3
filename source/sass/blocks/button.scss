@@ -9,23 +9,36 @@
   justify-content: space-between;
   gap: 20px;
 
-
-  &::after {
-    content: '';
-    display: block;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    background-color: $color-accent;
-  }
-
   &--dark {
     background-color: $color-accent;
     border: 1px solid $color-white;
 
-    &::after {
+    .text-button {
+    color: $color-white;  
+    }
+
+    .button__button {
       background-color: $color-white;
+      &::after {
+        background-color: $color-accent;
+      }
     }
   }
 }
 
+.button__menu {
+  @include btn-circle ($width: 46px, $height: 46px);
+
+  &:after {
+    @include btn-icon ($width: 20px, $height: 20px,  
+    $mask-image: url('../../__spritemap#sprite-menu-view') );
+   }
+}
+
+.button__button {
+  @include btn-circle ($width: 34px, $height: 34px);
+
+  &:after {
+    @include btn-icon ($mask-image: url('../../__spritemap#sprite-arr-view') );
+   }
+}

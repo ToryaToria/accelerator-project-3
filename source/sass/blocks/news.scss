@@ -17,7 +17,7 @@
   }
 
   @include media-desktop {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -29,12 +29,31 @@
 
   @include media-tablet {
     margin-bottom: 30px;
+    gap: 10px;
   }
 
   @include media-desktop {
     width: 720px;
     margin: 0 auto 40px;
-    }
+  }
+}
+
+.news__item-tags {
+  box-sizing: border-box;
+  padding: 12px 16px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+
+  &--current {
+    border: 2px solid $color-accent;
+  }
+
+  @include media-tablet {
+    padding: 16px 22px;
+  }
+  @include media-desktop {
+    padding: 16px 35px;
+  }
 }
 
 .news__list {
@@ -95,8 +114,8 @@
   }
 
   @include media-tablet {
-  width: 324px;
-  min-height: 350px;
+    width: 324px;
+    min-height: 350px;
   }
 
   @include media-desktop {
@@ -140,6 +159,6 @@
   gap: 16px;
 
   @include media-tablet {
-  gap: 20px;
+    gap: 20px;
   }
 }

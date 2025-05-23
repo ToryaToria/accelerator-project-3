@@ -8,6 +8,33 @@
   color: $color;
 }
 
+@mixin btn-circle ($width: 30px, $height: 30px, $border: none, $background-color: $color-accent) {
+  width: $width;
+  height: $height;
+  border: $border;
+  border-radius: 50%;
+  background-color: $background-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin btn-icon ($width: 10px, $height: 10px, $background-color: $color-white, $mask-size: auto, $mask-image ) {
+  content: '';
+  width: $width;
+  height: $height;
+  background-color: $background-color;
+
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  mask-size: $mask-size;
+  mask-image: $mask-image;
+
+}
+
+
 @mixin list-reset($padd-left: 0) {
   margin-top: 0;
   margin-bottom: 0;

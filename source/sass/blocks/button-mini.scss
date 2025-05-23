@@ -1,9 +1,7 @@
 .button-mini {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border: none;
-  border-radius: 50%;
-  background-color: $color-accent;  
+ @include btn-circle;
 
+ &:after {
+  @include btn-icon ($mask-image: url('../../__spritemap#sprite-arr-view') );
+ }
 }

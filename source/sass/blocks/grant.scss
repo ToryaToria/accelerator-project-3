@@ -20,8 +20,8 @@
   flex-direction: column;
 
   @include media-desktop {
-  flex-direction: row;
-  gap: 138px;
+    flex-direction: row;
+    gap: 138px;
   }
 
 }
@@ -69,12 +69,14 @@
     margin-bottom: 20px;
 
     @include media-desktop {
-    margin-bottom: 30px;
+      margin-bottom: 30px;
     }
   }
 }
 
 .grant__list {
+  counter-reset: myCounter;
+
   color: $color-white;
   @include list-reset;
   display: flex;
@@ -90,16 +92,35 @@
   }
 
   @include media-desktop {
-  width: 498px;
+    width: 498px;
   }
 }
 
 .grant__item {
+  position: relative;
   box-sizing: border-box;
   margin-left: 15px;
   padding: 25px 26px;
   border: 1px solid $color-white;
   border-radius: 16px;
+
+  &::after {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+
+    counter-increment: myCounter;
+  content: counter(myCounter);
+
+    // content: '';
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-color: $color-accent;
+   font-size: 22px;
+   line-height: 22px;
+   font-weight: 500;
+  }
 
   @include media-tablet {
     padding: 31px 50px 31px 26px;
@@ -111,5 +132,5 @@
 
   @include media-desktop {
     width: 100%;
-    }
+  }
 }
