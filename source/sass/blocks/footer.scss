@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 40px;
+  padding-top: 80px; // а должно быть 40!!!
   padding-bottom: 40px;
 }
 
@@ -38,9 +38,9 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 30px;
+  gap: 19px 30px;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .footer__link-nav {
@@ -49,14 +49,14 @@
 
 .footer__logo {
   grid-area: logo;
-  margin: 0 auto 20px;
+  margin: 0 auto 19px;
 }
 
 .footer__conf {
   grid-area: conf;
 
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   text-align: center;
 }
 

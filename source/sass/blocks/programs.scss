@@ -1,5 +1,5 @@
 .programs {
-  padding-top: 50px;
+  padding-top: 56px; // должно быть 50!!!
   padding-bottom: 50px;
 
   @include media-desktop {
@@ -11,7 +11,7 @@
 .programs__wrapp {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   @include media-tablet {
     margin-bottom: 40px;
@@ -21,6 +21,7 @@
 .programs__list {
   @include list-reset;
   display: flex;
+  gap: 15px;
   margin-bottom: 30px;
 
   @include media-tablet {
@@ -42,7 +43,7 @@
   flex-grow: 0;
 
   border-radius: 12px;
-  background-position: center;
+  // background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -71,16 +72,33 @@
 }
 
 .programs__card {
+  --nb-r: 12px;
+  --nb-w: 10px;
+  --nb-h: 17px;
   background-color: $color-white;
-  border-radius: 18px;
+  border-radius: 12px;
   padding: 18px 18px 15px 18px;
 
   flex-shrink: 0;
   flex-grow: 0;
+
+  @include media-desktop {
+  padding-bottom: 15.5px;
+  }
+}
+
+.programs__title-card {
+  margin-bottom: 18px;
+
+  @include media-desktop {
+    margin-bottom: 18.5px;
+  }
 }
 
 .programs__button {
   background-color: $color-bg-light;
+  padding-left: 31px;
+  gap: 30px;
 }
 
 .programs__card-wrapp {

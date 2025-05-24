@@ -27,6 +27,14 @@
   }
 }
 
+.faq__answer {
+display: none;
+&--current {
+  display: block;
+  margin-top: 20px;
+}  
+}
+
 .faq__list {
   @include list-reset;
   display: flex;
@@ -35,7 +43,8 @@
 }
 
 .faq__item {
-  padding: 22px 17px;
+  box-sizing: border-box;
+  padding: 21px 17px 21px 16px;
   border: 1px solid $color-accent;
   border-radius: 14px;
 }
@@ -43,4 +52,5 @@
 .faq__wrapp {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }

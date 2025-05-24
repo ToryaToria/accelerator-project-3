@@ -12,18 +12,17 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
-
 }
 
 .grant__container {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 
   @include media-desktop {
     flex-direction: row;
     gap: 138px;
   }
-
 }
 
 .grant__title {
@@ -47,23 +46,23 @@
   width: 290px;
   height: 200px;
   border-radius: 16px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   @include media-tablet {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     width: 678px;
     height: 375px;
   }
 
   @include media-desktop {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     width: 498px;
     height: 363px;
   }
 }
 
 .grant__subtitle {
-  margin-bottom: 15px;
+  margin-bottom: 29px;
 
   @include media-tablet {
     margin-bottom: 20px;
@@ -81,8 +80,8 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 5px;
+  gap: 15px;
+  // margin-top: 5px;
 
   @include media-tablet {
     margin-top: 0;
@@ -100,25 +99,27 @@
   position: relative;
   box-sizing: border-box;
   margin-left: 15px;
-  padding: 25px 26px;
+  padding: 23px 24px 25px 25px;
   border: 1px solid $color-white;
   border-radius: 16px;
 
   &::after {
     position: absolute;
-    top: -6px;
-    left: -6px;
+    top: -9px;
+    left: -15px;
 
     counter-increment: myCounter;
   content: counter(myCounter);
 
+  padding: 10px;
     // content: '';
     display: block;
-    width: 42px;
-    height: 42px;
+    width: 6px;
+    height: 15px;
     background-color: $color-accent;
-   font-size: 22px;
-   line-height: 22px;
+    // background-color: red;
+   font-size: 18px;
+   line-height: 18px;
    font-weight: 500;
   }
 
@@ -128,6 +129,9 @@
     margin-left: 0;
     margin-top: 15px;
     width: 325px;
+
+    font-size: 22px;
+   line-height: 22px;
   }
 
   @include media-desktop {

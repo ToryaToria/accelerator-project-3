@@ -1,17 +1,43 @@
 .hero {
+  position: relative;
   width: 100%;
   height: 100%;
+
+  //   *{
+  // outline: auto;
+  //   }
 }
+
+.hero__pagination {
+  --nb-r: 12px;
+  --nb-w: 0px;
+  --nb-h: 4px;
+
+  position: absolute;
+  bottom: 328px;
+  left: 15px;
+  width: 105px;
+  height: 39px;
+  background-color: $color-white;
+  // border-radius: 12px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+
+
+  z-index: 10;
+}
+
 
 .hero__list {
   @include list-reset;
+  display: flex;
 }
 
 .hero__item {
   box-sizing: border-box;
   padding-top: 20px;
   padding-bottom: 20px;
-  min-width: 320px;
+  width: 100%;
   min-height: 568px;
 
   background-repeat: no-repeat;
@@ -21,9 +47,19 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  flex-shrink: 0;
+  // flex-grow: 0;
 
   &--slid1 {
     background-image: url('../../img/tmp/bg-hero1.png');
+  }
+
+  &--slid2 {
+    background-image: url('../../img/tmp/bg-hero2.jpg');
+  }
+
+  &--slid3 {
+    background-image: url('../../img/tmp/bg-hero3.jpg');
   }
 
   @include media-tablet {
@@ -34,36 +70,77 @@
   @include media-desktop {
     min-height: 800px;
   }
-
 }
 
-.hero__card {
+.hero__wrapp-title {
+  box-sizing: border-box;
+  width: 290px;
+  padding: 20px 15px 46px 14px;
   background-color: $color-white;
-  padding: 20px 14px 10px 15px;
-  border-radius: 18px;
 
-}
+  // margin-bottom: 20px;
+    --nb-r: 16px;
+    --nb-w: -4px;
+    --nb-h: -2px;
+  border-top-right-radius: 16px;
+  // border-bottom-right-radius: 16px;
 
-.hero__title {
-  margin-bottom: 16px;
+  background-color: $color-white;
 
   @include media-tablet {
-    margin-bottom: 24px;
+    width: 659px;
+    padding: 30px 69px 24px 40px;
+
+  }
+
+  @include media-desktop {
+    width: 968px;
+    padding: 40px 50px 30px 50px;
   }
 }
 
+// .hero__title {
+//   margin-bottom: 16px;
 
-.hero__wrapp {
+//   @include media-tablet {
+//     margin-bottom: 24px;
+//   }
+// }
+
+
+.hero__wrapp-text {
+  --nb-r: 14px;
+  --nb-w: 55px;
+  --nb-h: 36px;
+  background-color: $color-white;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+
+  padding: 15px 15px 10px 14px;
+  margin-top: -45px;
+
   display: flex;
   flex-direction: column;
+  width: 238px;
 
   @include media-tablet {
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
+    padding: 15px 40px 35px 40px;
+  }
+
+  @include media-desktop {
+    padding: 15px 50px 35px 50px;
+
   }
 }
 
-.hero__text {
-  margin-bottom: 15px;
+// .hero__text {
+//   margin-bottom: 25px;
+// }
+
+.hero__button {
+  width: 154px;
+  margin-top: 25px;
 }

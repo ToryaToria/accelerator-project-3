@@ -1,12 +1,9 @@
 .header {
   position: relative;
  
-
   // @include media-desktop {
   //   min-height: 568px;
-
   // }
-
 }
 
 .header__header {
@@ -14,7 +11,8 @@
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 21px;
+  z-index: 5;
+  padding-top: 19px;
   padding-bottom: 4px;
 
   @include media-tablet {
@@ -25,4 +23,15 @@
 .header__wrapp {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__button {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.header__menu-text {
+  @include font ($size: 14px, $line-height: 100%, $weight: 500);
+  text-transform: uppercase;
 }

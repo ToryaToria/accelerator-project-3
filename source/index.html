@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship</title>
+  <link rel="stylesheet" href="./sass/vendor/nebo.css">
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
@@ -16,6 +17,7 @@
     </svg> -->
 
   <header class="header" data-test="hero">
+    <!-- style="display: none;" -->
     <div class="header__header container">
 
       <h1 class="visually-hidden">Gроект «Стажировка»</h1>
@@ -24,12 +26,12 @@
           <img class="logo__img" src="/__spritemap#sprite-logo-view" alt="logo" width="30" height="30">
         </div>
 
-        <div>
-          <button class="button" type="button">
-            <span class="text-button">Меню</span>
+        <!-- <div> -->
+          <button class="header__button button" type="button">
+            <span class="header__menu-text">Меню</span>
             <span class="button__menu"></span>
           </button>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="visually-hidden">
@@ -79,22 +81,46 @@
 
     <section class="hero">
       <div class="hero__slider">
-        <div></div>
+        <div class="hero__pagination nebo nebo--tr"></div>
         <ul class="hero__list">
           <li class="hero__item hero__item--slid1">
             <div class="container">
-              <div class="hero__card">
+              <div class="hero__wrapp-title nebo nebo--br">
                 <h2 class="hero__title title-hero">
                   Глобальный профессиональный
                   опыт обучения за&nbsp;рубежом
                 </h2>
+              </div>
 
-                <div class="hero__wrapp">
+                <div class="hero__wrapp-text nebo nebo--br">
                   <p class="hero__text text-base">
                     Погрузитесь в&nbsp;академическую
                     программу, проходя практику
                     в&nbsp;разных городах, ощущая
                     настоящий студенческий стиль жизни!
+                  </p>
+
+                  <button class="hero__button button" type="button">
+                    <span class="text-button">подробнее</span>
+                    <span class="button__button"></span>
+                  </button>
+                </div>
+
+            </div>
+          </li>
+
+          <!-- <li>еще слайд</li> -->
+          <li class="hero__item hero__item--slid2">
+            <div class="container">
+              <div class="hero__wrapp-title">
+                <h2 class="hero__title title-hero">
+                  Волонтёрские программы&nbsp;— внесите свой вклад в&nbsp;общество
+                </h2>
+
+                <div class="hero__wrapp-text">
+                  <p class="hero__text text-base">
+                    Возможности для&nbsp;преподавания, органического сельского хозяйства, устойчивого образа жизни
+                    и&nbsp;другое.
                   </p>
 
                   <button class="button  " type="button">
@@ -106,7 +132,30 @@
               </div>
             </div>
           </li>
+
           <!-- <li>еще слайд</li> -->
+          <li class="hero__item hero__item--slid3">
+            <div class="container">
+              <div class="hero__wrapp-title">
+                <h2 class="hero__title title-hero">
+                  Программы стажировок в&nbsp;крупнейших компаниях мира
+                </h2>
+
+                <div class="hero__wrapp-text">
+                  <p class="hero__text text-base">
+                    Получите незаменимый опыт работы в&nbsp;ведущих мировых компаниях и&nbsp;государственных
+                    организациях.
+                  </p>
+
+                  <button class="button  " type="button">
+                    <span class="text-button">подробнее</span>
+                    <span class="button__button"></span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
       </div>
@@ -188,11 +237,11 @@
         <div class="programs__slider">
           <ul class="programs__list">
             <li class="programs__item programs__item--slid1">
-              <div class="programs__card">
-                <h3 class="programs__title-part title-part">Стажировки</h3>
+              <div class="programs__card nebo nebo--tr">
+                <h3 class="programs__title-card title-card">Стажировки</h3>
 
                 <div class="programs__card-wrapp">
-                  <p class="text-part">
+                  <p class="text-card">
                     Получите незаменимый опыт работы в&nbsp;крупнейших мировых компаниях.
                   </p>
 
@@ -202,20 +251,20 @@
             </li>
 
             <li class="programs__item programs__item--slid2">
-              <div class="programs__card">
-                <h3 class="programs__title-part title-part">Волонтёрство</h3>
+              <div class="programs__card nebo nebo--tr">
+                <h3 class="programs__title-card title-card">Волонтёрство</h3>
                 <div class="programs__card-wrapp">
-                  <p class="text-part">Помогайте другим и&nbsp;развивайте свои лидерские качества</p>
+                  <p class="text-card">Помогайте другим и&nbsp;развивайте свои лидерские качества</p>
                   <button class="programs__button-mini button-mini" type="button"></button>
                 </div>
               </div>
             </li>
 
             <li class="programs__item programs__item--slid3">
-              <div class="programs__card">
-                <h3 class="programs__title-part title-part">Учёба</h3>
+              <div class="programs__card nebo nebo--tr">
+                <h3 class="programs__title-card title-card">Учёба</h3>
                 <div class="programs__card-wrapp">
-                  <p class="text-part">Получите образование и&nbsp;измените своё будущее.</p>
+                  <p class="text-card">Получите образование и&nbsp;измените своё будущее.</p>
                   <button class="programs__button-mini button-mini" type="button"></button>
                 </div>
               </div>
@@ -282,7 +331,6 @@
 
     <section class="news" data-test="news">
       <div class="container">
-        <section class="news" data-test="news">
           <h2 class="news__title title-section">Новости и&nbsp;материалы</h2>
 
           <ul class="news__list-tags">
@@ -312,10 +360,12 @@
             <ul class="news__list">
               <li class="news__item news__item--slid1">
                 <div class="news__item-wrapp">
-                  <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
-                  <h3 class="title-part">Интервью с&nbsp;участницей программы стажировки</h3>
-                  <div class="news-text-wrapp">
-                    <p class="text-part">Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как&nbsp;прошла
+                  <time class="news__data text-data nebo nebo--tr" datetime="2023-03-20">20/03/2023</time>
+
+                  <h3 class="news__subtitle title-card nebo nebo--tr">Интервью с&nbsp;участницей программы стажировки</h3>
+                 
+                  <div class="news-text-wrapp nebo nebo--tr">
+                    <p class="news__text-card text-card">Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как&nbsp;прошла
                       6-месячная стажировка в&nbsp;ISOFound</p>
                     <button class="programs__button-mini button-mini" type="button"></button>
                   </div>
@@ -325,10 +375,10 @@
               <li class="news__item news__item--slid2">
                 <div class="news__item-wrapp">
 
-                  <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
-                  <h3 class="title-part">Путешествуем по&nbsp;миру</h3>
-                  <div class="news-text-wrapp">
-                    <p class="text-part">Какие места посещают
+                  <time class="news__data text-data nebo nebo--tr" datetime="2023-03-20">20/03/2023</time>
+                  <h3 class="news__subtitle title-card nebo nebo--tr">Путешествуем по&nbsp;миру</h3>
+                  <div class="news-text-wrapp nebo nebo--tr">
+                    <p class="news__text-card text-card">Какие места посещают
                       наши студенты весной</p>
                     <button class="programs__button-mini button-mini" type="button"></button>
                   </div>
@@ -338,10 +388,10 @@
               <li class="news__item news__item--slid3">
                 <div class="news__item-wrapp">
 
-                  <time class="news__data text-data" datetime="2023-03-17">17/03/2023</time>
-                  <h3 class="title-part">Новая программа волонтёрства</h3>
-                  <div class="news-text-wrapp">
-                    <p class="text-part">Программа помощи детям
+                  <time class="news__data text-data nebo nebo--tr" datetime="2023-03-17">17/03/2023</time>
+                  <h3 class="news__subtitle title-card nebo nebo--tr">Новая программа волонтёрства</h3>
+                  <div class="news-text-wrapp nebo nebo--tr">
+                    <p class="news__text-card text-card">Программа помощи детям
                       длительностью 4&nbsp;месяца</p>
                     <button class="programs__button-mini button-mini" type="button"></button>
                   </div>
@@ -350,10 +400,10 @@
 
               <li class="news__item news__item--slid4">
                 <div class="news__item-wrapp">
-                  <time class="news__data text-data" datetime="2023-03-10">10/03/2023</time>
-                  <h3 class="title-part">Построй свою карьеру</h3>
-                  <div class="news-text-wrapp">
-                    <p class="text-part">Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <time class="news__data text-data nebo nebo--tr" datetime="2023-03-10">10/03/2023</time>
+                  <h3 class="news__subtitle title-card nebo nebo--tr">Построй свою карьеру</h3>
+                  <div class="news-text-wrapp nebo nebo--tr">
+                    <p class="news__text-card text-card">Ведущие компании готовы трудоустроить выпускников стажировки</p>
                     <button class="programs__button-mini button-mini" type="button"></button>
                   </div>
                 </div>
@@ -388,47 +438,47 @@
         <ul class="faq__list">
           <li class="faq__item">
             <div class="faq__wrapp">
-              <p class="title-faq">Кто&nbsp;организатор? Какие сроки у&nbsp;программы?</p>
+              <p class="faq__question title-faq">Кто&nbsp;организатор? Какие сроки у&nbsp;программы?</p>
 
               <button class="button-plus" type="button"></button>
             </div>
 
-            <p class="text-mini">Организатором программы является проект «Стажировка» в сотрудничестве с
+            <p class="faq__answer text-mini">Организатором программы является проект «Стажировка» в сотрудничестве с
               образовательными учреждениями.
               Сроки программы обмена могут варьироваться от одного семестра до года.</p>
           </li>
 
           <li class="faq__item">
             <div class="faq__wrapp">
-              <p class="title-faq">Что&nbsp;такое грант на&nbsp;обучение?</p>
+              <p class="faq__question title-faq">Что&nbsp;такое грант на&nbsp;обучение?</p>
 
               <button class="button-plus" type="button"></button>
             </div>
 
-            <p class="text-mini">Грант на обучение — это финансовая поддержка, которую предоставляет организатор
+            <p class="faq__answer text-mini">Грант на обучение — это финансовая поддержка, которую предоставляет организатор
               программы обмена
               студентами для оплаты учебных расходов.</p>
           </li>
 
           <li class="faq__item">
             <div class="faq__wrapp">
-              <p class="title-faq">Как&nbsp;определяется стоимость программы?</p>
+              <p class="faq__question title-faq">Как&nbsp;определяется стоимость программы?</p>
               <button class="button-plus" type="button"></button>
             </div>
 
-            <p class="text-mini">Полная стоимость определяется организаторами в&nbsp;зависимости от&nbsp;направления.
+            <p class="faq__answer faq__answer--current  text-mini">Полная стоимость определяется организаторами в&nbsp;зависимости от&nbsp;направления.
               В&nbsp;большинстве случаев грант «Стажировка» не&nbsp;покрывает полную стоимость программы, и&nbsp;поэтому
               предусматривается определённая доля личного участия.</p>
           </li>
 
           <li class="faq__item">
             <div class="faq__wrapp">
-              <p class="title-faq">Признаётся&nbsp;ли&nbsp;учёба в&nbsp;рамках проекта
-                для&nbsp;дальнейшего обучения?</p>
+              <p class="faq__question title-faq">Признаётся&nbsp;ли&nbsp;учёба в&nbsp;рамках проекта
+                для дальнейшего обучения?</p>
               <button class="button-plus" type="button"></button>
             </div>
 
-            <p class="text-mini">Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей
+            <p class="faq__answer text-mini">Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей
               будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того,
               многие
               университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
@@ -436,12 +486,12 @@
 
           <li class="faq__item">
             <div class="faq__wrapp">
-              <p class="title-faq">Как&nbsp;выглядит полный процесс регистрации на&nbsp;программу
+              <p class="faq__question title-faq">Как&nbsp;выглядит полный процесс регистрации на&nbsp;программу
                 «Стажировка»?</p>
               <button class="button-plus" type="button"></button>
             </div>
 
-            <p class="text-mini">Процесс регистрации на программу обмена включает выбор университета-партнера и
+            <p class="faq__answer text-mini">Процесс регистрации на программу обмена включает выбор университета-партнера и
               программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых
               документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей
               и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
@@ -474,18 +524,18 @@
                 <dl class="reviews__wrapp-property">
                   <div>
                     <dt class="reviews__data text-data">программа</dt>
-                    <dd class="reviews__property text-part">Masa Art Challenge</dd>
+                    <dd class="reviews__property text-card">Masa Art Challenge</dd>
                   </div>
 
                   <div>
                     <dt class="reviews__data text-data">Дата</dt>
-                    <dd class="reviews__property  text-part">Осень 2022</dd>
+                    <dd class="reviews__property  text-card">Осень 2022</dd>
                   </div>
                 </dl>
               </div>
 
-              <h3 class="reviews__title-part title-part">
-                Я&nbsp;могу с&nbsp;уверенностью сказать, что&nbsp;это&nbsp;былодин из&nbsp;самых незабываемых опытов
+              <h3 class="reviews__title-card title-card">
+                Я&nbsp;могу с&nbsp;уверенностью сказать, что&nbsp;это&nbsp;был один из&nbsp;самых незабываемых опытов
                 в&nbsp;жизни!
               </h3>
               <p class="text-mini">
@@ -506,17 +556,17 @@
                 <dl class="reviews__wrapp-property">
                   <div>
                     <dt class="reviews__data text-data">программа</dt>
-                    <dd class="reviews__property text-part">Volunteer Chance</dd>
+                    <dd class="reviews__property text-card">Volunteer Chance</dd>
                   </div>
 
                   <div>
                     <dt class="reviews__data text-data">Дата</dt>
-                    <dd class="reviews__property  text-part">Лето 2022</dd>
+                    <dd class="reviews__property  text-card">Лето 2022</dd>
                   </div>
                 </dl>
               </div>
 
-              <h3 class="reviews__title-part title-part">Благодаря опыту стажировки я&nbsp;узнал так&nbsp;много нового
+              <h3 class="reviews__title-card title-card">Благодаря опыту стажировки я&nbsp;узнал так&nbsp;много нового
                 о&nbsp;себе
                 и&nbsp;об&nbsp;окружающем мире.</h3>
               <p class="text-mini">Каждый день был&nbsp;возможностью оказать ощутимое влияние на&nbsp;жизнь других
@@ -575,22 +625,22 @@
 
         <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="form__label">
-            <span class="form__text-field text-part">Имя</span>
+            <span class="form__text-field text-card">Имя</span>
             <input class="form__field" type="text">
           </label>
 
           <label class="form__label">
-            <span class="form__text-field text-part">Телефон</span>
+            <span class="form__text-field text-card">Телефон</span>
             <input class="form__field" type="tel">
           </label>
 
           <label class="form__label">
-            <span class="form__text-field text-part">Ваше сообщение</span>
-            <textarea class="form__field" name="" id="" rows="5"></textarea>
+            <span class="form__text-field text-card">Ваше сообщение</span>
+            <textarea class="form__field form__field--textarea" name="" id="" rows="5"></textarea>
           </label>
 
           <label class="form__label form__label--right">
-            <span class="form__text-field text-part">Выберите город</span>
+            <span class="form__text-field text-card">Выберите город</span>
             <select class="form__select form__field" name="" id="">
               <option value=""></option>
               <option value="Moscow">Москва</option>

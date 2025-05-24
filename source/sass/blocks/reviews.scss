@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 50px;
+  padding-top: 55px; // должно быть 50!!!
   padding-bottom: 50px;
 
   @include media-desktop {
@@ -11,7 +11,7 @@
 .reviews__wrapp {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 34px; // должно быть 30!!!
 
   @include media-tablet {
     margin-bottom: 40px;
@@ -22,11 +22,13 @@
   @include list-reset;
   display: flex;
 
+  gap: 15px;
+
 }
 
 .reviews__item {
   box-sizing: border-box;
-  padding: 32px 17px;
+  padding: 30px 16px; // должно быть 32 17!!!
 
   flex-grow: 0;
   flex-shrink: 0;
@@ -101,7 +103,7 @@
   margin-left: 0;
 }
 
-.reviews__title-part {
+.reviews__title-card {
   margin-bottom: 20px;
 
   @include media-tablet {

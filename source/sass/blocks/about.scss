@@ -52,7 +52,7 @@
 
 .about__subtitle {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @include media-tablet {
     margin-bottom: 30px;
@@ -81,13 +81,13 @@
 
 .about__list {
   @include list-reset;
-  padding: 20px 20px 40px 0;
+  padding: 43px 20px 40px 0;
   background-color: $color-accent;
   border-radius: 20px;
 
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 22px;
 
   @include media-tablet {
     padding: 50px;
@@ -102,9 +102,10 @@
 }
 
 .about__item {
+  box-sizing: border-box;
   position: relative;
   box-sizing: border-box;
-  margin-top: 22px;
+  // margin-top: 22px;
   margin-left: 20px;
   padding: 16px 21px;
   border: 1px solid $color-white;
@@ -115,8 +116,8 @@
 
   &::after {
     position: absolute;
-    top: -18px;
-    left: -18px;
+    top: -23px;
+    left: -21px;
     content: '';
     display: block;
     width: 42px;
@@ -144,7 +145,7 @@
 }
 
 .about__title-property {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @include media-desktop {
     width: 201px;

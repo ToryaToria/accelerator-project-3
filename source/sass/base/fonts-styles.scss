@@ -22,9 +22,9 @@
 }
 
 .text-button {
-  @include font ($size: 12px, $line-height: 100%, $color: $color-title);
+  @include font ($size: 12px, $line-height: 100%, $color: $color-title, $weight: 500);
   text-transform: uppercase;
-  letter-spacing: 0.024em;
+  letter-spacing: 0.02em;
 
   @include media-tablet {
     font-size: 14px;
@@ -91,7 +91,7 @@
   @include font ($size: 16px, $line-height: 20px, $color: $color-title);
 
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 
   @include media-tablet {
     font-size: 20px;
@@ -113,7 +113,7 @@
   }
 }
 
-.title-part { //часть
+.title-card { //часть
   @include font ($size: 16px, $line-height: 18px, $color: $color-title);
 
   @include media-tablet {
@@ -127,7 +127,7 @@
   }
 }
 
-.text-part {
+.text-card {
   @include font ($size: 12px, $line-height: 14px);
 
   @include media-tablet {
