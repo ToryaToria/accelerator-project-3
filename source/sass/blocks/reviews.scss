@@ -2,6 +2,11 @@
   padding-top: 55px; // должно быть 50!!!
   padding-bottom: 50px;
 
+  @include media-tablet {
+    padding-top: 50px;
+    padding-bottom: 113px; // должно быть 50!!!
+  }
+
   @include media-desktop {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -24,6 +29,10 @@
 
   gap: 15px;
 
+  @include media-tablet {
+    gap: 30px;
+  }
+
 }
 
 .reviews__item {
@@ -38,7 +47,7 @@
   border-radius: 16px;
 
   @include media-tablet {
-    padding: 52px;
+    padding: 51px 52px 50px 51px;
     width: 560px;
   }
 

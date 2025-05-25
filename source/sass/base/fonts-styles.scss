@@ -4,7 +4,7 @@
 
   @include media-tablet {
     font-size: 36px;
-    line-height: 34px;
+    line-height: 44px;
   }
 
   @include media-desktop {
@@ -28,7 +28,7 @@
 
   @include media-tablet {
     font-size: 14px;
-    letter-spacing: 0.028em;
+    letter-spacing: 0.005em;
   }
 }
 
@@ -96,7 +96,7 @@
   @include media-tablet {
     font-size: 20px;
     line-height: 22px;
-    letter-spacing: 0.026em;
+    // letter-spacing: 0.02em;
   }
 
   @include media-desktop {

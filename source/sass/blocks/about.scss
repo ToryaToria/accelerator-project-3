@@ -33,13 +33,17 @@
 }
 
 .about__wrapp2 {
+  margin-bottom: 40px;
+
   @include media-tablet {
     margin-right: 180px;
-
-    @include media-desktop {
-      margin-right: 0;
-    }
+    margin-bottom: 60px;
   }
+
+  @include media-desktop {
+    margin-right: 0;
+  }
+
 }
 
 .about__title {
@@ -66,7 +70,6 @@
 
 .about__button {
   margin-top: 30px;
-  margin-bottom: 40px;
   background-color: $color-bg-light;
 
   @include media-tablet {
@@ -130,9 +133,10 @@
   }
 
   @include media-tablet {
-    width: 273px;
-    margin-top: 0;
-    margin-left: 0;
+    width: 253px;
+    margin-top: 22px;
+    margin-left: 20px;
+
   }
 
   @include media-desktop {
@@ -146,6 +150,10 @@
 
 .about__title-property {
   margin-bottom: 13px;
+
+  @include media-tablet {
+  padding-right: 30px;
+  }
 
   @include media-desktop {
     width: 201px;

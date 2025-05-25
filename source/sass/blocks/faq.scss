@@ -47,10 +47,20 @@ display: none;
   padding: 21px 17px 21px 16px;
   border: 1px solid $color-accent;
   border-radius: 14px;
+
+  @include media-tablet {
+    border-radius: 16px;
+    padding: 31px 32px;
+  }
 }
 
 .faq__wrapp {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include media-tablet {
+    // align-items: flex-start;
+
+  }
 }

@@ -9,21 +9,28 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  flex-shrink: 0;
 
   &--dark {
     background-color: $color-accent;
     border: 1px solid $color-white;
 
     .text-button {
-    color: $color-white;  
+      color: $color-white;
     }
 
     .button__button {
       background-color: $color-white;
+
       &::after {
         background-color: $color-accent;
       }
     }
+  }
+
+  @include media-tablet {
+  padding-left: 31px;
+  gap: 30px;
   }
 }
 
@@ -31,15 +38,21 @@
   @include btn-circle ($width: 46px, $height: 46px);
 
   &:after {
-    @include btn-icon ($width: 20px, $height: 20px,  
-    $mask-image: url('../../__spritemap#sprite-menu-view') );
-   }
+    @include btn-icon ($width: 20px, $height: 20px,
+      $mask-image: url('../../__spritemap#sprite-menu-view'));
+  }
 }
 
 .button__button {
+  flex-shrink: 0;
   @include btn-circle ($width: 34px, $height: 34px);
 
   &:after {
-    @include btn-icon ($mask-image: url('../../__spritemap#sprite-arr-view') );
-   }
+    @include btn-icon ($mask-image: url('../../__spritemap#sprite-arr-view'));
+  }
+
+  @include media-tablet {
+    width: 46px;
+    height: 46px;
+  }
 }
