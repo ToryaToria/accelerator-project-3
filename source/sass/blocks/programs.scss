@@ -9,8 +9,8 @@
   }
 
   @include media-desktop {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 65px; // должно быть 60!!!
+    padding-bottom: 82px; // пока не сделаю погинацию!!!
   }
 }
 
@@ -21,6 +21,11 @@
 
   @include media-tablet {
     margin-bottom: 43px; // должно быть 40!!!
+  }
+
+  @include media-desktop {
+    margin-bottom: 45px; // должно быть 40!!!
+
   }
 }
 
@@ -33,6 +38,10 @@
   @include media-tablet {
     margin-bottom: 40px;
     gap: 30px;
+  }
+
+  @include media-desktop {
+  gap: 32px;
   }
 }
 
@@ -130,6 +139,10 @@
   justify-content: space-between;
   gap: 16px;
   align-items: center;
+
+  @include media-desktop {
+  
+  }
 }
 
 .programs__button-mini {

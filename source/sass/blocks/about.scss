@@ -3,7 +3,7 @@
   padding-bottom: 50px;
 
   @include media-desktop {
-    padding-top: 60px;
+    padding-top: 70px; // Должно быть 60!!!
     padding-bottom: 60px;
   }
 }
@@ -42,6 +42,8 @@
 
   @include media-desktop {
     margin-right: 0;
+    margin-bottom: 0;
+
   }
 
 }
@@ -143,12 +145,28 @@
     width: 484px;
     margin-top: 22px;
     margin-left: 20px;
+    padding: 50px 41px;
     flex-direction: row;
-    padding: 51px 41px;
+    align-items: center;
+  
+    &:nth-child(2),
+    &:nth-child(3)  {
+      padding: 30px 41px;
+      align-items: center;
+
+    }
+
+    &:nth-child(4)  {
+      padding: 40px 41px;
+      align-items: center;
+
+    }
   }
+
 }
 
 .about__title-property {
+  box-sizing: border-box;
   margin-bottom: 13px;
 
   @include media-tablet {
@@ -158,5 +176,7 @@
   @include media-desktop {
     width: 201px;
     flex-shrink: 0;
+    margin-bottom: 0;
+
   }
 }

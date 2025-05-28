@@ -3,14 +3,16 @@
   padding-bottom: 50px;
 
   @include media-desktop {
-    padding-top: 60px;
+    padding-top: 71px; //должно быть 60!!!
     padding-bottom: 60px;
   }
 }
 
 .faq__container {
   @include media-desktop {
+    box-sizing: border-box;
   width: 1028px;
+  margin: 0 auto;
   }
 }
 
@@ -23,7 +25,7 @@
   }
 
   @include media-desktop {
-    margin-bottom: 60px;
+    margin-bottom: 71px; //должно быть 60!!!
   }
 }
 
@@ -52,6 +54,11 @@ display: none;
     border-radius: 16px;
     padding: 31px 32px;
   }
+
+  @include media-desktop {
+    padding:41px 42px;
+
+  }
 }
 
 .faq__wrapp {
@@ -61,6 +68,9 @@ display: none;
 
   @include media-tablet {
     // align-items: flex-start;
+  }
 
+  @include media-desktop {
+  gap: 10px;
   }
 }

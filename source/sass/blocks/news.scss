@@ -53,7 +53,7 @@
   }
 
   @include media-desktop {
-    padding: 16px 35px;
+    padding: 14px 35px;
   }
 }
 
@@ -194,6 +194,9 @@
   
   }
 
+  @include media-desktop {
+  width: 484px;
+  }
 }
 
 .news__text-card {
