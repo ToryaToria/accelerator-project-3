@@ -1,7 +1,11 @@
 .about {
-  padding-top: 50px;
+  padding-top: 51px;
   padding-bottom: 50px;
 
+    @include media-tablet {
+      padding-top: 50px;
+
+    }
   @include media-desktop {
     padding-top: 70px; // Должно быть 60!!!
     padding-bottom: 60px;
@@ -49,7 +53,7 @@
 }
 
 .about__title {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @include media-tablet {
     margin-bottom: 30px;
@@ -58,7 +62,7 @@
 
 .about__subtitle {
   margin-top: 40px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
   @include media-tablet {
     margin-bottom: 30px;
@@ -86,7 +90,7 @@
 
 .about__list {
   @include list-reset;
-  padding: 43px 20px 40px 0;
+  padding: 42px 20px 40px 0;
   background-color: $color-accent;
   border-radius: 20px;
 
@@ -107,12 +111,11 @@
 }
 
 .about__item {
-  box-sizing: border-box;
   position: relative;
   box-sizing: border-box;
-  // margin-top: 22px;
+
   margin-left: 20px;
-  padding: 16px 21px;
+  padding: 15px 20px 15px 20px;
   border: 1px solid $color-white;
   border-radius: 16px;
 
@@ -138,7 +141,6 @@
     width: 253px;
     margin-top: 22px;
     margin-left: 20px;
-
   }
 
   @include media-desktop {
@@ -153,13 +155,11 @@
     &:nth-child(3)  {
       padding: 30px 41px;
       align-items: center;
-
     }
 
     &:nth-child(4)  {
       padding: 40px 41px;
       align-items: center;
-
     }
   }
 
@@ -167,7 +167,7 @@
 
 .about__title-property {
   box-sizing: border-box;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   @include media-tablet {
   padding-right: 30px;

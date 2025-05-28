@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 77px; // должно быть 70!!!
+  padding-top: 76px; // должно быть 70!!!
   padding-bottom: 70px;
   background-color: $color-accent;
 
@@ -35,7 +35,7 @@
   margin-bottom: 35px; // должно быть 30!!!
 
   @include media-tablet {
-    margin-bottom: 29px;
+    margin-bottom: 31px;
   }
 }
 
@@ -47,8 +47,9 @@
   gap: 22px;
 
   @include media-tablet {
+    margin-top: 1px;
     flex-direction: row;
-    gap: 20.5px;
+    gap: 21px;
   }
 
   @include media-desktop {
@@ -62,7 +63,7 @@
   margin-bottom: 13px; // должно быть 15!!!
 
   @include media-tablet {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
 }
 

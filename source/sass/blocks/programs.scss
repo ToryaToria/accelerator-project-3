@@ -46,6 +46,7 @@
 }
 
 .programs__item {
+  position: relative;
   box-sizing: border-box;
   min-height: 400px;
 
@@ -57,6 +58,7 @@
   width: fit-content;
   flex-shrink: 0;
   flex-grow: 0;
+  overflow: hidden;
 
   border-radius: 12px;
   // background-position: center;
@@ -74,7 +76,11 @@
   &--slid3 {
     background-image: url(../../img/tmp/progr3.png);
   }
-
+&::before {
+    @include overlay;
+    
+  }
+  
   @include media-tablet {
     min-height: 420px;
     width: 324px;
@@ -105,7 +111,6 @@
 
     padding-top: 14px;
   }
-
 
   @include media-desktop {
     padding-bottom: 15.5px;

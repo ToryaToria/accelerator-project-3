@@ -1,6 +1,11 @@
 .faq {
-  padding-top: 50px;
+  padding-top: 51px;
   padding-bottom: 50px;
+
+    @include media-tablet {
+      padding-top: 50px;
+
+    }
 
   @include media-desktop {
     padding-top: 71px; //должно быть 60!!!
@@ -11,14 +16,14 @@
 .faq__container {
   @include media-desktop {
     box-sizing: border-box;
-  width: 1028px;
-  margin: 0 auto;
+    width: 1028px;
+    margin: 0 auto;
   }
 }
 
 .faq__title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @include media-tablet {
     margin-bottom: 40px;
@@ -30,11 +35,14 @@
 }
 
 .faq__answer {
-display: none;
-&--current {
-  display: block;
-  margin-top: 20px;
-}  
+  display: none;
+
+  &--open {
+    display: block;
+    margin-top: 20px;
+        color: $color-white;
+
+  }
 }
 
 .faq__list {
@@ -46,18 +54,21 @@ display: none;
 
 .faq__item {
   box-sizing: border-box;
-  padding: 21px 17px 21px 16px;
-  border: 1px solid $color-accent;
+  padding: 20px 15px 20px 15px;
+  border: 2px solid $color-accent;
   border-radius: 14px;
 
   @include media-tablet {
     border-radius: 16px;
-    padding: 31px 32px;
+    padding: 30px 30px 30px 30px;
   }
 
   @include media-desktop {
-    padding:41px 42px;
+    padding: 42px 42px 38px 40px;
+  }
 
+  &--open {
+    background-color: $color-accent;
   }
 }
 
@@ -71,6 +82,12 @@ display: none;
   }
 
   @include media-desktop {
-  gap: 10px;
+    gap: 10px;
+  }
+}
+
+.faq__question {
+  &--open {
+    color: $color-white;
   }
 }

@@ -1,5 +1,5 @@
 .button-arrow {
-  @include btn-circle ($width: 22px, $height: 22px, $background-color: $color-white);
+  @include btn-circle ($width: 22px, $height: 22px, $background-color: transparent);
 
   &:after {
     @include btn-icon ($background-color: $color-accent, $mask-image: url('../../__spritemap#sprite-arrow-view'));
