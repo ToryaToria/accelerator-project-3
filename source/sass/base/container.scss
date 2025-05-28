@@ -1,19 +1,27 @@
 .container {
   box-sizing: border-box;
-  width: 100%;
+  width:  $mobile-width;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+      // max-width: $mobile-width;
+
+      // outline: auto;
+
+      overflow-x: hidden;
+
 
   @include media-tablet {
     padding-left: 45px;
     padding-right: 45px;
+        width: $tablet-width;
+
   }
 
   @include media-desktop {
     padding-left: 100px;
     padding-right: 100px;
 
-    max-width: $desktop-width;
+    width: $desktop-width;
   }
 }
