@@ -1,6 +1,11 @@
 .footer {
-  padding-top: 80px; // а должно быть 40!!!
+  padding-top: 40px; 
   padding-bottom: 40px;
+
+    @include media-desktop {
+padding-top: 60px;
+  padding-bottom: 60px;
+}
 }
 
 .footer__container {
@@ -12,35 +17,49 @@
     'conf'
     'copy'
     'social'
-
   ;
 
   @include media-tablet {
-    // grid-template-columns: 1fr 1fr;
+    grid-template-columns: 145px 100px auto auto;
     grid-template-areas:
-      'logo nav'
-      'conf social'
-      'copy social'
+      'logo nav nav nav'
+      'conf conf social social'
+      'copy copy social social'
     ;
   }
 
   @include media-desktop {
-    // grid-template-columns: 1fr 1fr;
+    grid-template-columns: 104px 175px 630px auto 225px;
 
     grid-template-areas:
-      'logo nav social'
-      'copy . conf'
+      'logo nav nav social social'
+      'copy copy . . conf'
     ;
   }
 }
 
 .footer__nav {
+  grid-area: nav;
   @include list-reset;
+
   display: flex;
   flex-wrap: wrap;
   gap: 19px 30px;
+
   justify-content: center;
   margin-bottom: 21px;
+
+  @include media-tablet {
+    gap: 16px;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+
+    @include media-desktop {
+    gap: 30px;
+        justify-content: start;
+    }
 }
 
 .footer__link-nav {
@@ -50,30 +69,59 @@
 .footer__logo {
   grid-area: logo;
   margin: 0 auto 19px;
+
+  @include media-tablet {
+    margin: 0 auto 26px 0;
+  }
 }
 
 .footer__conf {
   grid-area: conf;
-
   display: block;
-  margin-bottom: 13px;
   text-align: center;
+  margin-bottom: 13px;
+
+  @include media-tablet {
+    text-align: left;
+  }
+
+      @include media-desktop {
+          text-align: right;
+
+      }
 }
 
 .footer_copy {
   grid-area: copy;
 
-  margin-bottom: 15px;
   text-align: center;
+  margin-bottom: 15px;
+
+  @include media-tablet {
+    text-align: left;
+  }
 }
 
 .footer__social {
-  grid-area: social;
-
   @include list-reset;
+
+  grid-area: social;
+  padding: 0 40px;
+
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
+
+  @include media-tablet {
+    justify-content: end;
+    padding: 0 0 0 40px;
+  }
+    @include media-desktop {
+      align-items: center;
+      margin-bottom: 25px;
+        gap: 20px;
+    }
 }
 
 .footer__social-link {
@@ -88,33 +136,39 @@
   &::after {
     content: '';
     width: 12px;
-    height: 17px;
+    height: 12px;
     background-color: $color-white;
 
     mask-position: center;
     mask-size: auto;
     mask-repeat: no-repeat;
 
+    @include media-tablet {
+      width: 17px;
+      height: 17px;
+    }
   }
 
   &--vk {
     &::after {
-
       mask-image: url("../__spritemap#sprite-vk-view");
     }
   }
 
   &--ok {
     &::after {
-
       mask-image: url("../__spritemap#sprite-ok-view");
     }
   }
 
   &--reddit {
     &::after {
-
       mask-image: url("../__spritemap#sprite-reddit-view");
     }
+  }
+
+  @include media-tablet {
+    width: 36px;
+    height: 36px;
   }
 }
