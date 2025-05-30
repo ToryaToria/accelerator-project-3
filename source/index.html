@@ -16,7 +16,7 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
 
-  <header class="header" data-test="hero">
+  <header class="header">
     <!-- style="display: none;" -->
     <div class="header__header container">
 
@@ -78,32 +78,40 @@
         </ul>
       </div>
     </div>
+  </header>
 
-    <section class="hero">
+  <main class="page__main">
+    <section class="hero" data-test="hero">
       <div class="hero__slider">
-        <div class="hero__pagination nebo nebo--tr"></div>
+
+        <div class="hero__pagination">
+          <!-- только кружочки -->
+        </div>
+
         <ul class="hero__list">
           <li class="hero__item hero__item--slid1">
             <div class="container">
-              <div class="hero__wrapp-title nebo nebo--br">
-                <h2 class="hero__title title-hero">
+             
+              
+                <h2 class="hero__title title-hero nebo nebo--tr">
                   Глобальный профессиональный
                   опыт обучения за&nbsp;рубежом
                 </h2>
-              </div>
 
               <div class="hero__wrapp-text nebo nebo--br">
-                <p class="hero__text text-base">
+                <p class="hero__text text-base nebo nebo--br">
                   Погрузитесь в&nbsp;академическую
                   программу, проходя практику
                   в&nbsp;разных городах, ощущая
                   настоящий студенческий стиль жизни!
                 </p>
 
-                <button class="hero__button button" type="button">
+                <div class="hero__wrapp-button ">
+                  <button class="hero__button button" type="button">
                   <span class="text-button">подробнее</span>
                   <span class="button__button"></span>
                 </button>
+                </div>
               </div>
 
             </div>
@@ -152,7 +160,6 @@
                     <span class="button__button"></span>
                   </button>
                 </div>
-
               </div>
             </div>
           </li>
@@ -160,9 +167,7 @@
       </div>
       </div>
     </section>
-  </header>
 
-  <main class="page__main">
     <section class="about container" data-test="about">
       <!-- <div class=""> -->
       <div class="about__container">
@@ -626,52 +631,52 @@
     </section>
 
     <section class="form" data-test="form">
-     <div class="form__background">
-       <div class="form__container">
-        <h2 class="form__title subtitle">Напишите&nbsp;нам</h2>
-        <p class="form__text text-mini">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—
-          мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
+      <div class="form__background">
+        <div class="form__container">
+          <h2 class="form__title subtitle">Напишите&nbsp;нам</h2>
+          <p class="form__text text-mini">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—
+            мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
 
-        <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="form__label">
-            <span class="form__text-field text-card">Имя</span>
-            <input class="form__field" type="text">
-          </label>
+          <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="form__label">
+              <span class="form__text-field text-card">Имя</span>
+              <input class="form__field" type="text">
+            </label>
 
-          <label class="form__label">
-            <span class="form__text-field text-card">Телефон</span>
-            <input class="form__field" type="tel">
-          </label>
+            <label class="form__label">
+              <span class="form__text-field text-card">Телефон</span>
+              <input class="form__field" type="tel">
+            </label>
 
-          <label class="form__label">
-            <span class="form__text-field text-card">Ваше сообщение</span>
-            <textarea class="form__field form__field--textarea" name="" id="" rows="5"></textarea>
-          </label>
+            <label class="form__label">
+              <span class="form__text-field text-card">Ваше сообщение</span>
+              <textarea class="form__field form__field--textarea" name="" id="" rows="5"></textarea>
+            </label>
 
-          <label class="form__label form__label--right">
-            <span class="form__text-field form__text-field--city text-card">Выберите город</span>
-            <select class="form__select form__field" name="" id="">
-              <option value=""></option>
-              <option value="Moscow">Москва</option>
-            </select>
-            <!-- выпадашка - что за тег? -->
-          </label>
+            <label class="form__label form__label--right">
+              <span class="form__text-field form__text-field--city text-card">Выберите город</span>
+              <select class="form__select form__field" name="" id="">
+                <option value=""></option>
+                <option value="Moscow">Москва</option>
+              </select>
+              <!-- выпадашка - что за тег? -->
+            </label>
 
-          <label class="form__label-check">
-            <input class="form__check" type="checkbox">
-            <span class="form__checkbox"></span>
-            <span class="form__text-approval text-approval">Я&nbsp;согласен на&nbsp;обработку моих персональных<br
-                class="form__br">
-              данных</span>
-          </label>
+            <label class="form__label-check">
+              <input class="form__check" type="checkbox">
+              <span class="form__checkbox"></span>
+              <span class="form__text-approval text-approval">Я&nbsp;согласен на&nbsp;обработку моих персональных<br
+                  class="form__br">
+                данных</span>
+            </label>
 
-          <button class="form_button button button--dark text-button" type="submit">
-            <span class="text-button">отправить</span>
-            <span class="button__button"></span>
-          </button>
-        </form>
+            <button class="form_button button button--dark text-button" type="submit">
+              <span class="text-button">отправить</span>
+              <span class="button__button"></span>
+            </button>
+          </form>
+        </div>
       </div>
-     </div>
     </section>
   </main>
 
