@@ -132,15 +132,33 @@
 }
 
 .programs__title-card {
-  margin-bottom: 18px;
+  box-sizing: border-box;
+ z-index: 5;
+ min-width: 164px;
+  --nb-r: 12px;
+  --nb-w: -6px;
+  --nb-h: 18px;
+  background-color: $color-white;
+      border-top-left-radius: 12px;
+  padding: 18px 18px 6px 18px;
+
+  flex-shrink: 0;
+  flex-grow: 0;
 
   @include media-tablet {
-    margin-bottom: 12px;
+     min-width: 191px;
+    padding-bottom: 1px;
+    padding-top: 13px;
   }
 
   @include media-desktop {
-    margin-bottom: 18.5px;
-  }
+        min-width: 212px;
+            padding-bottom: 2px;
+            --nb-r: 13px;
+  --nb-w: -9px;
+  --nb-h: 14px;
+
+ }
 }
 
 .programs__button {
@@ -154,12 +172,23 @@
 }
 
 .programs__card-wrapp {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   gap: 16px;
   align-items: center;
+  z-index: 5;
 
-  @include media-desktop {}
+  padding: 11px 18px 16px 18px;
+  background-color: $color-white;
+  border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+      border-bottom-left-radius: 12px;
+
+
+  @include media-desktop {
+    min-height: 82px;
+  }
 }
 
 .programs__button-mini {
