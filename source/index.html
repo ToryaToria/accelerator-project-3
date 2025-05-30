@@ -91,12 +91,12 @@
         <ul class="hero__list">
           <li class="hero__item hero__item--slid1">
             <div class="container">
-             
-              
-                <h2 class="hero__title title-hero nebo nebo--tr">
-                  Глобальный профессиональный
-                  опыт обучения за&nbsp;рубежом
-                </h2>
+
+
+              <h2 class="hero__title title-hero nebo nebo--tr">
+                Глобальный профессиональный
+                опыт обучения за&nbsp;рубежом
+              </h2>
 
               <div class="hero__wrapp-text nebo nebo--br">
                 <p class="hero__text text-base nebo nebo--br">
@@ -108,9 +108,9 @@
 
                 <div class="hero__wrapp-button ">
                   <button class="hero__button button" type="button">
-                  <span class="text-button">подробнее</span>
-                  <span class="button__button"></span>
-                </button>
+                    <span class="text-button">подробнее</span>
+                    <span class="button__button"></span>
+                  </button>
                 </div>
               </div>
 
@@ -301,7 +301,13 @@
             программах и&nbsp;городах, в&nbsp;которых можете
             пройти программу.</p>
 
-          <img class="grant__img" src="./img/tmp/arrow.png" alt="указатели" width="290" height="200">
+          <picture>
+            <source type="image/webp" srcset="./img/arrow_1x.webp 1x,
+          ./img/arrow_2x.webp 2x" width="290" height="200">
+
+            <img class="grant__img" src="./img/grant.jpg" srcset="./img/grant.jpg 2x" alt="указатели" width="290"
+              height="200">
+          </picture>
         </div>
 
         <div class="grant__wrapp">
@@ -530,7 +536,15 @@
             <li class="reviews__item">
               <div class="reviews__wrapper">
                 <div class="reviews__wrapp-ava">
-                  <img class="reviews__ava" src="./img/tmp/ava1.png" alt="Лола Алекс" width="60" height="60">
+
+                  <picture>
+                    <source type="image/webp" srcset="./img/avatar1_1x.webp 1x,
+          ./img/avatar1_2x.webp 2x" width="290" height="200">
+
+                    <img class="reviews__ava" src="./img/avatar1_1x.jpg" srcset="./img/avatar1_2x.jpg 2x"
+                      alt="Лола Алекс" width="60" height="60">
+                  </picture>
+
                   <p class="text-name">Лола <br> Алекс</p>
                 </div>
 
@@ -562,7 +576,14 @@
             <li class="reviews__item">
               <div class="reviews__wrapper">
                 <div class="reviews__wrapp-ava">
-                  <img class="reviews__ava" src="./img/tmp/ava2.png" alt="Давид Иванов" width="60" height="60">
+
+                  <picture>
+                    <source type="image/webp" srcset="./img/avatar2_1x.webp 1x,
+          ./img/avatar2_2x.webp 2x" width="290" height="200">
+
+                    <img class="reviews__ava" src="./img/avatar2_1x.jpg" srcset="./img/avatar2_2x.jpg 2x"
+                      alt="Давид Иванов" width="60" height="60">
+                  </picture>
                   <p class="text-name">Давид <br>Иванов</p>
                 </div>
 
@@ -625,7 +646,26 @@
           </dl>
         </div>
 
-        <img class="contacts__map" src="./img/tmp/map-mob.png" alt="карта" width="290" height="240">
+             <picture>
+ <source type="image/webp" media="(min-width: 1440px)" srcset="./img/map_deskt_1x.webp 1x,
+                ./img/map_deskt_2x.webp 2x" width="1240" height="486">
+
+          <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/map_deskt_1x.jpg 1x,
+      ./img/map_deskt_2x.jpg 2x" width="1240" height="486">
+
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/map_tabl_1x.webp 1x,
+                ./img/map_tabl_2x.webp 2x" width="678" height="500">
+
+          <source type="image/jpg" media="(min-width: 768px)" srcset="./img/map_tabl_1x.jpg 1x,
+      ./img/map_tabl_2x.jpg 2x" width="678" height="500">
+
+
+          <source type="image/webp" srcset="./img/map_mob_1x.webp 1x,
+          ./img/map_mob_2x.webp 2x" width="290" height="200">
+
+          <img class="contacts__map" src="./img/map_mob_1x.jpg" srcset="./img/map_mob_2x.jpg 2x" alt="карта" width="290"
+            height="240">
+        </picture>
 
       </div>
     </section>

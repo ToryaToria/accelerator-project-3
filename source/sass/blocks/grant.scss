@@ -54,18 +54,17 @@
 .grant__img {
   display: block;
   width: 290px;
-  height: 200px;
+  // height: 200px;
   border-radius: 16px;
-  object-fit: cover;
+  object-fit: contain;
+  overflow: hidden;
 
   @include media-tablet {
-    // margin-bottom: 40px;
     width: 678px;
     height: 375px;
   }
 
   @include media-desktop {
-    // margin-bottom: 40px;
     width: 498px;
     height: 363px;
   }

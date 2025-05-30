@@ -37,15 +37,76 @@
   // flex-grow: 0;
 
   &--slid1 {
-    background-image: url('../../img/tmp/bg-hero1.png');
+    background-image:
+      // linear-gradient($color-overlay, $color-overlay),
+      image-set(url("../../img/hero1_mob_1x.webp") 1x type("image/webp"),
+        url("../..img/hero1_mob_1x.jpg") 1x,
+        url("../../img/hero1_mob_2x.webp") 2x type("image/webp"),
+        url("../../img/hero1_mob_2x.jpg") 2x);
+
+    @include media-tablet {
+      background-image:
+               image-set(url("../../img/hero1_tabl_1x.webp") 1x type("image/webp"),
+          url("../..img/hero1_tabl_1x.jpg") 1x,
+          url("../../img/hero1_tabl_2x.webp") 2x type("image/webp"),
+          url("../../img/hero1_tabl_2x.jpg") 2x);
+    }
+
+    @include media-desktop {
+      background-image:
+               image-set(url("../../img/hero1_deskt_1x.webp") 1x type("image/webp"),
+          url("../..img/hero1_deskt_1x.jpg") 1x,
+          url("../../img/hero1_deskt_2x.webp") 2x type("image/webp"),
+          url("../../img/hero1_deskt_2x.jpg") 2x);
+    }
   }
 
   &--slid2 {
-    background-image: url('../../img/tmp/bg-hero2.jpg');
+    background-image:
+          image-set(url("../../img/hero2_mob_1x.webp") 1x type("image/webp"),
+        url("../..img/hero2_mob_1x.jpg") 1x,
+        url("../../img/hero2_mob_2x.webp") 2x type("image/webp"),
+        url("../../img/hero2_mob_2x.jpg") 2x);
+
+    @include media-tablet {
+      background-image:
+               image-set(url("../../img/hero2_tabl_1x.webp") 1x type("image/webp"),
+          url("../..img/hero2_tabl_1x.jpg") 1x,
+          url("../../img/hero2_tabl_2x.webp") 2x type("image/webp"),
+          url("../../img/hero2_tabl_2x.jpg") 2x);
+    }
+
+    @include media-desktop {
+      background-image:
+             image-set(url("../../img/hero2_deskt_1x.webp") 1x type("image/webp"),
+          url("../..img/hero2_deskt_1x.jpg") 1x,
+          url("../../img/hero2_deskt_2x.webp") 2x type("image/webp"),
+          url("../../img/hero2_deskt_2x.jpg") 2x);
+    }
   }
 
   &--slid3 {
-    background-image: url('../../img/tmp/bg-hero3.jpg');
+    background-image:
+           image-set(url("../../img/hero3_mob_1x.webp") 1x type("image/webp"),
+        url("../..img/hero3_mob_1x.jpg") 1x,
+        url("../../img/hero3_mob_2x.webp") 2x type("image/webp"),
+        url("../../img/hero3_mob_2x.jpg") 2x);
+
+    @include media-tablet {
+      background-image:
+               image-set(url("../../img/hero3_tabl_1x.webp") 1x type("image/webp"),
+          url("../..img/hero1_tabl_3x.jpg") 1x,
+          url("../../img/hero3_tabl_2x.webp") 2x type("image/webp"),
+          url("../../img/hero3_tabl_2x.jpg") 2x);
+    }
+
+    @include media-desktop {
+      background-image:
+                image-set(url("../../img/hero3_deskt_1x.webp") 1x type("image/webp"),
+          url("../..img/hero1_deskt_3x.jpg") 1x,
+          url("../../img/hero3_deskt_2x.webp") 2x type("image/webp"),
+          url("../../img/hero3_deskt_2x.jpg") 2x);
+    }
   }
 
   &::before {
@@ -130,7 +191,7 @@
   @include media-desktop {
     // padding: 15px 50px 35px 50px;
     width: 801px;
-        --nb-h: 53px;
+    --nb-h: 53px;
 
   }
 }

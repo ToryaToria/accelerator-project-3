@@ -41,7 +41,7 @@
   }
 
   @include media-desktop {
-  gap: 32px;
+    gap: 32px;
   }
 }
 
@@ -66,21 +66,35 @@
   background-repeat: no-repeat;
 
   &--slid1 {
-    background-image: url(../../img/tmp/progr1.png);
+    background-image:
+      image-set(url("../../img/progr1_deskt_1x.webp") 1x type("image/webp"),
+        url("../../img/progr1_deskt_1x.jpg") 1x,
+        url("../../img/progr1_deskt_2x.webp") 2x type("image/webp"),
+        url("../../img/progr1_deskt_2x.jpg") 2x);
   }
 
   &--slid2 {
-    background-image: url(../../img/tmp/progr2.png);
+    background-image:
+
+      image-set(url("../../img/progr2_deskt_1x.webp") 1x type("image/webp"),
+        url("../..img/progr2_deskt_1x.jpg") 1x,
+        url("../../img/progr2_deskt_2x.webp") 2x type("image/webp"),
+        url("../../img/progr2_deskt_2x.jpg") 2x);
   }
 
   &--slid3 {
-    background-image: url(../../img/tmp/progr3.png);
+    background-image:
+      image-set(url("../../img/progr3_deskt_1x.webp") 1x type("image/webp"),
+        url("../..img/progr3_deskt_1x.jpg") 1x,
+        url("../../img/progr3_deskt_2x.webp") 2x type("image/webp"),
+        url("../../img/progr3_deskt_2x.jpg") 2x);
   }
-&::before {
+
+  &::before {
     @include overlay;
-    
+
   }
-  
+
   @include media-tablet {
     min-height: 420px;
     width: 324px;
@@ -135,7 +149,7 @@
   gap: 30px;
 
   @include media-tablet {
-  display: none;
+    display: none;
   }
 }
 
@@ -145,9 +159,7 @@
   gap: 16px;
   align-items: center;
 
-  @include media-desktop {
-  
-  }
+  @include media-desktop {}
 }
 
 .programs__button-mini {

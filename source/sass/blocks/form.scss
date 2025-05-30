@@ -23,16 +23,33 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../../img/tmp/bg-form.png);
+
+  background-color: aqua;
+
+  background-image:
+    image-set(url("../../img/form-bg_mob_2x.webp") 1x type("image/webp"),
+      url("../../img/form-bg_mob_1x.jpg") 1x,
+      url("../../img/form-bg_mob_2x.webp") 2x type("image/webp"),
+      url("../../img/form-bg_mob_2x.jpg") 2x);
 
   @include media-tablet {
     padding: 0 210px 0 0;
     border-radius: 16px;
+
+    background-image:
+    image-set(url("../../img/form-bg_tabl_2x.webp") 1x type("image/webp"),
+      url("../../img/form-bg_tabl_1x.jpg") 1x,
+      url("../../img/form-bg_tabl_2x.webp") 2x type("image/webp"),
+      url("../../img/form-bg_tabl_2x.jpg") 2x);
   }
 
   @include media-desktop {
     padding: 0 750px 0 0;
-
+     background-image:
+    image-set(url("../../img/form-bg_deskt_2x.webp") 1x type("image/webp"),
+      url("../../img/form-bg_deskt_1x.jpg") 1x,
+      url("../../img/form-bg_deskt_2x.webp") 2x type("image/webp"),
+      url("../../img/form-bg_deskt_2x.jpg") 2x);
   }
 }
 
@@ -107,13 +124,13 @@
   @include media-tablet {
     margin-bottom: 12px;
   }
-  
+
   &--city {
     margin-top: -4px;
 
     @include media-desktop {
       margin-top: -8px;
-  margin-bottom: 8px;
+      margin-bottom: 8px;
 
     }
   }
