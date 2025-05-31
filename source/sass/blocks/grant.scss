@@ -47,26 +47,33 @@
   }
 
   @include media-desktop {
-  padding-right: 0;
+    padding-right: 0;
   }
 }
 
 .grant__img {
   display: block;
   width: 290px;
-  // height: 200px;
+  min-height: 200px;
+  height: auto;
   border-radius: 16px;
-  object-fit: contain;
+  object-fit: cover;
   overflow: hidden;
+
+  background-color: red;
 
   @include media-tablet {
     width: 678px;
-    height: 375px;
+    min-height: 375px;
+    border-radius: 24px;
+
   }
 
   @include media-desktop {
+    border-radius: 16px;
+
     width: 498px;
-    height: 363px;
+    min-height: 363px;
   }
 }
 
@@ -104,7 +111,7 @@
   @include media-desktop {
     width: 498px;
     gap: 8px;
-        padding-top: 9px;
+    padding-top: 9px;
 
   }
 }
@@ -142,8 +149,8 @@
       font-size: 22px;
       line-height: 22px;
 
-       width: 16px;
-    height: 30px;
+      width: 16px;
+      height: 30px;
     }
 
     @include media-desktop {
@@ -178,6 +185,6 @@
 
 .grant__wrapp {
   @include media-desktop {
-  width: 498px;
+    width: 498px;
   }
 }
