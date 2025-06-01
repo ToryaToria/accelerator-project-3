@@ -1,0 +1,282 @@
+.programs {
+  padding-top: 56px; // должно быть 50!!!
+  padding-bottom: 50px;
+
+  @include media-tablet {
+    padding-top: 53px; // должно быть 50!!!
+    padding-bottom: 72px; // должно быть 50!!! - временно, пока с кнотками не разбирусь
+
+  }
+
+  @include media-desktop {
+    padding-top: 65px; // должно быть 60!!!
+    padding-bottom: 82px; // пока не сделаю погинацию!!!
+  }
+}
+
+.programs_grid {
+  display: grid;
+
+  grid-template-areas:
+    'title arrows'
+    'slider slider'
+    'btn dtn'
+  ;
+}
+
+.programs__title {
+    grid-area: title;
+}
+
+.programs__arrows {
+      grid-area: arrows;
+}
+
+// .programs__slider {
+//         
+// }
+
+// .programs__wrapp {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 32px;
+
+//   @include media-tablet {
+//     margin-bottom: 43px; // должно быть 40!!!
+//   }
+
+//   @include media-desktop {
+//     margin-bottom: 45px; // должно быть 40!!!
+//   }
+// }
+
+.programs__list {
+  grid-area: slider;
+
+  @include list-reset;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+
+  @include media-tablet {
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+
+  @include media-desktop {
+    gap: 32px;
+  }
+}
+
+.programs__item {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 400px;
+  // width: fit-content;
+width: 290px;
+  padding: 10px 10px 18px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow: hidden;
+
+  border-radius: 12px;
+  // background-position: center;
+    // background-position: unset;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--slid1 {
+
+    background-image:
+    
+      image-set(url("../../img/program1_mob_1x.webp") 1x type("image/webp"),
+        url("../../img/program1_mob_1x.jpg") 1x,
+        url("../../img/program1_mob_2x.webp") 2x type("image/webp"),
+        url("../../img/program1_mob_2x.jpg") 2x);
+
+    // @include media-tablet {
+    //   background-image:
+    //     image-set(url("../../img/program1_tabl_1x.webp") 1x type("image/webp"),
+    //       url("../../img/program1_tabl_1x.jpg") 1x,
+    //       url("../../img/program1_tabl_2x.webp") 2x type("image/webp"),
+    //       url("../../img/program1_tabl_2x.jpg") 2x);
+    // }
+
+    @include media-desktop {
+      background-image:
+        image-set(url("../../img/program1_desktop_1x.webp") 1x type("image/webp"),
+          url("../../img/program1_desktop_1x.jpg") 1x,
+          url("../../img/program1_desktop_2x.webp") 2x type("image/webp"),
+          url("../../img/program1_desktop_2x.jpg") 2x);
+    }
+  }
+
+  &--slid2 {
+    background-image:
+      image-set(url("../../img/program2_mob_1x.webp") 1x type("image/webp"),
+        url("../../img/program2_mob_1x.jpg") 1x,
+        url("../../img/program2_mob_2x.webp") 2x type("image/webp"),
+        url("../../img/program2_mob_2x.jpg") 2x);
+
+    // @include media-tablet {
+    //   background-image:
+    //     image-set(url("../../img/program2_tabl_1x.webp") 1x type("image/webp"),
+    //       url("../../img/program2_tabl_1x.jpg") 1x,
+    //       url("../../img/program2_tabl_2x.webp") 2x type("image/webp"),
+    //       url("../../img/program2_tabl_2x.jpg") 2x);
+    // }
+
+    @include media-desktop {
+      background-image:
+        image-set(url("../../img/program2_desktop_1x.webp") 1x type("image/webp"),
+          url("../../img/program2_desktop_1x.jpg") 1x,
+          url("../../img/program2_desktop_2x.webp") 2x type("image/webp"),
+          url("../../img/program2_desktop_2x.jpg") 2x);
+    }
+  }
+
+  &--slid3 {
+    background-image:
+      image-set(url("../../img/program3_mob_1x.webp") 1x type("image/webp"),
+        url("../../img/program3_mob_1x.jpg") 1x,
+        url("../../img/program3_mob_2x.webp") 2x type("image/webp"),
+        url("../../img/program3_mob_2x.jpg") 2x);
+
+    // @include media-tablet {
+    //   background-image:
+    //     image-set(url("../../img/program3_tabl_1x.webp") 1x type("image/webp"),
+    //       url("../../img/program3_tabl_1x.jpg") 1x,
+    //       url("../../img/program3_tabl_2x.webp") 2x type("image/webp"),
+    //       url("../../img/program3_tabl_2x.jpg") 2x);
+    // }
+
+    @include media-desktop {
+      background-image:
+        image-set(url("../../img/program3_desktop_1x.webp") 1x type("image/webp"),
+          url("../../img/program3_desktop_1x.jpg") 1x,
+          url("../../img/program3_desktop_2x.webp") 2x type("image/webp"),
+          url("../../img/program3_desktop_2x.jpg") 2x);
+    }
+  }
+
+  &::before {
+    @include overlay;
+  }
+
+  @include media-tablet {
+    min-height: 420px;
+    width: 324px;
+    padding: 10px 20px;
+  }
+
+  @include media-desktop {
+    width: 392px;
+    padding: 17px 51px 17px 20px;
+  }
+}
+
+// .programs__card {
+//   --nb-r: 12px;
+//   --nb-w: 10px;
+//   --nb-h: 17px;
+//   background-color: $color-white;
+//   border-radius: 12px;
+//   padding: 18px 18px 15px 18px;
+
+//   flex-shrink: 0;
+//   flex-grow: 0;
+
+//   @include media-tablet {
+//     // --nb-r: 12px;
+//     --nb-w: 87px;
+//     --nb-h: 14px;
+
+//     padding-top: 14px;
+//   }
+
+//   @include media-desktop {
+//     padding-bottom: 15.5px;
+//   }
+// }
+
+.programs__title-card {
+  box-sizing: border-box;
+  position: relative;
+  // z-index: 5;
+  min-width: 146px;
+  // --nb-r: 12px;
+  // --nb-w: -6px;
+  // --nb-h: 18px;
+  background-color: $color-white;
+  padding: 18px 18px 6px 18px;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  &::after {
+    content: '';
+    @include angle($width: 18px, $height: 18px,$bg-color:$color-white);
+    position: absolute;
+    bottom: 0;
+    right: -16px;
+      z-index: 10;
+  }
+
+  @include media-tablet {
+    min-width: 173px;
+    padding-bottom: 0;
+    padding-top: 14px;
+  }
+
+  @include media-desktop {
+    min-width: 212px;
+    padding-bottom: 2px;
+    --nb-r: 13px;
+    --nb-w: -9px;
+    --nb-h: 14px;
+  }
+}
+
+.programs__button {
+      grid-area: btn;
+
+  background-color: $color-bg-light;
+  padding-left: 31px;
+  gap: 30px;
+
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.programs__card-wrapp {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  z-index: 5;
+
+  padding: 12px 18px 15px 18px;
+  background-color: $color-white;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+
+  @include media-desktop {
+    min-height: 82px;
+  }
+}
+
+.programs__button-mini {
+  flex-shrink: 0;
+}
