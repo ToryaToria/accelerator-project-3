@@ -83,14 +83,15 @@
   left: 0;
 }
 
-@mixin angle {
+@mixin angle ($width: 16px, $height: 16px, $bg-color:$color-bg-light) {
   display: block;
-  width: 16px;
-  height: 16px;
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-image: url('../../__spritemap#sprite-angle-view');
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  mask-position: center;
+  mask-size: auto;
+  mask-repeat: no-repeat;
+  mask-image: url('../../__spritemap#sprite-angle-view');
   z-index: 5;
 }
 
