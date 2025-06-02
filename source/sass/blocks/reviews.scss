@@ -16,7 +16,6 @@
 .reviews__container {
   display: grid;
   grid-template-columns: 1fr 60px;
-  // align-items: start;
   grid-template-areas:
     'head arr'
     'slid slid';
@@ -29,13 +28,11 @@
       'head head'
       'slid slid'
       'pag arr';
-      gap: 40px;
+    gap: 40px;
   }
 
   @include media-desktop {
     grid-template-columns: 1136px 1fr;
-        // gap: 42px;
-
   }
 }
 
@@ -61,18 +58,15 @@
 
   @include list-reset;
   display: flex;
-
   gap: 15px;
 
   @include media-tablet {
     gap: 30px;
-    // margin-bottom: 40px;
   }
 
   @include media-desktop {
     gap: 32px;
   }
-
 }
 
 .reviews__item {

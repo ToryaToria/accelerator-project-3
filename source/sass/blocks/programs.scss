@@ -1,16 +1,15 @@
 .programs {
-  padding-top: 56px; // должно быть 50!!!
+  padding-top: 50px;
   padding-bottom: 50px;
 
   @include media-tablet {
-    padding-top: 53px; // должно быть 50!!!
-    padding-bottom: 72px; // должно быть 50!!! - временно, пока с кнотками не разбирусь
-
+    padding-top: 50px;
+    padding-bottom: 50;
   }
 
   @include media-desktop {
-    padding-top: 65px; // должно быть 60!!!
-    padding-bottom: 82px; // пока не сделаю погинацию!!!
+    padding-top: 65px;
+    padding-bottom: 60px;
   }
 }
 
@@ -19,8 +18,8 @@
   display: grid;
   grid-template-columns: 1fr 62px;
 
-  gap: 32px 0;
-  align-items: center;
+  gap: 30px 0;
+  // align-items: center;
 
   grid-template-areas:
     'title arrows'
@@ -32,32 +31,41 @@
     width: 768px;
 
     grid-template-columns: 1fr 138px 116px;
-
+    gap: 40px 0;
     grid-template-areas:
       'title  button button'
       'slider slider slider'
-      'pagin pagin arrows'
-    ;
-
-    gap: 40px 0;
+      'pagin pagin arrows';
   }
 
   @include media-desktop {
     width: 1440px;
-    // grid-template-columns:1fr 1fr 1fr;
   }
 }
 
 .programs__title {
+  box-sizing: border-box;
   grid-area: title;
-  // width: 238px;
-  // justify-self: start;
   margin-right: auto;
+  padding-top: 6px;
+  padding-bottom: 2px;
+
+  @include media-tablet {
+    padding-top: 3px;
+    padding-bottom: 0;
+  }
 }
 
 .programs__arrows {
   grid-area: arrows;
   justify-self: end;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  @include media-tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .programs__pagination {
@@ -66,17 +74,23 @@
   @include media-tablet {
     grid-area: pagin;
     display: block;
+    padding: 10px 0;
   }
 }
 
 .programs__button {
+  box-sizing: border-box;
   grid-area: button;
   justify-self: start;
   background-color: $color-bg-light;
-  gap: 30px;
+  gap: 31px;
+  padding-left: 30px;
+  align-items: center;
 
   @include media-tablet {
     justify-self: end;
+    padding-left: 31px;
+    gap: 32px;
   }
 }
 
@@ -86,7 +100,6 @@
   grid-area: slider;
   display: flex;
   gap: 15px;
-
 
   @include media-tablet {
     gap: 30px;
@@ -230,15 +243,23 @@
   align-items: center;
   z-index: 5;
 
-  padding: 12px 18px 15px 18px;
+  padding: 13px 18px 14px 18px;
+  // padding: 13px 18px 15px 18px;
+
   background-color: $color-white;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
 
+  @include media-tablet {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
 
   @include media-desktop {
     min-height: 82px;
+    padding-top: 12px;
+    padding-bottom: 16px;
   }
 }
 
