@@ -522,101 +522,92 @@
     </section>
 
     <section class="reviews slider" data-test="reviews">
-      <div class="container">
+      <div class="reviews__container container">
 
-        <div class="reviews__wrapp">
-          <h2 class="title-section">Отзывы</h2>
-          <div class="slider__wrapp-btn">
-            <button class="button-arrow button-arrow--left" type="button"><span
-                class="visually-hidden">назад</span></button>
-            <button class="button-arrow" type="button"><span class="visually-hidden">вперед</span></button>
-          </div>
+        <h2 class="reviews__title title-section">Отзывы</h2>
+
+        <div class="reviews__arrows slider__wrapp-btn">
+          <button class="button-arrow button-arrow--left" type="button"><span
+              class="visually-hidden">назад</span></button>
+          <button class="button-arrow" type="button"><span class="visually-hidden">вперед</span></button>
         </div>
 
-        <div class="reviews__slider">
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <div class="reviews__wrapper">
-                <div class="reviews__wrapp-ava">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__wrapper">
 
-                  <picture>
-                    <source type="image/webp" srcset="./img/avatar1_1x.webp 1x,
+              <picture>
+                <source type="image/webp" srcset="./img/avatar1_1x.webp 1x,
           ./img/avatar1_2x.webp 2x" width="290" height="200">
 
-                    <img class="reviews__ava" src="./img/avatar1_1x.jpg" srcset="./img/avatar1_2x.jpg 2x"
-                      alt="Лола Алекс" width="60" height="60">
-                  </picture>
+                <img class="reviews__ava" src="./img/avatar1_1x.jpg" srcset="./img/avatar1_2x.jpg 2x" alt="Лола Алекс"
+                  width="60" height="60">
+              </picture>
 
-                  <p class="text-name">Лола <br> Алекс</p>
-                </div>
+              <p class="text-name">Лола <br> Алекс</p>
 
-                <dl class="reviews__wrapp-property">
-                  <div>
-                    <dt class="reviews__data text-data">программа</dt>
-                    <dd class="reviews__property text-card">Masa Art Challenge</dd>
-                  </div>
-
-                  <div>
-                    <dt class="reviews__data text-data">Дата</dt>
-                    <dd class="reviews__property  text-card">Осень 2022</dd>
-                  </div>
-                </dl>
+              <div class="reviews__program">
+                <p class="reviews__data text-data">программа</p>
+                <p class="reviews__property text-card">Masa Art Challenge</p>
               </div>
 
-              <h3 class="reviews__title-card title-card">
-                Я&nbsp;могу с&nbsp;уверенностью сказать, что&nbsp;это&nbsp;был один из&nbsp;самых незабываемых опытов
-                в&nbsp;жизни!
-              </h3>
-              <p class="text-mini">
-                Я&nbsp;рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
-                Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает
-                её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную
-                мне&nbsp;возможность.
-              </p>
-            </li>
+              <div class="reviews__time">
+                <p class="reviews__data text-data">Дата</p>
+                <p class="reviews__property  text-card">Осень 2022</p>
+              </div>
+            </div>
 
-            <li class="reviews__item">
-              <div class="reviews__wrapper">
-                <div class="reviews__wrapp-ava">
+            <h3 class="reviews__title-card title-card">
+              Я&nbsp;могу с&nbsp;уверенностью сказать, что&nbsp;это&nbsp;был один из&nbsp;самых незабываемых опытов
+              в&nbsp;жизни!
+            </h3>
 
-                  <picture>
-                    <source type="image/webp" srcset="./img/avatar2_1x.webp 1x,
+            <p class="text-mini">
+              Я&nbsp;рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
+              Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает
+              её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную
+              мне&nbsp;возможность.
+            </p>
+          </li>
+
+          <li class="reviews__item">
+            <div class="reviews__wrapper">
+
+              <picture>
+                <source type="image/webp" srcset="./img/avatar2_1x.webp 1x,
           ./img/avatar2_2x.webp 2x" width="290" height="200">
 
-                    <img class="reviews__ava" src="./img/avatar2_1x.jpg" srcset="./img/avatar2_2x.jpg 2x"
-                      alt="Давид Иванов" width="60" height="60">
-                  </picture>
-                  <p class="text-name">Давид <br>Иванов</p>
-                </div>
+                <img class="reviews__ava" src="./img/avatar2_1x.jpg" srcset="./img/avatar2_2x.jpg 2x" alt="Давид Иванов"
+                  width="60" height="60">
+              </picture>
+              <p class="text-name">Давид <br>Иванов</p>
 
-                <dl class="reviews__wrapp-property">
-                  <div>
-                    <dt class="reviews__data text-data">программа</dt>
-                    <dd class="reviews__property text-card">Volunteer Chance</dd>
-                  </div>
-
-                  <div>
-                    <dt class="reviews__data text-data">Дата</dt>
-                    <dd class="reviews__property  text-card">Лето 2022</dd>
-                  </div>
-                </dl>
+              <div class="reviews__program">
+                <p class="reviews__data text-data">программа</p>
+                <p class="reviews__property text-card">Volunteer Chance</p>
               </div>
 
-              <h3 class="reviews__title-card title-card">Благодаря опыту стажировки я&nbsp;узнал так&nbsp;много нового
-                о&nbsp;себе
-                и&nbsp;об&nbsp;окружающем мире.</h3>
-              <p class="text-mini">Каждый день был&nbsp;возможностью оказать ощутимое влияние на&nbsp;жизнь других
-                людей. Я&nbsp;бы&nbsp;очень рекомендовал эту&nbsp;волонтёрскую программу всем, кто&nbsp;ищет значимый
-                и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для&nbsp;меня было честью быть частью
-                такой удивительной инициативы.</p>
-            </li>
-          </ul>
+              <div class="reviews__time">
+                <p class="reviews__data text-data">Дата</p>
+                <p class="reviews__property  text-card">Лето 2022</p>
+              </div>
+            </div>
 
-          <div>
-            <!-- пагинация слайдера и кнопки туда-сюда -->
+            <h3 class="reviews__title-card title-card">Благодаря опыту стажировки я&nbsp;узнал так&nbsp;много нового
+              о&nbsp;себе
+              и&nbsp;об&nbsp;окружающем мире.</h3>
+
+            <p class="text-mini">Каждый день был&nbsp;возможностью оказать ощутимое влияние на&nbsp;жизнь других
+              людей. Я&nbsp;бы&nbsp;очень рекомендовал эту&nbsp;волонтёрскую программу всем, кто&nbsp;ищет значимый
+              и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для&nbsp;меня было честью быть частью
+              такой удивительной инициативы.</p>
+          </li>
+        </ul>
+
+        <div class="reviews__pagination">
+          <div class="scroll-bar">
           </div>
         </div>
-      </div>
     </section>
 
     <section class="contacts" data-test="contacts">

@@ -1,129 +1,186 @@
 .reviews {
-  padding-top: 56px; // должно быть 50!!!
+  padding-top: 56px;
   padding-bottom: 50px;
 
-  // background-image: url('../../img/test_img/terst1.png');
+  @include media-tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-  // @include media-tablet {
-  //   padding-top: 50px;
-  //   padding-bottom: 113px; // должно быть 50!!!
-  // }
-
-  // @include media-desktop {
-  //   padding-top: 65px; // должно быть 50!!!
-  //   padding-bottom: 120px; // пока не сделаю пагинацию
-  // }
+  @include media-desktop {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
 }
 
-.reviews__wrapp {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 32px; // должно быть 30!!!
+.reviews__container {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  // align-items: start;
+  grid-template-areas:
+    'head arr'
+    'slid slid';
+  gap: 30px;
 
-  // @include media-tablet {
-  //   margin-bottom: 40px;
-  // }
+  @include media-tablet {
+    grid-template-columns: 562px 1fr;
 
-  // @include media-desktop {
-  // margin-bottom: 45px;
-  // }
+    grid-template-areas:
+      'head head'
+      'slid slid'
+      'pag arr';
+      gap: 40px;
+  }
+
+  @include media-desktop {
+    grid-template-columns: 1136px 1fr;
+        // gap: 42px;
+
+  }
+}
+
+.reviews__title {
+  grid-area: head;
+  justify-self: start;
+
+  @include media-desktop {
+    margin-left: 3px;
+    margin-bottom: 5px;
+  }
+}
+
+.reviews__arrows {
+  grid-area: arr;
+  justify-self: end;
+  margin-top: -2px;
+  margin-bottom: 4px;
 }
 
 .reviews__list {
+  grid-area: slid;
+
   @include list-reset;
   display: flex;
 
   gap: 15px;
 
-  // @include media-tablet {
-  //   gap: 30px;
-  // }
+  @include media-tablet {
+    gap: 30px;
+    // margin-bottom: 40px;
+  }
+
+  @include media-desktop {
+    gap: 32px;
+  }
 
 }
 
 .reviews__item {
   box-sizing: border-box;
-  padding: 30px 15px; // должно быть 32 17!!!
+  padding: 30px 15px;
 
   flex-grow: 0;
   flex-shrink: 0;
-  width: fit-content;
+  width: 290px;
 
   border: 2px solid $color-accent;
   border-radius: 16px;
 
-  // @include media-tablet {
-  //   padding: 51px 52px 50px 51px;
-  //   width: 560px;
-  // }
+  @include media-tablet {
+    padding: 51px 50px 50px 50px;
+    width: 560px;
+  }
 
-  // @include media-desktop {
-  //   padding: 52px 48px 52px 52px;
-  //   width: 604px;
-  // }
+  @include media-desktop {
+    padding: 50px 48px 50px 50px;
+    width: 604px;
+  }
 }
 
 .reviews__wrapper {
-  display: flex;
-  flex-direction: column;
-  // gap: 15px;
-  // margin-bottom: 25px;
-
-  // @include media-tablet {
-  //   flex-direction: row;
-  //   align-items: center;
-  //   justify-content: space-between;
-  //   margin-bottom: 30px;
-  // }
-}
-
-.reviews__wrapp-ava {
-  display: flex;
+  display: grid;
   align-items: center;
-  gap: 10px;
+  gap: 15px 10px;
 
-  background-color: rgb(235, 205, 199);
+  grid-template-columns: 60px 53px 1fr;
+  grid-template-areas:
+    'ava name name'
+    'program program time';
+
+  margin-bottom: 25px;
+
   @include media-tablet {
+    margin-bottom: 30px;
     gap: 15px;
+
+    grid-template-columns: 90px 107px 136px 1fr;
+    grid-template-areas:
+      'ava name program time';
+  }
+
+  @include media-desktop {
+    grid-template-columns: 90px 153px 136px 1fr;
   }
 }
 
 .reviews__ava {
+  grid-area: ava;
+
   display: block;
   width: 60px;
   height: 60px;
   border-radius: 50%;
 
-  // @include media-tablet {
-  //   width: 90px;
-  //   height: 90px;
-  // }
+  @include media-tablet {
+    width: 90px;
+    height: 90px;
+  }
 }
 
-.reviews__wrapp-property {
-  display: flex;
-  gap: 25px;
-  background-color: rgb(127, 161, 255);
+.reviews__program {
+  grid-area: program;
+}
 
+.reviews__time {
+  grid-area: time;
 }
 
 .reviews__data {
   color: $color-title;
   margin-bottom: 8px;
 
-  // @include media-tablet {
-  //   margin-bottom: 11px;
-  // }
+  @include media-tablet {
+    margin-bottom: 12px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 11px;
+  }
 }
 
 .reviews__property {
+  grid-area: nav;
   margin-left: 0;
 }
 
 .reviews__title-card {
   margin-bottom: 20px;
 
-  // @include media-tablet {
-  //   margin-bottom: 25px;
-  // }
+  @include media-tablet {
+    margin-bottom: 24px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 25px;
+  }
+}
+
+.reviews__pagination {
+  display: none;
+
+  @include media-tablet {
+    grid-area: pag;
+    display: block;
+    padding: 10px 0;
+  }
 }

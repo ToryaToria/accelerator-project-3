@@ -1,0 +1,129 @@
+.reviews {
+  padding-top: 56px; // должно быть 50!!!
+  padding-bottom: 50px;
+
+  // background-image: url('../../img/test_img/terst1.png');
+
+  // @include media-tablet {
+  //   padding-top: 50px;
+  //   padding-bottom: 113px; // должно быть 50!!!
+  // }
+
+  // @include media-desktop {
+  //   padding-top: 65px; // должно быть 50!!!
+  //   padding-bottom: 120px; // пока не сделаю пагинацию
+  // }
+}
+
+.reviews__wrapp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px; // должно быть 30!!!
+
+  // @include media-tablet {
+  //   margin-bottom: 40px;
+  // }
+
+  // @include media-desktop {
+  // margin-bottom: 45px;
+  // }
+}
+
+.reviews__list {
+  @include list-reset;
+  display: flex;
+
+  gap: 15px;
+
+  // @include media-tablet {
+  //   gap: 30px;
+  // }
+
+}
+
+.reviews__item {
+  box-sizing: border-box;
+  padding: 30px 15px; // должно быть 32 17!!!
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: fit-content;
+
+  border: 2px solid $color-accent;
+  border-radius: 16px;
+
+  // @include media-tablet {
+  //   padding: 51px 52px 50px 51px;
+  //   width: 560px;
+  // }
+
+  // @include media-desktop {
+  //   padding: 52px 48px 52px 52px;
+  //   width: 604px;
+  // }
+}
+
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  // gap: 15px;
+  // margin-bottom: 25px;
+
+  // @include media-tablet {
+  //   flex-direction: row;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   margin-bottom: 30px;
+  // }
+}
+
+.reviews__wrapp-ava {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: rgb(235, 205, 199);
+  @include media-tablet {
+    gap: 15px;
+  }
+}
+
+.reviews__ava {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  // @include media-tablet {
+  //   width: 90px;
+  //   height: 90px;
+  // }
+}
+
+.reviews__wrapp-property {
+  display: flex;
+  gap: 25px;
+  background-color: rgb(127, 161, 255);
+
+}
+
+.reviews__data {
+  color: $color-title;
+  margin-bottom: 8px;
+
+  // @include media-tablet {
+  //   margin-bottom: 11px;
+  // }
+}
+
+.reviews__property {
+  margin-left: 0;
+}
+
+.reviews__title-card {
+  margin-bottom: 20px;
+
+  // @include media-tablet {
+  //   margin-bottom: 25px;
+  // }
+}

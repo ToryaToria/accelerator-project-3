@@ -45,7 +45,6 @@
   @include media-desktop {
     width: 1440px;
     // grid-template-columns:1fr 1fr 1fr;
-
   }
 }
 
@@ -59,7 +58,6 @@
 .programs__arrows {
   grid-area: arrows;
   justify-self: end;
-
 }
 
 .programs__pagination {
@@ -68,7 +66,6 @@
   @include media-tablet {
     grid-area: pagin;
     display: block;
-
   }
 }
 
