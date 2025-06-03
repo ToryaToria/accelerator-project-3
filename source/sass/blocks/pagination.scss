@@ -14,7 +14,8 @@
     border-radius: 50%;
     background-color: $color-accent;
     color: $color-white;
-  }
+
+      }
 
   @include media-tablet {
     font-size: 16px;
@@ -32,9 +33,11 @@
   &:not(:disabled):hover {
     color: $color-accent;
     border-color: $color-accent;
+    background-color: transparent;
   }
 
   &:not(:disabled):active {
+        color: $color-white;
     background-color: $color-active;
   }
 

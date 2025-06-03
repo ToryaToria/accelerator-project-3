@@ -64,6 +64,19 @@
 
 .footer__link-nav {
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+    color: $color-accent-70;
+  }
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  &:active {
+    color: $color-active;
+  }
 }
 
 .footer__logo {
@@ -84,8 +97,7 @@
 
   @include media-tablet {
     text-align: left;
-      justify-self: start;
-
+    justify-self: start;
   }
 
   @include media-desktop {
@@ -99,6 +111,31 @@
     height: 1px;
     background-color: currentColor;
     margin-top: 1px;
+  }
+
+  &:focus {
+    outline: none;
+    color: $color-accent-70;
+
+    &::after {
+      color: $color-accent-70;
+    }
+  }
+
+  &:hover {
+    color: $color-accent;
+
+    &::after {
+      color: $color-accent;
+    }
+  }
+
+  &:active {
+    color: $color-active;
+
+    &::after {
+      color: $color-active;
+    }
   }
 }
 
@@ -187,5 +224,24 @@
   @include media-tablet {
     width: 36px;
     height: 36px;
+  }
+
+  &:focus {
+    outline: auto;
+    background-color: $color-white;
+
+    &::after {
+      background-color: $color-accent;
+    }
+  }
+
+  &:hover {
+    &::after {
+  background-color: $color-white-70;
+    }
+  }
+
+  &:active {
+  background-color: $color-active;
   }
 }

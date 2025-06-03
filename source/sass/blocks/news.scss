@@ -59,6 +59,27 @@
   @include media-desktop {
     padding: 14px 35px;
   }
+
+
+  &:focus {
+    outline: auto;
+    background-color: $color-white;
+    background-color: $color-active;
+  }
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  &:active {
+    // найти в стилях
+    color: $color-active;
+  }
+
+  &:disabled {
+    // найти в стилях
+    color: $color-disabled;
+  }
 }
 
 .news__text-button {
@@ -154,11 +175,11 @@
     }
 
     @include media-desktop {
- background-image:
-      image-set(url("../../img/news3_desktop_1x.webp") 1x type("image/webp"),
-        url("../../img/news3_desktop_1x.jpg") 1x,
-        url("../../img/news3_desktop_2x.webp") 2x type("image/webp"),
-        url("../../img/news3_desktop_2x.jpg") 2x);
+      background-image:
+        image-set(url("../../img/news3_desktop_1x.webp") 1x type("image/webp"),
+          url("../../img/news3_desktop_1x.jpg") 1x,
+          url("../../img/news3_desktop_2x.webp") 2x type("image/webp"),
+          url("../../img/news3_desktop_2x.jpg") 2x);
     }
   }
 
