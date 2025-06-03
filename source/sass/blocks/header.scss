@@ -20,7 +20,7 @@
     }
 }
 
-.header__wrapp {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,6 +31,8 @@
   flex-shrink: 0;
   padding-left: 21px;
   gap: 20px;
+    background-color: $color-white;
+
 }
 
 .header__menu-text {

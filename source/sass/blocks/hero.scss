@@ -8,8 +8,6 @@
   width: 48px;
   height: 8px;
   position: absolute;
-
-  // background-color: red;
   z-index: 10;
 }
 
@@ -46,7 +44,7 @@
 
     @include media-tablet {
       background-image:
-               image-set(url("../../img/hero1_tabl_1x.webp") 1x type("image/webp"),
+        image-set(url("../../img/hero1_tabl_1x.webp") 1x type("image/webp"),
           url("../..img/hero1_tabl_1x.jpg") 1x,
           url("../../img/hero1_tabl_2x.webp") 2x type("image/webp"),
           url("../../img/hero1_tabl_2x.jpg") 2x);
@@ -54,7 +52,7 @@
 
     @include media-desktop {
       background-image:
-               image-set(url("../../img/hero1_deskt_1x.webp") 1x type("image/webp"),
+        image-set(url("../../img/hero1_deskt_1x.webp") 1x type("image/webp"),
           url("../..img/hero1_deskt_1x.jpg") 1x,
           url("../../img/hero1_deskt_2x.webp") 2x type("image/webp"),
           url("../../img/hero1_deskt_2x.jpg") 2x);
@@ -63,14 +61,14 @@
 
   &--slid2 {
     background-image:
-          image-set(url("../../img/hero2_mob_1x.webp") 1x type("image/webp"),
+      image-set(url("../../img/hero2_mob_1x.webp") 1x type("image/webp"),
         url("../..img/hero2_mob_1x.jpg") 1x,
         url("../../img/hero2_mob_2x.webp") 2x type("image/webp"),
         url("../../img/hero2_mob_2x.jpg") 2x);
 
     @include media-tablet {
       background-image:
-               image-set(url("../../img/hero2_tabl_1x.webp") 1x type("image/webp"),
+        image-set(url("../../img/hero2_tabl_1x.webp") 1x type("image/webp"),
           url("../..img/hero2_tabl_1x.jpg") 1x,
           url("../../img/hero2_tabl_2x.webp") 2x type("image/webp"),
           url("../../img/hero2_tabl_2x.jpg") 2x);
@@ -78,7 +76,7 @@
 
     @include media-desktop {
       background-image:
-             image-set(url("../../img/hero2_deskt_1x.webp") 1x type("image/webp"),
+        image-set(url("../../img/hero2_deskt_1x.webp") 1x type("image/webp"),
           url("../..img/hero2_deskt_1x.jpg") 1x,
           url("../../img/hero2_deskt_2x.webp") 2x type("image/webp"),
           url("../../img/hero2_deskt_2x.jpg") 2x);
@@ -87,14 +85,14 @@
 
   &--slid3 {
     background-image:
-           image-set(url("../../img/hero3_mob_1x.webp") 1x type("image/webp"),
+      image-set(url("../../img/hero3_mob_1x.webp") 1x type("image/webp"),
         url("../..img/hero3_mob_1x.jpg") 1x,
         url("../../img/hero3_mob_2x.webp") 2x type("image/webp"),
         url("../../img/hero3_mob_2x.jpg") 2x);
 
     @include media-tablet {
       background-image:
-               image-set(url("../../img/hero3_tabl_1x.webp") 1x type("image/webp"),
+        image-set(url("../../img/hero3_tabl_1x.webp") 1x type("image/webp"),
           url("../..img/hero1_tabl_3x.jpg") 1x,
           url("../../img/hero3_tabl_2x.webp") 2x type("image/webp"),
           url("../../img/hero3_tabl_2x.jpg") 2x);
@@ -102,7 +100,7 @@
 
     @include media-desktop {
       background-image:
-                image-set(url("../../img/hero3_deskt_1x.webp") 1x type("image/webp"),
+        image-set(url("../../img/hero3_deskt_1x.webp") 1x type("image/webp"),
           url("../..img/hero1_deskt_3x.jpg") 1x,
           url("../../img/hero3_deskt_2x.webp") 2x type("image/webp"),
           url("../../img/hero3_deskt_2x.jpg") 2x);
@@ -140,7 +138,6 @@
   @include media-tablet {
     width: 659px;
     padding: 71px 69px 24px 40px;
-
     --nb-r: 23px;
     --nb-w: 512px;
     --nb-h: -5px;
@@ -152,53 +149,43 @@
   @include media-desktop {
     width: 968px;
     padding: 80px 50px 30px 50px;
-
     --nb-w: 820px;
     --nb-h: -6px;
-
   }
 }
 
-.hero__wrapp-text {
+.hero__wrapper-text {
   box-sizing: border-box;
   --nb-r: 14px;
   --nb-w: 78px;
   --nb-h: 36px;
   border-bottom-left-radius: 14px;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
 
-
   @include media-tablet {
     flex-direction: row;
-    // justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
     padding: 0;
-
     --nb-r: 30px;
     --nb-w: -34px;
     --nb-h: 75px;
     background-color: $color-white;
-
     width: 619px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
 
   @include media-desktop {
-    // padding: 15px 50px 35px 50px;
     width: 801px;
     --nb-h: 53px;
-
   }
 }
 
 .hero__text {
   box-sizing: border-box;
-  // width: 267px;
   padding: 2px 36px 15px 14px;
   --nb-r: 14px;
   --nb-w: -5px;
@@ -207,7 +194,6 @@
 
   @include media-tablet {
     width: 325px;
-
     padding: 0px 0px 35px 40px;
     --nb-r: 0px;
     --nb-w: 0px;
@@ -220,26 +206,20 @@
   }
 }
 
-.hero__wrapp-button {
+.hero__wrapper-link {
   box-sizing: border-box;
-  // width: 194px;
   padding: 10px 15px;
-  // --nb-r: 14px;
-  // --nb-w: -5px;
-  // --nb-h: 110px;
   background-color: $color-white;
 
   @include media-tablet {
     padding: 0 40px 0 0;
-
   }
 }
 
-.hero__button {
+.hero__link {
   width: 154px;
-  // margin-top: 25px;
-  // flex-shrink: 0;
-
+  text-decoration: none;
+ 
   @include media-tablet {
     margin-top: 0;
     width: 198px;

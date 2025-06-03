@@ -78,7 +78,8 @@
   }
 }
 
-.programs__button {
+.programs__link {
+  text-decoration: none;
   box-sizing: border-box;
   grid-area: button;
   justify-self: start;
@@ -235,7 +236,7 @@
   }
 }
 
-.programs__card-wrapp {
+.programs__card-wrapper {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;

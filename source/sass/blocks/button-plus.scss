@@ -1,5 +1,5 @@
 .button-plus {
-  // display: block;
+  padding: 0;
   flex-shrink: 0;
 
   @include btn-circle ($width: 40px, $height: 40px, $border: 1px solid $color-accent);
@@ -7,13 +7,60 @@
   &:after {
     @include btn-icon ($width: 20px, $height: 20px,
       $mask-image: url('../../__spritemap#sprite-plus-view'));
+    z-index: 5;
   }
-}
 
-.button-plus--open {
-    background-color: $color-white;
+  &:not(:disabled):focus,
+  &:not(:disabled):hover {
+    background-color: transparent;
 
     &:after {
       background-color: $color-accent;
     }
   }
+
+  &:not(:disabled):active {
+    background-color: $color-active;
+
+    &:after {
+      background-color: $color-white;
+    }
+  }
+
+  &:disabled {
+    border-color: $color-disabled;
+    background-color: $color-disabled;
+
+    &:after {
+      background-color: $color-white-60;
+    }
+  }
+}
+
+.button-plus--open {
+  background-color: $color-white;
+
+  &:after {
+
+    @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent, $mask-image: url('../../__spritemap#sprite-minus-view'));
+  }
+
+  &:not(:disabled):focus,
+  &:not(:disabled):hover {
+    background-color: transparent;
+    border-color: $color-white;
+
+    &:after {
+      background-color: $color-white;
+    }
+  }
+
+  &:not(:disabled):active {
+    background-color: $color-white;
+
+    &:after {
+      background-color: $color-accent-70;
+    }
+  }
+
+}

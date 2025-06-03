@@ -1,7 +1,7 @@
 .button {
   box-sizing: border-box;
   padding: 4px 4px 4px 21px;
-  background-color: $color-white;
+  background-color: transparent;
   border: 1px solid $color-accent;
   border-radius: 30px;
 
@@ -11,15 +11,27 @@
   gap: 20px;
   flex-shrink: 0;
 
-  &--dark {
+  @include media-tablet {
+    padding-left: 31px;
+    gap: 30px;
+  }
+
+  &:not(:disabled):focus {
+    .button__circle {
+      transform: rotate(45deg);
+    }
+  }
+
+  &:not(:disabled):hover,
+  &:not(.button--disabled):hover {
     background-color: $color-accent;
-    border: 1px solid $color-white;
 
     .text-button {
       color: $color-white;
     }
 
-    .button__button {
+    .button__circle {
+      transform: rotate(45deg);
       background-color: $color-white;
 
       &::after {
@@ -28,9 +40,70 @@
     }
   }
 
-  @include media-tablet {
-  padding-left: 31px;
-  gap: 30px;
+  &:not(:disabled):active,
+  &:not(.button--disabled):active {
+    .text-button {
+      color: $color-white-70;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    border-color: $color-disabled;
+
+    .text-button {
+      color: $color-disabled;
+    }
+
+    .button__circle {
+      background-color: $color-disabled;
+
+      &:after {
+        background-color: $color-white-60;
+      }
+    }
+  }
+}
+
+.button--dark {
+  background-color: $color-accent;
+  border: 1px solid $color-white;
+
+  .text-button {
+    color: $color-white;
+  }
+
+  .button__circle {
+    background-color: $color-white;
+
+    &::after {
+      background-color: $color-accent;
+    }
+  }
+
+
+  &:not(:disabled):hover {
+    background-color: $color-white;
+
+    .text-button {
+      color: $color-accent;
+    }
+
+    .button__circle {
+      transform: rotate(45deg);
+      background-color: $color-accent;
+
+      &::after {
+        background-color: $color-white;
+      }
+    }
+  }
+
+  &:not(:disabled):active,
+  &:not(.button--disabled):active {
+    .text-button {
+      color: $color-accent-70;
+    }
   }
 }
 
@@ -43,7 +116,7 @@
   }
 }
 
-.button__button {
+.button__circle {
   flex-shrink: 0;
   @include btn-circle ($width: 34px, $height: 34px);
 

@@ -23,7 +23,7 @@
   }
 }
 
-.about__wrapp1 {
+.about__wrapper-title {
   @include media-tablet {
     margin-right: 40px;
 
@@ -36,7 +36,7 @@
   }
 }
 
-.about__wrapp2 {
+.about__wrapper-subtitle {
   margin-bottom: 40px;
 
   @include media-tablet {
@@ -47,7 +47,6 @@
   @include media-desktop {
     margin-right: 0;
     margin-bottom: 0;
-
   }
 
 }

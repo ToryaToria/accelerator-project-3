@@ -14,7 +14,7 @@
   }
 }
 
-.contacts__wrapp {
+.contacts__wrapper {
   border-bottom: 2px solid $color-line ;
   padding-bottom: 30px;
   margin-bottom: 30px;
@@ -40,6 +40,7 @@
 }
 
 .contacts__list {
+  @include list-reset;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
@@ -59,7 +60,7 @@
 
 }
 
-.contacts__data {
+.contacts__key {
   margin-bottom: 13px; // должно быть 15!!!
 
   @include media-tablet {
@@ -83,6 +84,9 @@
       display: block;
     }
   }
+
+  // &--link {
+  // }
 }
 
 .contacts__map {

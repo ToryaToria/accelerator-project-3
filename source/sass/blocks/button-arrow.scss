@@ -1,4 +1,5 @@
 .button-arrow {
+    padding: 0;
   @include btn-circle ($width: 22px, $height: 22px, $background-color: transparent);
 
   &:after {
@@ -7,5 +8,29 @@
 
   &--left {
     transform: rotate(180deg);
+  }
+
+  &:not(:disabled):focus {
+    background-color: $color-white;
+  }
+
+  &:not(:disabled):hover {
+    &:after {
+      background-color: $color-accent-70;
+    }
+  }
+
+  &:not(:disabled):active {
+        background-color: $color-white;
+    &:after {
+      background-color: $color-accent-70;
+    }
+
+  }
+
+  &:disabled {
+    &:after {
+      background-color: $color-disabled;
+    }
   }
 }
