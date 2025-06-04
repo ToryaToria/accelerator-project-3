@@ -195,15 +195,12 @@
   }
 }
 
-// .text-pagination {
-//   @include font ($size: 14px, $line-height: 14px, $color: $color-accent-50);
-
-//   @include media-tablet {
-//     font-size: 16px;
-//     line-height: 20px; 
-//   }
-
-// }
+.text-nav {
+@include font ($size: 16px, $line-height: 100%,$weight: 500, $color: $color-white-70);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+text-decoration: none; 
+}
 
 // ++++++++++++++++=
 .text-revers {

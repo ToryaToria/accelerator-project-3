@@ -17,7 +17,6 @@
     </svg> -->
 
   <header class="header">
-    <!-- style="display: none;" -->
     <div class="header__header container">
 
       <h1 class="visually-hidden">Gроект «Стажировка»</h1>
@@ -26,57 +25,79 @@
           <img class="logo__img" src="/__spritemap#sprite-logo-view" alt="logo" width="30" height="30">
         </div>
 
-        <!-- <div> -->
         <button class="header__button button" type="button">
           <span class="header__menu-text">Меню</span>
           <span class="button__menu"></span>
         </button>
-        <!-- </div> -->
       </div>
 
-      <div class="visually-hidden">
-        <ul>
-          <li>
-            <a href="">О проекте</a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link text-nav" href="#about">О проекте</a>
           </li>
 
-          <li>
-            <label for="">
-              <span>Программы</span>
-              <select name="programs" id="programs-select">
-                <option value="">Стажировки</option>
-                <option value="">Волонтёрство</option>
-                <option value="">Учеба</option>
-                <option value="">Религия</option>
-              </select>
-            </label>
+          <li class="nav__item">
+            <button class="nav__button nav__button--programs text-nav" type="button">Программы</button>
+
+            <ul class="nav__sublist nav__sublist--programs">
+              <li class="nav__subitem">
+                <a class="nav__sublink" href="#programs">Стажировки</a>
+              </li>
+
+              <li class="nav__subitem">
+                <a class="nav__sublink" href="#">Волонтёрство</a>
+              </li>
+
+              <li class="nav__subitem">
+                <a class="nav__sublink" href="#">Учеба</a>
+              </li>
+
+              <li class="nav__subitem">
+                <a class="nav__sublink" href="#">Религия</a>
+              </li>
+            </ul>
           </li>
 
-          <li>
-            <a href="">как поехать</a>
+          <li class="nav__item">
+            <a class="nav__link text-nav" href="#grant">как поехать</a>
           </li>
 
-          <li>
-            <a href="">отзывы</a>
+          <li class="nav__item">
+            <a class="nav__link text-nav" href="#reviews">отзывы</a>
           </li>
 
-          <li>
-            <label for="">
-              <span>новости</span>
-              <select name="programs" id="programs-select">
-                <option value="">news1</option>
-                <option value="">news2</option>
-                <option value="">news3</option>
-                <option value="">news4</option>
-              </select>
-            </label>
+          <li class="nav__item">
+            <button class="nav__button nav__button--news text-nav" type="button">новости</button>
+
+            <ul class="nav__sublist nav__sublist--news">
+              <li class="nav__subitem">
+                <a class="nav__sublink" href="#news">Общее</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__sublink" href="#">Волонтёрство</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__sublink" href="#">Стажировки</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__sublink" href="#">Карьера</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__sublink" href="#">Путешествия</a>
+              </li>
+            </ul>
           </li>
 
-          <li>
-            <a href="">контакты</a>
+          <li class="nav__item">
+            <a class="nav__link text-nav" href="#contacts">контакты</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
 
@@ -172,7 +193,7 @@
       <!-- </div> -->
     </section>
 
-    <section class="about container" data-test="about">
+    <section class="about container" data-test="about" id="about">
       <!-- <div class=""> -->
       <div class="about__container">
         <div class="about__wrapper-title">
@@ -227,7 +248,7 @@
       <!-- </div> -->
     </section>
 
-    <section class="programs slider" data-test="programs">
+    <section class="programs slider" data-test="programs" id="programs">
       <div class="container programs_grid">
         <h2 class="programs__title title-section">Программы</h2>
 
@@ -284,7 +305,7 @@
       </div>
     </section>
 
-    <section class="grant" data-test="grant">
+    <section class="grant" data-test="grant" id="grant">
       <div class="grant__container container">
         <div class="grant__wrapper">
           <h2 class="grant__title title-section text-revers">Как&nbsp;поехать</h2>
@@ -345,7 +366,7 @@
       </div>
     </section>
 
-    <section class="news" data-test="news">
+    <section class="news" data-test="news" id="news">
       <div class="container">
         <h2 class="news__title title-section">Новости и&nbsp;материалы</h2>
 
@@ -525,7 +546,7 @@
       </div>
     </section>
 
-    <section class="reviews slider" data-test="reviews">
+    <section class="reviews slider" data-test="reviews" id="reviews">
       <div class="reviews__container container">
 
         <h2 class="reviews__title title-section">Отзывы</h2>
@@ -612,9 +633,10 @@
           <div class="scroll-bar">
           </div>
         </div>
+      </div>
     </section>
 
-    <section class="contacts" data-test="contacts">
+    <section class="contacts" data-test="contacts" id="contacts">
       <div class="container">
         <div class="contacts__wrapper">
           <h2 class="contacts__title title-section">Контакты</h2>
@@ -622,7 +644,7 @@
             <li>
               <p class="contacts__data text-data">центральный офис</p>
               <p class="contacts__property text-mini">
-                г.&nbsp;Новосибирск, ул.&nbsp;Щетинкина 68, 
+                г.&nbsp;Новосибирск, ул.&nbsp;Щетинкина 68,
                 <br class="contacts__br">
                 культурный центр
               </p>
@@ -630,12 +652,14 @@
 
             <li>
               <p class="contacts__data text-data">Телефон</p>
-              <a class="contacts__property contacts__property--link text-mini" href="tel:+7963876876">+7 963 876 876 76</a>
+              <a class="contacts__property contacts__property--link text-mini" href="tel:+7963876876">+7 963 876 876
+                76</a>
             </li>
 
             <li>
               <p class="contacts__data text-data">Email</p>
-              <a class="contacts__property  contacts__property--link text-mini" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+              <a class="contacts__property  contacts__property--link text-mini"
+                href="mailto:Info@stazh.ru">Info@stazh.ru</a>
             </li>
           </ul>
         </div>
@@ -722,31 +746,31 @@
 
       <ul class="footer__nav">
         <li class="footer__item-nav">
-          <a class="footer__link-nav text-mini" href="">О&nbsp;проекте</a>
+          <a class="footer__link-nav text-mini" href="#about">О&nbsp;проекте</a>
         </li>
 
         <li class="footer__item-nav">
-          <a class="footer__link-nav text-mini" href="">Программы</a>
+          <a class="footer__link-nav text-mini" href="#programs">Программы</a>
         </li>
 
         <li class="footer__item-nav">
-          <a class="footer__link-nav text-mini" href="">Как&nbsp;поехать</a>
+          <a class="footer__link-nav text-mini" href="#grant">Как&nbsp;поехать</a>
         </li>
 
         <li class="footer__item-nav">
-          <a class="footer__link-nav text-mini" href="">Отзывы</a>
+          <a class="footer__link-nav text-mini" href="#reviews">Отзывы</a>
         </li>
 
         <li class="footer__item-nav">
-          <a class="footer__link-nav text-mini" href="">Новости</a>
+          <a class="footer__link-nav text-mini" href="#news">Новости</a>
         </li>
 
         <li class="footer__item-nav">
-          <a class="footer__link-nav text-mini" href="">Контакты</a>
+          <a class="footer__link-nav text-mini" href="#contacts">Контакты</a>
         </li>
       </ul>
 
-      <a class="footer__conf text-other" href="">Политика конфиденциальности</a>
+      <a class="footer__conf text-other" href="#">Политика конфиденциальности</a>
       <p class="footer_copy text-other">Стажировка © 2023&nbsp;Все&nbsp;права защищены</p>
 
       <ul class="footer__social">

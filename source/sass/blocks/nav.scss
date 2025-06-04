@@ -1,0 +1,85 @@
+nav {
+  box-sizing: border-box;
+  width: 290px;
+  background-color: $color-accent;
+  border-radius: 16px;
+  padding: 35px 25px;
+}
+
+.nav__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.nav__sublist {
+  display: none;
+  @include list-reset;
+}
+
+.nav__sublist--open {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav__link {
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+  }
+}
+
+.nav__sublink {
+  @include font ($size: 16px, $line-height: 100%, $weight: 500, $color: $color-white-60);
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white-90;
+  }
+}
+
+.nav__button {
+  @include btn-reset;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::after {
+    z-index: 5;
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: $color-white-60;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    // mask-size: auto;
+    mask-image: url("../__spritemap#sprite-corner-view");
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+.nav__button--open {
+  color: $color-white;
+
+  &::after {
+    transform: rotate(180deg);
+    background-color: $color-white;
+  }
+}
