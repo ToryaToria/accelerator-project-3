@@ -1,0 +1,125 @@
+.modal {
+  position: absolute;
+  z-index: 17;
+  left: 50%;
+  transform: translate(-50%);
+    top: 15px;
+
+  box-sizing: border-box;
+  width: 290px;
+  padding: 20px 15px 40px 15px;
+  background-color: $color-white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+  @include media-tablet {
+    width: 510px;
+    padding: 30px 30px 60px 80px;
+    top: 204px;
+  }
+
+  @include media-desktop {
+    top: 90px;
+  }
+}
+
+.modal--open {
+    display: flex;
+  }
+
+
+
+.modal__btn-closer {
+  @include btn-reset;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  margin-left: auto;
+  cursor: pointer;
+  margin-bottom: 4px;
+
+  @include btn-icon($width: 16px, $height: 16px, $background-color: $color-accent, $mask-image: url('../../__spritemap#sprite-cross-view'));
+
+  @include media-tablet {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    outline: auto;
+  }
+}
+
+.modal__title {
+  @include font ($size: 18px, $line-height: 100%, $color: $color-accent);
+  margin: 0 20px 15px 20px;
+  text-align: center;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+  }
+}
+
+.modal__text {
+  @include font ($size: 14px, $line-height: 20px);
+  margin: 0 20px 25px 20px;
+  text-align: center;
+
+  @include media-tablet {
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+
+  @include media-desktop {
+    line-height: 26px;
+  }
+}
+
+.modal__form {
+  gap: 15px;
+
+  @include media-tablet {
+    margin-right: 50px;
+    gap: 20px;
+  }
+}
+
+.modal__field {
+  border-color: $color-text-base-30;
+  background-color: transparent;
+
+  &--city {
+    background-image: url("../__spritemap#sprite-select-modal-view");
+  }
+}
+
+.modal__mark {
+  border: 1px solid $color-accent-70;
+  background-color: $color-accent;
+}
+
+.modal__approval {
+  @include font ($size: 12px, $line-height: 14px);
+  color: $color-text-base;
+}
+
+.modal__check {
+  @include media-tablet {
+    margin-bottom: 10px;
+  }
+}
+
+.modal__button {
+  @include media-tablet {
+    width: 194px;
+    margin: 0 auto;
+  }
+
+  @include media-desktop {
+    width: 196px;
+  }
+}

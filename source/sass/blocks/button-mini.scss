@@ -1,6 +1,7 @@
 .button-mini {
   padding: 0;
   @include btn-circle;
+    cursor: pointer;
 
   &:after {
     @include btn-icon ($mask-image: url('../../__spritemap#sprite-arr-view'));
@@ -17,7 +18,6 @@
     transform: rotate(45deg);
 
     &::after {
-
       background-color: $color-accent;
     }
   }

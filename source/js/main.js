@@ -4,3 +4,4 @@
 // import 'swiper/css';
 
 import './main-menu.js';
+import './modal.js';

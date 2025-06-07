@@ -28,7 +28,7 @@ btnMenu.addEventListener('click', () => {
   body.addEventListener('click', onDocumentClick);
 
   btnMenu.classList.toggle('header__button--open');
-  body.classList.toggle('page__menu-open')
+  body.classList.toggle('overlay')
   nav.classList.toggle('header__nav--open');
 
   btnNav.forEach((elem) => {
@@ -41,7 +41,7 @@ btnMenu.addEventListener('click', () => {
 
 const closeMenu = () => {
   btnMenu.classList.remove('header__button--open');
-  body.classList.remove('page__menu-open')
+  body.classList.remove('overlay')
   nav.classList.remove('header__nav--open');
 
   btnNav.forEach((elem) => {
@@ -49,7 +49,8 @@ const closeMenu = () => {
   });
   submenu.forEach((elem) => {
     elem.classList.remove('nav__sublist--open');
-  });
+  });    console.log('esc')
+
 
   document.removeEventListener('keydown', onDocumentKeydown);
   body.removeEventListener('click', onDocumentClick);

@@ -174,14 +174,6 @@
   }
 }
 
-.text-approval { // согласие - перенести а тег???
-  @include font ($size: 12px, $line-height: 14px);
-
-  @include media-tablet {
-    line-height: 12px; 
-  }
-}
-
 .text-other { // другое - - перенести а тег???
   @include font ($size: 12px, $line-height: 14px);
 
