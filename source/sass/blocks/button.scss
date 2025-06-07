@@ -51,6 +51,8 @@
   &:disabled,
   &--disabled {
     border-color: $color-disabled;
+        cursor: default;
+
 
     .text-button {
       color: $color-disabled;

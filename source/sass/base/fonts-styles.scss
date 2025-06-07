@@ -46,20 +46,6 @@
   }
 }
 
-.text-big {
-  @include font ($size: 16px, $line-height: 22px);
-
-  @include media-tablet {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  @include media-desktop {
-    font-size: 22px;
-    line-height: 32px;
-  }
-}
-
 .subtitle {
   @include font ($size: 18px, $line-height: 22px, $color: $color-title);
 
@@ -86,32 +72,33 @@
   }
 }
 
-.title-property {
-  // перенести в H4 ???
-  @include font ($size: 16px, $line-height: 20px, $color: $color-title);
+// .title-property {
+//   // перенести в H4 ???
+//   @include font ($size: 16px, $line-height: 20px, $color: $color-title);
 
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
+//   text-transform: uppercase;
+//   letter-spacing: 0.01em;
 
-  @include media-tablet {
-    font-size: 20px;
-    line-height: 22px;
-    // letter-spacing: 0.02em;
-  }
+//   @include media-tablet {
+//     font-size: 20px;
+//     line-height: 22px;
+//     // letter-spacing: 0.02em;
+//   }
 
-  @include media-desktop {
-    font-size: 26px;
-    line-height: 30px;
-  }
-}
+//   @include media-desktop {
+//     font-size: 26px;
+//     line-height: 30px;
+//   }
+// }
 
-.text-ligth {
-  @include font ($size: 14px, $line-height: 20px, $weight: 300);
+// .text-ligth {
+//   background-color: rgb(145, 255, 0);
+//   @include font ($size: 14px, $line-height: 20px, $weight: 300);
 
-  @include media-tablet {
-    font-size: 16px;
-  }
-}
+//   @include media-tablet {
+//     font-size: 16px;
+//   }
+// }
 
 .title-card { //часть
   @include font ($size: 16px, $line-height: 18px, $color: $color-title);

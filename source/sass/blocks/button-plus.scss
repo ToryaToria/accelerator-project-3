@@ -32,6 +32,8 @@
   &:disabled {
     border-color: $color-disabled;
     background-color: $color-disabled;
+        cursor: default;
+
 
     &:after {
       background-color: $color-white-60;

@@ -2,10 +2,10 @@
   padding-top: 51px;
   padding-bottom: 50px;
 
-    @include media-tablet {
-      padding-top: 50px;
+  @include media-tablet {
+    padding-top: 50px;
 
-    }
+  }
 
   @include media-desktop {
     padding-top: 71px; //должно быть 60!!!
@@ -40,8 +40,6 @@
   &--open {
     display: block;
     margin-top: 20px;
-        color: $color-white;
-
   }
 }
 
@@ -88,6 +86,26 @@
 
 .faq__question {
   &--open {
+    color: $color-white;
+  }
+}
+
+.faq__content {
+  p {
+    @include font ($size: 14px, $line-height: 20px);
+
+    @include media-tablet {
+      font-size: 16px;
+    }
+
+    @include media-desktop {
+      line-height: 26px;
+    }
+  }
+}
+
+.faq__answer--open.faq__content {
+  p {
     color: $color-white;
   }
 }

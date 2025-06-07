@@ -245,7 +245,6 @@
   z-index: 5;
 
   padding: 13px 18px 14px 18px;
-  // padding: 13px 18px 15px 18px;
 
   background-color: $color-white;
   border-top-right-radius: 12px;
@@ -266,4 +265,19 @@
 
 .programs__button-mini {
   flex-shrink: 0;
+}
+
+.programs__content {
+  p {
+     @include font ($size: 12px, $line-height: 14px);
+
+  @include media-tablet {
+    font-size: 14px;
+    line-height: 20px; 
+  }
+
+  @include media-desktop {
+    line-height: 18px;
+  }
+  }
 }

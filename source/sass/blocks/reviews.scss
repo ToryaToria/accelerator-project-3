@@ -178,3 +178,16 @@
     padding: 10px 0;
   }
 }
+.reviews__content {
+  p {
+     @include font ($size: 14px, $line-height: 20px);
+
+  @include media-tablet {
+    font-size: 16px;
+  }
+
+  @include media-desktop {
+    line-height: 26px;
+  }
+  }
+}
