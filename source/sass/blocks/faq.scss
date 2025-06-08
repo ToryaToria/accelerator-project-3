@@ -75,9 +75,9 @@
   justify-content: space-between;
   align-items: center;
 
-  @include media-tablet {
-    // align-items: flex-start;
-  }
+  // @include media-tablet {
+  //   // align-items: flex-start;
+  // }
 
   @include media-desktop {
     gap: 10px;

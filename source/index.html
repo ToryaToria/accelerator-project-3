@@ -103,17 +103,15 @@
 
   <main class="page__main">
     <section class="hero" data-test="hero">
-      <div class="hero__slider">
+      <div class="hero__slider swiper">
 
-        <div class="hero__pagination">
+        <div class="hero__pagination swiper-pagination">
           <!-- только кружочки -->
         </div>
 
-        <ul class="hero__list">
-          <li class="hero__item hero__item--slid1">
+        <ul class="hero__list swiper-wrapper">
+          <li class="hero__item hero__item--slid1 swiper-slide">
             <div class="container">
-
-
               <h2 class="hero__title title-hero nebo nebo--tr">
                 Глобальный профессиональный
                 опыт обучения за&nbsp;рубежом
@@ -139,58 +137,56 @@
             </div>
           </li>
 
-          <!-- <li>еще слайд</li> -->
-          <li class="hero__item hero__item--slid2">
+          <li class="hero__item hero__item--slid2 swiper-slide">
             <div class="container">
-              <div class="hero__wrapper-title">
-                <h2 class="hero__title title-hero">
-                  Волонтёрские программы&nbsp;— внесите свой вклад в&nbsp;общество
-                </h2>
+              <!-- <div class="hero__wrapper-title"> -->
+              <h2 class="hero__title title-hero nebo nebo--tr">
+                Волонтёрские программы&nbsp;— внесите свой вклад в&nbsp;общество
+              </h2>
 
-                <div class="hero__wrapper-text">
-                  <div class="hero__content hero__text nebo nebo--br">
-                    <p>
-                      Возможности для&nbsp;преподавания, органического сельского хозяйства, устойчивого образа жизни
-                      и&nbsp;другое.
-                    </p>
-                  </div>
-
-                  <div class="hero__wrapper-link">
-                    <a class="hero__link button" href="#">
-                      <span class="text-button">подробнее</span>
-                      <span class="button__circle"></span>
-                    </a>
-                  </div>
+              <div class="hero__wrapper-text nebo nebo--br">
+                <div class="hero__content hero__text nebo nebo--br">
+                  <p>
+                    Возможности для&nbsp;преподавания, органического сельского хозяйства, устойчивого образа жизни
+                    и&nbsp;другое.
+                  </p>
                 </div>
 
+                <div class="hero__wrapper-link">
+                  <a class="hero__link button" href="#">
+                    <span class="text-button">подробнее</span>
+                    <span class="button__circle"></span>
+                  </a>
+                </div>
               </div>
+
+              <!-- </div> -->
             </div>
           </li>
 
-          <!-- <li>еще слайд</li> -->
-          <li class="hero__item hero__item--slid3">
+          <li class="hero__item hero__item--slid3 swiper-slide">
             <div class="container">
-              <div class="hero__wrapper-title">
-                <h2 class="hero__title title-hero">
-                  Программы стажировок в&nbsp;крупнейших компаниях мира
-                </h2>
+              <!-- <div class="hero__wrapper-title"> -->
+              <h2 class="hero__title title-hero nebo nebo--tr">
+                Программы стажировок в&nbsp;крупнейших компаниях мира
+              </h2>
 
-                <div class="hero__wrapper-text">
-                  <div class="hero__content hero__text nebo nebo--br">
-                    <p> Получите незаменимый опыт работы в&nbsp;ведущих мировых компаниях и&nbsp;государственных
-                      организациях.
-                    </p>
-                  </div>
+              <div class="hero__wrapper-text nebo nebo--br">
+                <div class="hero__content hero__text nebo nebo--br">
+                  <p> Получите незаменимый опыт работы в&nbsp;ведущих мировых компаниях и&nbsp;государственных
+                    организациях.
+                  </p>
+                </div>
 
-                  <div class="hero__wrapper-link">
-                    <a class="hero__link button" href="#">
-                      <span class="text-button">подробнее</span>
-                      <span class="button__circle"></span>
-                    </a>
-                  </div>
+                <div class="hero__wrapper-link">
+                  <a class="hero__link button" href="#">
+                    <span class="text-button">подробнее</span>
+                    <span class="button__circle"></span>
+                  </a>
                 </div>
               </div>
             </div>
+            <!-- </div> -->
           </li>
         </ul>
       </div>
@@ -274,60 +270,110 @@
         </a>
 
         <div class="programs__arrows slider__wrapper-btn">
-          <button class="button-arrow button-arrow--left" type="button">
+          <button class="button-arrow button-arrow--left swiper-button-back-programs" type="button">
             <span class="visually-hidden">назад</span>
           </button>
 
-          <button class="button-arrow" type="button">
+          <button class="button-arrow swiper-button-next-programs" type="button">
             <span class="visually-hidden">вперед</span>
           </button>
         </div>
 
-        <ul class="programs__list">
-          <li class="programs__item programs__item--slid1">
+        <div class="programs__slider swiper">
+          <ul class="programs__list swiper-wrapper">
+            <li class="programs__item programs__item--slid1 swiper-slide">
 
-            <h3 class="programs__title-card title-card">Стажировки</h3>
+              <h3 class="programs__title-card title-card">Стажировки</h3>
 
-            <div class="programs__card-wrapper">
-              <div class="programs__content">
-                <!-- class="text-card" -->
-                <p>
-                  Получите незаменимый опыт работы в&nbsp;крупнейших мировых компаниях.
-                </p>
+              <div class="programs__card-wrapper">
+                <div class="programs__content">
+                  <p>
+                    Получите незаменимый опыт работы в&nbsp;крупнейших мировых компаниях.
+                  </p>
+                </div>
+
+                <a class="programs__button-mini button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Стажировки"</span>
+                </a>
               </div>
+            </li>
 
-              <button class="programs__button-mini button-mini" type="button"></button>
-            </div>
-          </li>
+            <li class="programs__item programs__item--slid2 swiper-slide">
+              <h3 class="programs__title-card title-card">Волонтёрство</h3>
+              <div class="programs__card-wrapper">
+                <div class="programs__content">
+                  <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества</p>
+                </div>
 
-          <li class="programs__item programs__item--slid2">
-            <h3 class="programs__title-card title-card">Волонтёрство</h3>
-            <div class="programs__card-wrapper">
-              <div class="programs__content">
-                <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества</p>
+                <a class="programs__button-mini button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Волонтёрство"</span>
+                </a>
               </div>
+            </li>
 
-              <button class="programs__button-mini button-mini" type="button"></button>
-            </div>
-          </li>
+            <li class="programs__item programs__item--slid3 swiper-slide">
+              <h3 class="programs__title-card title-card">Учёба</h3>
+              <div class="programs__card-wrapper">
+                <div class="programs__content">
 
-          <li class="programs__item programs__item--slid3">
-            <h3 class="programs__title-card title-card">Учёба</h3>
-            <div class="programs__card-wrapper">
-              <div class="programs__content">
+                  <p>Получите образование и&nbsp;измените своё будущее.</p>
+                </div>
 
-                <p>Получите образование и&nbsp;измените своё будущее.</p>
+                <a class="programs__button-mini button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Учёба"</span>
+                </a>
               </div>
+            </li>
 
-              <button class="programs__button-mini button-mini" type="button"></button>
-            </div>
-          </li>
-        </ul>
+            <!-- дополнительныe слайды  -->
 
-        <div class="programs__pagination">
-          <div class="scroll-bar">
-          </div>
+            <li class="programs__item programs__item--slid1 swiper-slide">
+
+              <h3 class="programs__title-card title-card">Стажировки-2</h3>
+
+              <div class="programs__card-wrapper">
+                <div class="programs__content">
+                  <p>
+                    Получите незаменимый опыт работы в&nbsp;крупнейших мировых компаниях.
+                  </p>
+                </div>
+
+                <a class="programs__button-mini button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Стажировки"</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="programs__item programs__item--slid2 swiper-slide">
+              <h3 class="programs__title-card title-card">Волонтёрство</h3>
+              <div class="programs__card-wrapper">
+                <div class="programs__content">
+                  <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества</p>
+                </div>
+
+                <a class="programs__button-mini button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Волонтёрство"</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="programs__item programs__item--slid3 swiper-slide">
+              <h3 class="programs__title-card title-card">Учёба</h3>
+              <div class="programs__card-wrapper">
+                <div class="programs__content">
+
+                  <p>Получите образование и&nbsp;измените своё будущее.</p>
+                </div>
+
+                <a class="programs__button-mini button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Учёба"</span>
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
+
+        <div class="programs__scrollbar swiper-scrollbar"></div>
       </div>
     </section>
 
@@ -337,7 +383,6 @@
           <h2 class="grant__title title-section text-revers">Как&nbsp;поехать</h2>
 
           <div class="grant__contrnt grant__text">
-            <!-- class="text-mini text-revers" -->
             <p>
               Свяжитесь с&nbsp;координатором, чтобы&nbsp;узнать полную
               информацию. Вы&nbsp;получите актуальные сведения о&nbsp;доступных программах и&nbsp;городах,
@@ -360,7 +405,8 @@
       ./img/arrow_tabl_2x.jpg 2x" width="678" height="375">
 
             <source type="image/webp" srcset="./img/arrow_mob-deskt_1x.webp 1x,
-          ./arrow_mob-deskt_1x.webp 2x" width="290" height="200">
+            
+          ./img/arrow_mob-deskt_2x.webp 2x" width="290" height="200">
 
             <img class="grant__img" src="./img/arrow_mob-deskt_1x.jpg" srcset="./img/arrow_mob-deskt_2x.jpg 2x"
               alt="указатели" width="290" height="200">
@@ -598,92 +644,172 @@
         <h2 class="reviews__title title-section">Отзывы</h2>
 
         <div class="reviews__arrows slider__wrapper-btn">
-          <button class="button-arrow button-arrow--left" type="button"><span
+          <button class="button-arrow button-arrow--left swiper-button-back-reviews" type="button"><span
               class="visually-hidden">назад</span></button>
-          <button class="button-arrow" type="button"><span class="visually-hidden">вперед</span></button>
+
+          <button class="button-arrow swiper-button-next-reviews" type="button"><span class="visually-hidden">вперед</span></button>
         </div>
 
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <div class="reviews__wrapper">
+        <div class="reviews__slider swiper">
+          <ul class="reviews__list swiper-wrapper">
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__wrapper">
 
-              <picture>
-                <source type="image/webp" srcset="./img/avatar1_1x.webp 1x,
+                <picture>
+                  <source type="image/webp" srcset="./img/avatar1_1x.webp 1x,
           ./img/avatar1_2x.webp 2x" width="290" height="200">
 
-                <img class="reviews__ava" src="./img/avatar1_1x.jpg" srcset="./img/avatar1_2x.jpg 2x" alt="Лола Алекс"
-                  width="60" height="60">
-              </picture>
+                  <img class="reviews__ava" src="./img/avatar1_1x.jpg" srcset="./img/avatar1_2x.jpg 2x" alt="Лола Алекс"
+                    width="60" height="60">
+                </picture>
 
-              <p class="text-name">Лола <br> Алекс</p>
+                <p class="text-name">Лола <br> Алекс</p>
 
-              <div class="reviews__program">
-                <p class="reviews__data text-data">программа</p>
-                <p class="reviews__property text-card">Masa Art Challenge</p>
+                <div class="reviews__program">
+                  <p class="reviews__data text-data">программа</p>
+                  <p class="reviews__property text-card">Masa Art Challenge</p>
+                </div>
+
+                <div class="reviews__time">
+                  <p class="reviews__data text-data">Дата</p>
+                  <p class="reviews__property  text-card">Осень 2022</p>
+                </div>
               </div>
 
-              <div class="reviews__time">
-                <p class="reviews__data text-data">Дата</p>
-                <p class="reviews__property  text-card">Осень 2022</p>
+              <h3 class="reviews__title-card title-card">
+                Я&nbsp;могу с&nbsp;уверенностью сказать, что&nbsp;это&nbsp;был один из&nbsp;самых незабываемых опытов
+                в&nbsp;жизни!
+              </h3>
+
+              <div class="reviews__content">
+                <!-- class="text-mini" -->
+                <p>
+                  Я&nbsp;рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
+                  Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает
+                  её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную
+                  мне&nbsp;возможность.
+                </p>
               </div>
-            </div>
+            </li>
 
-            <h3 class="reviews__title-card title-card">
-              Я&nbsp;могу с&nbsp;уверенностью сказать, что&nbsp;это&nbsp;был один из&nbsp;самых незабываемых опытов
-              в&nbsp;жизни!
-            </h3>
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__wrapper">
 
-            <div class="reviews__content">
-              <!-- class="text-mini" -->
-              <p>
-                Я&nbsp;рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
-                Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает
-                её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную
-                мне&nbsp;возможность.
-              </p>
-            </div>
-          </li>
-
-          <li class="reviews__item">
-            <div class="reviews__wrapper">
-
-              <picture>
-                <source type="image/webp" srcset="./img/avatar2_1x.webp 1x,
+                <picture>
+                  <source type="image/webp" srcset="./img/avatar2_1x.webp 1x,
           ./img/avatar2_2x.webp 2x" width="290" height="200">
 
-                <img class="reviews__ava" src="./img/avatar2_1x.jpg" srcset="./img/avatar2_2x.jpg 2x" alt="Давид Иванов"
-                  width="60" height="60">
-              </picture>
-              <p class="text-name">Давид <br>Иванов</p>
+                  <img class="reviews__ava" src="./img/avatar2_1x.jpg" srcset="./img/avatar2_2x.jpg 2x"
+                    alt="Давид Иванов" width="60" height="60">
+                </picture>
+                <p class="text-name">Давид <br>Иванов</p>
 
-              <div class="reviews__program">
-                <p class="reviews__data text-data">программа</p>
-                <p class="reviews__property text-card">Volunteer Chance</p>
+                <div class="reviews__program">
+                  <p class="reviews__data text-data">программа</p>
+                  <p class="reviews__property text-card">Volunteer Chance</p>
+                </div>
+
+                <div class="reviews__time">
+                  <p class="reviews__data text-data">Дата</p>
+                  <p class="reviews__property  text-card">Лето 2022</p>
+                </div>
               </div>
 
-              <div class="reviews__time">
-                <p class="reviews__data text-data">Дата</p>
-                <p class="reviews__property  text-card">Лето 2022</p>
+              <h3 class="reviews__title-card title-card">Благодаря опыту стажировки я&nbsp;узнал так&nbsp;много нового
+                о&nbsp;себе
+                и&nbsp;об&nbsp;окружающем мире.</h3>
+
+              <div class="reviews__content">
+                <p>
+                  Каждый день был&nbsp;возможностью оказать ощутимое влияние на&nbsp;жизнь других людей.
+                  Я&nbsp;бы&nbsp;очень рекомендовал эту&nbsp;волонтёрскую программу всем, кто&nbsp;ищет значимый
+                  и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для&nbsp;меня было честью быть
+                  частью
+                  такой удивительной инициативы.
+                </p>
               </div>
-            </div>
+            </li>
 
-            <h3 class="reviews__title-card title-card">Благодаря опыту стажировки я&nbsp;узнал так&nbsp;много нового
-              о&nbsp;себе
-              и&nbsp;об&nbsp;окружающем мире.</h3>
+            <!-- дополнительные слайды -->
+              <li class="reviews__item swiper-slide">
+              <div class="reviews__wrapper">
 
-            <div class="reviews__content">
-              <p>
-                Каждый день был&nbsp;возможностью оказать ощутимое влияние на&nbsp;жизнь других людей.
-                Я&nbsp;бы&nbsp;очень рекомендовал эту&nbsp;волонтёрскую программу всем, кто&nbsp;ищет значимый
-                и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для&nbsp;меня было честью быть частью
-                такой удивительной инициативы.
-              </p>
-            </div>
-          </li>
-        </ul>
+                <picture>
+                  <source type="image/webp" srcset="./img/avatar1_1x.webp 1x,
+          ./img/avatar1_2x.webp 2x" width="290" height="200">
 
-        <div class="reviews__pagination">
-          <div class="scroll-bar">
+                  <img class="reviews__ava" src="./img/avatar1_1x.jpg" srcset="./img/avatar1_2x.jpg 2x" alt="Лола Алекс"
+                    width="60" height="60">
+                </picture>
+
+                <p class="text-name">Лола-2 <br> Алекс</p>
+
+                <div class="reviews__program">
+                  <p class="reviews__data text-data">программа</p>
+                  <p class="reviews__property text-card">Masa Art Challenge</p>
+                </div>
+
+                <div class="reviews__time">
+                  <p class="reviews__data text-data">Дата</p>
+                  <p class="reviews__property  text-card">Осень 2022</p>
+                </div>
+              </div>
+
+              <h3 class="reviews__title-card title-card">
+                Я&nbsp;могу с&nbsp;уверенностью сказать, что&nbsp;это&nbsp;был один из&nbsp;самых незабываемых опытов
+                в&nbsp;жизни!
+              </h3>
+
+              <div class="reviews__content">
+                <p>
+                  Я&nbsp;рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
+                  Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает
+                  её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную
+                  мне&nbsp;возможность.
+                </p>
+              </div>
+            </li>
+
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__wrapper">
+
+                <picture>
+                  <source type="image/webp" srcset="./img/avatar2_1x.webp 1x,
+          ./img/avatar2_2x.webp 2x" width="290" height="200">
+
+                  <img class="reviews__ava" src="./img/avatar2_1x.jpg" srcset="./img/avatar2_2x.jpg 2x"
+                    alt="Давид Иванов" width="60" height="60">
+                </picture>
+                <p class="text-name">Давид-2 <br>Иванов</p>
+
+                <div class="reviews__program">
+                  <p class="reviews__data text-data">программа</p>
+                  <p class="reviews__property text-card">Volunteer Chance</p>
+                </div>
+
+                <div class="reviews__time">
+                  <p class="reviews__data text-data">Дата</p>
+                  <p class="reviews__property  text-card">Лето 2022</p>
+                </div>
+              </div>
+
+              <h3 class="reviews__title-card title-card">Благодаря опыту стажировки я&nbsp;узнал так&nbsp;много нового
+                о&nbsp;себе
+                и&nbsp;об&nbsp;окружающем мире.</h3>
+
+              <div class="reviews__content">
+                <p>
+                  Каждый день был&nbsp;возможностью оказать ощутимое влияние на&nbsp;жизнь других людей.
+                  Я&nbsp;бы&nbsp;очень рекомендовал эту&nbsp;волонтёрскую программу всем, кто&nbsp;ищет значимый
+                  и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для&nbsp;меня было честью быть
+                  частью
+                  такой удивительной инициативы.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="reviews__scrollbar swiper-scrollbar">
           </div>
         </div>
       </div>
