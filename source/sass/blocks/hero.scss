@@ -25,11 +25,9 @@
   flex-direction: column;
   justify-content: flex-end;
   flex-shrink: 0;
-  // flex-grow: 0;
 
   &--slid1 {
     background-image:
-      // linear-gradient($color-overlay, $color-overlay),
       image-set(url("../../img/hero1_mob_1x.webp") 1x type("image/webp"),
         url("../..img/hero1_mob_1x.jpg") 1x,
         url("../../img/hero1_mob_2x.webp") 2x type("image/webp"),
@@ -236,43 +234,22 @@
 //======hero__pagination=====
 
 .hero__pagination {
-  // width: 48px;
-  // height: 8px;
-  position: absolute;
+    position: absolute;
   left: 24px;
   bottom: 340px;
   z-index: 10;
-  // background-color: red;
   padding: 5px;
-
   display: flex;
   gap: 12px;
+
+  @include media-tablet {
+      left: 60px;
+  }
+
+  @include media-desktop {
+      left: 115px;
+  }
 }
-
-
-// .hero .hero__pagination-buttons {
-
-
-//   display: flex;
-//   width: 12px;
-//   height: 20px;
-//   padding: 0;
-//   background-color: blueviolet;
-//   outline: none;
-//   border: none;
-//   flex-direction: row;
-//   justify-content: center;
-//   align-items: center;
-//   opacity: 1;
-//   margin: 0;
-
-//   @media (width >= 768px) {
-//     width: 16px;
-//   }
-
-//   cursor: pointer;
-//   z-index: 2;
-// }
 
 .hero__pagination-button {
   @include btn-reset;
@@ -282,7 +259,6 @@
   height: 8px;
   border: 2px solid $color-accent;
   border-radius: 50%;
-
   
   @media (width >=768px) {
     width: 12px;
@@ -298,7 +274,6 @@
 
 .hero__pagination-button:focus {
   background-color: $color-accent;
-  // border: none;
 }
 
 .swiper-pagination-bullet-active {

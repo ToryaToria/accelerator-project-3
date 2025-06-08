@@ -11,10 +11,7 @@ const initSwiperHero = () => {
     allowTouchMove: true, // свайп и мышка
     // direction: 'horizontal', // по умолчанию
     grabCursor: true,
-    // spaceBetween: 0,
-    // slidesPerView: '1',
-
-
+    
     pagination: {
       el: '.hero__pagination',
       clickable: true,
@@ -24,21 +21,34 @@ const initSwiperHero = () => {
                   </button>`;
       }
     },
-       breakpoints: {
+    breakpoints: {
       1440: {
-    allowTouchMove: false,
+        allowTouchMove: false,
         grabCursor: false,
 
       }
-    }
-
+    },
   });
 
+  function updatePaginationPosition() {
+
+    const activeSlide = document.querySelector('.swiper-slide-active .hero__slid-content');
+    const pagination = document.querySelector('.hero__pagination');
+
   
-  // swiperHero.on('slideChange', () => {
-  //   console.log('slider change');
-  //   console.log(swiperHero.activeIndex);
-  // });
+    const contentRect = activeSlide.getBoundingClientRect();
+
+    const newTop = contentRect.top + 8;
+      pagination.style.top = `${newTop}px`;
+    }
+
+  updatePaginationPosition();
+
+   swiperHero.on('slideChange', () => {
+    requestAnimationFrame(() => {
+      updatePaginationPosition();
+    });
+  });
 }
 
-export { initSwiperHero };
+export { initSwiperHero};

@@ -6,9 +6,6 @@ import { Navigation, Scrollbar } from "swiper/modules";
 // import 'swiper/css/scrollbar';
 
 
-// console.log('ky-ky');
-
-
 const initSwiperPrograms = () => {
   const swiperPrograms = new Swiper('.programs__slider', {
     modules: [Navigation, Scrollbar],
