@@ -8,7 +8,7 @@
   }
 
   @include media-desktop {
-    padding-top: 65px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -47,13 +47,18 @@
   box-sizing: border-box;
   grid-area: title;
   margin-right: auto;
-  padding-top: 6px;
+  padding-top: 2px;
   padding-bottom: 2px;
 
   @include media-tablet {
     padding-top: 3px;
     padding-bottom: 0;
   }
+
+    @include media-desktop {
+      padding-bottom: 0;
+
+    }
 }
 
 .programs__arrows {
@@ -87,6 +92,10 @@
 
 .programs__slider {
   grid-area: slider;
+
+      @include media-desktop {
+      overflow: hidden;
+      }
 
 }
 

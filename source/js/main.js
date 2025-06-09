@@ -6,7 +6,7 @@
 import './main-menu.js';
 import './modal.js';
 
-import {initSwiperHero} from './sliders/slider-hero.js';
+import {initSwiperHero} from './sliders/hero-slider.js';
 initSwiperHero();
 
 import {initSwiperPrograms} from './sliders/programs-slider.js';

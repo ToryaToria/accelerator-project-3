@@ -11,7 +11,7 @@ const initSwiperHero = () => {
     allowTouchMove: true, // свайп и мышка
     // direction: 'horizontal', // по умолчанию
     grabCursor: true,
-    
+
     pagination: {
       el: '.hero__pagination',
       clickable: true,
@@ -30,25 +30,46 @@ const initSwiperHero = () => {
     },
   });
 
-  function updatePaginationPosition() {
+  function calculatePaginationPosition() {
+    const hero = document.querySelector('.swiper-slide-active.hero__item');
 
     const activeSlide = document.querySelector('.swiper-slide-active .hero__slid-content');
     const pagination = document.querySelector('.hero__pagination');
 
-  
+
     const contentRect = activeSlide.getBoundingClientRect();
-
-    const newTop = contentRect.top + 8;
-      pagination.style.top = `${newTop}px`;
+    const heroRect = hero.getBoundingClientRect();
+    let padding = 0;
+    const newTop = contentRect.top + 6;
+    if (heroRect.width >= 768) {
+      padding = 4;
     }
+    pagination.style.top = `${newTop + padding}px`;
 
-  updatePaginationPosition();
+    // console.log(heroRect.width);
+    // console.log(contentRect.width);
 
-   swiperHero.on('slideChange', () => {
+    let indent = 0;
+    if (heroRect.width <= 767) {
+      indent = 24;
+    } else if (heroRect.width < 1440) {
+      indent = 60;
+    } else {
+      indent = 116;
+    }
+    const newLeft = (heroRect.width - contentRect.width) / 2 + indent;
+    // console.log(newLeft);
+
+    pagination.style.left = `${newLeft}px`;
+  }
+
+  calculatePaginationPosition();
+
+  swiperHero.on('slideChange', () => {
     requestAnimationFrame(() => {
-      updatePaginationPosition();
+      calculatePaginationPosition();
     });
   });
 }
 
-export { initSwiperHero};
+export { initSwiperHero };

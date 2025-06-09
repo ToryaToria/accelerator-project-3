@@ -55,6 +55,10 @@
 
 .reviews__slider {
   grid-area: slid;
+
+    @include media-desktop {
+    overflow: hidden;
+    }
 }
 
 .reviews__list {
