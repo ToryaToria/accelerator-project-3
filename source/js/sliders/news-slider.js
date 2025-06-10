@@ -19,11 +19,11 @@ const initSwiperNews = () => {
     autoHeight: false,
     watchOverflow: true,
 
-    initialSlide: 0,
-    centeredSlides: false,
+    // initialSlide: 0,
+    // centeredSlides: false,
     // fill: 'row',
     slidesPerView: 1,
-    slidesPerColumn: 2,
+    // slidesPerColumn: 2,
     // slidesPerGroup :2,
 
     // grid: {
@@ -34,7 +34,15 @@ const initSwiperNews = () => {
     navigation: {
       nextEl: '.swiper-button-next-news',
       prevEl: '.swiper-button-back-news',
-    }
+    },
+      breakpoints: {
+      768: {
+        spaceBetween: 30,
+      },
+       1440: {
+        spaceBetween: 32,
+      },}
+
   });
 
   swiperNews.on('slideChange', () => {

@@ -18,7 +18,7 @@
 .write-us__background {
   box-sizing: border-box;
   padding: 43px 10px 40px 10px;
-  // width: auto;
+  margin: 0 auto;
   // height: 753px;
   background-position: center;
   background-size: cover;
@@ -35,6 +35,8 @@
   @include media-tablet {
     padding: 0 210px 0 0;
     border-radius: 16px;
+    // width: $tablet-width;
+
 
     background-image:
       image-set(url("../../img/form-bg_tabl_2x.webp") 1x type("image/webp"),
@@ -45,6 +47,8 @@
 
   @include media-desktop {
     padding: 0 750px 0 0;
+    width: 1240px;
+
     background-image:
       image-set(url("../../img/form-bg_deskt_2x.webp") 1x type("image/webp"),
         url("../../img/form-bg_deskt_1x.jpg") 1x,
@@ -55,16 +59,21 @@
 
 .write-us__container {
   padding: 15px 15px 27px 15px;
+  width: 290px;
+  margin: 0 auto;
 
   background-color: $color-accent;
   border-radius: 16px;
 
   @include media-tablet {
     padding: 41px 40px 36px 40px;
+    width: 442px;
+    margin: 0;
   }
 
   @include media-desktop {
     padding: 44px 70px 40px 70px;
+    width: 490px;
   }
 }
 
@@ -91,11 +100,11 @@
 }
 
 .write-us__text-field {
-    color: $color-bg-light;
+  color: $color-bg-light;
 }
 
-.write-us__filed  {
- color: $color-white;
+.write-us__filed {
+  color: $color-white;
   background-color: transparent;
 
   &:not(:disabled):focus,
@@ -113,12 +122,11 @@
 }
 
 .write-us__approval {
-    @include font ($size: 12px, $line-height: 14px);
-     color: $color-white;
+  @include font ($size: 12px, $line-height: 14px);
+  color: $color-white;
 }
 
 .write-us__mark {
   border: 1px solid $color-white-70;
   background-color: transparent;
 }
-

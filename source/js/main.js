@@ -18,9 +18,8 @@ initSwiperPrograms();
 import {initSwiperReviews} from './sliders/reviwes-slider.js';
 initSwiperReviews();
 
-// import {initSwiperNews } from './sliders/news-slider.js';
-// initSwiperNews();
+import {initSwiperNews } from './sliders/news-slider.js';
+initSwiperNews();
 
 // import { initSwiper } from './sliders/slider.js';
-
 // initSwiper();
