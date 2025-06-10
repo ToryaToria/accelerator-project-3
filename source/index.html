@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship</title>
+
+
   <link rel="stylesheet" href="./sass/vendor/nebo.css">
   <link rel="stylesheet" href="sass/style.scss">
 </head>
@@ -140,7 +142,7 @@
               <h2 class="hero__title title-hero nebo nebo--tr">
                 Волонтёрские программы&nbsp;— внесите свой вклад в&nbsp;общество
 
-                 Волонтёрские программы&nbsp;— внесите свой вклад в&nbsp;общество
+                Волонтёрские программы&nbsp;— внесите свой вклад в&nbsp;общество
               </h2>
 
               <div class="hero__wrapper-text">
@@ -442,7 +444,6 @@
         <h2 class="news__title title-section">Новости и&nbsp;материалы</h2>
 
         <ul class="news__list-tags">
-          <!-- Что за эдемент? -->
           <li class="">
             <button class="news__item-tags news__item-tags--current text-button" type="button">Общее</button>
           </li>
@@ -464,10 +465,9 @@
           </li>
         </ul>
 
-        <div class="news__slider">
-          <ul class="news__list">
-            <li class="news__item news__item--slid1">
-              <!-- <div class="news__item-wrapper"> -->
+        <div class="news__slider swiper">
+          <ul class="news__list swiper-wrapper">
+            <li class="news__item news__item--slid1 swiper-slide">
               <time class="news__data text-data" datetime="2023-03-23">23/03/2023</time>
 
               <h3 class="news__subtitle title-card">Интервью с&nbsp;участницей программы стажировки</h3>
@@ -481,8 +481,7 @@
               <!-- </div> -->
             </li>
 
-            <li class="news__item news__item--slid2">
-              <!-- <div class="news__item-wrapper"> -->
+            <li class="news__item news__item--slid2 swiper-slide">
 
               <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
               <h3 class="news__subtitle title-card">Путешествуем по&nbsp;миру</h3>
@@ -491,11 +490,9 @@
                   наши студенты весной</p>
                 <button class="programs__button-mini button-mini" type="button"></button>
               </div>
-              <!-- </div> -->
             </li>
 
-            <li class="news__item news__item--slid3">
-              <!-- <div class="news__item-wrapper"> -->
+            <li class="news__item news__item--slid3 swiper-slide">
 
               <time class="news__data text-data" datetime="2023-03-17">17/03/2023</time>
               <h3 class="news__subtitle title-card">Новая программа волонтёрства</h3>
@@ -504,24 +501,23 @@
                   длительностью 4&nbsp;месяца</p>
                 <button class="programs__button-mini button-mini" type="button"></button>
               </div>
-              <!-- </div> -->
             </li>
 
-            <li class="news__item news__item--slid4">
-              <!-- <div class="news__item-wrapper"> -->
+            <li class="news__item news__item--slid4 swiper-slide">
               <time class="news__data text-data" datetime="2023-03-10">10/03/2023</time>
               <h3 class="news__subtitle title-card">Построй свою карьеру</h3>
               <div class="news-text-wrapper">
                 <p class="news__text-card text-card">Ведущие компании готовы трудоустроить выпускников стажировки</p>
                 <button class="programs__button-mini button-mini" type="button"></button>
               </div>
-              <!-- </div> -->
             </li>
           </ul>
 
-          <div class="news__pagination-container">
-            <button class="button-arrow button-arrow--left" type="button" disabled></button>
-            <ol class="news__pagination-wrapper">
+          <div class="news__pagination-container ">
+            <button class="button-arrow button-arrow--left swiper-button-back-news" type="button" disabled>
+              <span class="visually-hidden">назад</span>
+            </button>
+            <ol class="news__pagination-wrapper swiper-pagination">
               <li>
                 <button class="pagination  pagination--current" type="button">1</button>
               </li>
@@ -535,7 +531,9 @@
                 <button class="pagination" type="button">4</button>
               </li>
             </ol>
-            <button class="button-arrow" type="button"></button>
+            <button class="button-arrow swiper-button-next-news" type="button">
+              <span class="visually-hidden">вперед</span>
+            </button>
           </div>
         </div>
       </div>
@@ -546,15 +544,14 @@
         <div class="faq__container">
           <h2 class="faq__title title-section">Вопросы и&nbsp;ответы</h2>
           <ul class="faq__list">
-            <li class="faq__item">
+            <li class="faq__item" tabindex="1">
               <div class="faq__wrapper">
                 <p class="faq__question title-faq">Кто&nbsp;организатор? Какие сроки у&nbsp;программы?</p>
 
-                <button class="button-plus" type="button" disabled></button>
+                <button class="button-plus" type="button"></button>
               </div>
 
               <div class="faq__answer faq__content">
-                <!-- class=" text-mini" -->
                 <p>
                   Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями.
                   Сроки программы обмена могут варьироваться от одного семестра до года.
@@ -563,7 +560,7 @@
 
             </li>
 
-            <li class="faq__item">
+            <li class="faq__item" tabindex="1">
               <div class="faq__wrapper">
                 <p class="faq__question title-faq">Что&nbsp;такое грант на&nbsp;обучение?</p>
 
@@ -578,14 +575,13 @@
               </div>
             </li>
 
-            <li class="faq__item faq__item--open">
+            <li class="faq__item faq__item--open" tabindex="1">
               <div class="faq__wrapper">
                 <p class="faq__question faq__question--open title-faq">Как&nbsp;определяется стоимость программы?</p>
                 <button class="faq__button button-plus button-plus--open" type="button"></button>
               </div>
 
               <div class="faq__answer faq__answer--open faq__content">
-                <!-- class="faq__answer faq__answer--open text-mini -->
                 <p>
                   Полная стоимость определяется организаторами
                   в&nbsp;зависимости от&nbsp;направления.
@@ -595,7 +591,7 @@
               </div>
             </li>
 
-            <li class="faq__item">
+            <li class="faq__item" tabindex="1">
               <div class="faq__wrapper">
                 <p class="faq__question title-faq">Признаётся&nbsp;ли&nbsp;учёба в&nbsp;рамках проекта
                   для дальнейшего обучения?</p>
@@ -611,7 +607,7 @@
               </div>
             </li>
 
-            <li class="faq__item">
+            <li class="faq__item" tabindex="1">
               <div class="faq__wrapper">
                 <p class="faq__question title-faq">Как&nbsp;выглядит полный процесс регистрации на&nbsp;программу
                   «Стажировка»?</p>

@@ -6,6 +6,9 @@
 import './main-menu.js';
 import './modal.js';
 
+import './accordion.js';
+
+
 import {initSwiperHero} from './sliders/hero-slider.js';
 initSwiperHero();
 
@@ -14,3 +17,10 @@ initSwiperPrograms();
 
 import {initSwiperReviews} from './sliders/reviwes-slider.js';
 initSwiperReviews();
+
+// import {initSwiperNews } from './sliders/news-slider.js';
+// initSwiperNews();
+
+// import { initSwiper } from './sliders/slider.js';
+
+// initSwiper();

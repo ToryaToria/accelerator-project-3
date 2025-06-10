@@ -4,15 +4,29 @@
 }
 
 .header__nav {
-  display: none;
+  box-sizing: border-box;
+
+  width: 290px;
+  border-radius: 16px;
   position: relative;
   margin-top: 4px;
-  z-index: 10;
+  z-index: 15;
   margin-left: auto;
+ 
+  transition: all 0.3s;
+  height: 0;
+  opacity: 0;
+
+
 }
 
 .header__nav--open {
-  display: block;
+  // display: block;
+  transition: all 0.3s;
+
+  height: max-content;
+  opacity: 1;
+
 }
 
 .header__header {
@@ -41,16 +55,15 @@
 }
 
 .header__button {
-  z-index: 10;
+  z-index: 15;
   flex-grow: 0;
   flex-shrink: 0;
   padding-left: 21px;
   gap: 20px;
   background-color: $color-white;
+  transition: all 0.3s;
+  width: 136px;
 
-  // &:not(:disabled):focus {
-  //   outline: auto;
-  // }
 
   &:not(:disabled):hover {
     background-color: $color-accent;
@@ -95,6 +108,16 @@
 .header__button--open {
   width: 290px;
   background-color: $color-accent;
+  position: absolute;
+  right: 15px;
+
+  @include media-tablet {
+    right: 45px;
+  }
+
+  @include media-desktop {
+    right: 100px;
+  }
 
   .header__menu-text {
     color: $color-white;

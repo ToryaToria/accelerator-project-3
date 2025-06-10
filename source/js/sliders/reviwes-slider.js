@@ -5,10 +5,6 @@ import { Navigation, Scrollbar } from "swiper/modules";
 // import 'swiper/css/pagination';
 // import 'swiper/css/scrollbar';
 
-
-console.log('ky-ky');
-
-
 const initSwiperReviews = () => {
   const swiperReviews = new Swiper('.reviews__slider', {
     modules: [Navigation, Scrollbar],

@@ -1,9 +1,9 @@
 nav {
   box-sizing: border-box;
-  width: 290px;
+  // width: 290px;
   background-color: $color-accent;
-  border-radius: 16px;
-  padding: 35px 25px;
+  // border-radius: 16px;
+  // padding: 35px 25px;
 }
 
 .nav__list {
@@ -11,17 +11,28 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  padding: 35px 25px;
+
 }
 
 .nav__sublist {
-  display: none;
   @include list-reset;
-}
 
-.nav__sublist--open {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  transition: all 0.3s;
+  height: 0;
+  opacity: 0;
+}
+
+.nav__sublist--open {
+  margin-top: 20px;
+  transition: all 0.3s;
+  height: max-content;
+  opacity: 1;
+
 }
 
 .nav__link {
@@ -46,7 +57,6 @@ nav {
 
 .nav__button {
   @include btn-reset;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 10px;

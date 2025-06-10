@@ -88,11 +88,13 @@
 }
 
 .news__list {
+  box-sizing: border-box;
   @include list-reset;
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 24px;
+  // height: 590px;
 
   overflow: hidden;
 
@@ -101,12 +103,15 @@
     flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
+    // height: 730px;
   }
 
   @include media-desktop {
     flex-wrap: nowrap;
     margin-bottom: 40px;
     gap: 32px;
+
+    // height: auto;
 
   }
 }
@@ -118,6 +123,7 @@
   justify-content: end;
   width: 290px;
   // padding-right: 11px;
+  // height: calc((100% - 20px)/2);
 
   background-position: center;
   background-size: cover;

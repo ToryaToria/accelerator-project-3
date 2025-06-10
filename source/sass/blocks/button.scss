@@ -5,6 +5,7 @@
   border: 1px solid $color-accent;
   border-radius: 30px;
   cursor: pointer;
+  transition: all 0.3s;
 
   display: flex;
   align-items: center;
@@ -51,7 +52,7 @@
   &:disabled,
   &--disabled {
     border-color: $color-disabled;
-        cursor: default;
+    cursor: default;
 
 
     .text-button {
@@ -96,6 +97,7 @@
       transform: rotate(45deg);
       background-color: $color-accent;
 
+
       &::after {
         background-color: $color-white;
       }
@@ -112,6 +114,8 @@
 
 .button__menu {
   @include btn-circle ($width: 46px, $height: 46px);
+    transition: all 0.3s;
+
 
   &:after {
     @include btn-icon ($width: 18px, $height: 8px,
@@ -122,6 +126,8 @@
 .button__circle {
   flex-shrink: 0;
   @include btn-circle ($width: 34px, $height: 34px);
+    transition: all 0.3s;
+
 
   &:after {
     @include btn-icon ($mask-image: url('../../__spritemap#sprite-arr-view'));

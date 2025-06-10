@@ -8,7 +8,7 @@
   }
 
   @include media-desktop {
-    padding-top: 71px; //должно быть 60!!!
+    padding-top: 71px;
     padding-bottom: 60px;
   }
 }
@@ -30,16 +30,7 @@
   }
 
   @include media-desktop {
-    margin-bottom: 71px; //должно быть 60!!!
-  }
-}
-
-.faq__answer {
-  display: none;
-
-  &--open {
-    display: block;
-    margin-top: 20px;
+    margin-bottom: 71px;
   }
 }
 
@@ -52,9 +43,13 @@
 
 .faq__item {
   box-sizing: border-box;
-  padding: 20px 15px 20px 15px;
   border: 2px solid $color-accent;
   border-radius: 14px;
+  overflow: hidden;
+  padding: 20px 15px 20px 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+
 
   @include media-tablet {
     border-radius: 16px;
@@ -65,19 +60,79 @@
     padding: 42px 42px 38px 40px;
   }
 
-  &--open {
+  &:focus,
+  &:hover {
+    background-color: $color-white;
+
+    .button-plus {
+      background-color: $color-white;
+
+      &:after {
+        background-color: $color-accent;
+      }
+    }
+  }
+
+  &:active {
+    background-color: $color-white;
+
+    .faq__question {
+      color: $color-active;
+    }
+
+    .button-plus {
+      background-color: $color-active;
+      border-color: $color-active ;
+
+      &:after {
+        background-color: $color-white;
+      }
+    }
+  }
+}
+
+.faq__item--open {
+  background-color: $color-accent;
+  transition: all 0.3s;
+
+  &:focus,
+  &:hover {
     background-color: $color-accent;
+
+    .button-plus {
+      background-color: $color-accent;
+      border-color: $color-white;
+
+      &:after {
+        background-color: $color-white;
+      }
+    }
+  }
+
+  &:active {
+    background-color: $color-active;
+
+    .faq__question {
+      color: $color-white;
+    }
+
+    .button-plus {
+      background-color: $color-white;
+      border-color: $color-active ;
+
+      &:after {
+        background-color: $color-active;
+      }
+    }
   }
 }
 
 .faq__wrapper {
+  box-sizing: border-box;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  // @include media-tablet {
-  //   // align-items: flex-start;
-  // }
 
   @include media-desktop {
     gap: 10px;
@@ -104,8 +159,22 @@
   }
 }
 
+.faq__answer {
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s;
+
+
+  &--open {
+    height: unset;
+    transition: all 0.3s;
+    opacity: 1;
+    margin-top: 20px;
+  }
+}
+
 .faq__answer--open.faq__content {
   p {
-    color: $color-white;
+    color: $color-bg-light;
   }
 }

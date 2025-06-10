@@ -1,8 +1,8 @@
 .button-arrow {
-    padding: 0;
+  padding: 0;
   @include btn-circle ($width: 22px, $height: 22px, $background-color: transparent);
-      cursor: pointer;
-
+  cursor: pointer;
+  transition: all 0.3s;
 
   &:after {
     @include btn-icon ($background-color: $color-accent, $mask-image: url('../../__spritemap#sprite-arrow-view'));
@@ -23,14 +23,15 @@
   }
 
   &:not(:disabled):active {
-        background-color: $color-white;
+    background-color: $color-white;
+
     &:after {
       background-color: $color-accent-70;
     }
   }
 
   &:disabled {
-        cursor: default;
+    cursor: default;
 
     &:after {
       background-color: $color-disabled;
