@@ -5,7 +5,7 @@ import { Navigation, Scrollbar, Pagination, Grid } from "swiper/modules";
 // import 'swiper/css/pagination';
 // import 'swiper/css/scrollbar';
 
-console.log('ky');
+// console.log('ky');
 
 const initSwiperNews = () => {
   const swiperNews = new Swiper('.news__slider', {
@@ -26,10 +26,10 @@ const initSwiperNews = () => {
     // slidesPerColumn: 2,
     // slidesPerGroup :2,
 
-    // grid: {
-    //     rows: 2,
-    //     // fill: 'column',
-    //   },
+    grid: {
+        rows: 2,
+        // fill: 'column',
+      },
 
     navigation: {
       nextEl: '.swiper-button-next-news',

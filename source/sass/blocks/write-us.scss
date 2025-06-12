@@ -18,7 +18,7 @@
 .write-us__background {
   box-sizing: border-box;
   padding: 43px 10px 40px 10px;
-  margin: 0 auto;
+  // margin: 0 auto;
   // height: 753px;
   background-position: center;
   background-size: cover;
@@ -58,9 +58,10 @@
 }
 
 .write-us__container {
+  box-sizing: border-box;
   padding: 15px 15px 27px 15px;
-  width: 290px;
-  margin: 0 auto;
+  width: 300px;
+  // margin: 0 auto;
 
   background-color: $color-accent;
   border-radius: 16px;

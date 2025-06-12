@@ -804,7 +804,7 @@
         <div class="reviews__scrollbar swiper-scrollbar">
         </div>
       </div>
-      </div>
+      <!-- </div> -->
     </section>
 
     <section class="contacts" data-test="contacts" id="contacts">
@@ -863,37 +863,40 @@
       <div class="write-us__background">
         <div class="write-us__container">
           <h2 class="write-us__title subtitle">Напишите&nbsp;нам</h2>
-          <p class="write-us__text text-mini">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—
-            мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
+          <p class="write-us__text text-mini">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—&nbsp;мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
 
-          <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="form__label">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+            <label class="form__label" for="name-form">
               <span class="write-us__text-field form__text-field text-card">Имя</span>
-              <input class="write-us__filed form__field" type="text">
+              <input class="write-us__filed form__field" type="text" id="name-form" name="name" minlength="3" pattern="^[А-Яа-яё]{1,}[А-Яа-яё0-9. -,IV`\(\)]+$">
             </label>
 
-            <label class="form__label">
+            <label class="form__label" for="phone-form">
               <span class="write-us__text-field form__text-field text-card">Телефон</span>
-              <input class="write-us__filed form__field" type="tel">
+              <input class="write-us__filed form__field" type="tel" id="phone-form" name="phone" minlength="14">
             </label>
 
-            <label class="form__label">
+            <label class="form__label" for="message-form">
               <span class="write-us__text-field form__text-field text-card">Ваше сообщение</span>
-              <textarea class="write-us__filed form__field form__field--textarea" name="" id="" rows="5"></textarea>
+              <textarea class="write-us__filed form__field form__field--textarea" name="message" id="message-form"
+                rows="5"></textarea>
             </label>
 
-            <label class="write-us__text-field form__label form__label--right">
+            <label class="write-us__text-field form__label form__label--right" for="city-form">
               <span class="write-us__filed form__text-field form__text-field--city text-card">Выберите город</span>
-              <select class="write-us__filed form__field form__field--city" name="input-city" id="input-city">
-                <option value="" selected disabled hidden></option>
-                <option value="moskow">Москва</option>
-                <option value="spb">Санкт-Петербург</option>
-                <option value="st-kr">Старый Крым</option>
-              </select>
+
+
+              <input class="write-us__filed form__field form__field--city" type="text" list="city-options"
+                id="city-form" name="city">
+              <datalist id="city-options">
+                <option value="Москва"></option>
+                <option value="Санкт-Петербург"></option>
+                <option value="Казань"></option>
+              </datalist>
             </label>
 
-            <label class="form__label-check">
-              <input class="form__check visually-hidden" type="checkbox" name="approval" required>
+            <label class="form__label-check" for="approval-form">
+              <input class="form__check visually-hidden" type="checkbox" name="approval" id="approval-form">
               <span class="write-us__mark form__mark"></span>
               <span class="write-us__approval form__text-approval">Я&nbsp;согласен на&nbsp;обработку моих персональных
                 <br class="form__br">
@@ -942,12 +945,13 @@
         </li>
       </ul>
 
-      <a class="footer__conf text-other" href="#">Политика конфиденциальности</a>
+      <a class="footer__confidentiality text-other" href="#" tabindex="2">Политика конфиденциальности</a>
+
       <p class="footer_copy text-other">Стажировка © 2023&nbsp;Все&nbsp;права защищены</p>
 
       <ul class="footer__social">
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--vk" href=""></a>
+          <a class="footer__social-link footer__social-link--vk" href="" tabindex="1"></a>
         </li>
 
         <li class="footer__social-item">
@@ -958,6 +962,7 @@
           <a class="footer__social-link footer__social-link--reddit" href=""></a>
         </li>
       </ul>
+
     </div>
   </footer>
 
@@ -970,34 +975,34 @@
 
 
       <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="form__label">
+        <label class="form__label" for="name-modal">
           <span class="form__text-field text-card">Имя</span>
-          <input class="modal__field form__field" type="text">
+          <input class="modal__field form__field" type="text" id="name-modal" name="name">
         </label>
 
-        <label class="form__label">
+        <label class="form__label" for="phone-modal">
           <span class="form__text-field text-card">Телефон</span>
-          <input class="modal__field form__field" type="tel">
+          <input class="modal__field form__field" type="tel" id="phone-modal" name="phone">
         </label>
 
-        <label class="form__label">
+        <label class="form__label" for="message-modal">
           <span class="form__text-field text-card">Ваше сообщение</span>
-          <textarea class="modal__field form__field form__field--textarea" name="" id="" rows="5"></textarea>
+          <textarea class="modal__field form__field form__field--textarea" rows="5" id="message-modal"
+            name="message"></textarea>
         </label>
 
-        <label class="form__label form__label--right">
+        <label class="form__label form__label--right" for="city-modal">
           <span class="form__text-field form__text-field--city text-card">Выберите город</span>
-          <select class="modal__field modal__field--city form__field form__field--city" name="input-city"
-            id="input-city">
-            <option value="" selected disabled hidden></option>
+          <select class="modal__field modal__field--city form__field form__field--city" name="city" id="city-modal">
+            <option value=" " selected disabled hidden></option>
             <option value="moskow">Москва</option>
             <option value="spb">Санкт-Петербург</option>
             <option value="st-kr">Старый Крым</option>
           </select>
         </label>
 
-        <label class="modal__check form__label-check">
-          <input class="form__check visually-hidden" type="checkbox" name="approval" required>
+        <label class="modal__check form__label-check" for="approval-modal">
+          <input class="form__check visually-hidden" type="checkbox" name="approval" id="approval-modal" required>
           <span class="modal__mark form__mark"></span>
           <span class="modal__approval form__text-approval">Я&nbsp;согласен на&nbsp;обработку моих персональных
             <br class="form__br">

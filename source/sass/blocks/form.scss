@@ -83,11 +83,11 @@
     background-color: $color-white-20;
   }
 
+  // :not(:placeholder-shown)
   &:not(:placeholder-shown):invalid {
     border-color: $color-error;
     background-color: $color-error-20;
   }
-
 }
 
 .form__label-check {
@@ -184,10 +184,10 @@
   background-color: $color-white;
 }
 
-// .form__check:invalid+.form__mark {
-//   border: 1px solid $color-error;
-//   background-color: $color-error-20;
-// }
+.form__check:invalid+.form__mark {
+  border: 1px solid $color-error;
+  background-color: $color-error-20;
+}
 
 .form_button {
   box-sizing: border-box;

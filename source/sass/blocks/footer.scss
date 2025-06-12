@@ -88,12 +88,14 @@
   }
 }
 
-.footer__conf {
+.footer__confidentiality {
   grid-area: conf;
-  display: block;
+  display: inline-block;
   text-align: center;
   margin-bottom: 11px;
   text-decoration: none;
+  justify-self: center;
+  width: fit-content;
 
   @include media-tablet {
     text-align: left;
@@ -226,7 +228,7 @@
     height: 36px;
   }
 
-  &:focus {
+    &:focus {
     outline: auto;
     background-color: $color-white;
 
@@ -237,11 +239,11 @@
 
   &:hover {
     &::after {
-  background-color: $color-white-70;
+      background-color: $color-white-70;
     }
   }
 
   &:active {
-  background-color: $color-active;
+    background-color: $color-active;
   }
 }
