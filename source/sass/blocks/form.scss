@@ -1,7 +1,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  // justify-content: flex-start;
   gap: 21px;
   align-items: stretch;
 
@@ -27,7 +26,6 @@
   display: block;
   margin-bottom: 11px;
 
-
   @include media-tablet {
     margin-bottom: 12px;
   }
@@ -48,7 +46,6 @@
   border: 1px solid $color-field-line;
   border-radius: 8px;
   padding: 16px 16px 16px 25px;
-
   width: 100%;
 
   &--textarea {
@@ -72,7 +69,6 @@
     background-position: center right 21px;
     background-size: 16px 16px;
     background-repeat: no-repeat;
-    // background-color: $color-white;
    }
   
   &:disabled {
@@ -80,8 +76,7 @@
     background-color: $color-white-20;
   }
 
-  // :not(:placeholder-shown)
-  &:not(:placeholder-shown):invalid {
+  &:invalid {
     border-color: $color-error;
     background-color: $color-error-20;
   }
@@ -142,48 +137,6 @@
     margin-top: 0;
   }
 }
-
-// .form__check[type="checkbox"]:checked+.form__mark {
-//   background-color: $color-white;
-// }
-
-// .form__check[type="checkbox"]:checked+.form__mark::before {
-//   background-color: $color-accent;
-// }
-
-// .form__check:not(:disabled):focus+.form__mark,
-// .form__check:not(:disabled):hover+.form__mark {
-//   border: 1px solid $color-white;
-//   cursor: pointer;
-// }
-
-// .form__check[type="checkbox"]:checked:not(:disabled):focus+.form__mark,
-// .form__check[type="checkbox"]:checked:not(:disabled):hover+.form__mark {
-//   border: 1px solid $color-white;
-//   background-color: transparent;
-// }
-
-// .form__check[type="checkbox"]:checked:not(:disabled):focus+.form__mark::before,
-// .form__check[type="checkbox"]:checked:not(:disabled):hover+.form__mark::before {
-//   background-color: $color-white;
-// }
-
-// .form__check:disabled+.form__mark {
-//   background-color: $color-white-60;
-// }
-
-// .form__check[type="checkbox"]:disabled+.form__mark {
-//   background-color: $color-disabled;
-// }
-
-// .form__check[type="checkbox"]:checked:disabled+.form__mark::before {
-//   background-color: $color-white;
-// }
-
-// .form__check:invalid+.form__mark {
-//   border: 1px solid $color-error;
-//   background-color: $color-error-20;
-// }
 
 .form_button {
   box-sizing: border-box;

@@ -4,7 +4,6 @@
 
 .header__nav {
   box-sizing: border-box;
-
   width: 290px;
   border-radius: 16px;
   position: relative;
@@ -55,7 +54,6 @@
   gap: 20px;
   background-color: $color-white;
   transition: all 0.3s;
-  // width: 136px;
   min-width: 136px;
   max-width: min-content;
 

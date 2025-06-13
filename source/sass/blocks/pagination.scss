@@ -14,8 +14,7 @@
     border-radius: 50%;
     background-color: $color-accent;
     color: $color-white;
-
-      }
+  }
 
   @include media-tablet {
     font-size: 16px;
@@ -37,12 +36,11 @@
   }
 
   &:not(:disabled):active {
-        color: $color-white;
+    color: $color-white;
     background-color: $color-active;
   }
 
   &:disabled {
-    // background-color: $color-disabled;
     color: $color-disabled;
   }
 }

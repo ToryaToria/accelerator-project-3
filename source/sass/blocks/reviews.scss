@@ -56,23 +56,14 @@
 .reviews__slider {
   grid-area: slid;
 
-    @include media-desktop {
+  @include media-desktop {
     overflow: hidden;
-    }
+  }
 }
 
 .reviews__list {
   @include list-reset;
   display: flex;
-  // gap: 15px;
-
-  // @include media-tablet {
-  //   gap: 30px;
-  // }
-
-  // @include media-desktop {
-  //   gap: 32px;
-  // }
 }
 
 .reviews__item {

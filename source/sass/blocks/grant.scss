@@ -55,13 +55,13 @@
   p {
     @include font ($size: 14px, $line-height: 20px, $color: $color-white);
 
-  @include media-tablet {
-    font-size: 16px;
-  }
+    @include media-tablet {
+      font-size: 16px;
+    }
 
-  @include media-desktop {
-    line-height: 26px;
-  }
+    @include media-desktop {
+      line-height: 26px;
+    }
   }
 }
 
@@ -121,7 +121,6 @@
     width: 498px;
     gap: 8px;
     padding-top: 9px;
-
   }
 }
 

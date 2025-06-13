@@ -1,9 +1,6 @@
 nav {
   box-sizing: border-box;
-  // width: 290px;
   background-color: $color-accent;
-  // border-radius: 16px;
-  // padding: 35px 25px;
 }
 
 .nav__list {
@@ -12,7 +9,6 @@ nav {
   flex-direction: column;
   gap: 28px;
   padding: 35px 25px;
-
 }
 
 .nav__sublist {
@@ -32,7 +28,6 @@ nav {
   transition: all 0.3s;
   height: max-content;
   opacity: 1;
-
 }
 
 .nav__link {
@@ -70,7 +65,6 @@ nav {
     background-color: $color-white-60;
     mask-repeat: no-repeat;
     mask-position: center;
-    // mask-size: auto;
     mask-image: url("../__spritemap#sprite-corner-view");
   }
 

@@ -29,8 +29,6 @@
   display: flex;
 }
 
-
-
 .modal__btn-close {
   @include btn-reset;
   box-sizing: border-box;
@@ -51,9 +49,7 @@
     content: '';
     width: 16px;
     height: 16px;
-
   }
-
 
   @include media-tablet {
     margin-right: 0;
@@ -64,7 +60,6 @@
 
   &:focus {
     background-color: $color-overlay;
-    //  outline: auto;
   }
 
   &:hover {
@@ -150,7 +145,6 @@
 .modal__mark {
   border: 1px solid $color-accent-50;
   background-color: $color-white;
-  // background-color: red;
 }
 
 .modal__check[type="checkbox"]:checked+.modal__mark {

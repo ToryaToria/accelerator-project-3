@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 76px; // должно быть 70!!!
+  padding-top: 76px;
   padding-bottom: 70px;
   background-color: $color-accent;
 
@@ -32,7 +32,7 @@
 
 .contacts__title {
   color: $color-white;
-  margin-bottom: 35px; // должно быть 30!!!
+  margin-bottom: 35px; 
 
   @include media-tablet {
     margin-bottom: 30px;

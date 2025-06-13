@@ -30,7 +30,6 @@
   display: flex;
   gap: 12px;
   margin-bottom: 24px;
-
   overflow-x: scroll;
 
   @include media-tablet {
@@ -63,7 +62,6 @@
     padding: 14px 35px;
   }
 
-
   &:focus {
     background-color: $color-white;
   }
@@ -73,12 +71,10 @@
   }
 
   &:active {
-    // найти в стилях
     color: $color-active;
   }
 
   &:disabled {
-    // найти в стилях
     color: $color-disabled;
   }
 }
@@ -124,6 +120,8 @@
   width: 290px;
   // padding-right: 11px;
   // height: calc((100% - 20px)/2);
+
+  background-color: $color-overlay;
 
   background-position: center;
   background-size: cover;
@@ -216,7 +214,6 @@
     flex-shrink: 0;
   }
 }
-
 
 .news__item:nth-child(3n-2) {
   @include media-desktop {

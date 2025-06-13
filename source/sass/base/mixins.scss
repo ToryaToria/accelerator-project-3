@@ -25,13 +25,10 @@
   width: $width;
   height: $height;
   background-color: $background-color;
-
   mask-position: center;
   mask-repeat: no-repeat;
-
   mask-size: $mask-size;
   mask-image: $mask-image;
-
 }
 
 
@@ -94,4 +91,3 @@
   mask-image: url('../../__spritemap#sprite-angle-view');
   z-index: 5;
 }
-
