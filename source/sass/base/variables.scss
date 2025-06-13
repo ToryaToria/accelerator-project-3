@@ -37,11 +37,13 @@ $color-line: rgba(255, 255, 255, 0.2); // 20%
 $color-field-line: rgba(255, 255, 255, 0.3); // 30%
 
 $color-disabled: #A9AFB7;
+$color-disabled-20: rgba(169, 175, 183, 0.2);
+$color-disabled-50: rgba(169, 175, 183, 0.5);
+
 $color-error: #FF5E66;
 $color-error-20: rgba(255, 94, 102, 0.2);
 
 $color-active: #275699;
-
 
 // WIDTH
 $desktop-width: 1440px;

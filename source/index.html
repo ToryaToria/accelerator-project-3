@@ -863,12 +863,14 @@
       <div class="write-us__background">
         <div class="write-us__container">
           <h2 class="write-us__title subtitle">Напишите&nbsp;нам</h2>
-          <p class="write-us__text text-mini">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—&nbsp;мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
+          <p class="write-us__text text-mini">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались
+            вопросы&nbsp;—&nbsp;мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
 
           <form class="form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
             <label class="form__label" for="name-form">
               <span class="write-us__text-field form__text-field text-card">Имя</span>
-              <input class="write-us__filed form__field" type="text" id="name-form" name="name" minlength="3" pattern="^[А-Яа-яё]{1,}[А-Яа-яё0-9. -,IV`\(\)]+$">
+              <input class="write-us__filed form__field" type="text" id="name-form" name="name" minlength="3"
+                pattern="^[А-Яа-яё]{1,}[А-Яа-яё0-9. -,IV`\(\)]+$">
             </label>
 
             <label class="form__label" for="phone-form">
@@ -885,14 +887,12 @@
             <label class="write-us__text-field form__label form__label--right" for="city-form">
               <span class="write-us__filed form__text-field form__text-field--city text-card">Выберите город</span>
 
-
-              <input class="write-us__filed form__field form__field--city" type="text" list="city-options"
-                id="city-form" name="city">
-              <datalist id="city-options">
-                <option value="Москва"></option>
-                <option value="Санкт-Петербург"></option>
-                <option value="Казань"></option>
-              </datalist>
+              <select class="write-us__filed write-us__filed--city form__field form__field--city" id="city-form" name="city">
+                <option label=" " value=""></option>
+                <option value="Москва">Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Старый Крым">Старый Крым</option>
+              </select>
             </label>
 
             <label class="form__label-check" for="approval-form">
@@ -968,13 +968,13 @@
 
   <div class="page__modal">
     <div class="modal">
-      <button class="modal__btn-closer" type="button"></button>
+      <button class="modal__btn-close" type="button"></button>
       <h2 class="modal__title">Напишите нам</h2>
       <p class="modal__text">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—
         мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
 
 
-      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
         <label class="form__label" for="name-modal">
           <span class="form__text-field text-card">Имя</span>
           <input class="modal__field form__field" type="text" id="name-modal" name="name">
@@ -991,18 +991,20 @@
             name="message"></textarea>
         </label>
 
-        <label class="form__label form__label--right" for="city-modal">
-          <span class="form__text-field form__text-field--city text-card">Выберите город</span>
-          <select class="modal__field modal__field--city form__field form__field--city" name="city" id="city-modal">
-            <option value=" " selected disabled hidden></option>
-            <option value="moskow">Москва</option>
-            <option value="spb">Санкт-Петербург</option>
-            <option value="st-kr">Старый Крым</option>
-          </select>
+        <label class="form__label" for="city-modal">
+          <span class="form__text-field text-card">Выберите город</span>
+
+          <input class="modal__field modal__field--city form__field form__field--city" type="text" list="city-options" id="city-modal"
+            name="city">
+          <datalist id="city-options">
+            <option value="Москва"></option>
+            <option value="Санкт-Петербург"></option>
+            <option value="Старый Крым"></option>
+          </datalist>
         </label>
 
-        <label class="modal__check form__label-check" for="approval-modal">
-          <input class="form__check visually-hidden" type="checkbox" name="approval" id="approval-modal" required>
+        <label class="form__label-check" for="approval-modal">
+          <input class="modal__check visually-hidden" type="checkbox" name="approval" id="approval-modal">
           <span class="modal__mark form__mark"></span>
           <span class="modal__approval form__text-approval">Я&nbsp;согласен на&nbsp;обработку моих персональных
             <br class="form__br">

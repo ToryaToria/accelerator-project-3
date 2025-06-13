@@ -4,7 +4,9 @@ const btnSubmit = document.querySelectorAll('.form_button');
 function validationForm(form) {
 
   const fileds = form.querySelectorAll('.form__field');
-  const checkbox = form.querySelector('.form__check')
+  const checkbox = form.querySelector('.form__check') || form.querySelector('.modal__check');
+
+  console.log(fileds);
 
   fileds.forEach((field) => {
       if (field.value === '') {
@@ -28,6 +30,7 @@ forms.forEach((evtForm) => {
     evt.preventDefault();
 
     console.log('отправка');
+    console.log(evtForm);
     validationForm(evtForm);
 
     if (evtForm.reportValidity()) {

@@ -1,7 +1,7 @@
 const aboutBtn = document.getElementById('about__button');
 const body = document.body;
 const modal = document.querySelector('.modal')
-const buttonCloser = document.querySelector('.modal__btn-closer');
+const buttonCloser = document.querySelector('.modal__btn-close');
 
 const modalOverlay = document.querySelector('.page__modal');
 
