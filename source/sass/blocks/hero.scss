@@ -4,10 +4,6 @@
   height: 100%;
 }
 
-// .hero__slider {
-//   position: relative;
-// }
-
 .hero__list {
   @include list-reset;
   display: flex;
@@ -151,31 +147,20 @@
 
 .hero__wrapper-text {
   box-sizing: border-box;
-  // --nb-r: 14px;
-  // --nb-w: 78px;
-  // --nb-h: 36px;
-  border-bottom-left-radius: 14px;
+    border-bottom-left-radius: 14px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 
   @include media-tablet {
     flex-direction: row;
-    // align-items: flex-start;
-    // gap: 30px;
-    padding: 0;
-    // --nb-r: 30px;
-    // --nb-w: -34px;
-    // --nb-h: 75px;
-    // background-color: $color-white;
-    // width: 619px;
-    border-bottom-left-radius: 30px;
+       padding: 0;
+        border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
 
   @include media-desktop {
     width: 801px;
-    // --nb-h: 53px;
   }
 }
 
@@ -216,18 +201,13 @@
 .hero__text {
   box-sizing: border-box;
   padding: 2px 14px 15px 14px;
-  // --nb-r: 14px;
-  // --nb-w: -5px;
-  // --nb-h: 88px;
+  
   background-color: $color-white;
 
   @include media-tablet {
     width: 325px;
     padding: 0px 0px 35px 40px;
-    // --nb-r: 0px;
-    // --nb-w: 0px;
-    // --nb-h: 0px;
-  }
+      }
 
   @include media-desktop {
     width: 496px;
@@ -268,7 +248,8 @@
 }
 
 .hero__link {
-  width: 154px;
+ min-width: 154px;
+ max-width: max-content;
   text-decoration: none;
 
   @include media-tablet {

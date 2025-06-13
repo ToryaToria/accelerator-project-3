@@ -17,9 +17,7 @@
   width: 320px;
   display: grid;
   grid-template-columns: 1fr 62px;
-
   gap: 30px 0;
-  // align-items: center;
 
   grid-template-areas:
     'title arrows'
@@ -55,10 +53,10 @@
     padding-bottom: 0;
   }
 
-    @include media-desktop {
-      padding-bottom: 0;
+  @include media-desktop {
+    padding-bottom: 0;
 
-    }
+  }
 }
 
 .programs__arrows {
@@ -93,9 +91,9 @@
 .programs__slider {
   grid-area: slider;
 
-      @include media-desktop {
-      overflow: hidden;
-      }
+  @include media-desktop {
+    overflow: hidden;
+  }
 
 }
 
@@ -253,10 +251,6 @@
   }
 }
 
-.programs__button-mini {
-  flex-shrink: 0;
-}
-
 .programs__content {
   p {
     @include font ($size: 12px, $line-height: 14px);
@@ -280,11 +274,10 @@
     display: block;
     margin: 10px 0;
     width: 562px;
-    // left: 0;
-    // bottom: 11px;
     height: 2px;
     background-color: $color-overlay;
   }
+
   @include media-desktop {
     width: 1136px;
   }

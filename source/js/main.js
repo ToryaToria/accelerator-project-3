@@ -26,3 +26,5 @@ initSwiperReviews();
 
 // import { initSwiper } from './sliders/slider.js';
 // initSwiper();
+
+// import './perepolnenie.js';

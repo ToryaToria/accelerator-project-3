@@ -115,6 +115,7 @@
 .button__menu {
   @include btn-circle ($width: 46px, $height: 46px);
     transition: all 0.3s;
+    flex-shrink: 0;
 
 
   &:after {

@@ -1,6 +1,5 @@
 .header {
   position: relative;
-
 }
 
 .header__nav {
@@ -16,17 +15,12 @@
   transition: all 0.3s;
   height: 0;
   opacity: 0;
-
-
 }
 
 .header__nav--open {
-  // display: block;
   transition: all 0.3s;
-
   height: max-content;
   opacity: 1;
-
 }
 
 .header__header {
@@ -34,7 +28,6 @@
   top: 0;
   left: 0;
   right: 0;
-  // z-index: 5;
   padding-top: 19px;
   padding-bottom: 4px;
 
@@ -62,7 +55,9 @@
   gap: 20px;
   background-color: $color-white;
   transition: all 0.3s;
-  width: 136px;
+  // width: 136px;
+  min-width: 136px;
+  max-width: min-content;
 
 
   &:not(:disabled):hover {
@@ -121,6 +116,10 @@
 
   .header__menu-text {
     color: $color-white;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+    flex-grow: 0;
+
   }
 
   .button__menu {

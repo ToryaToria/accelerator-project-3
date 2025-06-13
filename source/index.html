@@ -5,23 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship</title>
+  <meta name="description" content=" Глобальный профессиональный опыт обучения за рубежом">
+
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.png" type="image/png">
+  <link rel="mask-icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 
 
   <link rel="stylesheet" href="./sass/vendor/nebo.css">
   <link rel="stylesheet" href="sass/style.scss">
+
+  <link rel="preload" href="./fonts/Manrope-Regular.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-Medium.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-Light.woff2" type="font/woff2" as="font">
 </head>
 
 <body class="page__body text-base">
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-
   <header class="header">
     <div class="header__header container">
 
-      <h1 class="visually-hidden">Gроект «Стажировка»</h1>
+      <h1 class="visually-hidden">Проект «Стажировка»</h1>
       <div class="header__wrapper">
         <div class="header__logo logo">
           <img class="logo__img" src="/__spritemap#sprite-logo-view" alt="logo" width="30" height="30">
@@ -44,19 +49,19 @@
 
             <ul class="nav__sublist nav__sublist--programs">
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#programs">Стажировки</a>
+                <a class="nav__sublink" href="#programs" tabindex="-1">Стажировки</a>
               </li>
 
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#">Волонтёрство</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Волонтёрство</a>
               </li>
 
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#">Учеба</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Учеба</a>
               </li>
 
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#">Религия</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Религия</a>
               </li>
             </ul>
           </li>
@@ -200,9 +205,7 @@
         </div>
 
         <div class="about__content about__wrapper-subtitle">
-          <!-- class="about__subtitle subtitle" -->
           <h3>Наша цель</h3>
-          <!-- class="text-mini" -->
           <p>Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов
             на&nbsp;ранних и&nbsp;средних стадиях карьеры, предоставляя им&nbsp;инструменты для&nbsp;решения сложных
             проблем, с&nbsp;которыми сталкиваются в&nbsp;мире. Цель центра&nbsp;— наделить этих людей способностью
@@ -218,9 +221,7 @@
       <ul class="about__list">
         <li class="about__item">
           <div class="about__content">
-            <!-- class="about__title-property title-property text-revers" -->
             <h4> Более 250 программ </h4>
-            <!-- class="text-ligth text-revers" -->
             <p>
               учебных и&nbsp;рабочих, разной длительностью
               от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года
@@ -289,7 +290,7 @@
                   </p>
                 </div>
 
-                <a class="programs__button-mini button-mini" href="#">
+                <a class="button-mini" href="#">
                   <span class="visually-hidden">перейти на стр. "Стажировки"</span>
                 </a>
               </div>
@@ -302,7 +303,7 @@
                   <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества</p>
                 </div>
 
-                <a class="programs__button-mini button-mini" href="#">
+                <a class="button-mini" href="#">
                   <span class="visually-hidden">перейти на стр. "Волонтёрство"</span>
                 </a>
               </div>
@@ -316,7 +317,7 @@
                   <p>Получите образование и&nbsp;измените своё будущее.</p>
                 </div>
 
-                <a class="programs__button-mini button-mini" href="#">
+                <a class="button-mini" href="#">
                   <span class="visually-hidden">перейти на стр. "Учёба"</span>
                 </a>
               </div>
@@ -335,7 +336,7 @@
                   </p>
                 </div>
 
-                <a class="programs__button-mini button-mini" href="#">
+                <a class="button-mini" href="#">
                   <span class="visually-hidden">перейти на стр. "Стажировки"</span>
                 </a>
               </div>
@@ -348,7 +349,7 @@
                   <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества</p>
                 </div>
 
-                <a class="programs__button-mini button-mini" href="#">
+                <a class="button-mini" href="#">
                   <span class="visually-hidden">перейти на стр. "Волонтёрство"</span>
                 </a>
               </div>
@@ -362,7 +363,7 @@
                   <p>Получите образование и&nbsp;измените своё будущее.</p>
                 </div>
 
-                <a class="programs__button-mini button-mini" href="#">
+                <a class="button-mini" href="#">
                   <span class="visually-hidden">перейти на стр. "Учёба"</span>
                 </a>
               </div>
@@ -473,12 +474,16 @@
               <h3 class="news__subtitle title-card">Интервью с&nbsp;участницей программы стажировки</h3>
 
               <div class="news-text-wrapper">
-                <p class="news__text-card text-card">Саша рассказывает, как&nbsp;попала в&nbsp;программу
+                <p class="news__text-card text-card">
+                  Саша рассказывает, как&nbsp;попала в&nbsp;программу
                   и&nbsp;как&nbsp;прошла
-                  6-месячная стажировка в&nbsp;ISOFound</p>
-                <button class="programs__button-mini button-mini" type="button" disabled></button>
+                  6-месячная стажировка в&nbsp;ISOFound
+                </p>
+
+                <a class="button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Саша рассказывает"</span>
+                </a>
               </div>
-              <!-- </div> -->
             </li>
 
             <li class="news__item news__item--slid2 swiper-slide">
@@ -488,7 +493,10 @@
               <div class="news-text-wrapper">
                 <p class="news__text-card text-card">Какие места посещают
                   наши студенты весной</p>
-                <button class="programs__button-mini button-mini" type="button"></button>
+
+                <a class="button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Какие места..."</span>
+                </a>
               </div>
             </li>
 
@@ -499,7 +507,10 @@
               <div class="news-text-wrapper">
                 <p class="news__text-card text-card">Программа помощи детям
                   длительностью 4&nbsp;месяца</p>
-                <button class="programs__button-mini button-mini" type="button"></button>
+
+                <a class="button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Программа помощи..."</span>
+                </a>
               </div>
             </li>
 
@@ -508,12 +519,15 @@
               <h3 class="news__subtitle title-card">Построй свою карьеру</h3>
               <div class="news-text-wrapper">
                 <p class="news__text-card text-card">Ведущие компании готовы трудоустроить выпускников стажировки</p>
-                <button class="programs__button-mini button-mini" type="button"></button>
+
+                <a class="button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "трудоустроить выпускников..."</span>
+                </a>
               </div>
             </li>
           </ul>
 
-          <div class="news__pagination-container ">
+          <div class="news__pagination-container">
             <button class="button-arrow button-arrow--left swiper-button-back-news" type="button" disabled>
               <span class="visually-hidden">назад</span>
             </button>
@@ -548,7 +562,9 @@
               <div class="faq__wrapper">
                 <p class="faq__question title-faq">Кто&nbsp;организатор? Какие сроки у&nbsp;программы?</p>
 
-                <button class="button-plus" type="button"></button>
+                <button class="button-plus" type="button">
+                  <span class="visually-hidden">открыть - закрыть вопрос</span>
+                </button>
               </div>
 
               <div class="faq__answer faq__content">
@@ -564,13 +580,13 @@
               <div class="faq__wrapper">
                 <p class="faq__question title-faq">Что&nbsp;такое грант на&nbsp;обучение?</p>
 
-                <button class="button-plus" type="button"></button>
+                <button class="button-plus" type="button">
+                  <span class="visually-hidden">открыть - закрыть вопрос</span>
+                </button>
               </div>
 
               <div class="faq__answer faq__content">
-                <p>Грант на обучение — это финансовая поддержка, которую предоставляет
-                  организатор
-                  программы обмена
+                <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена
                   студентами для оплаты учебных расходов.</p>
               </div>
             </li>
@@ -578,7 +594,11 @@
             <li class="faq__item faq__item--open" tabindex="1">
               <div class="faq__wrapper">
                 <p class="faq__question faq__question--open title-faq">Как&nbsp;определяется стоимость программы?</p>
-                <button class="faq__button button-plus button-plus--open" type="button"></button>
+
+                <button class="faq__button button-plus button-plus--open" type="button">
+                  <span class="visually-hidden">открыть - закрыть вопрос</span>
+
+                </button>
               </div>
 
               <div class="faq__answer faq__answer--open faq__content">
@@ -593,25 +613,34 @@
 
             <li class="faq__item" tabindex="1">
               <div class="faq__wrapper">
-                <p class="faq__question title-faq">Признаётся&nbsp;ли&nbsp;учёба в&nbsp;рамках проекта
-                  для дальнейшего обучения?</p>
-                <button class="faq__button button-plus" type="button"></button>
+                <p class="faq__question title-faq">
+                  Признаётся&nbsp;ли&nbsp;учёба в&nbsp;рамках проекта для дальнейшего обучения?
+                </p>
+
+                <button class="faq__button button-plus" type="button">
+                  <span class="visually-hidden">открыть - закрыть вопрос</span>
+
+                </button>
               </div>
 
               <div class="faq__answer faq__content">
-                <p>Студенты, участвующие в проекте, могут использовать полученные знания и
-                  навыки в своей
-                  будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того,
-                  многие
-                  университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
+                <p>
+                  Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей
+                  профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие
+                  университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.
+                </p>
               </div>
             </li>
 
             <li class="faq__item" tabindex="1">
               <div class="faq__wrapper">
-                <p class="faq__question title-faq">Как&nbsp;выглядит полный процесс регистрации на&nbsp;программу
-                  «Стажировка»?</p>
-                <button class="button-plus" type="button"></button>
+                <p class="faq__question title-faq">
+                  Как&nbsp;выглядит полный процесс регистрации на&nbsp;программу «Стажировка»?
+                </p>
+
+                <button class="button-plus" type="button">
+                  <span class="visually-hidden">открыть - закрыть вопрос</span>
+                </button>
               </div>
 
               <div class="faq__answer faq__content">
@@ -674,7 +703,6 @@
               </h3>
 
               <div class="reviews__content">
-                <!-- class="text-mini" -->
                 <p>
                   Я&nbsp;рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
                   Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает
@@ -804,7 +832,6 @@
         <div class="reviews__scrollbar swiper-scrollbar">
         </div>
       </div>
-      <!-- </div> -->
     </section>
 
     <section class="contacts" data-test="contacts" id="contacts">
@@ -887,7 +914,8 @@
             <label class="write-us__text-field form__label form__label--right" for="city-form">
               <span class="write-us__filed form__text-field form__text-field--city text-card">Выберите город</span>
 
-              <select class="write-us__filed write-us__filed--city form__field form__field--city" id="city-form" name="city">
+              <select class="write-us__filed write-us__filed--city form__field form__field--city" id="city-form"
+                name="city">
                 <option label=" " value=""></option>
                 <option value="Москва">Москва</option>
                 <option value="Санкт-Петербург">Санкт-Петербург</option>
@@ -951,15 +979,15 @@
 
       <ul class="footer__social">
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--vk" href="" tabindex="1"></a>
+          <a class="footer__social-link footer__social-link--vk" href="#" tabindex="1" target="_blank"></a>
         </li>
 
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--ok" href=""></a>
+          <a class="footer__social-link footer__social-link--ok" href="#" target="_blank"></a>
         </li>
 
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--reddit" href=""></a>
+          <a class="footer__social-link footer__social-link--reddit" href="#" target="_blank"></a>
         </li>
       </ul>
 
@@ -968,11 +996,15 @@
 
   <div class="page__modal">
     <div class="modal">
-      <button class="modal__btn-close" type="button"></button>
-      <h2 class="modal__title">Напишите нам</h2>
-      <p class="modal__text">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—
-        мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
+      <button class="modal__btn-close" type="button">
+        <span class="visually-hidden">открыть - закрыть модальное окно</span>
 
+      </button>
+      <h2 class="modal__title">Напишите нам</h2>
+      <p class="modal__text">
+        Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—
+        мы&nbsp;на&nbsp;них&nbsp;ответим!
+      </p>
 
       <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
         <label class="form__label" for="name-modal">
@@ -994,8 +1026,8 @@
         <label class="form__label" for="city-modal">
           <span class="form__text-field text-card">Выберите город</span>
 
-          <input class="modal__field modal__field--city form__field form__field--city" type="text" list="city-options" id="city-modal"
-            name="city">
+          <input class="modal__field modal__field--city form__field form__field--city" type="text" list="city-options"
+            id="city-modal" name="city">
           <datalist id="city-options">
             <option value="Москва"></option>
             <option value="Санкт-Петербург"></option>
@@ -1018,6 +1050,7 @@
       </form>
     </div>
   </div>
+
   <script type="module" src="js/main.js"></script>
 </body>
 

@@ -11,13 +11,13 @@ const submenu = document.querySelectorAll('.nav__sublist');
 const isEscapeKey = (evt) => evt.key === 'Escape';
 const isEnterKey = (evt) => evt.key === 'Enter';
 
-function onDocumentKeydown(evt) {
+const onDocumentKeydown = (evt) => {
   if (isEscapeKey(evt)) {
     closeMenu();
   }
 }
-
-function onDocumentClick(evt) {
+ 
+const onDocumentClick = (evt) => {
   if (evt.target === body) {
     closeMenu();
   }
@@ -49,8 +49,7 @@ const closeMenu = () => {
   });
   submenu.forEach((elem) => {
     elem.classList.remove('nav__sublist--open');
-  });    console.log('esc')
-
+  }); console.log('esc')
 
   document.removeEventListener('keydown', onDocumentKeydown);
   body.removeEventListener('click', onDocumentClick);

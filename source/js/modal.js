@@ -4,18 +4,25 @@ const modal = document.querySelector('.modal')
 const buttonCloser = document.querySelector('.modal__btn-close');
 
 const modalOverlay = document.querySelector('.page__modal');
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+const onDocumentClick = (evt) => {
+  if (evt.target === body) {
+    closeModal();
+  }
+};
+
+const onDocumentKeydown = (evt) => {
+  if (isEscapeKey(evt)) {
+    closeModal();
+  }
+}
 
 aboutBtn.addEventListener('click', () => {
   modal.classList.toggle('modal--open');
-  modalOverlay.classList.toggle('overlay');
+  body.classList.toggle('overlay');
   document.addEventListener('keydown', onDocumentKeydown);
-
-  // по клику МО закрывается. Почему клик - ВЕЗДЕ!!!
-    // modalOverlay.addEventListener('click', (e) => {
-    //   e.stopImmediatePropagation();
-    //   console.log('klik');
-    //   closeModal();
-    // }, true);
+  body.addEventListener('click', onDocumentClick);
 }
 );
 
@@ -23,24 +30,9 @@ buttonCloser.addEventListener('click', () => {
   closeModal();
 });
 
-
 const closeModal = () => {
   modal.classList.remove('modal--open');
-  modalOverlay.classList.remove('overlay');
+  body.classList.remove('overlay');
   document.removeEventListener('keydown', onDocumentKeydown);
-
-}
-
-function onDocumentClick(evt) {
-  if (evt.target === body) {
-    closeModal();
-  }
-};
-
-const isEscapeKey = (evt) => evt.key === 'Escape';
-
-function onDocumentKeydown(evt) {
-  if (isEscapeKey(evt)) {
-    closeModal();
-  }
+  body.removeEventListener('click', onDocumentClick);
 }

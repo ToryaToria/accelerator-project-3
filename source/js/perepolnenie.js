@@ -19,4 +19,6 @@ function getTextNodesIn(elem, opt_fnFilter) {
   return textNodes;
 }
 
-getTextNodesIn(document.body).forEach((item) => { item.textContent = "У меня есть несколько клиентов, которые записались ко мне на стрижку, не успев даже зайти в салон." })
+getTextNodesIn(document.body).forEach((item) => { item.textContent = "У" })
+
+// textContent = "У меня есть несколько клиентов, которые записались ко мне на стрижку, не успев даже зайти в салон." 
