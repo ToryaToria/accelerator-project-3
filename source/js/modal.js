@@ -1,9 +1,9 @@
-const aboutBtn = document.getElementById('about__button');
+const aboutBtn = document.getElementById('about-button');
 const body = document.body;
-const modal = document.querySelector('.modal')
+const modal = document.querySelector('.modal');
 const buttonCloser = document.querySelector('.modal__btn-close');
 
-const modalOverlay = document.querySelector('.page__modal');
+// const modalOverlay = document.querySelector('.page__modal');
 const isEscapeKey = (evt) => evt.key === 'Escape';
 
 const onDocumentClick = (evt) => {
@@ -16,7 +16,7 @@ const onDocumentKeydown = (evt) => {
   if (isEscapeKey(evt)) {
     closeModal();
   }
-}
+};
 
 aboutBtn.addEventListener('click', () => {
   modal.classList.toggle('modal--open');
@@ -30,7 +30,7 @@ buttonCloser.addEventListener('click', () => {
   closeModal();
 });
 
-const closeModal = () => {
+function closeModal () {
   modal.classList.remove('modal--open');
   body.classList.remove('overlay');
   document.removeEventListener('keydown', onDocumentKeydown);

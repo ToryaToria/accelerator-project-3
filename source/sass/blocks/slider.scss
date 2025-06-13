@@ -3,9 +3,11 @@
   gap: 8px;
 }
 
+
+// для тестирования грид-свайпера (УДАЛИТЬ!)
 .mySwiper {
-background-color: rgb(132, 0, 255); 
-margin-top: 100px; 
+  // background-color: rgb(132, 0, 255);
+  margin-top: 100px;
 }
 
 // .slider {
@@ -20,7 +22,7 @@ margin-top: 100px;
 // .slider-slide  {
 //   text-align: center;
 //   font-size: 18px;
-//   height: calc((100% - 30px) / 2); 
+//   height: calc((100% - 30px) / 2);
 //   width: 290px;
 //   background-color: rgb(41, 248, 76);
 // flex-grow: 0;

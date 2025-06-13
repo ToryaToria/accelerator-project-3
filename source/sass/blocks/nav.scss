@@ -5,6 +5,7 @@ nav {
 
 .nav__list {
   @include list-reset;
+
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -31,7 +32,6 @@ nav {
 }
 
 .nav__link {
-
   &:hover,
   &:focus,
   &:active {
@@ -41,6 +41,7 @@ nav {
 
 .nav__sublink {
   @include font ($size: 16px, $line-height: 100%, $weight: 500, $color: $color-white-60);
+
   text-decoration: none;
 
   &:hover,
@@ -52,13 +53,14 @@ nav {
 
 .nav__button {
   @include btn-reset;
+
   display: flex;
   align-items: center;
   gap: 10px;
 
   &::after {
     z-index: 5;
-    content: '';
+    content: "";
     display: block;
     width: 12px;
     height: 12px;

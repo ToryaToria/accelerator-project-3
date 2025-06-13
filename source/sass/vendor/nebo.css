@@ -22,7 +22,7 @@
   /* Setting default curve position (bottom right corner) */
   --_nb-curve-pos: var(--_nb-curve-pos-br);
 
-  --_nb-mask-image: 
+  --_nb-mask-image:
     linear-gradient(to bottom, #000, #000),
     linear-gradient(to bottom, #000, #000),
     linear-gradient(to bottom, #000, #000),

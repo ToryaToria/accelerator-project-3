@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
 // Base ---------------------------------
 
 @import "./base/variables";
@@ -13,34 +14,25 @@
 @import "./base/container";
 
 // Blocks ---------------------------------
-@import "./blocks/button.scss";
-@import "./blocks/button-mini.scss";
-@import "./blocks/button-arrow.scss";
-@import "./blocks/button-plus.scss";
-
-@import "./blocks/pagination.scss";
-@import "./blocks/overlay.scss";
-
+@import "./blocks/button";
+@import "./blocks/button-mini";
+@import "./blocks/button-arrow";
+@import "./blocks/button-plus";
+@import "./blocks/pagination";
+@import "./blocks/overlay";
 @import "./blocks/header";
 @import "./blocks/hero";
-
 @import "./blocks/about";
-@import "./blocks/programs.scss";
-@import "./blocks/slider.scss";
-@import "./blocks/grant.scss";
-@import "./blocks/news.scss";
-@import "./blocks/faq.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/write-us.scss";
-@import "./blocks/form.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/logo.scss";
-@import "./blocks/nav.scss";
-@import "./blocks/modal.scss";
-
-
-
-
-
-
+@import "./blocks/programs";
+@import "./blocks/slider";
+@import "./blocks/grant";
+@import "./blocks/news";
+@import "./blocks/faq";
+@import "./blocks/reviews";
+@import "./blocks/contacts";
+@import "./blocks/write-us";
+@import "./blocks/form";
+@import "./blocks/footer";
+@import "./blocks/logo";
+@import "./blocks/nav";
+@import "./blocks/modal";

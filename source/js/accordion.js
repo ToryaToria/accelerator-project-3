@@ -1,13 +1,13 @@
 const questions = document.querySelectorAll('.faq__item');
 const answers = document.querySelectorAll('.faq__answer');
-const titleQvestions = document.querySelectorAll('.faq__question')
+const titleQvestions = document.querySelectorAll('.faq__question');
 
 questions.forEach((elem, index) => {
-elem.addEventListener('click', () => {
-elem.classList.toggle('faq__item--open');
-answers[index].classList.toggle('faq__answer--open');
-titleQvestions[index].classList.toggle('faq__question--open');
+  elem.addEventListener('click', () => {
+    elem.classList.toggle('faq__item--open');
+    answers[index].classList.toggle('faq__answer--open');
+    titleQvestions[index].classList.toggle('faq__question--open');
 
-});
+  });
 
 });

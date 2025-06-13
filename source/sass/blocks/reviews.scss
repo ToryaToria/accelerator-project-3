@@ -17,17 +17,17 @@
   display: grid;
   grid-template-columns: 1fr 60px;
   grid-template-areas:
-    'head arr'
-    'slid slid';
+    "head arr"
+    "slid slid";
   gap: 30px;
 
   @include media-tablet {
     grid-template-columns: 562px 1fr;
 
     grid-template-areas:
-      'head head'
-      'slid slid'
-      'pag arr';
+      "head head"
+      "slid slid"
+      "pag  arr";
     gap: 40px;
   }
 
@@ -63,6 +63,7 @@
 
 .reviews__list {
   @include list-reset;
+
   display: flex;
 }
 
@@ -78,7 +79,7 @@
   border-radius: 16px;
 
   @include media-tablet {
-    padding: 51px 50px 50px 50px;
+    padding: 51px 50px 50px;
     width: 560px;
   }
 
@@ -95,8 +96,8 @@
 
   grid-template-columns: 60px 53px 1fr;
   grid-template-areas:
-    'ava name name'
-    'program program time';
+    "ava     name    name"
+    "program program time";
 
   margin-bottom: 25px;
 
@@ -105,8 +106,7 @@
     gap: 15px;
 
     grid-template-columns: 90px 107px 136px 1fr;
-    grid-template-areas:
-      'ava name program time';
+    grid-template-areas: "ava name program time";
   }
 
   @include media-desktop {

@@ -61,7 +61,7 @@
     }
   }
 
-   &--city {
+  &--city {
     box-sizing: border-box;
     padding-right: 40px;
     height: 52px;
@@ -69,8 +69,8 @@
     background-position: center right 21px;
     background-size: 16px 16px;
     background-repeat: no-repeat;
-   }
-  
+  }
+
   &:disabled {
     border-color: $color-white-40;
     background-color: $color-white-20;
@@ -95,7 +95,6 @@
 }
 
 .form__text-approval {
-
   @include media-tablet {
     line-height: 12px;
     margin-top: 1px;
@@ -138,9 +137,8 @@
   }
 }
 
-.form_button {
+.form__button {
   box-sizing: border-box;
-  width: fit-content;
   color: $color-white;
   width: 260px;
   margin-top: -2px;

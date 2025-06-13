@@ -123,8 +123,9 @@
               </h2>
 
               <div class="hero__wrapper-text">
-                <div class="hero__content hero__wrapper__content hero__text">
-                  <p> Погрузитесь в&nbsp;академическую
+                <div class="hero__content hero__wrapper-content hero__text">
+                  <p>
+                    Погрузитесь в&nbsp;академическую
                     программу, проходя практику
                     в&nbsp;разных городах, ощущая
                     настоящий студенческий стиль жизни!
@@ -151,7 +152,7 @@
               </h2>
 
               <div class="hero__wrapper-text">
-                <div class="hero__content  hero__wrapper__content hero__text">
+                <div class="hero__content  hero__wrapper-content hero__text">
                   <p>
                     Возможности для&nbsp;преподавания, органического сельского хозяйства, устойчивого образа жизни
                     и&nbsp;другое.
@@ -175,8 +176,9 @@
               </h2>
 
               <div class="hero__wrapper-text">
-                <div class="hero__content  hero__wrapper__content hero__text">
-                  <p> Получите незаменимый опыт работы в&nbsp;ведущих мировых компаниях и&nbsp;государственных
+                <div class="hero__content  hero__wrapper-content hero__text">
+                  <p>
+                    Получите незаменимый опыт работы в&nbsp;ведущих мировых компаниях и&nbsp;государственных
                     организациях.
                   </p>
                 </div>
@@ -211,7 +213,7 @@
             проблем, с&nbsp;которыми сталкиваются в&nbsp;мире. Цель центра&nbsp;— наделить этих людей способностью
             инициировать значимые изменения.</p>
 
-          <button class="about__button button" type="button" id="about__button">
+          <button class="about__button button" type="button" id="about-button">
             <span class="text-button">подробнее о&nbsp;проекте</span>
             <span class="button__circle"></span>
           </button>
@@ -221,7 +223,7 @@
       <ul class="about__list">
         <li class="about__item">
           <div class="about__content">
-            <h4> Более 250 программ </h4>
+            <h4>Более 250 программ</h4>
             <p>
               учебных и&nbsp;рабочих, разной длительностью
               от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года
@@ -259,11 +261,11 @@
     </section>
 
     <section class="programs slider" data-test="programs" id="programs">
-      <div class="container programs_grid">
+      <div class="container programs__grid">
         <h2 class="programs__title title-section">Программы</h2>
 
         <a class="programs__link button" href="#">
-          <span class="text-button"> все&nbsp;программы</span>
+          <span class="text-button">все&nbsp;программы</span>
           <span class="button__circle"></span>
         </a>
 
@@ -403,7 +405,6 @@
       ./img/arrow_tabl_2x.jpg 2x" width="678" height="375">
 
             <source type="image/webp" srcset="./img/arrow_mob-deskt_1x.webp 1x,
-            
           ./img/arrow_mob-deskt_2x.webp 2x" width="290" height="200">
 
             <img class="grant__img" src="./img/arrow_mob-deskt_1x.jpg" srcset="./img/arrow_mob-deskt_2x.jpg 2x"
@@ -445,23 +446,23 @@
         <h2 class="news__title title-section">Новости и&nbsp;материалы</h2>
 
         <ul class="news__list-tags">
-          <li class="">
+          <li>
             <button class="news__item-tags news__item-tags--current text-button" type="button">Общее</button>
           </li>
 
-          <li class="">
+          <li>
             <button class="news__item-tags text-button" type="button">Волонтёрство</button>
           </li>
 
-          <li class="">
+          <li>
             <button class="news__item-tags text-button" type="button">Стажировки</button>
           </li>
 
-          <li class="">
+          <li>
             <button class="news__item-tags text-button" type="button">Карьера</button>
           </li>
 
-          <li class="">
+          <li>
             <button class="news__item-tags text-button" type="button">Путешествия</button>
           </li>
         </ul>
@@ -894,24 +895,24 @@
             вопросы&nbsp;—&nbsp;мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
 
           <form class="form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-            <label class="form__label" for="name-form">
+            <label class="form__label">
               <span class="write-us__text-field form__text-field text-card">Имя</span>
               <input class="write-us__filed form__field" type="text" id="name-form" name="name" minlength="3"
                 pattern="^[А-Яа-яё]{1,}[А-Яа-яё0-9. -,IV`\(\)]+$">
             </label>
 
-            <label class="form__label" for="phone-form">
+            <label class="form__label">
               <span class="write-us__text-field form__text-field text-card">Телефон</span>
               <input class="write-us__filed form__field" type="tel" id="phone-form" name="phone" minlength="14">
             </label>
 
-            <label class="form__label" for="message-form">
+            <label class="form__label">
               <span class="write-us__text-field form__text-field text-card">Ваше сообщение</span>
               <textarea class="write-us__filed form__field form__field--textarea" name="message" id="message-form"
                 rows="5"></textarea>
             </label>
 
-            <label class="write-us__text-field form__label form__label--right" for="city-form">
+            <label class="write-us__text-field form__label form__label--right">
               <span class="write-us__filed form__text-field form__text-field--city text-card">Выберите город</span>
 
               <select class="write-us__filed write-us__filed--city form__field form__field--city" id="city-form"
@@ -923,7 +924,7 @@
               </select>
             </label>
 
-            <label class="form__label-check" for="approval-form">
+            <label class="form__label-check">
               <input class="form__check visually-hidden" type="checkbox" name="approval" id="approval-form">
               <span class="write-us__mark form__mark"></span>
               <span class="write-us__approval form__text-approval">Я&nbsp;согласен на&nbsp;обработку моих персональных
@@ -931,7 +932,7 @@
                 данных</span>
             </label>
 
-            <button class="form_button button button--dark text-button" type="submit">
+            <button class="form__button button button--dark text-button" type="submit">
               <span class="text-button">отправить</span>
               <span class="button__circle"></span>
             </button>
@@ -975,23 +976,23 @@
 
       <a class="footer__confidentiality text-other" href="#">Политика конфиденциальности</a>
 
-      <p class="footer_copy text-other">Стажировка © 2023&nbsp;Все&nbsp;права защищены</p>
+      <p class="footer__copy text-other">Стажировка © 2023&nbsp;Все&nbsp;права защищены</p>
 
       <ul class="footer__social">
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--vk" href="#" target="_blank">
+          <a class="footer__social-link footer__social-link--vk" href="#" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
 
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--ok" href="#" target="_blank">
+          <a class="footer__social-link footer__social-link--ok" href="#" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Одноклассники</span>
           </a>
         </li>
 
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--reddit" href="#" target="_blank">
+          <a class="footer__social-link footer__social-link--reddit" href="#" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">reddit</span>
           </a>
         </li>
@@ -1013,23 +1014,23 @@
       </p>
 
       <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-        <label class="form__label" for="name-modal">
+        <label class="form__label">
           <span class="form__text-field text-card">Имя</span>
           <input class="modal__field form__field" type="text" id="name-modal" name="name">
         </label>
 
-        <label class="form__label" for="phone-modal">
+        <label class="form__label">
           <span class="form__text-field text-card">Телефон</span>
           <input class="modal__field form__field" type="tel" id="phone-modal" name="phone">
         </label>
 
-        <label class="form__label" for="message-modal">
+        <label class="form__label">
           <span class="form__text-field text-card">Ваше сообщение</span>
           <textarea class="modal__field form__field form__field--textarea" rows="5" id="message-modal"
             name="message"></textarea>
         </label>
 
-        <label class="form__label" for="city-modal">
+        <label class="form__label">
           <span class="form__text-field text-card">Выберите город</span>
 
           <input class="modal__field modal__field--city form__field form__field--city" type="text" list="city-options"
@@ -1041,7 +1042,7 @@
           </datalist>
         </label>
 
-        <label class="form__label-check" for="approval-modal">
+        <label class="form__label-check">
           <input class="modal__check visually-hidden" type="checkbox" name="approval" id="approval-modal">
           <span class="modal__mark form__mark"></span>
           <span class="modal__approval form__text-approval">Я&nbsp;согласен на&nbsp;обработку моих персональных
@@ -1049,7 +1050,7 @@
             данных</span>
         </label>
 
-        <button class="modal__button form_button button text-button" type="submit">
+        <button class="modal__button form__button button text-button" type="submit">
           <span class="text-button">отправить</span>
           <span class="button__circle"></span>
         </button>
@@ -1059,5 +1060,4 @@
 
   <script type="module" src="js/main.js"></script>
 </body>
-
 </html>

@@ -104,7 +104,9 @@
   counter-reset: myCounter;
 
   color: $color-white;
+
   @include list-reset;
+
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -166,7 +168,6 @@
 
   @include media-tablet {
     padding: 30px 31px 30px 25px;
-    margin-left: 0;
     margin-top: 15px;
     width: 305px;
     margin-left: 20px;

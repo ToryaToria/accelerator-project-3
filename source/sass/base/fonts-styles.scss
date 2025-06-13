@@ -23,6 +23,7 @@
 
 .text-button {
   @include font ($size: 12px, $line-height: 100%, $color: $color-title, $weight: 500);
+
   text-transform: uppercase;
   letter-spacing: 0.02em;
 
@@ -72,7 +73,7 @@
   }
 }
 
-.title-card { //часть
+.title-card { // часть
   @include font ($size: 16px, $line-height: 18px, $color: $color-title);
 
   @include media-tablet {
@@ -91,7 +92,7 @@
 
   @include media-tablet {
     font-size: 14px;
-    line-height: 20px; 
+    line-height: 20px;
   }
 
   @include media-desktop {
@@ -101,22 +102,23 @@
 
 .text-data {
   @include font ($size: 12px, $line-height: 100%, $color: $color-white-80);
+
   letter-spacing: 0.012em;
 
   text-transform: uppercase;
 }
 
-.title-faq { //перенести в faq
+.title-faq { // перенести в faq
   @include font ($size: 16px, $line-height: 18px, $color: $color-title);
 
   @include media-tablet {
     font-size: 22px;
-    line-height: 26px; 
+    line-height: 26px;
   }
 
   @include media-desktop {
     font-size: 28px;
-    line-height: 34px; 
+    line-height: 34px;
   }
 }
 
@@ -125,7 +127,7 @@
 
   @include media-tablet {
     font-size: 20px;
-    line-height: 24px; 
+    line-height: 24px;
   }
 
   @include media-desktop {
@@ -137,20 +139,21 @@
   @include font ($size: 12px, $line-height: 14px);
 
   @include media-tablet {
-    line-height: 12px; 
+    line-height: 12px;
   }
 
   @include media-desktop {
     font-size: 14px;
-    line-height: 18px; 
+    line-height: 18px;
   }
 }
 
 .text-nav {
-@include font ($size: 16px, $line-height: 100%,$weight: 500, $color: $color-white-70);
+  @include font ($size: 16px, $line-height: 100%,$weight: 500, $color: $color-white-70);
+
   text-transform: uppercase;
   letter-spacing: 0.02em;
-text-decoration: none; 
+  text-decoration: none;
 }
 
 // ++++++++++++++++=

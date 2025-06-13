@@ -6,6 +6,7 @@
 
 .hero__list {
   @include list-reset;
+
   display: flex;
 }
 
@@ -29,72 +30,72 @@
   &--slid1 {
     background-image:
       image-set(url("../../img/hero1_mob_1x.webp") 1x type("image/webp"),
-        url("../..img/hero1_mob_1x.jpg") 1x,
-        url("../../img/hero1_mob_2x.webp") 2x type("image/webp"),
-        url("../../img/hero1_mob_2x.jpg") 2x);
+      url("../..img/hero1_mob_1x.jpg") 1x,
+      url("../../img/hero1_mob_2x.webp") 2x type("image/webp"),
+      url("../../img/hero1_mob_2x.jpg") 2x);
 
     @include media-tablet {
       background-image:
         image-set(url("../../img/hero1_tabl_1x.webp") 1x type("image/webp"),
-          url("../..img/hero1_tabl_1x.jpg") 1x,
-          url("../../img/hero1_tabl_2x.webp") 2x type("image/webp"),
-          url("../../img/hero1_tabl_2x.jpg") 2x);
+        url("../..img/hero1_tabl_1x.jpg") 1x,
+        url("../../img/hero1_tabl_2x.webp") 2x type("image/webp"),
+        url("../../img/hero1_tabl_2x.jpg") 2x);
     }
 
     @include media-desktop {
       background-image:
         image-set(url("../../img/hero1_deskt_1x.webp") 1x type("image/webp"),
-          url("../..img/hero1_deskt_1x.jpg") 1x,
-          url("../../img/hero1_deskt_2x.webp") 2x type("image/webp"),
-          url("../../img/hero1_deskt_2x.jpg") 2x);
+        url("../..img/hero1_deskt_1x.jpg") 1x,
+        url("../../img/hero1_deskt_2x.webp") 2x type("image/webp"),
+        url("../../img/hero1_deskt_2x.jpg") 2x);
     }
   }
 
   &--slid2 {
     background-image:
       image-set(url("../../img/hero2_mob_1x.webp") 1x type("image/webp"),
-        url("../..img/hero2_mob_1x.jpg") 1x,
-        url("../../img/hero2_mob_2x.webp") 2x type("image/webp"),
-        url("../../img/hero2_mob_2x.jpg") 2x);
+      url("../..img/hero2_mob_1x.jpg") 1x,
+      url("../../img/hero2_mob_2x.webp") 2x type("image/webp"),
+      url("../../img/hero2_mob_2x.jpg") 2x);
 
     @include media-tablet {
       background-image:
         image-set(url("../../img/hero2_tabl_1x.webp") 1x type("image/webp"),
-          url("../..img/hero2_tabl_1x.jpg") 1x,
-          url("../../img/hero2_tabl_2x.webp") 2x type("image/webp"),
-          url("../../img/hero2_tabl_2x.jpg") 2x);
+        url("../..img/hero2_tabl_1x.jpg") 1x,
+        url("../../img/hero2_tabl_2x.webp") 2x type("image/webp"),
+        url("../../img/hero2_tabl_2x.jpg") 2x);
     }
 
     @include media-desktop {
       background-image:
         image-set(url("../../img/hero2_deskt_1x.webp") 1x type("image/webp"),
-          url("../..img/hero2_deskt_1x.jpg") 1x,
-          url("../../img/hero2_deskt_2x.webp") 2x type("image/webp"),
-          url("../../img/hero2_deskt_2x.jpg") 2x);
+        url("../..img/hero2_deskt_1x.jpg") 1x,
+        url("../../img/hero2_deskt_2x.webp") 2x type("image/webp"),
+        url("../../img/hero2_deskt_2x.jpg") 2x);
     }
   }
 
   &--slid3 {
     background-image:
       image-set(url("../../img/hero3_mob_1x.webp") 1x type("image/webp"),
-        url("../..img/hero3_mob_1x.jpg") 1x,
-        url("../../img/hero3_mob_2x.webp") 2x type("image/webp"),
-        url("../../img/hero3_mob_2x.jpg") 2x);
+      url("../..img/hero3_mob_1x.jpg") 1x,
+      url("../../img/hero3_mob_2x.webp") 2x type("image/webp"),
+      url("../../img/hero3_mob_2x.jpg") 2x);
 
     @include media-tablet {
       background-image:
         image-set(url("../../img/hero3_tabl_1x.webp") 1x type("image/webp"),
-          url("../..img/hero1_tabl_3x.jpg") 1x,
-          url("../../img/hero3_tabl_2x.webp") 2x type("image/webp"),
-          url("../../img/hero3_tabl_2x.jpg") 2x);
+        url("../..img/hero1_tabl_3x.jpg") 1x,
+        url("../../img/hero3_tabl_2x.webp") 2x type("image/webp"),
+        url("../../img/hero3_tabl_2x.jpg") 2x);
     }
 
     @include media-desktop {
       background-image:
         image-set(url("../../img/hero3_deskt_1x.webp") 1x type("image/webp"),
-          url("../..img/hero1_deskt_3x.jpg") 1x,
-          url("../../img/hero3_deskt_2x.webp") 2x type("image/webp"),
-          url("../../img/hero3_deskt_2x.jpg") 2x);
+        url("../..img/hero1_deskt_3x.jpg") 1x,
+        url("../../img/hero3_deskt_2x.webp") 2x type("image/webp"),
+        url("../../img/hero3_deskt_2x.jpg") 2x);
     }
   }
 
@@ -116,11 +117,11 @@
   box-sizing: border-box;
   width: 290px;
   padding: 47px 15px 14px 14px;
-  background-color: $color-white;
 
   --nb-r: 16px;
   --nb-w: 179px;
   --nb-h: -4px;
+
   border-top-left-radius: 11px;
   border-bottom-right-radius: 16px;
 
@@ -129,9 +130,11 @@
   @include media-tablet {
     width: 659px;
     padding: 71px 69px 24px 40px;
+
     --nb-r: 23px;
     --nb-w: 512px;
     --nb-h: -5px;
+
     border-top-left-radius: 20px;
     border-bottom-right-radius: 30px;
     background-color: $color-white;
@@ -139,7 +142,8 @@
 
   @include media-desktop {
     width: 968px;
-    padding: 80px 50px 30px 50px;
+    padding: 80px 50px 30px;
+
     --nb-w: 820px;
     --nb-h: -6px;
   }
@@ -174,14 +178,16 @@
   }
 }
 
-.hero__wrapper__content {
+.hero__wrapper-content {
   position: relative;
   width: 267px;
   border-bottom-right-radius: 16px;
 
   &::after {
-    content: '';
+    content: "";
+
     @include angle($width: 8px, $height: 10px, $bg-color: $color-white);
+
     position: absolute;
     top: -1px;
     right: -8px;
@@ -200,12 +206,12 @@
 
 .hero__text {
   box-sizing: border-box;
-  padding: 2px 14px 15px 14px;
+  padding: 2px 14px 15px;
   background-color: $color-white;
 
   @include media-tablet {
     width: 325px;
-    padding: 0px 0px 35px 40px;
+    padding: 0 0 35px 40px;
   }
 
   @include media-desktop {
@@ -224,8 +230,10 @@
   width: 184px;
 
   &::after {
-    content: '';
+    content: "";
+
     @include angle($width: 10px, $height: 10px, $bg-color: $color-white);
+
     position: absolute;
     top: 0;
     right: -10px;
@@ -261,11 +269,12 @@
   }
 }
 
-//======hero__pagination=====
+// ======hero__pagination=====
 
 .hero__pagination {
   position: absolute;
   left: 24px;
+
   // bottom: 340px;
   z-index: 10;
   padding: 5px;
@@ -283,6 +292,7 @@
 
 .hero__pagination-button {
   @include btn-reset;
+
   box-sizing: border-box;
   display: flex;
   width: 8px;
@@ -290,7 +300,7 @@
   border: 2px solid $color-accent;
   border-radius: 50%;
 
-  @media (width >=768px) {
+  @media (width >= 768px) {
     width: 12px;
     height: 12px;
   }

@@ -1,11 +1,13 @@
 .button-arrow {
   padding: 0;
+
   @include btn-circle ($width: 22px, $height: 22px, $background-color: transparent);
+
   cursor: pointer;
   transition: all 0.3s;
 
-  &:after {
-    @include btn-icon ($background-color: $color-accent, $mask-image: url('../../__spritemap#sprite-arrow-view'));
+  &::after {
+    @include btn-icon ($background-color: $color-accent, $mask-image: url("../../__spritemap#sprite-arrow-view"));
   }
 
   &--left {
@@ -17,7 +19,7 @@
   }
 
   &:not(:disabled):hover {
-    &:after {
+    &::after {
       background-color: $color-accent-70;
     }
   }
@@ -25,7 +27,7 @@
   &:not(:disabled):active {
     background-color: $color-white;
 
-    &:after {
+    &::after {
       background-color: $color-accent-70;
     }
   }
@@ -33,7 +35,7 @@
   &:disabled {
     cursor: default;
 
-    &:after {
+    &::after {
       background-color: $color-disabled;
     }
   }

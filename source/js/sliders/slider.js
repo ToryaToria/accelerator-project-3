@@ -1,12 +1,12 @@
-import Swiper from "swiper";
-import {  Pagination, Grid } from "swiper/modules";
+import Swiper from 'swiper';
+import { Pagination, Grid } from 'swiper/modules';
 
 import 'swiper/css/pagination';
 
 
 const initSwiper = () => {
 
-  const swiper = new Swiper(".mySwiper", {
+  const swiper = new Swiper('.mySwiper', {
     modules: [ Pagination, Grid],
     allowTouchMove: true, // свайп и мышка
     autoHeight: false,
@@ -26,10 +26,10 @@ const initSwiper = () => {
     spaceBetween: 15,
 
     pagination: {
-      el: ".swiper-paginat",
+      el: '.swiper-paginat',
       clickable: true,
     },
   });
-}
+};
 
 export { initSwiper };

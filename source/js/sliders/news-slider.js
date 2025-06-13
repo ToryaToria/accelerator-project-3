@@ -1,6 +1,6 @@
 // https://swiperjs.com/get-started#installation
-import Swiper from "swiper";
-import { Navigation, Scrollbar, Pagination, Grid } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation, Scrollbar, Pagination, Grid } from 'swiper/modules';
 // import 'swiper/css';
 // import 'swiper/css/pagination';
 // import 'swiper/css/scrollbar';
@@ -27,29 +27,28 @@ const initSwiperNews = () => {
     // slidesPerGroup :2,
 
     grid: {
-        rows: 2,
-        // fill: 'column',
-      },
+      rows: 2,
+      // fill: 'column',
+    },
 
     navigation: {
       nextEl: '.swiper-button-next-news',
       prevEl: '.swiper-button-back-news',
     },
-      breakpoints: {
+    breakpoints: {
       768: {
         spaceBetween: 30,
       },
-       1440: {
+      1440: {
         spaceBetween: 32,
       },}
 
   });
 
-  swiperNews.on('slideChange', () => {
-    console.log('slider change');
-    console.log(swiperNews.activeIndex);
-  });
-}
+  // swiperNews.on('slideChange', () => {
+  //   console.log('slider change');
+  //   console.log(swiperNews.activeIndex);
+  // });
+};
 
 export { initSwiperNews };
-

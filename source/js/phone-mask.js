@@ -7,10 +7,9 @@ fieldPhone.forEach((field) => {
       const inputLength = field.value.length;
 
 
-
       field.value = '+7 ';
       if (inputLength > 1) {
-       field.value += value.substring(1, 4);
+        field.value += value.substring(1, 4);
       }
       if (inputLength >= 4) {
         field.value += ` ${value.substring(4, 7)}`;
@@ -21,11 +20,11 @@ fieldPhone.forEach((field) => {
       if (inputLength >= 9) {
         field.value += `${value.substring(9, 11)}`;
       }
-      console.log(inputLength);
+      // console.log(inputLength);
       // console.log(field.value);
     });
 
-    
+
   };
 
   field.addEventListener('input', inputPhoneField);
@@ -42,6 +41,4 @@ fieldPhone.forEach((field) => {
       field.value = '';
     }
   };
-})
-
-
+});

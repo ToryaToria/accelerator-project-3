@@ -1,12 +1,14 @@
 .button-mini {
   padding: 0;
+
   @include btn-circle;
+
   cursor: pointer;
-  transition: all 0.3s;  
+  transition: all 0.3s;
   flex-shrink: 0;
 
-  &:after {
-    @include btn-icon ($mask-image: url('../../__spritemap#sprite-arr-view'));
+  &::after {
+    @include btn-icon ($mask-image: url("../../__spritemap#sprite-arr-view"));
   }
 
   &:not(:disabled):focus {
@@ -34,7 +36,7 @@
     background-color: $color-disabled;
     cursor: default;
 
-    &:after {
+    &::after {
       background-color: $color-white-60;
     }
   }

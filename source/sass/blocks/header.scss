@@ -10,7 +10,7 @@
   margin-top: 4px;
   z-index: 15;
   margin-left: auto;
- 
+
   transition: all 0.3s;
   height: 0;
   opacity: 0;
@@ -90,12 +90,11 @@
     .button__menu {
       background-color: $color-disabled;
 
-      &:after {
+      &::after {
         background-color: $color-white-60;
       }
     }
   }
-
 }
 
 .header__button--open {
@@ -117,7 +116,6 @@
     text-overflow: ellipsis;
     flex-shrink: 1;
     flex-grow: 0;
-
   }
 
   .button__menu {
@@ -125,8 +123,9 @@
 
     &::after {
       background-color: $color-accent;
+
       @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent,
-        $mask-image: url('../../__spritemap#sprite-cross-view'));
+      $mask-image: url("../../__spritemap#sprite-cross-view"));
     }
   }
 
@@ -155,5 +154,6 @@
 
 .header__menu-text {
   @include font ($size: 14px, $line-height: 100%, $weight: 500, $color: $color-accent);
+
   text-transform: uppercase;
 }

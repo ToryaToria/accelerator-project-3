@@ -7,7 +7,7 @@
   }
 
   @include media-desktop {
-    padding-top: 70px; 
+    padding-top: 70px;
     padding-bottom: 60px;
   }
 }
@@ -74,6 +74,7 @@
 
 .about__list {
   @include list-reset;
+
   padding: 42px 20px 40px 0;
   background-color: $color-accent;
   border-radius: 20px;
@@ -99,7 +100,7 @@
   box-sizing: border-box;
 
   margin-left: 20px;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px;
   border: 1px solid $color-white;
   border-radius: 16px;
 
@@ -107,7 +108,7 @@
     position: absolute;
     top: -23px;
     left: -21px;
-    content: '';
+    content: "";
     display: block;
     width: 42px;
     height: 42px;
@@ -115,7 +116,7 @@
     background-position: center;
     background-size: 18px 22px;
     background-repeat: no-repeat;
-    background-image: url('../../__spritemap#sprite-star-view');
+    background-image: url("../../__spritemap#sprite-star-view");
   }
 
   @include media-tablet {
@@ -155,6 +156,7 @@
 
   h4 {
     @include font ($size: 16px, $line-height: 20px, $color: $color-white);
+
     text-transform: uppercase;
     letter-spacing: 0.01em;
 
@@ -185,7 +187,7 @@
   }
 }
 
-.about__title+.about__content {
+.about__title + .about__content {
   p {
     @include font ($size: 16px, $line-height: 22px);
 
