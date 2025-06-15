@@ -1,7 +1,7 @@
 // https://swiperjs.com/get-started#installation
 import Swiper from 'swiper';
 import { Navigation, Scrollbar } from 'swiper/modules';
-// import 'swiper/css';
+import 'swiper/css';
 // import 'swiper/css/pagination';
 // import 'swiper/css/scrollbar';
 
@@ -23,7 +23,7 @@ const initSwiperPrograms = () => {
     breakpoints: {
       768: {
         spaceBetween: 30,
-        slidesPerView: '2',
+        slidesPerView: 'auto',
 
         scrollbar: {
           el: '.programs__scrollbar',
@@ -38,7 +38,7 @@ const initSwiperPrograms = () => {
         allowTouchMove: false,
         grabCursor: false,
         slidesPerView: '3',
-        spaceBetween: 28,
+        spaceBetween: '22',
 
         scrollbar: {
           el: '.programs__scrollbar',

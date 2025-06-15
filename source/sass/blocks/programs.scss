@@ -33,12 +33,14 @@
       "title  button button"
       "slider slider slider"
       "pagin  pagin  arrows";
+
+    padding-right: 0;
   }
 
   @include media-desktop {
     width: 1440px;
-        gap: 42px 0;
-
+    gap: 42px 0;
+    padding-right: 100px;
   }
 }
 
@@ -68,7 +70,12 @@
   @include media-tablet {
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 45px;
   }
+
+    @include media-desktop {
+    margin-right: 0;
+    }
 }
 
 .programs__link {
@@ -85,14 +92,27 @@
     justify-self: end;
     padding-left: 31px;
     gap: 32px;
+    margin-right: 45px;
+  }
+
+  @include media-desktop {
+    margin-right: 0;
   }
 }
 
 .programs__slider {
   grid-area: slider;
+  width: 290px;
+
+  @include media-tablet {
+    width: 100%;
+
+  }
 
   @include media-desktop {
     overflow: hidden;
+    // width: 1240px;
+
   }
 }
 
@@ -102,7 +122,20 @@
   display: flex;
 }
 
-.programs__item {
+.programs__item.swiper-slide {
+    width: 290px;
+ flex-shrink: 0;
+  flex-grow: 0;
+    @include media-tablet {
+        width: 324px;
+  }
+
+  @include media-desktop {
+    width: 392px;
+}
+}
+
+.programs__item--wrapper {
   position: relative;
   box-sizing: border-box;
   min-height: 400px;
@@ -113,8 +146,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: end;
-  flex-shrink: 0;
-  flex-grow: 0;
+ 
   overflow: hidden;
 
   border-radius: 12px;
@@ -124,48 +156,48 @@
   &--slid1 {
     background-image:
       image-set(url("../../img/program1_mob_1x.webp") 1x type("image/webp"),
-      url("../../img/program1_mob_1x.jpg") 1x,
-      url("../../img/program1_mob_2x.webp") 2x type("image/webp"),
-      url("../../img/program1_mob_2x.jpg") 2x);
+        url("../../img/program1_mob_1x.jpg") 1x,
+        url("../../img/program1_mob_2x.webp") 2x type("image/webp"),
+        url("../../img/program1_mob_2x.jpg") 2x);
 
     @include media-desktop {
       background-image:
         image-set(url("../../img/program1_desktop_1x.webp") 1x type("image/webp"),
-        url("../../img/program1_desktop_1x.jpg") 1x,
-        url("../../img/program1_desktop_2x.webp") 2x type("image/webp"),
-        url("../../img/program1_desktop_2x.jpg") 2x);
+          url("../../img/program1_desktop_1x.jpg") 1x,
+          url("../../img/program1_desktop_2x.webp") 2x type("image/webp"),
+          url("../../img/program1_desktop_2x.jpg") 2x);
     }
   }
 
   &--slid2 {
     background-image:
       image-set(url("../../img/program2_mob_1x.webp") 1x type("image/webp"),
-      url("../../img/program2_mob_1x.jpg") 1x,
-      url("../../img/program2_mob_2x.webp") 2x type("image/webp"),
-      url("../../img/program2_mob_2x.jpg") 2x);
+        url("../../img/program2_mob_1x.jpg") 1x,
+        url("../../img/program2_mob_2x.webp") 2x type("image/webp"),
+        url("../../img/program2_mob_2x.jpg") 2x);
 
     @include media-desktop {
       background-image:
         image-set(url("../../img/program2_desktop_1x.webp") 1x type("image/webp"),
-        url("../../img/program2_desktop_1x.jpg") 1x,
-        url("../../img/program2_desktop_2x.webp") 2x type("image/webp"),
-        url("../../img/program2_desktop_2x.jpg") 2x);
+          url("../../img/program2_desktop_1x.jpg") 1x,
+          url("../../img/program2_desktop_2x.webp") 2x type("image/webp"),
+          url("../../img/program2_desktop_2x.jpg") 2x);
     }
   }
 
   &--slid3 {
     background-image:
       image-set(url("../../img/program3_mob_1x.webp") 1x type("image/webp"),
-      url("../../img/program3_mob_1x.jpg") 1x,
-      url("../../img/program3_mob_2x.webp") 2x type("image/webp"),
-      url("../../img/program3_mob_2x.jpg") 2x);
+        url("../../img/program3_mob_1x.jpg") 1x,
+        url("../../img/program3_mob_2x.webp") 2x type("image/webp"),
+        url("../../img/program3_mob_2x.jpg") 2x);
 
     @include media-desktop {
       background-image:
         image-set(url("../../img/program3_desktop_1x.webp") 1x type("image/webp"),
-        url("../../img/program3_desktop_1x.jpg") 1x,
-        url("../../img/program3_desktop_2x.webp") 2x type("image/webp"),
-        url("../../img/program3_desktop_2x.jpg") 2x);
+          url("../../img/program3_desktop_1x.jpg") 1x,
+          url("../../img/program3_desktop_2x.webp") 2x type("image/webp"),
+          url("../../img/program3_desktop_2x.jpg") 2x);
     }
   }
 
@@ -217,7 +249,8 @@
   }
 
   @include media-desktop {
-    min-width: 212px;
+    min-width: 194px;
+    padding-right: 12px;
     padding-bottom: 2px;
   }
 }

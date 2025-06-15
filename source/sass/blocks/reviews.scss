@@ -29,10 +29,13 @@
       "slid slid"
       "pag  arr";
     gap: 40px;
+
+    padding-right: 0;
   }
 
   @include media-desktop {
     grid-template-columns: 1136px 1fr;
+    padding-right: 100px;
   }
 }
 
@@ -51,10 +54,19 @@
   justify-self: end;
   margin-top: -2px;
   margin-bottom: 4px;
+
+  @include media-tablet {
+    margin-right: 45px;
+  }
+
+  @include media-desktop {
+    margin-right: 0;
+  }
 }
 
 .reviews__slider {
   grid-area: slid;
+  width: 100%;
 
   @include media-desktop {
     overflow: hidden;
@@ -68,11 +80,21 @@
 }
 
 .reviews__item {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.reviews__item.swiper-slide {
+    @include media-tablet {
+    width: 560px;
+    }
+}
+
+.reviews__item--wrapper {
   box-sizing: border-box;
   padding: 30px 15px;
 
-  flex-grow: 0;
-  flex-shrink: 0;
+
   width: 290px;
 
   border: 2px solid $color-accent;
@@ -86,6 +108,7 @@
   @include media-desktop {
     padding: 50px 48px 50px 50px;
     width: 604px;
+    height: 100%;
   }
 }
 

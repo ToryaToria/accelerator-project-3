@@ -14,6 +14,9 @@ const initSwiperReviews = () => {
     spaceBetween: 15,
     slidesPerView: '1',
 
+        autoHeight: false,
+
+
     navigation: {
       nextEl: '.swiper-button-next-reviews',
       prevEl: '.swiper-button-back-reviews',
