@@ -13,7 +13,7 @@ const initSwiper = () => {
     slidesPerView: 1,
     // grid: {
     //   rows: 2,
-    //   fill: 'column',
+    //   fill: 'column',  
     // },
     loop: false,
     // updateOnWindowResize: true,

@@ -25,34 +25,38 @@
   }
 }
 
-.news__list-tags {
+.news__list-tabs {
   @include list-reset;
 
   display: flex;
-  gap: 12px;
+  // gap: 12px;
   margin-bottom: 24px;
-  overflow-x: scroll;
+  // overflow-x: scroll;
 
   @include media-tablet {
     margin-bottom: 30px;
-    gap: 10px;
+    // gap: 10px;
   }
 
   @include media-desktop {
     width: 720px;
     margin: 0 auto 40px;
+        gap: 10px;
   }
 }
 
-.news__item-tags {
+.news__item-tabs {
   box-sizing: border-box;
   padding: 10px 14px;
   border: 2px solid transparent;
   border-radius: 20px;
   background-color: transparent;
+  color: $color-accent-60;
 
   &--current {
     border: 2px solid $color-accent;
+      color: $color-accent;
+
   }
 
   @include media-tablet {
@@ -111,6 +115,7 @@
     flex-wrap: nowrap;
     margin-bottom: 40px;
     gap: 32px;
+    overflow: hidden;
 
     // height: auto;
   }

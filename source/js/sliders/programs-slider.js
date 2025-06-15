@@ -38,7 +38,7 @@ const initSwiperPrograms = () => {
         allowTouchMove: false,
         grabCursor: false,
         slidesPerView: '3',
-        spaceBetween: 30,
+        spaceBetween: 28,
 
         scrollbar: {
           el: '.programs__scrollbar',

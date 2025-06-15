@@ -19,6 +19,7 @@
   }
 
   &:not(:disabled):focus {
+    outline: none;
     .button__circle {
       transform: rotate(45deg);
     }

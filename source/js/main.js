@@ -7,7 +7,6 @@ import './main-menu.js';
 import './modal.js';
 
 import './accordion.js';
-// import './footer-tabindex.js';
 import './phone-mask.js';
 import './form-valid.js';
 
@@ -20,6 +19,9 @@ initSwiperPrograms();
 
 import {initSwiperReviews} from './sliders/reviwes-slider.js';
 initSwiperReviews();
+
+import {initSwiperNewsTags } from './sliders/news-tabs-slider.js';
+initSwiperNewsTags();
 
 // import {initSwiperNews } from './sliders/news-slider.js';
 // initSwiperNews();

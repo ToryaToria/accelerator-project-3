@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="./sass/vendor/nebo.css">
   <link rel="stylesheet" href="sass/style.scss">
 
-  <link rel="preload" href="./fonts/Manrope-Regular.woff2" type="font/woff2" as="font">
+  <!-- <link rel="preload" href="./fonts/Manrope-Regular.woff2" type="font/woff2" as="font">
   <link rel="preload" href="./fonts/Manrope-Medium.woff2" type="font/woff2" as="font">
-  <link rel="preload" href="./fonts/Manrope-Light.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-Light.woff2" type="font/woff2" as="font"> -->
 </head>
 
 <body class="page__body text-base">
   <header class="header">
-    <div class="header__header container">
+    <div class="header__container container">
 
       <h1 class="visually-hidden">Проект «Стажировка»</h1>
       <div class="header__wrapper">
@@ -49,19 +49,19 @@
 
             <ul class="nav__sublist nav__sublist--programs">
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#programs" tabindex="-1">Стажировки</a>
+                <a class="nav__sublink" href="#programs">Стажировки</a>
               </li>
 
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#" tabindex="-1">Волонтёрство</a>
+                <a class="nav__sublink" href="#">Волонтёрство</a>
               </li>
 
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#" tabindex="-1">Учеба</a>
+                <a class="nav__sublink" href="#">Учеба</a>
               </li>
 
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#" tabindex="-1">Религия</a>
+                <a class="nav__sublink" href="#">Религия</a>
               </li>
             </ul>
           </li>
@@ -203,7 +203,6 @@
           <div class="about__content">
             <p>«Стажировка» — совместный проект правительств и&nbsp;волонтёрских бригад.</p>
           </div>
-
         </div>
 
         <div class="about__content about__wrapper-subtitle">
@@ -252,9 +251,12 @@
 
         <li class="about__item">
           <div class="about__content">
-            <h4>от&nbsp;4 200&nbsp;$ <br>до&nbsp;8 400&nbsp;$
+            <h4>
+              от&nbsp;4 200&nbsp;$ <br>до&nbsp;8 400&nbsp;$
             </h4>
-            <p>грант всем участникам для&nbsp;комфортного прохождения программы</p>
+            <p>
+              грант всем участникам для&nbsp;комфортного прохождения программы
+            </p>
           </div>
         </li>
       </ul>
@@ -444,28 +446,30 @@
     <section class="news" data-test="news" id="news">
       <div class="container">
         <h2 class="news__title title-section">Новости и&nbsp;материалы</h2>
+        <div class="news__tabs-container swiper">
+          <ul class="news__list-tabs swiper-wrapper">
+            <li class="swiper-slide">
+              <button class="news__item-tabs news__item-tabs--current text-button" type="button">Общее</button>
+            </li>
 
-        <ul class="news__list-tags">
-          <li>
-            <button class="news__item-tags news__item-tags--current text-button" type="button">Общее</button>
-          </li>
+            <li class="swiper-slide">
+              <button class="news__item-tabs text-button" type="button">Волонтёрство</button>
+            </li>
 
-          <li>
-            <button class="news__item-tags text-button" type="button">Волонтёрство</button>
-          </li>
+            <li class="swiper-slide">
+              <button class="news__item-tabs text-button" type="button">Стажировки</button>
+            </li>
 
-          <li>
-            <button class="news__item-tags text-button" type="button">Стажировки</button>
-          </li>
+            <li class="swiper-slide">
+              <button class="news__item-tabs text-button" type="button">Карьера</button>
+            </li>
 
-          <li>
-            <button class="news__item-tags text-button" type="button">Карьера</button>
-          </li>
+            <li class="swiper-slide">
+              <button class="news__item-tabs text-button" type="button">Путешествия</button>
+            </li>
+          </ul>
+        </div>
 
-          <li>
-            <button class="news__item-tags text-button" type="button">Путешествия</button>
-          </li>
-        </ul>
 
         <div class="news__slider swiper">
           <ul class="news__list swiper-wrapper">
@@ -526,6 +530,67 @@
                 </a>
               </div>
             </li>
+
+            <!-- дополнительные слайды -->
+
+            <!-- <li class="news__item news__item--slid1 swiper-slide">
+              <time class="news__data text-data" datetime="2023-03-23">23/03/2023</time>
+
+              <h3 class="news__subtitle title-card">Интервью-2 с&nbsp;участницей программы стажировки</h3>
+
+              <div class="news-text-wrapper">
+                <p class="news__text-card text-card">
+                  Саша рассказывает, как&nbsp;попала в&nbsp;программу
+                  и&nbsp;как&nbsp;прошла
+                  6-месячная стажировка в&nbsp;ISOFound
+                </p>
+
+                <a class="button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Саша рассказывает"</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="news__item news__item--slid2 swiper-slide">
+
+              <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
+              <h3 class="news__subtitle title-card">Путешеству-2 по&nbsp;миру</h3>
+              <div class="news-text-wrapper">
+                <p class="news__text-card text-card">Какие места посещают
+                  наши студенты весной</p>
+
+                <a class="button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Какие места..."</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="news__item news__item--slid3 swiper-slide">
+
+              <time class="news__data text-data" datetime="2023-03-17">17/03/2023</time>
+              <h3 class="news__subtitle title-card">Новая-2 программа волонтёрства</h3>
+              <div class="news-text-wrapper">
+                <p class="news__text-card text-card">Программа помощи детям
+                  длительностью 4&nbsp;месяца</p>
+
+                <a class="button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "Программа помощи..."</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="news__item news__item--slid4 swiper-slide">
+              <time class="news__data text-data" datetime="2023-03-10">10/03/2023</time>
+              <h3 class="news__subtitle title-card">Построй-2 свою карьеру</h3>
+              <div class="news-text-wrapper">
+                <p class="news__text-card text-card">Ведущие компании готовы трудоустроить выпускников стажировки</p>
+
+                <a class="button-mini" href="#">
+                  <span class="visually-hidden">перейти на стр. "трудоустроить выпускников..."</span>
+                </a>
+              </div>
+            </li> -->
+
           </ul>
 
           <div class="news__pagination-container">
@@ -1060,4 +1125,5 @@
 
   <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

@@ -5,7 +5,7 @@ const nav = document.querySelector('.nav');
 const navLink = document.querySelectorAll('.nav__link');
 const navSubLink = document.querySelectorAll('.nav__sublink');
 
-const btnNav = document.querySelectorAll('.nav__button');
+const btnNavs = document.querySelectorAll('.nav__button');
 const submenu = document.querySelectorAll('.nav__sublist');
 
 const isEscapeKey = (evt) => evt.key === 'Escape';
@@ -31,7 +31,7 @@ btnMenu.addEventListener('click', () => {
   body.classList.toggle('overlay');
   nav.classList.toggle('header__nav--open');
 
-  btnNav.forEach((elem) => {
+  btnNavs.forEach((elem) => {
     elem.classList.remove('nav__button--open');
   });
   submenu.forEach((elem) => {
@@ -44,7 +44,7 @@ function closeMenu () {
   body.classList.remove('overlay');
   nav.classList.remove('header__nav--open');
 
-  btnNav.forEach((elem) => {
+  btnNavs.forEach((elem) => {
     elem.classList.remove('nav__button--open');
   });
   submenu.forEach((elem) => {
@@ -68,7 +68,7 @@ navSubLink.forEach((elem) => {
   });
 });
 
-btnNav.forEach((el, index) => {
+btnNavs.forEach((el, index) => {
   const i = index;
 
   el.addEventListener('click', () => {

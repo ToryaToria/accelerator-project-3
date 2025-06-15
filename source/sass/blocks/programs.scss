@@ -8,7 +8,7 @@
   }
 
   @include media-desktop {
-    padding-top: 60px;
+    padding-top: 62px;
     padding-bottom: 60px;
   }
 }
@@ -37,6 +37,8 @@
 
   @include media-desktop {
     width: 1440px;
+        gap: 42px 0;
+
   }
 }
 

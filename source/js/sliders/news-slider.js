@@ -38,6 +38,15 @@ const initSwiperNews = () => {
     breakpoints: {
       768: {
         spaceBetween: 30,
+        slidesPerView: 2,
+    // slidesPerColumn: 2,
+    // slidesPerGroup :2,
+
+    grid: {
+      rows: 2,
+      // fill: 'column',
+    },
+
       },
       1440: {
         spaceBetween: 32,
