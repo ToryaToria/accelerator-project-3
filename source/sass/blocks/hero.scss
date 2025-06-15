@@ -118,9 +118,9 @@
   width: 290px;
   padding: 47px 15px 14px 14px;
 
-  --nb-r: 16px;
-  --nb-w: 179px;
-  --nb-h: -4px;
+  --nb-r: 11px;
+  --nb-w: 188px;
+  --nb-h: 5px;
 
   border-top-left-radius: 11px;
   border-bottom-right-radius: 16px;
@@ -245,6 +245,7 @@
     width: 268px;
 
     padding: 0 40px 44px 30px;
+  border-bottom-right-radius: 30px;
 
     &::after {
       width: 26px;
@@ -252,7 +253,12 @@
       right: -26px;
     }
   }
+  @include media-desktop {
+      width: 279px;
+  }
+
 }
+
 
 .hero__link {
   min-width: 154px;
@@ -277,12 +283,14 @@
 
   // bottom: 340px;
   z-index: 10;
-  padding: 5px;
+  padding: 3px 5px 5px 7px;
   display: flex;
   gap: 12px;
 
   @include media-tablet {
     left: 60px;
+      padding: 5px;
+
   }
 
   @include media-desktop {

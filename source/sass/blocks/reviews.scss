@@ -85,9 +85,9 @@
 }
 
 .reviews__item.swiper-slide {
-    @include media-tablet {
+  @include media-tablet {
     width: 560px;
-    }
+  }
 }
 
 .reviews__item--wrapper {
@@ -133,7 +133,10 @@
   }
 
   @include media-desktop {
-    grid-template-columns: 90px 153px 136px 1fr;
+    // grid-template-columns: 90px 153px 126px 1fr;
+    grid-template-areas: "ava name  program time";
+
+    grid-template-columns: 90px 63px 228px 78px;
   }
 }
 
@@ -153,10 +156,28 @@
 
 .reviews__program {
   grid-area: program;
+
+  &--lola {
+    @include media-desktop {
+      margin-left: 92px;
+    }
+  }
+
+  &--david {
+    @include media-desktop {
+      margin-left: 111px;
+    }
+  }
 }
 
 .reviews__time {
   grid-area: time;
+
+  &--david {
+    @include media-desktop {
+      margin-left: 9px;
+    }
+  }
 }
 
 .reviews__data {

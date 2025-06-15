@@ -48,7 +48,7 @@
   box-sizing: border-box;
   grid-area: title;
   margin-right: auto;
-  padding-top: 2px;
+  padding-top: 5px;
   padding-bottom: 2px;
 
   @include media-tablet {
@@ -75,6 +75,7 @@
 
     @include media-desktop {
     margin-right: 0;
+    margin-top: -2px;
     }
 }
 
@@ -298,12 +299,13 @@
 }
 
 .programs__scrollbar {
+  box-sizing: border-box;
   display: none;
 
   @include media-tablet {
     grid-area: pagin;
     display: block;
-    margin: 10px 0;
+    margin: 8px 0 10px 0;
     width: 562px;
     height: 2px;
     background-color: $color-overlay;

@@ -37,6 +37,10 @@
   @include media-tablet {
     margin-bottom: 30px;
   }
+
+  @include media-desktop {
+    margin-right: 10px;
+  }
 }
 
 .contacts__list {
@@ -52,6 +56,7 @@
     margin-top: 1px;
     flex-direction: row;
     gap: 21px;
+    flex-wrap: wrap;
   }
 
   @include media-desktop {
@@ -65,6 +70,16 @@
 
   @include media-tablet {
     margin-bottom: 23px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 17px;
+  }
+
+  &--address {
+    @include media-desktop {
+      margin-bottom: 23px;
+    }
   }
 }
 
@@ -86,6 +101,7 @@
 
   &--link {
     position: relative;
+    line-height: 17px;
 
     &::after {
       position: absolute;

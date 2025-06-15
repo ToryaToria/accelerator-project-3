@@ -143,6 +143,16 @@
   &--open {
     color: $color-white;
   }
+
+  &--padding-right {
+    @include media-tablet {
+      padding-right: 126px;
+    }
+
+    @include media-desktop {
+      padding-right: 0;
+    }
+  }
 }
 
 .faq__content {

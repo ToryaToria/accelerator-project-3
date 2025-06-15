@@ -20,8 +20,8 @@ initSwiperPrograms();
 import {initSwiperReviews} from './sliders/reviwes-slider.js';
 initSwiperReviews();
 
-// import {initSwiperNewsTags } from './sliders/news-tabs-slider.js';
-// // initSwiperNewsTags();
+import {initSwiperNewsTags } from './sliders/news-tabs-slider.js';
+initSwiperNewsTags();
 
 import {initSwiperNews } from './sliders/news-slider.js';
 initSwiperNews();

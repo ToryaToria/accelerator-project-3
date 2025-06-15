@@ -1,14 +1,14 @@
 .write-us {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 44px;
   background-color: $color-bg-light;
 
   @include media-tablet {
-    padding: 50px 58px;
+    padding: 50px 58px 54px 58px;
   }
 
   @include media-desktop {
-    padding: 60px 100px;
+    padding: 60px 100px 64px 100px;
   }
 }
 
@@ -84,7 +84,7 @@
 }
 
 .write-us__text {
-  color: $color-white;
+  color: $color-bg-light;
   margin-bottom: 21px;
 
   @include media-tablet {
@@ -126,7 +126,7 @@
 
 .write-us__mark {
   border: 1px solid $color-white-70;
-  background-color: transparent;
+  background-color: $color-white;
 }
 
 .form__check[type="checkbox"]:checked + .write-us__mark {
