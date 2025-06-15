@@ -8,28 +8,31 @@
 .mySwiper {
   // background-color: rgb(132, 0, 255);
   margin-top: 100px;
+
+  width: 100%;
+  height: 440px;
 }
 
-// .slider {
-//   width: 100%;
-//   height: 240px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background-color: aqua;
-//   display: flex;
-// }
+.slider {
+  // width: 100%;
+  // height: 240px;
+  // margin-left: auto;
+  // margin-right: auto;
+  background-color: aqua;
+  display: flex;
+}
 
-// .slider-slide  {
-//   text-align: center;
-//   font-size: 18px;
-//   height: calc((100% - 30px) / 2);
-//   width: 290px;
-//   background-color: rgb(41, 248, 76);
-// flex-grow: 0;
-// flex-shrink: 0;
+.slider-slide  {
+  text-align: center;
+  font-size: 18px;
+  // height: calc((100% - 30px) / 2);
+  // width: 290px;
+  background-color: rgb(41, 248, 76);
+flex-grow: 0;
+flex-shrink: 0;
 
-//   /* Center slide text vertically */
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
