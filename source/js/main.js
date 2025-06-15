@@ -3,28 +3,28 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
-// import './main-menu.js';
-// import './modal.js';
+import './main-menu.js';
+import './modal.js';
 
-// import './accordion.js';
-// import './phone-mask.js';
-// import './form-valid.js';
+import './accordion.js';
+import './phone-mask.js';
+import './form-valid.js';
 
 
-// import {initSwiperHero} from './sliders/hero-slider.js';
-// initSwiperHero();
+import {initSwiperHero} from './sliders/hero-slider.js';
+initSwiperHero();
 
-// import {initSwiperPrograms} from './sliders/programs-slider.js';
-// initSwiperPrograms();
+import {initSwiperPrograms} from './sliders/programs-slider.js';
+initSwiperPrograms();
 
-// import {initSwiperReviews} from './sliders/reviwes-slider.js';
-// initSwiperReviews();
+import {initSwiperReviews} from './sliders/reviwes-slider.js';
+initSwiperReviews();
 
-// import {initSwiperNewsTags } from './sliders/news-tabs-slider.js';
+import {initSwiperNewsTags } from './sliders/news-tabs-slider.js';
 // initSwiperNewsTags();
 
-// import {initSwiperNews } from './sliders/news-slider.js';
-// initSwiperNews();
+import {initSwiperNews } from './sliders/news-slider.js';
+initSwiperNews();
 
-import { initSwiper } from './sliders/slider.js';
-initSwiper();
+// import { initSwiper } from './sliders/slider.js';
+// initSwiper();

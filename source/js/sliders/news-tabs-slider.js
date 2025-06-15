@@ -1,7 +1,5 @@
 import Swiper from 'swiper';
 
-console.log('tabs')
-
 const initSwiperNewsTags = () => {
 new Swiper('.news__tabs-container', {
     loop: false, // незациклен
