@@ -1,5 +1,4 @@
 .title-hero {
-  // перенести в .hero ???
   @include font ($size: 22px, $line-height: 26px, $color: $color-title);
 
   @include media-tablet {
@@ -78,12 +77,12 @@
 
   @include media-tablet {
     font-size: 20px;
-    line-height: 24px; // у programm - 14???
+    line-height: 24px; 
   }
 
   @include media-desktop {
     font-size: 24px;
-    line-height: 26px; // у programm - 17???
+    line-height: 26px; 
   }
 }
 
@@ -108,7 +107,7 @@
   text-transform: uppercase;
 }
 
-.title-faq { // перенести в faq
+.title-faq { 
   @include font ($size: 16px, $line-height: 18px, $color: $color-title);
 
   @include media-tablet {
@@ -135,7 +134,7 @@
   }
 }
 
-.text-other { // другое - - перенести а тег???
+.text-other { 
   @include font ($size: 12px, $line-height: 14px);
 
   @include media-tablet {

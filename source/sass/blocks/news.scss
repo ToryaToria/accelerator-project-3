@@ -41,7 +41,6 @@
   margin-bottom: 23px;
   padding-right: 15px;
 
-
   @include media-tablet {
     margin-bottom: 30px;
     padding-right: 0;
@@ -139,7 +138,6 @@
   color: $color-accent-60;
 }
 
-// ===================
 .news__slider {
   height: 590px;
   padding-right: 15px;
@@ -155,8 +153,6 @@
     height: 400px;
   }
 }
-
-// ===========
 
 .news__list {
   box-sizing: border-box;

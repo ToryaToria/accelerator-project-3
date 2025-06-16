@@ -133,9 +133,7 @@
   }
 
   @include media-desktop {
-    // grid-template-columns: 90px 153px 126px 1fr;
     grid-template-areas: "ava name program time";
-
     grid-template-columns: 90px 63px 228px 78px;
   }
 }
