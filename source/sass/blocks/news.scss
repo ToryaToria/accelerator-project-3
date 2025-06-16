@@ -15,15 +15,12 @@
 .news__container {
   padding-right: 0;
 
-  // background-color: red;
-
   @include media-tablet {
     padding-right: 45px;
   }
 
   @include media-desktop {
     padding-right: 100px;
-
   }
 }
 
@@ -48,7 +45,6 @@
   @include media-tablet {
     margin-bottom: 30px;
     padding-right: 0;
-
   }
 
   @include media-desktop {
@@ -59,9 +55,10 @@
 .news__item-tabs.swiper-slide {
   width: unset;
   min-width: 75px;
-    @include media-desktop {
+
+  @include media-desktop {
     width: 120px;
-    }
+  }
 }
 
 .news__list-tabs {
@@ -106,9 +103,8 @@
 
     @include media-desktop {
       width: 120px;
-    padding: 13px 0 15px 0;
-    text-align: center;
-
+      padding: 13px 0 15px 0;
+      text-align: center;
     }
   }
 
@@ -117,11 +113,9 @@
   }
 
   @include media-desktop {
-padding: 13px 0 14px 0;
+    padding: 13px 0 14px 0;
     text-align: center;
-        width: 120px;
-
-
+    width: 120px;
   }
 
   &:focus {
@@ -148,7 +142,6 @@ padding: 13px 0 14px 0;
 .news__slider {
   height: 590px;
   padding-right: 15px;
-
   margin-bottom: 24px;
 
   @include media-tablet {
@@ -163,51 +156,11 @@ padding: 13px 0 14px 0;
   }
 }
 
-.news__item.swiper-slide:nth-child(2n + 1) {
-  height: 330px !important;
-
-  /* верхняя строка */
-  @include media-tablet {
-    height: 350px !important;
-  }
-
-  @include media-desktop {
-    height: 400px !important;
-  }
-}
-
-.news__item.swiper-slide:nth-child(2n) {
-  height: 240px !important;
-
-  /* нижняя строка */
-  @include media-tablet {
-    height: 350px !important;
-  }
-
-  @include media-desktop {
-    height: 400px !important;
-  }
-}
-
 .news__list {
   box-sizing: border-box;
   @include list-reset;
   display: flex;
 }
-
-.news__item {
-  @include media-tablet {
-    // &.news__item--order2 {
-    //   order: -3;
-    // }
-
-    //  &.news__item--order3 {
-    //   order: -1;
-    // }
-  }
-}
-
-
 
 .news__item--wrapper {
   box-sizing: border-box;
@@ -296,26 +249,13 @@ padding: 13px 0 14px 0;
 
   @include media-tablet {
     width: 324px;
-    min-height: 350px;
+    height: 350px;
   }
 
   @include media-desktop {
     width: 286px;
-    min-height: 400px;
-    // flex-shrink: 0;
+    height: 400px;
   }
-}
-
-.news__item.swiper-slide.swiper-slide-active {
-  @include media-desktop {
-    width: 604px !important;
-    background-color: red;
-  }
-}
-
-.news__item.swiper-slide {
-  width: 286px !important;
-
 }
 
 .news__item:nth-child(3n-2) .news__item--wrapper {
@@ -444,11 +384,8 @@ padding: 13px 0 14px 0;
   justify-content: space-between;
   padding-right: 15px;
 
-  // background-color: aqua;
-
   @include media-tablet {
     padding-right: 0;
-
   }
 }
 
