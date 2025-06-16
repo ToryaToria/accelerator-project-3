@@ -203,24 +203,6 @@
     }
   }
 
-  &--vk {
-    &::after {
-      mask-image: url("../__spritemap#sprite-vk-view");
-    }
-  }
-
-  &--ok {
-    &::after {
-      mask-image: url("../__spritemap#sprite-ok-view");
-    }
-  }
-
-  &--reddit {
-    &::after {
-      mask-image: url("../__spritemap#sprite-reddit-view");
-    }
-  }
-
   @include media-tablet {
     width: 36px;
     height: 36px;
@@ -243,5 +225,23 @@
 
   &:active {
     background-color: $color-active;
+  }
+}
+
+.footer__social-link--vk {
+  &::after {
+    mask-image: url("../__spritemap#sprite-vk-view");
+  }
+}
+
+.footer__social-link--ok {
+  &::after {
+    mask-image: url("../__spritemap#sprite-ok-view");
+  }
+}
+
+.footer__social-link--reddit {
+  &::after {
+    mask-image: url("../__spritemap#sprite-reddit-view");
   }
 }

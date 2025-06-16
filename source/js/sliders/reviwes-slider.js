@@ -14,7 +14,7 @@ const initSwiperReviews = () => {
     spaceBetween: 15,
     slidesPerView: '1',
 
-        autoHeight: false,
+    autoHeight: false,
 
 
     navigation: {

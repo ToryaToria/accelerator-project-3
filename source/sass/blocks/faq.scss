@@ -59,37 +59,38 @@
   @include media-desktop {
     padding: 42px 42px 38px 40px;
   }
+}
 
-  &:focus,
-  &:hover {
+.faq__item:focus,
+.faq__item:hover {
+  background-color: $color-white;
+
+  .button-plus {
     background-color: $color-white;
-
-    .button-plus {
-      background-color: $color-white;
-
-      &::after {
-        background-color: $color-accent;
-      }
-    }
   }
 
-  &:active {
-    background-color: $color-white;
-
-    .faq__question {
-      color: $color-active;
-    }
-
-    .button-plus {
-      background-color: $color-active;
-      border-color: $color-active;
-
-      &::after {
-        background-color: $color-white;
-      }
-    }
+  .button-plus::after {
+    background-color: $color-accent;
   }
 }
+
+.faq__item:active {
+  background-color: $color-white;
+
+  .faq__question {
+    color: $color-active;
+  }
+
+  .button-plus {
+    background-color: $color-active;
+    border-color: $color-active;
+  }
+
+  .button-plus::after {
+    background-color: $color-white;
+  }
+}
+
 
 .faq__item--open {
   background-color: $color-accent;
@@ -102,10 +103,10 @@
     .button-plus {
       background-color: $color-accent;
       border-color: $color-white;
+    }
 
-      &::after {
-        background-color: $color-white;
-      }
+    .button-plus::after {
+      background-color: $color-white;
     }
   }
 
@@ -119,10 +120,10 @@
     .button-plus {
       background-color: $color-white;
       border-color: $color-active;
+    }
 
-      &::after {
-        background-color: $color-active;
-      }
+    .button-plus::after {
+      background-color: $color-active;
     }
   }
 }

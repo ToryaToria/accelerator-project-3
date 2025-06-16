@@ -73,10 +73,10 @@
     margin-right: 45px;
   }
 
-    @include media-desktop {
+  @include media-desktop {
     margin-right: 0;
     margin-top: -2px;
-    }
+  }
 }
 
 .programs__link {
@@ -107,13 +107,12 @@
 
   @include media-tablet {
     width: 100%;
-
   }
 
   @include media-desktop {
     overflow: hidden;
-    // width: 1240px;
 
+    // width: 1240px;
   }
 }
 
@@ -124,19 +123,20 @@
 }
 
 .programs__item.swiper-slide {
-    width: 290px;
- flex-shrink: 0;
+  width: 290px;
+  flex-shrink: 0;
   flex-grow: 0;
-    @include media-tablet {
-        width: 324px;
+
+  @include media-tablet {
+    width: 324px;
   }
 
   @include media-desktop {
     width: 392px;
-}
+  }
 }
 
-.programs__item--wrapper {
+.programs__item-wrapper {
   position: relative;
   box-sizing: border-box;
   min-height: 400px;
@@ -147,7 +147,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: end;
- 
+
   overflow: hidden;
 
   border-radius: 12px;
@@ -157,48 +157,48 @@
   &--slid1 {
     background-image:
       image-set(url("../../img/program1_mob_1x.webp") 1x type("image/webp"),
-        url("../../img/program1_mob_1x.jpg") 1x,
-        url("../../img/program1_mob_2x.webp") 2x type("image/webp"),
-        url("../../img/program1_mob_2x.jpg") 2x);
+      url("../../img/program1_mob_1x.jpg") 1x,
+      url("../../img/program1_mob_2x.webp") 2x type("image/webp"),
+      url("../../img/program1_mob_2x.jpg") 2x);
 
     @include media-desktop {
       background-image:
         image-set(url("../../img/program1_desktop_1x.webp") 1x type("image/webp"),
-          url("../../img/program1_desktop_1x.jpg") 1x,
-          url("../../img/program1_desktop_2x.webp") 2x type("image/webp"),
-          url("../../img/program1_desktop_2x.jpg") 2x);
+        url("../../img/program1_desktop_1x.jpg") 1x,
+        url("../../img/program1_desktop_2x.webp") 2x type("image/webp"),
+        url("../../img/program1_desktop_2x.jpg") 2x);
     }
   }
 
   &--slid2 {
     background-image:
       image-set(url("../../img/program2_mob_1x.webp") 1x type("image/webp"),
-        url("../../img/program2_mob_1x.jpg") 1x,
-        url("../../img/program2_mob_2x.webp") 2x type("image/webp"),
-        url("../../img/program2_mob_2x.jpg") 2x);
+      url("../../img/program2_mob_1x.jpg") 1x,
+      url("../../img/program2_mob_2x.webp") 2x type("image/webp"),
+      url("../../img/program2_mob_2x.jpg") 2x);
 
     @include media-desktop {
       background-image:
         image-set(url("../../img/program2_desktop_1x.webp") 1x type("image/webp"),
-          url("../../img/program2_desktop_1x.jpg") 1x,
-          url("../../img/program2_desktop_2x.webp") 2x type("image/webp"),
-          url("../../img/program2_desktop_2x.jpg") 2x);
+        url("../../img/program2_desktop_1x.jpg") 1x,
+        url("../../img/program2_desktop_2x.webp") 2x type("image/webp"),
+        url("../../img/program2_desktop_2x.jpg") 2x);
     }
   }
 
   &--slid3 {
     background-image:
       image-set(url("../../img/program3_mob_1x.webp") 1x type("image/webp"),
-        url("../../img/program3_mob_1x.jpg") 1x,
-        url("../../img/program3_mob_2x.webp") 2x type("image/webp"),
-        url("../../img/program3_mob_2x.jpg") 2x);
+      url("../../img/program3_mob_1x.jpg") 1x,
+      url("../../img/program3_mob_2x.webp") 2x type("image/webp"),
+      url("../../img/program3_mob_2x.jpg") 2x);
 
     @include media-desktop {
       background-image:
         image-set(url("../../img/program3_desktop_1x.webp") 1x type("image/webp"),
-          url("../../img/program3_desktop_1x.jpg") 1x,
-          url("../../img/program3_desktop_2x.webp") 2x type("image/webp"),
-          url("../../img/program3_desktop_2x.jpg") 2x);
+        url("../../img/program3_desktop_1x.jpg") 1x,
+        url("../../img/program3_desktop_2x.webp") 2x type("image/webp"),
+        url("../../img/program3_desktop_2x.jpg") 2x);
     }
   }
 
@@ -305,7 +305,7 @@
   @include media-tablet {
     grid-area: pagin;
     display: block;
-    margin: 8px 0 10px 0;
+    margin: 8px 0 10px;
     width: 562px;
     height: 2px;
     background-color: $color-overlay;

@@ -12,8 +12,6 @@
   overflow: hidden;
 
   outline: auto;
-  background-color: aqua;
-  // z-index: 1;
 
   @include media-tablet {
     padding-top: 30px;
@@ -45,8 +43,8 @@
   max-width: min-content;
 
   @include media-tablet {
-   padding-top: 4px;
-  padding-bottom: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   &:not(:disabled):hover {
@@ -58,10 +56,10 @@
 
     .button__menu {
       background-color: $color-white;
+    }
 
-      &::after {
-        background-color: $color-accent;
-      }
+    .button__menu::after {
+      background-color: $color-accent;
     }
   }
 
@@ -80,10 +78,10 @@
 
     .button__menu {
       background-color: $color-disabled;
+    }
 
-      &::after {
-        background-color: $color-white-60;
-      }
+    .button__menu::after {
+      background-color: $color-white-60;
     }
   }
 }
@@ -111,35 +109,35 @@
 
   .button__menu {
     background-color: $color-white;
-
-    &::after {
-      background-color: $color-accent;
-
-      @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent,
-      $mask-image: url("../../__spritemap#sprite-cross-view"));
-    }
   }
 
-  &:not(:disabled):hover {
+  .button__menu::after {
+    background-color: $color-accent;
+
+    @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent,
+    $mask-image: url("../../__spritemap#sprite-cross-view"));
+  }
+}
+
+.header__button--open:not(:disabled):hover {
+  background-color: $color-white;
+
+  .header__menu-text {
+    color: $color-accent;
+  }
+
+  .button__menu {
+    background-color: $color-accent;
+  }
+
+  .button__menu::after {
     background-color: $color-white;
-
-    .header__menu-text {
-      color: $color-accent;
-    }
-
-    .button__menu {
-      background-color: $color-accent;
-
-      &::after {
-        background-color: $color-white;
-      }
-    }
   }
+}
 
-  &:not(:disabled):active {
-    .header__menu-text {
-      color: $color-accent-70;
-    }
+.header__button--open:not(:disabled):active {
+  .header__menu-text {
+    color: $color-accent-70;
   }
 }
 

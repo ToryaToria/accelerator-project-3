@@ -13,4 +13,3 @@ questions.forEach((elem, index) => {
     byttonIcons[index].classList.toggle('button-plus--open');
   });
 });
- 

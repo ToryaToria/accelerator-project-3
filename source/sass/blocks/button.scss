@@ -20,6 +20,7 @@
 
   &:not(:disabled):focus {
     outline: none;
+
     .button__circle {
       transform: rotate(45deg);
     }
@@ -36,10 +37,10 @@
     .button__circle {
       transform: rotate(45deg);
       background-color: $color-white;
+    }
 
-      &::after {
-        background-color: $color-accent;
-      }
+    .button__circle::after {
+      background-color: $color-accent;
     }
   }
 
@@ -49,23 +50,23 @@
       color: $color-white-70;
     }
   }
+}
 
-  &:disabled,
-  &--disabled {
-    border-color: $color-disabled;
-    cursor: default;
+.button:disabled,
+.button--disabled {
+  border-color: $color-disabled;
+  cursor: default;
 
-    .text-button {
-      color: $color-disabled;
-    }
+  .text-button {
+    color: $color-disabled;
+  }
 
-    .button__circle {
-      background-color: $color-disabled;
+  .button__circle {
+    background-color: $color-disabled;
+  }
 
-      &::after {
-        background-color: $color-white-60;
-      }
-    }
+  .button__circle::after {
+    background-color: $color-white-60;
   }
 }
 
@@ -79,10 +80,10 @@
 
   .button__circle {
     background-color: $color-white;
+  }
 
-    &::after {
-      background-color: $color-accent;
-    }
+  .button__circle::after {
+    background-color: $color-accent;
   }
 
   &:not(:disabled):hover {
@@ -95,10 +96,10 @@
     .button__circle {
       transform: rotate(45deg);
       background-color: $color-accent;
+    }
 
-      &::after {
-        background-color: $color-white;
-      }
+    .button__circle::after {
+      background-color: $color-white;
     }
   }
 

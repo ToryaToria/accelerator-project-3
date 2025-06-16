@@ -17,9 +17,9 @@
   <link rel="stylesheet" href="./sass/vendor/nebo.css">
   <link rel="stylesheet" href="sass/style.scss">
 
-  <!-- <link rel="preload" href="./fonts/Manrope-Regular.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-Regular.woff2" type="font/woff2" as="font">
   <link rel="preload" href="./fonts/Manrope-Medium.woff2" type="font/woff2" as="font">
-  <link rel="preload" href="./fonts/Manrope-Light.woff2" type="font/woff2" as="font"> -->
+  <link rel="preload" href="./fonts/Manrope-Light.woff2" type="font/woff2" as="font">
 </head>
 
 <body class="page__body text-base">
@@ -38,7 +38,7 @@
         </button>
       </div>
 
-      <nav class="header__nav nav">
+      <nav class="header__nav nav" aria-label="основная навигация сайта">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link text-nav" href="#about">О проекте</a>
@@ -290,7 +290,7 @@
         <div class="programs__slider swiper">
           <ul class="programs__list swiper-wrapper">
             <li class="programs__item swiper-slide">
-              <div class="programs__item--wrapper programs__item--wrapper--slid1">
+              <div class="programs__item-wrapper programs__item-wrapper--slid1">
                 <h3 class="programs__title-card title-card">Стажировки</h3>
 
                 <div class="programs__card-wrapper">
@@ -309,7 +309,7 @@
             </li>
 
             <li class="programs__item swiper-slide">
-              <div class="programs__item--wrapper programs__item--wrapper--slid2">
+              <div class="programs__item-wrapper programs__item-wrapper--slid2">
 
                 <h3 class="programs__title-card title-card">Волонтёрство</h3>
                 <div class="programs__card-wrapper">
@@ -325,7 +325,7 @@
             </li>
 
             <li class="programs__item swiper-slide">
-              <div class="programs__item--wrapper programs__item--wrapper--slid3">
+              <div class="programs__item-wrapper programs__item-wrapper--slid3">
 
                 <h3 class="programs__title-card title-card">Учёба</h3>
                 <div class="programs__card-wrapper">
@@ -344,7 +344,7 @@
             <!-- дополнительныe слайды  -->
 
             <li class="programs__item swiper-slide">
-              <div class="programs__item--wrapper programs__item--wrapper--slid1">
+              <div class="programs__item-wrapper programs__item-wrapper--slid1">
 
                 <h3 class="programs__title-card title-card">Стажировки-2</h3>
 
@@ -363,7 +363,7 @@
             </li>
 
             <li class="programs__item swiper-slide">
-              <div class="programs__item--wrapper programs__item--wrapper--slid2">
+              <div class="programs__item-wrapper programs__item-wrapper--slid2">
 
                 <h3 class="programs__title-card title-card">Волонтёрство</h3>
                 <div class="programs__card-wrapper">
@@ -379,7 +379,7 @@
             </li>
 
             <li class="programs__item swiper-slide">
-              <div class="programs__item--wrapper programs__item--wrapper--slid3">
+              <div class="programs__item-wrapper programs__item-wrapper--slid3">
 
                 <h3 class="programs__title-card title-card">Учёба</h3>
                 <div class="programs__card-wrapper">
@@ -496,7 +496,7 @@
         <div class="news__slider swiper">
           <ul class="news__list swiper-wrapper">
             <li class="news__item swiper-slide">
-              <div class="news__item--wrapper news__item--wrapper--slid1">
+              <div class="news__item-wrapper news__item-wrapper--slid1">
                 <time class="news__data text-data" datetime="2023-03-23">23/03/2023</time>
 
                 <h3 class="news__subtitle title-card">Интервью с&nbsp;участницей программы стажировки</h3>
@@ -516,7 +516,7 @@
             </li>
 
             <li class="news__item swiper-slide">
-              <div class="news__item--wrapper news__item--wrapper--slid2">
+              <div class="news__item-wrapper news__item-wrapper--slid2">
 
                 <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
                 <h3 class="news__subtitle title-card">Путешествуем по&nbsp;миру</h3>
@@ -532,7 +532,7 @@
             </li>
 
             <li class="news__item swiper-slide">
-              <div class="news__item--wrapper news__item--wrapper--slid3">
+              <div class="news__item-wrapper news__item-wrapper--slid3">
 
                 <time class="news__data text-data" datetime="2023-03-17">17/03/2023</time>
                 <h3 class="news__subtitle title-card">Новая программа волонтёрства</h3>
@@ -548,7 +548,7 @@
             </li>
 
             <li class="news__item swiper-slide">
-              <div class="news__item--wrapper news__item--wrapper--slid4">
+              <div class="news__item-wrapper news__item-wrapper--slid4">
 
                 <time class="news__data text-data" datetime="2023-03-10">10/03/2023</time>
                 <h3 class="news__subtitle title-card">Построй свою карьеру</h3>
@@ -564,8 +564,8 @@
 
             <!-- дополнительные слайды -->
 
-             <li class="news__item swiper-slide">
-              <div class="news__item--wrapper news__item--wrapper--slid3">
+            <li class="news__item swiper-slide">
+              <div class="news__item-wrapper news__item-wrapper--slid3">
 
                 <time class="news__data text-data" datetime="2023-03-17">17/03/2023</time>
                 <h3 class="news__subtitle title-card">Новая программа волонтёрства</h3>
@@ -577,10 +577,11 @@
                     <span class="visually-hidden">перейти на стр. "Программа помощи..."</span>
                   </a>
                 </div>
+              </div>
             </li>
 
             <li class="news__item swiper-slide">
-              <div class="news__item--wrapper news__item--wrapper--slid4">
+              <div class="news__item-wrapper news__item-wrapper--slid4">
 
                 <time class="news__data text-data" datetime="2023-03-10">10/03/2023</time>
                 <h3 class="news__subtitle title-card">Построй свою карьеру</h3>
@@ -594,8 +595,8 @@
               </div>
             </li>
 
-                       <li class="news__item swiper-slide">
-              <div class="news__item--wrapper news__item--wrapper--slid1">
+            <li class="news__item swiper-slide">
+              <div class="news__item-wrapper news__item-wrapper--slid1">
 
                 <time class="news__data text-data" datetime="2023-03-23">23/03/2023</time>
 
@@ -616,7 +617,7 @@
             </li>
 
             <li class="news__item swiper-slide">
-              <div class="news__item--wrapper news__item--wrapper--slid2">
+              <div class="news__item-wrapper news__item-wrapper--slid2">
 
                 <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
                 <h3 class="news__subtitle title-card">Путешествуй по&nbsp;миру</h3>
@@ -634,28 +635,28 @@
         </div>
 
         <div class="news__pagination-container">
-            <button class="button-arrow button-arrow--left swiper-button-back-news" type="button" disabled>
-              <span class="visually-hidden">назад</span>
-            </button>
-   
-            <ol class="news__pagination-wrapper swiper-pagination">
-              <li>
-                <button class="pagination  pagination--current" type="button">1</button>
-              </li>
-              <li>
-                <button class="pagination" type="button">2</button>
-              </li>
-              <li>
-                <button class="pagination" type="button">3</button>
-              </li>
-              <li>
-                <button class="pagination" type="button">4</button>
-              </li>
-            </ol>
-            <button class="button-arrow swiper-button-next-news" type="button">
-              <span class="visually-hidden">вперед</span>
-            </button>
-          </div>
+          <button class="button-arrow button-arrow--left swiper-button-back-news" type="button" disabled>
+            <span class="visually-hidden">назад</span>
+          </button>
+
+          <ol class="news__pagination-wrapper swiper-pagination">
+            <li>
+              <button class="pagination  pagination--current" type="button">1</button>
+            </li>
+            <li>
+              <button class="pagination" type="button">2</button>
+            </li>
+            <li>
+              <button class="pagination" type="button">3</button>
+            </li>
+            <li>
+              <button class="pagination" type="button">4</button>
+            </li>
+          </ol>
+          <button class="button-arrow swiper-button-next-news" type="button">
+            <span class="visually-hidden">вперед</span>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -780,7 +781,7 @@
         <div class="reviews__slider swiper">
           <ul class="reviews__list swiper-wrapper">
             <li class="reviews__item swiper-slide">
-              <div class="reviews__item--wrapper">
+              <div class="reviews__item-wrapper">
                 <div class="reviews__wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/avatar1_1x.webp 1x,
@@ -821,7 +822,7 @@
             </li>
 
             <li class="reviews__item swiper-slide">
-              <div class="reviews__item--wrapper">
+              <div class="reviews__item-wrapper">
 
                 <div class="reviews__wrapper">
                   <picture>
@@ -862,7 +863,7 @@
 
             <!-- дополнительные слайды -->
             <li class="reviews__item swiper-slide">
-              <div class="reviews__item--wrapper">
+              <div class="reviews__item-wrapper">
                 <div class="reviews__wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/avatar1_1x.webp 1x,
@@ -903,7 +904,7 @@
             </li>
 
             <li class="reviews__item swiper-slide">
-              <div class="reviews__item--wrapper">
+              <div class="reviews__item-wrapper">
                 <div class="reviews__wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/avatar2_1x.webp 1x,
@@ -1061,7 +1062,7 @@
         <img class="logo__img" src="/__spritemap#sprite-logo-view" alt="logo" width="30" height="30">
       </div>
 
-      <ul class="footer__nav">
+      <ul class="footer__nav" aria-label="навигация по сайту">
         <li class="footer__item-nav">
           <a class="footer__link-nav text-mini" href="#about">О&nbsp;проекте</a>
         </li>

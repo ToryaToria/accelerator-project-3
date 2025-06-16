@@ -245,7 +245,7 @@
     width: 268px;
 
     padding: 0 40px 44px 30px;
-  border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 
     &::after {
       width: 26px;
@@ -253,8 +253,9 @@
       right: -26px;
     }
   }
+
   @include media-desktop {
-      width: 279px;
+    width: 279px;
   }
 }
 
@@ -287,8 +288,7 @@
 
   @include media-tablet {
     left: 60px;
-      padding: 5px;
-
+    padding: 5px;
   }
 
   @include media-desktop {

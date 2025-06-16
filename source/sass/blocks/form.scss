@@ -51,10 +51,12 @@
   &--textarea {
     height: 94px;
     resize: none;
+
     // margin-bottom: 2px;
 
     @include media-tablet {
       height: 88px;
+
       // margin-bottom: 0;
     }
 
