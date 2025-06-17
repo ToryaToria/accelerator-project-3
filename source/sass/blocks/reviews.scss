@@ -1,0 +1,245 @@
+.reviews {
+  padding-top: 56px;
+  padding-bottom: 50px;
+
+  @include media-tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include media-desktop {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+}
+
+.reviews__container {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  grid-template-areas:
+    "head arr"
+    "slid slid";
+  gap: 30px;
+
+  @include media-tablet {
+    grid-template-columns: 562px 1fr;
+
+    grid-template-areas:
+      "head head"
+      "slid slid"
+      "pag  arr";
+    gap: 40px;
+
+    padding-right: 0;
+  }
+
+  @include media-desktop {
+    grid-template-columns: 1136px 1fr;
+    padding-right: 100px;
+  }
+}
+
+.reviews__title {
+  grid-area: head;
+  justify-self: start;
+
+  @include media-desktop {
+    margin-left: 3px;
+    margin-bottom: 5px;
+  }
+}
+
+.reviews__arrows {
+  grid-area: arr;
+  justify-self: end;
+  margin-top: -2px;
+  margin-bottom: 4px;
+
+  @include media-tablet {
+    margin-right: 45px;
+  }
+
+  @include media-desktop {
+    margin-right: 0;
+  }
+}
+
+.reviews__slider {
+  grid-area: slid;
+  width: 100%;
+
+  @include media-desktop {
+    overflow: hidden;
+  }
+}
+
+.reviews__list {
+  @include list-reset;
+
+  display: flex;
+}
+
+.reviews__item {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.reviews__item.swiper-slide {
+  @include media-tablet {
+    width: 560px;
+  }
+}
+
+.reviews__item-wrapper {
+  box-sizing: border-box;
+  padding: 30px 15px;
+
+
+  width: 290px;
+
+  border: 2px solid $color-accent;
+  border-radius: 16px;
+
+  @include media-tablet {
+    padding: 51px 50px 50px;
+    width: 560px;
+  }
+
+  @include media-desktop {
+    padding: 50px 48px 50px 50px;
+    width: 604px;
+    height: 100%;
+  }
+}
+
+.reviews__wrapper {
+  display: grid;
+  align-items: center;
+  gap: 15px 10px;
+
+  grid-template-columns: 60px 53px 1fr;
+  grid-template-areas:
+    "ava     name    name"
+    "program program time";
+
+  margin-bottom: 25px;
+
+  @include media-tablet {
+    margin-bottom: 30px;
+    gap: 15px;
+
+    grid-template-columns: 90px 107px 136px 1fr;
+    grid-template-areas: "ava name program time";
+  }
+
+  @include media-desktop {
+    grid-template-areas: "ava name program time";
+    grid-template-columns: 90px 63px 228px 78px;
+  }
+}
+
+.reviews__ava {
+  grid-area: ava;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  @include media-tablet {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.reviews__program {
+  grid-area: program;
+
+  &--lola {
+    @include media-desktop {
+      margin-left: 92px;
+    }
+  }
+
+  &--david {
+    @include media-desktop {
+      margin-left: 111px;
+    }
+  }
+}
+
+.reviews__time {
+  grid-area: time;
+
+  &--david {
+    @include media-desktop {
+      margin-left: 9px;
+    }
+  }
+}
+
+.reviews__data {
+  color: $color-title;
+  margin-bottom: 8px;
+
+  @include media-tablet {
+    margin-bottom: 12px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 11px;
+  }
+}
+
+.reviews__property {
+  grid-area: nav;
+  margin-left: 0;
+}
+
+.reviews__title-card {
+  margin-bottom: 20px;
+
+  @include media-tablet {
+    margin-bottom: 24px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 25px;
+  }
+}
+
+.reviews__content {
+  p {
+    @include font ($size: 14px, $line-height: 20px);
+
+    @include media-tablet {
+      font-size: 16px;
+    }
+
+    @include media-desktop {
+      line-height: 26px;
+    }
+  }
+}
+
+.reviews__scrollbar {
+  display: none;
+
+  @include media-tablet {
+    grid-area: pag;
+    display: block;
+    margin: 10px 0;
+    width: 562px;
+    height: 2px;
+    background-color: $color-overlay;
+  }
+
+  @include media-desktop {
+    width: 1136px;
+  }
+}
+
+.reviews__scrollbar .swiper-scrollbar-drag {
+  background-color: $color-accent;
+  height: 2px;
+}

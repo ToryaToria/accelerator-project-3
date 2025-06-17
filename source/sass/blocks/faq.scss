@@ -1,0 +1,191 @@
+.faq {
+  padding-top: 51px;
+  padding-bottom: 50px;
+
+  @include media-tablet {
+    padding-top: 50px;
+  }
+
+  @include media-desktop {
+    padding-top: 71px;
+    padding-bottom: 60px;
+  }
+}
+
+.faq__container {
+  @include media-desktop {
+    box-sizing: border-box;
+    width: 1028px;
+    margin: 0 auto;
+  }
+}
+
+.faq__title {
+  text-align: center;
+  margin-bottom: 29px;
+
+  @include media-tablet {
+    margin-bottom: 40px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 71px;
+  }
+}
+
+.faq__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq__item {
+  box-sizing: border-box;
+  border: 2px solid $color-accent;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 20px 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+
+  @include media-tablet {
+    border-radius: 16px;
+    padding: 30px;
+  }
+
+  @include media-desktop {
+    padding: 42px 42px 38px 40px;
+  }
+}
+
+.faq__item:focus,
+.faq__item:hover {
+  background-color: $color-white;
+
+  .button-plus {
+    background-color: $color-white;
+  }
+
+  .button-plus::after {
+    background-color: $color-accent;
+  }
+}
+
+.faq__item:active {
+  background-color: $color-white;
+
+  .faq__question {
+    color: $color-active;
+  }
+
+  .button-plus {
+    background-color: $color-active;
+    border-color: $color-active;
+  }
+
+  .button-plus::after {
+    background-color: $color-white;
+  }
+}
+
+
+.faq__item--open {
+  background-color: $color-accent;
+  transition: all 0.3s;
+
+  &:focus,
+  &:hover {
+    background-color: $color-accent;
+
+    .button-plus {
+      background-color: $color-accent;
+      border-color: $color-white;
+    }
+
+    .button-plus::after {
+      background-color: $color-white;
+    }
+  }
+
+  &:active {
+    background-color: $color-active;
+
+    .faq__question {
+      color: $color-white;
+    }
+
+    .button-plus {
+      background-color: $color-white;
+      border-color: $color-active;
+    }
+
+    .button-plus::after {
+      background-color: $color-active;
+    }
+  }
+}
+
+.faq__wrapper {
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media-desktop {
+    gap: 10px;
+  }
+}
+
+.faq__question {
+  &--open {
+    color: $color-white;
+  }
+
+  &--padding-right {
+    @include media-tablet {
+      padding-right: 126px;
+    }
+
+    @include media-desktop {
+      padding-right: 0;
+    }
+  }
+}
+
+.faq__content {
+  p {
+    @include font ($size: 14px, $line-height: 20px);
+
+    @include media-tablet {
+      font-size: 16px;
+    }
+
+    @include media-desktop {
+      line-height: 26px;
+    }
+  }
+}
+
+.faq__answer {
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s;
+
+
+  &--open {
+    height: unset;
+    transition: all 0.3s;
+    opacity: 1;
+    margin-top: 20px;
+  }
+}
+
+.faq__answer--open.faq__content {
+  p {
+    color: $color-bg-light;
+  }
+}

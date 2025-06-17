@@ -1,0 +1,46 @@
+.pagination {
+  @include font ($size: 14px, $line-height: 14px, $color: $color-accent-50);
+
+  box-sizing: border-box;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+
+  &--current {
+    border: 1px solid $color-accent;
+    border-radius: 50%;
+    background-color: $color-accent;
+    color: $color-white;
+  }
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 20px;
+    width: 32px;
+    height: 32px;
+  }
+
+  &:not(:disabled):focus {
+    background-color: $color-white;
+    color: $color-accent;
+    border-color: $color-accent;
+  }
+
+  &:not(:disabled):hover {
+    color: $color-accent;
+    border-color: $color-accent;
+    background-color: transparent;
+  }
+
+  &:not(:disabled):active {
+    color: $color-white;
+    background-color: $color-active;
+  }
+
+  &:disabled {
+    color: $color-disabled;
+  }
+}

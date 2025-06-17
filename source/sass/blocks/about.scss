@@ -1,0 +1,238 @@
+.about {
+  padding-top: 51px;
+  padding-bottom: 50px;
+
+  @include media-tablet {
+    padding-top: 50px;
+  }
+
+  @include media-desktop {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+
+  @include media-desktop {
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+.about__wrapper-title {
+  @include media-tablet {
+    margin-right: 40px;
+
+    @include media-desktop {
+      margin-right: 0;
+      width: 702px;
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.about__wrapper-subtitle {
+  margin-bottom: 40px;
+
+  @include media-tablet {
+    margin-right: 180px;
+    margin-bottom: 60px;
+  }
+
+  @include media-desktop {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.about__title {
+  margin-bottom: 14px;
+
+  @include media-tablet {
+    margin-bottom: 30px;
+  }
+}
+
+.about__button {
+  margin-top: 30px;
+  background-color: $color-bg-light;
+
+  @include media-tablet {
+    margin-top: 40px;
+  }
+
+  @include media-desktop {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
+.about__list {
+  @include list-reset;
+
+  padding: 42px 20px 40px 0;
+  background-color: $color-accent;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @include media-tablet {
+    padding: 50px;
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  @include media-desktop {
+    padding: 50px 100px;
+  }
+}
+
+.about__item {
+  position: relative;
+  box-sizing: border-box;
+
+  margin-left: 20px;
+  padding: 15px 20px;
+  border: 1px solid $color-white;
+  border-radius: 16px;
+
+  &::after {
+    position: absolute;
+    top: -23px;
+    left: -21px;
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-color: $color-accent;
+    background-position: center;
+    background-size: 18px 22px;
+    background-repeat: no-repeat;
+    background-image: url("../../__spritemap#sprite-star-view");
+  }
+
+  @include media-tablet {
+    width: 253px;
+    margin-top: 22px;
+    margin-left: 20px;
+  }
+
+  @include media-desktop {
+    width: 484px;
+    margin-top: 22px;
+    margin-left: 20px;
+    padding: 50px 41px;
+
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding: 30px 41px;
+      align-items: center;
+    }
+
+    &:nth-child(4) {
+      padding: 40px 41px;
+      align-items: center;
+    }
+  }
+}
+
+.about__item .about__content {
+  display: flex;
+  flex-direction: column;
+
+  @include media-desktop {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  h4 {
+    @include font ($size: 16px, $line-height: 20px, $color: $color-white);
+
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+    @include media-tablet {
+      font-size: 20px;
+      line-height: 22px;
+      padding-right: 30px;
+    }
+
+    @include media-desktop {
+      font-size: 26px;
+      line-height: 30px;
+      width: 201px;
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    @include font ($size: 14px, $line-height: 20px, $weight: 300, $color: $color-white);
+
+    @include media-tablet {
+      font-size: 16px;
+    }
+  }
+}
+
+.about__title + .about__content {
+  p {
+    @include font ($size: 16px, $line-height: 22px);
+
+    @include media-tablet {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include media-desktop {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}
+
+.about__content {
+  h3 {
+    @include font ($size: 18px, $line-height: 22px, $color: $color-title);
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    @include media-tablet {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    @include media-desktop {
+      font-size: 32px;
+      line-height: 36px;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  p {
+    @include font ($size: 14px, $line-height: 20px);
+
+    @include media-tablet {
+      font-size: 16px;
+    }
+
+    @include media-desktop {
+      line-height: 26px;
+    }
+  }
+}

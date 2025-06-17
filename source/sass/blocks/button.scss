@@ -1,0 +1,141 @@
+.button {
+  box-sizing: border-box;
+  padding: 4px 4px 4px 21px;
+  background-color: transparent;
+  border: 1px solid $color-accent;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-shrink: 0;
+
+  @include media-tablet {
+    padding-left: 31px;
+    gap: 30px;
+  }
+
+  &:not(:disabled):focus {
+    outline: none;
+
+    .button__circle {
+      transform: rotate(45deg);
+    }
+  }
+
+  &:not(:disabled):hover,
+  &:not(.button--disabled):hover {
+    background-color: $color-accent;
+
+    .text-button {
+      color: $color-white;
+    }
+
+    .button__circle {
+      transform: rotate(45deg);
+      background-color: $color-white;
+    }
+
+    .button__circle::after {
+      background-color: $color-accent;
+    }
+  }
+
+  &:not(:disabled):active,
+  &:not(.button--disabled):active {
+    .text-button {
+      color: $color-white-70;
+    }
+  }
+}
+
+.button:disabled,
+.button--disabled {
+  border-color: $color-disabled;
+  cursor: default;
+
+  .text-button {
+    color: $color-disabled;
+  }
+
+  .button__circle {
+    background-color: $color-disabled;
+  }
+
+  .button__circle::after {
+    background-color: $color-white-60;
+  }
+}
+
+.button--dark {
+  background-color: $color-accent;
+  border: 1px solid $color-white;
+
+  .text-button {
+    color: $color-white;
+  }
+
+  .button__circle {
+    background-color: $color-white;
+  }
+
+  .button__circle::after {
+    background-color: $color-accent;
+  }
+
+  &:not(:disabled):hover {
+    background-color: $color-white;
+
+    .text-button {
+      color: $color-accent;
+    }
+
+    .button__circle {
+      transform: rotate(45deg);
+      background-color: $color-accent;
+    }
+
+    .button__circle::after {
+      background-color: $color-white;
+    }
+  }
+
+  &:not(:disabled):active,
+  &:not(.button--disabled):active {
+    .text-button {
+      color: $color-accent-70;
+    }
+  }
+}
+
+.button__menu {
+  @include btn-circle ($width: 46px, $height: 46px);
+
+  transition: all 0.3s;
+  flex-shrink: 0;
+
+  &::after {
+    @include btn-icon ($width: 18px, $height: 8px,
+    $mask-image: url("../../__spritemap#sprite-menu-view"));
+  }
+}
+
+.button__circle {
+  flex-shrink: 0;
+
+  @include btn-circle ($width: 34px, $height: 34px);
+
+  transition: all 0.3s;
+
+  &::after {
+    @include btn-icon ($mask-image: url("../../__spritemap#sprite-arr-view"));
+  }
+
+  @include media-tablet {
+    width: 46px;
+    height: 46px;
+  }
+}

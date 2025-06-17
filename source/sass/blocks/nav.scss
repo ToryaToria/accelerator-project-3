@@ -1,0 +1,91 @@
+nav {
+  box-sizing: border-box;
+  background-color: $color-accent;
+}
+
+.nav__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 35px 25px;
+}
+
+.nav__sublist {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  transition: all 0.3s;
+  height: 0;
+  opacity: 0;
+}
+
+.nav__sublist--open {
+  margin-top: 20px;
+  transition: all 0.3s;
+  height: max-content;
+  opacity: 1;
+}
+
+.nav__link {
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+  }
+}
+
+.nav__sublink {
+  @include font ($size: 16px, $line-height: 100%, $weight: 500, $color: $color-white-60);
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white-90;
+  }
+}
+
+.nav__button {
+  @include btn-reset;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::after {
+    z-index: 5;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: $color-white-60;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-image: url("../__spritemap#sprite-corner-view");
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+.nav__button--open {
+  color: $color-white;
+
+  &::after {
+    transform: rotate(180deg);
+    background-color: $color-white;
+  }
+}

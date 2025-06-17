@@ -1,0 +1,172 @@
+.write-us {
+  padding-top: 40px;
+  padding-bottom: 44px;
+  background-color: $color-bg-light;
+
+  @include media-tablet {
+    padding: 50px 58px 54px;
+  }
+
+  @include media-desktop {
+    padding: 60px 100px 64px;
+  }
+}
+
+.write-us__background {
+  box-sizing: border-box;
+  padding: 43px 10px 40px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-color: $color-overlay;
+
+  background-image:
+    image-set(url("../../img/form-bg_mob_2x.webp") 1x type("image/webp"),
+    url("../../img/form-bg_mob_1x.jpg") 1x,
+    url("../../img/form-bg_mob_2x.webp") 2x type("image/webp"),
+    url("../../img/form-bg_mob_2x.jpg") 2x);
+
+  @include media-tablet {
+    padding: 0 210px 0 0;
+    border-radius: 16px;
+
+    background-image:
+      image-set(url("../../img/form-bg_tabl_2x.webp") 1x type("image/webp"),
+      url("../../img/form-bg_tabl_1x.jpg") 1x,
+      url("../../img/form-bg_tabl_2x.webp") 2x type("image/webp"),
+      url("../../img/form-bg_tabl_2x.jpg") 2x);
+  }
+
+  @include media-desktop {
+    padding: 0 750px 0 0;
+    width: 1240px;
+
+    background-image:
+      image-set(url("../../img/form-bg_deskt_2x.webp") 1x type("image/webp"),
+      url("../../img/form-bg_deskt_1x.jpg") 1x,
+      url("../../img/form-bg_deskt_2x.webp") 2x type("image/webp"),
+      url("../../img/form-bg_deskt_2x.jpg") 2x);
+  }
+}
+
+.write-us__container {
+  box-sizing: border-box;
+  padding: 15px 15px 27px;
+  width: 300px;
+  background-color: $color-accent;
+  border-radius: 16px;
+
+  @include media-tablet {
+    padding: 41px 40px 36px;
+    width: 442px;
+    margin: 0;
+  }
+
+  @include media-desktop {
+    padding: 44px 70px 40px;
+    width: 490px;
+  }
+}
+
+.write-us__title {
+  color: $color-white;
+  margin-bottom: 10px;
+
+  @include media-tablet {
+    margin-bottom: 31px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 34px;
+  }
+}
+
+.write-us__text {
+  color: $color-bg-light;
+  margin-bottom: 21px;
+
+  @include media-tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.write-us__text-field {
+  color: $color-bg-light;
+}
+
+.write-us__filed {
+  color: $color-white;
+  background-color: transparent;
+
+  &--city {
+    background-image: url("../__spritemap#sprite-select-view");
+  }
+
+  &:not(:disabled):focus,
+  &:not(:disabled):hover,
+  &:not(:disabled):active {
+    border-color: $color-white;
+    outline: none;
+  }
+
+  &:not(:disabled):focus ~ .form__text-field,
+  &:not(:disabled):hover ~ .form__text-field,
+  &:not(:disabled):active ~ .form__text-field {
+    color: $color-white;
+  }
+}
+
+.write-us__approval {
+  @include font ($size: 12px, $line-height: 14px);
+
+  color: $color-white;
+}
+
+.write-us__mark {
+  border: 1px solid $color-white-70;
+  background-color: $color-white;
+}
+
+.form__check[type="checkbox"]:checked + .write-us__mark {
+  background-color: $color-white;
+}
+
+.form__check[type="checkbox"]:checked + .write-us__mark::before {
+  background-color: $color-accent;
+}
+
+.form__check:not(:disabled):focus + .write-us__mark,
+.form__check:not(:disabled):hover + .write-us__mark {
+  border: 1px solid $color-white;
+  cursor: pointer;
+}
+
+.form__check[type="checkbox"]:checked:not(:disabled):focus + .write-us__mark,
+.form__check[type="checkbox"]:checked:not(:disabled):hover + .write-us__mark {
+  border: 1px solid $color-white;
+  background-color: transparent;
+}
+
+.form__check[type="checkbox"]:checked:not(:disabled):focus + .write-us__mark::before,
+.form__check[type="checkbox"]:checked:not(:disabled):hover + .write-us__mark::before {
+  background-color: $color-white;
+}
+
+.form__check:disabled + .write-us__mark {
+  background-color: $color-white-60;
+}
+
+.form__check[type="checkbox"]:disabled + .write-us__mark {
+  background-color: $color-disabled;
+}
+
+.form__check[type="checkbox"]:checked:disabled + .write-us__mark::before {
+  background-color: $color-white;
+}
+
+.form__check:invalid + .write-us__mark {
+  border: 1px solid $color-error;
+  background-color: $color-error-20;
+}
