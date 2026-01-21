@@ -1,5 +1,7 @@
-const aboutBtn = document.getElementById('about-button');
 const body = document.body;
+const html = document.documentElement;
+
+const aboutBtn = document.getElementById('about-button');
 const modal = document.querySelector('.modal');
 const buttonCloser = document.querySelector('.modal__btn-close');
 
@@ -18,7 +20,16 @@ const onDocumentKeydown = (evt) => {
   }
 };
 
+
 aboutBtn.addEventListener('click', () => {
+  let scrollTop = html.scrollTop || body && body.scrollTop || 0;
+  // scrollTop -= html.clientTop; // в IE7- <html> смещён относительно (0,0)
+
+  if (scrollTop > 0) {
+    scrollTop = scrollTop + 15;
+    modal.style.top = `${scrollTop}px`;
+  }
+
   modal.classList.toggle('modal--open');
   body.classList.toggle('overlay');
   document.addEventListener('keydown', onDocumentKeydown);
@@ -30,7 +41,8 @@ buttonCloser.addEventListener('click', () => {
   closeModal();
 });
 
-function closeModal () {
+function closeModal() {
+  modal.style.top = '35px';
   modal.classList.remove('modal--open');
   body.classList.remove('overlay');
   document.removeEventListener('keydown', onDocumentKeydown);
