@@ -8,7 +8,7 @@
 
   &::after {
     @include btn-icon ($width: 20px, $height: 20px,
-    $mask-image: url("../../__spritemap#sprite-plus-view"));
+    $mask-image: url("../__spritemap#sprite-plus-view"));
 
     z-index: 5;
     transition: all 0.3s;
@@ -46,7 +46,7 @@
   background-color: $color-white;
 
   &::after {
-    @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent, $mask-image: url("../../__spritemap#sprite-minus-view"));
+    @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent, $mask-image: url("../__spritemap#sprite-minus-view"));
   }
 
   &:not(:disabled):focus,

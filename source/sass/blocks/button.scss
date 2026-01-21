@@ -119,7 +119,7 @@
 
   &::after {
     @include btn-icon ($width: 18px, $height: 8px,
-    $mask-image: url("../../__spritemap#sprite-menu-view"));
+    $mask-image: url("../__spritemap#sprite-menu-view"));
   }
 }
 
@@ -131,7 +131,7 @@
   transition: all 0.3s;
 
   &::after {
-    @include btn-icon ($mask-image: url("../../__spritemap#sprite-arr-view"));
+    @include btn-icon ($mask-image: url("../__spritemap#sprite-arr-view"));
   }
 
   @include media-tablet {

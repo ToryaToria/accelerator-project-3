@@ -115,7 +115,7 @@
     background-color: $color-accent;
 
     @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent,
-    $mask-image: url("../../__spritemap#sprite-cross-view"));
+    $mask-image: url("../__spritemap#sprite-cross-view"));
   }
 }
 

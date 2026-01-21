@@ -8,7 +8,7 @@
   flex-shrink: 0;
 
   &::after {
-    @include btn-icon ($mask-image: url("../../__spritemap#sprite-arr-view"));
+    @include btn-icon ($mask-image: url("../__spritemap#sprite-arr-view"));
   }
 
   &:not(:disabled):focus {

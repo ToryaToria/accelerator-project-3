@@ -7,7 +7,7 @@
   transition: all 0.3s;
 
   &::after {
-    @include btn-icon ($background-color: $color-accent, $mask-image: url("../../__spritemap#sprite-arrow-view"));
+    @include btn-icon ($background-color: $color-accent, $mask-image: url("../__spritemap#sprite-arrow-view"));
   }
 
   &--left {
