@@ -23,10 +23,13 @@
     height: 32px;
   }
 
-  &:not(:disabled):focus {
+  &:not(:disabled):focus-visible {
     background-color: $color-white;
     color: $color-accent;
     border-color: $color-accent;
+
+            outline: 3px solid red;
+
   }
 
   &:not(:disabled):hover {

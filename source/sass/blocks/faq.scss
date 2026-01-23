@@ -48,7 +48,7 @@
   overflow: hidden;
   padding: 20px 15px;
   cursor: pointer;
-  transition: all 0.3s;
+  // transition: all 0.3s;
 
 
   @include media-tablet {
@@ -61,9 +61,11 @@
   }
 }
 
-.faq__item:focus,
+.faq__item:focus-visible,
 .faq__item:hover {
   background-color: $color-white;
+          outline: 3px solid gold;
+
 
   .button-plus {
     background-color: $color-white;
@@ -94,11 +96,13 @@
 
 .faq__item--open {
   background-color: $color-accent;
-  transition: all 0.3s;
+  // transition: all 0.3s;
 
-  &:focus,
+  &:focus-visible,
   &:hover {
     background-color: $color-accent;
+
+            outline: 3px solid red;
 
     .button-plus {
       background-color: $color-accent;
@@ -173,12 +177,12 @@
 .faq__answer {
   height: 0;
   opacity: 0;
-  transition: all 0.3s;
+  // transition: all 0.3s;
 
 
   &--open {
     height: unset;
-    transition: all 0.3s;
+    // transition: all 0.3s;
     opacity: 1;
     margin-top: 20px;
   }

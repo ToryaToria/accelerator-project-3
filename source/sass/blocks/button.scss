@@ -5,7 +5,7 @@
   border: 1px solid $color-accent;
   border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s;
+  // transition: all 0.3s;
 
   display: flex;
   align-items: center;
@@ -18,8 +18,10 @@
     gap: 30px;
   }
 
-  &:not(:disabled):focus {
+  &:not(:disabled):focus-visible {
     outline: none;
+            outline: 3px solid red;
+
 
     .button__circle {
       transform: rotate(45deg);
@@ -114,7 +116,7 @@
 .button__menu {
   @include btn-circle ($width: 46px, $height: 46px);
 
-  transition: all 0.3s;
+  // transition: all 0.3s;
   flex-shrink: 0;
 
   &::after {
@@ -128,7 +130,7 @@
 
   @include btn-circle ($width: 34px, $height: 34px);
 
-  transition: all 0.3s;
+  // transition: all 0.3s;
 
   &::after {
     @include btn-icon ($mask-image: url("../__spritemap#sprite-arr-view"));

@@ -117,8 +117,10 @@
     width: 120px;
   }
 
-  &:focus {
+  &:focus-visible {
     background-color: $color-white;
+            outline: 3px solid red;
+
   }
 
   &:hover {
@@ -365,7 +367,7 @@
   }
 }
 
-.news-text-wrapper {
+.news__text-wrapper {
   position: relative;
   box-sizing: border-box;
   border-top-right-radius: 12px;

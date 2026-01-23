@@ -2,7 +2,7 @@
   padding: 0;
   flex-shrink: 0;
   cursor: pointer;
-  transition: all 0.3s;
+  // transition: all 0.3s;
 
   @include btn-circle ($width: 40px, $height: 40px, $border: 1px solid $color-accent);
 
@@ -11,12 +11,15 @@
     $mask-image: url("../__spritemap#sprite-plus-view"));
 
     z-index: 5;
-    transition: all 0.3s;
+    // transition: all 0.3s;
   }
 
-  &:not(:disabled):focus,
+  &:not(:disabled):focus-visible,
   &:not(:disabled):hover {
     background-color: transparent;
+
+            outline: 3px solid violet;
+
 
     &::after {
       background-color: $color-accent;
@@ -49,10 +52,12 @@
     @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent, $mask-image: url("../__spritemap#sprite-minus-view"));
   }
 
-  &:not(:disabled):focus,
+  &:not(:disabled):focus-visible,
   &:not(:disabled):hover {
     background-color: transparent;
     border-color: $color-white;
+
+            outline: 3px solid green;
 
     &::after {
       background-color: $color-white;

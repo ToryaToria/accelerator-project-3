@@ -4,7 +4,7 @@
   @include btn-circle ($width: 22px, $height: 22px, $background-color: transparent);
 
   cursor: pointer;
-  transition: all 0.3s;
+  // transition: all 0.3s;
 
   &::after {
     @include btn-icon ($background-color: $color-accent, $mask-image: url("../__spritemap#sprite-arrow-view"));
@@ -14,8 +14,10 @@
     transform: rotate(180deg);
   }
 
-  &:not(:disabled):focus {
+  &:not(:disabled):focus-visible {
     background-color: $color-white;
+            outline: 3px solid red;
+
   }
 
   &:not(:disabled):hover {

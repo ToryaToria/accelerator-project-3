@@ -3,7 +3,7 @@
 }
 
 .header__container {
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -38,13 +38,17 @@
   padding-bottom: 3px;
   gap: 20px;
   background-color: $color-white;
-  transition: all 0.3s;
+  // transition: all 0.3s;
   min-width: 136px;
   max-width: min-content;
 
   @include media-tablet {
     padding-top: 4px;
     padding-bottom: 4px;
+  }
+
+    &:not(:disabled):focus-visible {
+    outline: 3px solid red;
   }
 
   &:not(:disabled):hover {
@@ -156,13 +160,13 @@
   z-index: 15;
   margin-left: auto;
 
-  transition: all 0.3s;
+  // transition: all 0.3s;
   height: 0;
   opacity: 0;
 }
 
 .header__nav--open {
-  transition: all 0.3s;
+  // transition: all 0.3s;
   height: max-content;
   opacity: 1;
 }
