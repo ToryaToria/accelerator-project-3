@@ -3,19 +3,19 @@ import { Navigation, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 
 function updateSlideFocus(slider) {
-  console.log('slider!');
+  // console.log('slider!');
 
   slider.slides.forEach((slide, index) => {
 
     const isActive = index === slider.activeIndex;
     const focusableElements = slide.querySelectorAll('a, button, input, textarea, select, [tabindex]');
 
-    console.log('slide');
-    console.log(slider.slides[index+1]);
-    console.log(focusableElements);
-    console.log(index+1);
+    // console.log('slide');
+    // console.log(slider.slides[index+1]);
+    // console.log(focusableElements);
+    // console.log(index+1);
 
-    console.log(isActive);
+    // console.log(isActive);
 
 
     // focusableElements.forEach((el) => {
@@ -86,12 +86,12 @@ const initSwiperPrograms = () => {
   });
 
 
-  swiperPrograms.on('slideChange', () => {
-    console.log('slider change');
-    console.log(swiperPrograms.activeIndex);
-    console.log('------------------------');
+  // swiperPrograms.on('slideChange', () => {
+  //   console.log('slider change');
+  //   console.log(swiperPrograms.activeIndex);
+  //   console.log('------------------------');
 
-  });
+  // });
 };
 
 
