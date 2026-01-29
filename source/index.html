@@ -44,10 +44,12 @@
             <a class="nav__link text-nav" href="#about" tabindex="-1">О проекте</a>
           </li>
 
-          <li class="nav__item">
-            <button class="nav__button nav__button--programs text-nav" type="button" tabindex="-1">Программы</button>
+          <li class="nav__item" data-has-children>
+            <!-- nav__button--programs -->
+            <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-programs" aria-expanded="false">Программы</button>
 
-            <ul class="nav__sublist nav__sublist--programs">
+            <!-- nav__sublist--programs -->
+            <ul class="nav__sublist" id="nav-programs">
               <li class="nav__subitem">
                 <a class="nav__sublink" href="#programs" tabindex="-1">Стажировки</a>
               </li>
@@ -74,10 +76,12 @@
             <a class="nav__link text-nav" href="#reviews" tabindex="-1">отзывы</a>
           </li>
 
-          <li class="nav__item">
-            <button class="nav__button nav__button--news text-nav" type="button" tabindex="-1">новости</button>
+          <li class="nav__item" data-has-children>
+            <!-- nav__button--news -->
+            <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-news" aria-expanded="false">новости</button>
 
-            <ul class="nav__sublist nav__sublist--news">
+            <!-- nav__sublist--news -->
+            <ul class="nav__sublist" id="nav-news">
               <li class="nav__subitem">
                 <a class="nav__sublink" href="#news" tabindex="-1">Общее</a>
               </li>
