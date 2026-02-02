@@ -13,7 +13,6 @@
   <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
 
-
   <link rel="stylesheet" href="./sass/vendor/nebo.css">
   <link rel="stylesheet" href="sass/style.scss">
 
@@ -46,7 +45,8 @@
 
           <li class="nav__item" data-has-children>
             <!-- nav__button--programs -->
-            <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-programs" aria-expanded="false">Программы</button>
+            <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-programs"
+              aria-expanded="false">Программы</button>
 
             <!-- nav__sublist--programs -->
             <ul class="nav__sublist" id="nav-programs">
@@ -78,7 +78,8 @@
 
           <li class="nav__item" data-has-children>
             <!-- nav__button--news -->
-            <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-news" aria-expanded="false">новости</button>
+            <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-news"
+              aria-expanded="false">новости</button>
 
             <!-- nav__sublist--news -->
             <ul class="nav__sublist" id="nav-news">
@@ -509,7 +510,7 @@
                 <time class="news__data text-data" datetime="2023-03-23">23/03/2023</time>
 
                 <h3 class="news__subtitle title-card">Интервью с&nbsp;участницей программы стажировки</h3>
-             <!-- <h2>слайд 1</h2> -->
+                <!-- <h2>слайд 1</h2> -->
                 <div class="news__text-wrapper">
                   <div>
                     <p class="news__text-card text-card">
@@ -530,7 +531,7 @@
 
                 <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
                 <h3 class="news__subtitle title-card">Путешествуем по&nbsp;миру</h3>
-                           <!-- <h2>слайд 2</h2> -->
+                <!-- <h2>слайд 2</h2> -->
 
                 <div class="news__text-wrapper">
                   <div>
@@ -550,7 +551,7 @@
 
                 <time class="news__data text-data" datetime="2023-03-17">17/03/2023</time>
                 <h3 class="news__subtitle title-card">Новая программа волонтёрства</h3>
-                     <!-- <h2>слайд 3</h2> -->
+                <!-- <h2>слайд 3</h2> -->
 
                 <div class="news__text-wrapper">
                   <div>
@@ -569,7 +570,7 @@
               <div class="news__item-wrapper news__item-wrapper--slid4">
                 <time class="news__data text-data" datetime="2023-03-10">10/03/2023</time>
                 <h3 class="news__subtitle title-card">Построй свою карьеру</h3>
-                     <!-- <h2>слайд 4</h2> -->
+                <!-- <h2>слайд 4</h2> -->
 
                 <div class="news__text-wrapper">
                   <div>
@@ -588,12 +589,12 @@
 
 
 
-           <li class="news__item news__item--1 swiper-slide">
+            <li class="news__item news__item--1 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid3">
 
                 <time class="news__data text-data" datetime="2023-03-17">17/03/2023</time>
                 <h3 class="news__subtitle title-card">Новая программа волонтёрства</h3>
-                     <!-- <h2>слайд 5</h2> -->
+                <!-- <h2>слайд 5</h2> -->
 
                 <div class="news__text-wrapper">
                   <div>
@@ -613,7 +614,7 @@
 
                 <time class="news__data text-data" datetime="2023-03-10">10/03/2023</time>
                 <h3 class="news__subtitle title-card">Построй свою карьеру</h3>
-                          <!-- <h2>слайд 6</h2> -->
+                <!-- <h2>слайд 6</h2> -->
 
                 <div class="news__text-wrapper">
                   <div>
@@ -632,7 +633,7 @@
               <div class="news__item-wrapper news__item-wrapper--slid1">
                 <time class="news__data text-data" datetime="2023-03-23">23/03/2023</time>
                 <h3 class="news__subtitle title-card">Интервью с&nbsp;участницей программы стажировки</h3>
-                             <!-- <h2>слайд 7</h2> -->
+                <!-- <h2>слайд 7</h2> -->
 
                 <div class="news__text-wrapper">
                   <div>
@@ -650,11 +651,11 @@
               </div>
             </li>
 
-              <li class="news__item news__item--2 swiper-slide">
+            <li class="news__item news__item--2 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid2">
                 <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
                 <h3 class="news__subtitle title-card">Путешествуй по&nbsp;миру</h3>
-                          <!-- <h2>слайд 8</h2> -->
+                <!-- <h2>слайд 8</h2> -->
 
                 <div class="news__text-wrapper">
                   <div>
@@ -1138,19 +1139,22 @@
     </div>
   </footer>
 
-  <div class="page__modal">
-    <div class="modal">
-      <button class="modal__btn-close" type="button">
-        <span class="visually-hidden">открыть - закрыть модальное окно</span>
+  <!-- aria-describedby="dialog-content" -->
+  <dialog class="modal" role="dialog" aria-modal="true" aria-label="форма запроса" aria-labelledby="dialog-title">
 
+    <div class="modal__wrapper">
+      <button class="modal__btn-close" type="button" value="close">
+        <span class="visually-hidden">закрыть модальное окно</span>
       </button>
-      <h2 class="modal__title">Напишите нам</h2>
+
+
+      <h2 class="modal__title" id="dialog-title">Напишите нам</h2>
       <p class="modal__text">
         Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—
         мы&nbsp;на&nbsp;них&nbsp;ответим!
       </p>
 
-      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="dialog" autocomplete="off">
         <label class="form__label">
           <span class="form__text-field text-card">Имя</span>
           <input class="modal__field form__field" type="text" id="name-modal" name="name">
@@ -1186,13 +1190,13 @@
             данных</span>
         </label>
 
-        <button class="modal__button form__button button text-button" type="submit">
+        <button class="modal__button form__button button text-button" type="submit" value="submit">
           <span class="text-button">отправить</span>
           <span class="button__circle"></span>
         </button>
       </form>
     </div>
-  </div>
+  </dialog>
 
   <script type="module" src="js/main.js"></script>
 </body>
