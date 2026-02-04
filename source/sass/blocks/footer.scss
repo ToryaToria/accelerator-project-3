@@ -63,7 +63,7 @@
 .footer__link-nav {
   text-decoration: none;
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     color: $color-accent-70;
   }
@@ -113,7 +113,7 @@
     margin-top: 1px;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     color: $color-accent-70;
 
@@ -208,8 +208,10 @@
     height: 36px;
   }
 
-  &:focus {
-    outline: auto;
+  &:focus-visible {
+    // outline: auto;
+    outline: 3px solid red;
+
     background-color: $color-white;
 
     &::after {

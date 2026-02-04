@@ -70,17 +70,17 @@
     height: 22px;
   }
 
+  &:focus-visible {
+    background-color: $color-overlay;
+    outline: 3px solid red;
+  }
+
   &:hover {
     background-color: $color-accent;
 
     &::after {
       background-color: $color-white;
     }
-  }
-
-  &:focus-visible {
-    background-color: $color-overlay;
-    outline: 3px solid red;
   }
 
   &:active {
@@ -134,11 +134,14 @@
 
   color: $color-text-base;
 
-  &:not(:disabled):hover,
+  &:not(:disabled):focus-visible {
+    outline: 3px solid red;
+  }
+
   &:not(:disabled):focus-visible,
+  &:not(:disabled):hover,
   &:not(:disabled):active {
     border-color: $color-text-base;
-    outline: none;
   }
 
   &:disabled {
@@ -171,22 +174,28 @@
   background-color: $color-white;
 }
 
-.modal__check:not(:disabled):hover + .modal__mark,
+.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible
+  + .modal__mark,
 .modal__check:not(:disabled):focus-visible + .modal__mark {
+  outline: 3px solid red;
+}
+
+.modal__check:not(:disabled):focus-visible + .modal__mark,
+.modal__check:not(:disabled):hover + .modal__mark {
   border: 1px solid $color-accent;
   cursor: pointer;
 }
 
-.modal__check[type="checkbox"]:checked:not(:disabled):hover + .modal__mark,
 .modal__check[type="checkbox"]:checked:not(:disabled):focus-visible
-  + .modal__mark {
+  + .modal__mark,
+.modal__check[type="checkbox"]:checked:not(:disabled):hover + .modal__mark {
   border: 1px solid $color-accent;
   background-color: transparent;
 }
 
-.modal__check[type="checkbox"]:checked:not(:disabled):hover
-  + .modal__mark::before,
 .modal__check[type="checkbox"]:checked:not(:disabled):focus-visible
+  + .modal__mark::before,
+  .modal__check[type="checkbox"]:checked:not(:disabled):hover
   + .modal__mark::before {
   background-color: $color-accent;
 }
@@ -212,7 +221,6 @@
 
 .modal__approval {
   @include font($size: 12px, $line-height: 14px);
-
   color: $color-text-base;
 }
 

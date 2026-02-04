@@ -47,7 +47,7 @@
     padding-bottom: 4px;
   }
 
-    &:not(:disabled):focus-visible {
+  &:not(:disabled):focus-visible {
     outline: 3px solid red;
   }
 
@@ -118,8 +118,12 @@
   .button__menu::after {
     background-color: $color-accent;
 
-    @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent,
-    $mask-image: url("../__spritemap#sprite-cross-view"));
+    @include btn-icon(
+      $width: 20px,
+      $height: 20px,
+      $background-color: $color-accent,
+      $mask-image: url("../__spritemap#sprite-cross-view")
+    );
   }
 }
 
@@ -146,7 +150,12 @@
 }
 
 .header__menu-text {
-  @include font ($size: 14px, $line-height: 100%, $weight: 500, $color: $color-accent);
+  @include font(
+    $size: 14px,
+    $line-height: 100%,
+    $weight: 500,
+    $color: $color-accent
+  );
 
   text-transform: uppercase;
 }

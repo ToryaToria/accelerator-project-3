@@ -161,19 +161,28 @@
   background-color: $color-accent;
 }
 
-.form__check:not(:disabled):focus + .write-us__mark,
+.form__check:not(:disabled):focus-visible + .write-us__mark {
+  outline: 3px solid red;
+}
+
+.form__check:not(:disabled):focus-visible + .write-us__mark,
 .form__check:not(:disabled):hover + .write-us__mark {
   border: 1px solid $color-white;
   cursor: pointer;
 }
 
-.form__check[type="checkbox"]:checked:not(:disabled):focus + .write-us__mark,
+
+.form__check[type="checkbox"]:checked:not(:disabled):focus-visible + .write-us__mark {
+  outline: 3px solid red;
+}
+
+.form__check[type="checkbox"]:checked:not(:disabled):focus-visible + .write-us__mark,
 .form__check[type="checkbox"]:checked:not(:disabled):hover + .write-us__mark {
   border: 1px solid $color-white;
   background-color: transparent;
 }
 
-.form__check[type="checkbox"]:checked:not(:disabled):focus + .write-us__mark::before,
+.form__check[type="checkbox"]:checked:not(:disabled):focus-visible + .write-us__mark::before,
 .form__check[type="checkbox"]:checked:not(:disabled):hover + .write-us__mark::before {
   background-color: $color-white;
 }

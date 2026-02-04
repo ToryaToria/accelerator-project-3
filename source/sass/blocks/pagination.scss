@@ -1,5 +1,5 @@
 .pagination {
-  @include font ($size: 14px, $line-height: 14px, $color: $color-accent-50);
+  @include font($size: 14px, $line-height: 14px, $color: $color-accent-50);
 
   box-sizing: border-box;
   display: block;
@@ -28,8 +28,7 @@
     color: $color-accent;
     border-color: $color-accent;
 
-            outline: 3px solid red;
-
+    outline: 3px solid red;
   }
 
   &:not(:disabled):hover {
