@@ -1,15 +1,42 @@
-const questions = document.querySelectorAll('.faq__item');
-const answers = document.querySelectorAll('.faq__answer');
-const titleQvestions = document.querySelectorAll('.faq__question');
+const details = document.querySelectorAll('.faq__wrapper');
+console.log('ky!');
 
-const byttonIcons = document.querySelectorAll('.button-plus');
+details.forEach(item => {
 
-questions.forEach((elem, index) => {
-  elem.addEventListener('click', () => {
-    elem.classList.toggle('faq__item--open');
-    answers[index].classList.toggle('faq__answer--open');
-    titleQvestions[index].classList.toggle('faq__question--open');
+  const question = item.querySelector('.faq__question');
+  const answer = item.querySelector('.faq__answer');
 
-    byttonIcons[index].classList.toggle('button-plus--open');
-  });
-});
+  const animationDuration = 300;
+
+  const setHeight = () => answer.style.setProperty('--details-height', `${answer.scrollHeight}px`);
+
+  item.classList.add('js-details');
+
+  if (item.getAttribute('open') === "") {
+    item.classList.add('is-open');
+    console.log('open');
+  } else {
+    item.classList.add('is-close');
+  }
+
+  const onClick = (event) => {
+    setHeight();
+
+    item.classList.toggle('is-open');
+    item.classList.toggle('is-close');
+
+    if (item.open) {
+      event.preventDefault();
+
+      setTimeout(() => {
+        item.open = false;
+      }, animationDuration);
+    }
+  };
+
+  question.addEventListener('click', onClick);
+})
+
+
+
+

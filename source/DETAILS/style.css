@@ -1,0 +1,90 @@
+.qna {
+  width: clamp(300px, 50%, 800px);
+  margin: 50px auto;
+}
+
+.faq__wrapper {
+  margin: -1px 0 0;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+.faq__wrapper:not(.js-details)[open],
+.faq__wrapper.is-open {
+  --border-color: #666;
+  position: relative;
+}
+
+.faq__question {
+  position: relative;
+  padding: 20px 50px 20px 20px;
+  list-style: none; /* убираем стандартный маркер */
+  cursor: pointer;
+}
+
+.faq__question::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 20px;
+  width: 12px;
+  height: 8px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 12 8'%3E%3Cpath stroke='%23999' stroke-width='2' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  transition: transform 0.3s;
+}
+.qna__item:not(.js-details)[open] .faq__question::after,
+.qna__item.is-open .faq__question::after {
+  transform: rotate(-180deg);
+}
+
+.faq__question::-webkit-details-marker {
+  display: none; /* убираем стандартный маркер в Safari */
+}
+
+.qna__text {
+  padding: 0 20px 20px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.js-details .faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  animation: slideUp 0.3s;
+}
+
+.js-details.is-open .faq__answer {
+  max-height: none;
+  animation: slideDown 0.3s;
+}
+
+.js-details.is-open.is-animating .faq__answer {
+  max-height: var(--details-height);
+}
+
+
+@keyframes slideUp {
+  0% {
+    max-height: var(--details-height);
+    opacity: 1;
+  }
+
+  100% {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    max-height: var(--details-height);
+    opacity: 1;
+  }
+}

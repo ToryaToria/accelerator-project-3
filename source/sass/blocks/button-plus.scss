@@ -4,34 +4,18 @@
   cursor: pointer;
   // transition: all 0.3s;
 
-  @include btn-circle ($width: 40px, $height: 40px, $border: 1px solid $color-accent);
+  @include btn-circle(
+    $width: 40px,
+    $height: 40px,
+    $border: 1px solid $color-accent
+  );
 
   &::after {
-    @include btn-icon ($width: 20px, $height: 20px,
-    $mask-image: url("../__spritemap#sprite-plus-view"));
-
-    z-index: 5;
-    // transition: all 0.3s;
-  }
-
-  &:not(:disabled):focus-visible,
-  &:not(:disabled):hover {
-    background-color: transparent;
-
-            outline: 3px solid violet;
-
-
-    &::after {
-      background-color: $color-accent;
-    }
-  }
-
-  &:not(:disabled):active {
-    background-color: $color-active;
-
-    &::after {
-      background-color: $color-white;
-    }
+    @include btn-icon(
+      $width: 20px,
+      $height: 20px,
+      $mask-image: url("../__spritemap#sprite-plus-view")
+    );
   }
 
   &:disabled {
@@ -49,26 +33,11 @@
   background-color: $color-white;
 
   &::after {
-    @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent, $mask-image: url("../__spritemap#sprite-minus-view"));
-  }
-
-  &:not(:disabled):focus-visible,
-  &:not(:disabled):hover {
-    background-color: transparent;
-    border-color: $color-white;
-
-            outline: 3px solid green;
-
-    &::after {
-      background-color: $color-white;
-    }
-  }
-
-  &:not(:disabled):active {
-    background-color: $color-white;
-
-    &::after {
-      background-color: $color-accent-70;
-    }
+    @include btn-icon(
+      $width: 20px,
+      $height: 20px,
+      $background-color: $color-accent,
+      $mask-image: url("../__spritemap#sprite-minus-view")
+    );
   }
 }

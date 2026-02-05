@@ -20,8 +20,3 @@ initSwiperReviews();
 import {initSwiperNewsTags } from './sliders/news-tabs-slider.js';
 initSwiperNewsTags();
 
-// import {initSwiperNews } from './sliders/news-slider.js';
-// initSwiperNews();
-
-// import { initSwiper } from './sliders/slider.js';
-// initSwiper();

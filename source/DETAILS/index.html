@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <section class="qna" itemscope itemtype="https://schema.org/FAQPage">
+    <h2>Вопросы и ответы</h2>
+    <div class="qna__items">
+
+      <details class="faq__wrapper" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq__question" itemprop="name">Что такое HTML?</summary>
+        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="qna__text" itemprop="text">
+            <p>HTML расшифровывается как HyperText Markup Language (язык гипертекстовой разметки). Это язык разметки
+              документов во Всемирной паутине (World Wide Web, WWW). HTML — это стандартизированный язык, позволяющий
+              составлять форматированный текст. Браузер интерпретирует его и отображает на экране элементы веб-страниц.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq__wrapper" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq__question" itemprop="name">Зачем использовать списки в HTML?</summary>
+        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="qna__text" itemprop="text">
+            <p>Списки делают информацию более наглядной и удобной дляотображения элементов списка) тоже можно
+              использовать различные теги. восприятия. Более того, внутри списков (точнее, для произвольного отображения
+              элементов списка) тоже можно использовать различные теги.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq__wrapper" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq__question" itemprop="name">Для чего нужны таблицы стилей (CSS)?</summary>
+        <div class="faq__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <div class="qna__text" itemprop="text">
+            <p>Таблицы стилей позволяют задать чёткие правила, которые определяют внешний вид контента, тех или иных
+              HTML-элементов и всей страницы в целом. Более того, одни и те же правила можно применять сразу к
+              нескольким веб-страницам, что упрощает сохранение и, при необходимости, изменение единого стиля сайта.</p>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </section>
+  <script src="./main.js"></script>
+</body>
+
+</html>
