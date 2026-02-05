@@ -162,7 +162,7 @@
 }
 
 .form__check:not(:disabled):focus-visible + .write-us__mark {
-  outline: 3px solid red;
+  outline: 3px solid $color-title;
 }
 
 .form__check:not(:disabled):focus-visible + .write-us__mark,
@@ -173,7 +173,7 @@
 
 
 .form__check[type="checkbox"]:checked:not(:disabled):focus-visible + .write-us__mark {
-  outline: 3px solid red;
+  outline: 3px solid $color-title;
 }
 
 .form__check[type="checkbox"]:checked:not(:disabled):focus-visible + .write-us__mark,

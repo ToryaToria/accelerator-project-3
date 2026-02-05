@@ -8,7 +8,7 @@
   );
 
   cursor: pointer;
-  // transition: all 0.3s;
+  transition: all 0.3s;
 
   &::after {
     @include btn-icon(
@@ -21,9 +21,16 @@
     transform: rotate(180deg);
   }
 
+  .button-arrow
+    .swiper-button-next-programs:focus-visible
+    &:not(:disabled):focus {
+    outline: none;
+  }
+
   &:not(:disabled):focus-visible {
     background-color: $color-white;
-    outline: 3px solid red;
+    outline: 1px solid $color-title;
+    outline-offset: -1px;
   }
 
   &:not(:disabled):hover {

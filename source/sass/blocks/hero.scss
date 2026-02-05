@@ -321,8 +321,7 @@
 
 .hero__pagination-button:focus-visible {
   background-color: $color-accent;
-
-  outline: 3px solid red;
+  outline: 1px solid $color-title;
 }
 
 .hero__pagination-button:hover {

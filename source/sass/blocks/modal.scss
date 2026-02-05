@@ -72,7 +72,7 @@
 
   &:focus-visible {
     background-color: $color-overlay;
-    outline: 3px solid red;
+    outline: 1px solid $color-title;
   }
 
   &:hover {
@@ -135,7 +135,7 @@
   color: $color-text-base;
 
   &:not(:disabled):focus-visible {
-    outline: 3px solid red;
+    outline: 1px solid $color-title;
   }
 
   &:not(:disabled):focus-visible,
@@ -177,7 +177,7 @@
 .modal__check[type="checkbox"]:checked:not(:disabled):focus-visible
   + .modal__mark,
 .modal__check:not(:disabled):focus-visible + .modal__mark {
-  outline: 3px solid red;
+  outline: 3px solid $color-title;
 }
 
 .modal__check:not(:disabled):focus-visible + .modal__mark,

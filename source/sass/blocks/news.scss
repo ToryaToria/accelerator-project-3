@@ -119,7 +119,8 @@
 
   &:focus-visible {
     background-color: $color-white;
-    outline: 3px solid red;
+    outline: 1px solid $color-title;
+    outline-offset: -1px;
   }
 
   &:hover {
@@ -447,7 +448,6 @@
 }
 
 .news__slider {
-
   .swiper-slide {
     box-sizing: border-box;
     width: round(286px); /* Базовая ширина для "остальных" слайдов */

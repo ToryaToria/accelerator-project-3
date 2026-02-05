@@ -13,7 +13,7 @@
 
   &:not(:disabled):focus-visible {
     transform: rotate(45deg);
-    outline: 3px solid red;
+    outline: 1px solid $color-title;
   }
 
   &:not(:disabled):hover {

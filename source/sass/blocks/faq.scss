@@ -92,11 +92,6 @@
   outline: none;
 }
 
-// .faq__wrapper:focus-within,
-// .faq__wrapper[open]:focus-within {
-//   outline: 3px solid red;
-// }
-
 .faq__wrapper:focus-within,
 .faq__wrapper:has(.faq__question:hover) {
   background-color: $color-white;
