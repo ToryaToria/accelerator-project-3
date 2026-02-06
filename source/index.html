@@ -44,11 +44,9 @@
           </li>
 
           <li class="nav__item" data-has-children>
-            <!-- nav__button--programs -->
             <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-programs"
               aria-expanded="false">Программы</button>
 
-            <!-- nav__sublist--programs -->
             <ul class="nav__sublist" id="nav-programs">
               <li class="nav__subitem">
                 <a class="nav__sublink" href="#programs" tabindex="-1">Стажировки</a>
@@ -77,11 +75,9 @@
           </li>
 
           <li class="nav__item" data-has-children>
-            <!-- nav__button--news -->
             <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-news"
               aria-expanded="false">новости</button>
 
-            <!-- nav__sublist--news -->
             <ul class="nav__sublist" id="nav-news">
               <li class="nav__subitem">
                 <a class="nav__sublink" href="#news" tabindex="-1">Общее</a>
@@ -756,8 +752,8 @@
             </li>
 
             <li class="faq__item">
-              <details class="faq__wrapper" open>
-                <summary class="faq__question title-faq">
+              <details class="faq__wrapper">
+                <summary class="faq__question faq__question--start title-faq">
                   Как&nbsp;выглядит полный процесс регистрации на&nbsp;программу «Стажировка»?
                   <span class="button-plus"></span>
                 </summary>
@@ -1124,18 +1120,15 @@
           </a>
         </li>
       </ul>
-
     </div>
   </footer>
 
-  <!-- aria-describedby="dialog-content" -->
-  <dialog class="modal" role="dialog" aria-modal="true" aria-label="форма запроса" aria-labelledby="dialog-title">
+  <dialog class="modal" aria-modal="true" aria-label="форма запроса" aria-labelledby="dialog-title">
 
     <div class="modal__wrapper">
       <button class="modal__btn-close" type="button" value="close">
         <span class="visually-hidden">закрыть модальное окно</span>
       </button>
-
 
       <h2 class="modal__title" id="dialog-title">Напишите нам</h2>
       <p class="modal__text">
