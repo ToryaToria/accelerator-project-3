@@ -174,8 +174,7 @@
   background-color: $color-white;
 }
 
-.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible
-  + .modal__mark,
+.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible + .modal__mark,
 .modal__check:not(:disabled):focus-visible + .modal__mark {
   outline: 3px solid $color-title;
 }
@@ -186,17 +185,14 @@
   cursor: pointer;
 }
 
-.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible
-  + .modal__mark,
+.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible + .modal__mark,
 .modal__check[type="checkbox"]:checked:not(:disabled):hover + .modal__mark {
   border: 1px solid $color-accent;
   background-color: transparent;
 }
 
-.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible
-  + .modal__mark::before,
-  .modal__check[type="checkbox"]:checked:not(:disabled):hover
-  + .modal__mark::before {
+.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible + .modal__mark::before,
+.modal__check[type="checkbox"]:checked:not(:disabled):hover + .modal__mark::before {
   background-color: $color-accent;
 }
 
@@ -221,6 +217,7 @@
 
 .modal__approval {
   @include font($size: 12px, $line-height: 14px);
+
   color: $color-text-base;
 }
 

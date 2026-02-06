@@ -54,6 +54,7 @@
     border-radius: 16px;
     padding-bottom: 30px;
   }
+
   @include media-desktop {
     padding-bottom: 40px;
   }
@@ -80,6 +81,7 @@
   @include media-tablet {
     padding: 30px;
     padding-bottom: 0;
+
     &--padding-right {
       gap: 126px;
       align-items: flex-start;
@@ -93,6 +95,7 @@
   @include media-desktop {
     padding: 40px;
     padding-bottom: 0;
+
     &--padding-right {
       gap: 20px;
     }
@@ -137,6 +140,7 @@
   background-color: $color-accent;
   transition: all 0.3s;
   color: $color-white;
+
   // padding-bottom: 0;
 
   .button-plus {
@@ -186,6 +190,7 @@
 .faq__content {
   p {
     @include font($size: 14px, $line-height: 20px);
+
     padding: 20px 15px;
     padding-bottom: 0;
 
@@ -212,16 +217,16 @@
   .js-details.is-close & {
     max-height: 0;
     overflow: hidden;
-    animation: slideUp 0.3s;
+    animation: slide-up 0.3s;
   }
 
   .js-details.is-open & {
     max-height: var(--details-height);
-    animation: slideDown 0.3s;
+    animation: slide-down 0.3s;
   }
 }
 
-@keyframes slideUp {
+@keyframes slide-up {
   0% {
     max-height: var(--details-height);
     opacity: 1;
@@ -233,7 +238,7 @@
   }
 }
 
-@keyframes slideDown {
+@keyframes slide-down {
   0% {
     max-height: 0;
     opacity: 0;

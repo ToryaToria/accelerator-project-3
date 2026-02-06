@@ -2,7 +2,7 @@ const body = document.body;
 const btnMenu = document.querySelector('.header__button');
 const nav = document.querySelector('.nav');
 
-const navItemChildren = document.querySelectorAll('.nav__item[data-has-children]');
+// const navItemChildren = document.querySelectorAll('.nav__item[data-has-children]');
 
 const navLinks = document.querySelectorAll('.nav__link');
 const navSubLinks = document.querySelectorAll('.nav__sublink');
@@ -33,7 +33,7 @@ const tabbingOutNav = (e) => {
   if(isTabKey(e) && !isFocus(nav)) {
     closeMenu();
   }
-}
+};
 
 btnMenu.addEventListener('click', () => {
   document.addEventListener('keydown', onDocumentKeydown);
@@ -94,7 +94,7 @@ navSubLinks.forEach((elem) => {
 function btnClick(el, index) {
   const i = index;
   const attrOpen = el.getAttribute('aria-expanded');
-  console.log(attrOpen);
+  // console.log(attrOpen);
   const links = submenus[i].querySelectorAll('.nav__sublink');
 
   if (attrOpen === 'false') {
@@ -102,7 +102,7 @@ function btnClick(el, index) {
     el.classList.add('nav__button--open');
     submenus[i].classList.add('nav__sublist--open');
 
-    console.log(links);
+    // console.log(links);
     links.forEach((link) => {
       link.setAttribute('tabindex', '0');
     });

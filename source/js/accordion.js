@@ -1,7 +1,7 @@
 const details = document.querySelectorAll('.faq__wrapper');
-console.log('ky!');
+// console.log('ky!');
 
-details.forEach(item => {
+details.forEach((item) => {
 
   const question = item.querySelector('.faq__question');
   const answer = item.querySelector('.faq__answer');
@@ -12,9 +12,9 @@ details.forEach(item => {
 
   item.classList.add('js-details');
 
-  if (item.getAttribute('open') === "") {
+  if (item.getAttribute('open') === '') {
     item.classList.add('is-open');
-    console.log('open');
+    // console.log('open');
   } else {
     item.classList.add('is-close');
   }
@@ -35,8 +35,4 @@ details.forEach(item => {
   };
 
   question.addEventListener('click', onClick);
-})
-
-
-
-
+});

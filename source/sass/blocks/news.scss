@@ -185,76 +185,83 @@
   &--slid1 {
     height: 330px;
 
-    background-image: image-set(
-      url("../img/news1_mob_1x.webp") 1x type("image/webp"),
-      url("../img/news1_mob_1x.jpg ") 1x,
-      url("../img/news1_mob_2x.webp") 2x type("image/webp"),
-      url("../img/news1_mob_2x.jpg") 2x
-    );
+    background-image:
+      image-set(
+        url("../img/news1_mob_1x.webp") 1x type("image/webp"),
+        url("../img/news1_mob_1x.jpg ") 1x,
+        url("../img/news1_mob_2x.webp") 2x type("image/webp"),
+        url("../img/news1_mob_2x.jpg") 2x
+      );
 
     @include media-tablet {
-      background-image: image-set(
-        url("../img/news1_tabl_1x.webp") 1x type("image/webp"),
-        url("../img/news1_tabl_1x.jpg ") 1x,
-        url("../img/news1_tabl_2x.webp") 2x type("image/webp"),
-        url("../img/news1_tabl_2x.jpg") 2x
-      );
+      background-image:
+        image-set(
+          url("../img/news1_tabl_1x.webp") 1x type("image/webp"),
+          url("../img/news1_tabl_1x.jpg ") 1x,
+          url("../img/news1_tabl_2x.webp") 2x type("image/webp"),
+          url("../img/news1_tabl_2x.jpg") 2x
+        );
     }
 
     @include media-desktop {
-      background-image: image-set(
-        url("../img/news1_desktop_1x.webp") 1x type("image/webp"),
-        url("../img/news1_desktop_1x.jpg ") 1x,
-        url("../img/news1_desktop_2x.webp") 2x type("image/webp"),
-        url("../img/news1_desktop_2x.jpg") 2x
-      );
+      background-image:
+        image-set(
+          url("../img/news1_desktop_1x.webp") 1x type("image/webp"),
+          url("../img/news1_desktop_1x.jpg ") 1x,
+          url("../img/news1_desktop_2x.webp") 2x type("image/webp"),
+          url("../img/news1_desktop_2x.jpg") 2x
+        );
     }
   }
 
   &--slid2 {
     height: 240px;
 
-    background-image: image-set(
-      url("../img/news2_1x.webp") 1x type("image/webp"),
-      url("../img/news2_1x.jpg") 1x,
-      url("../img/news2_2x.webp") 2x type("image/webp"),
-      url("../img/news2_2x.jpg") 2x
-    );
+    background-image:
+      image-set(
+        url("../img/news2_1x.webp") 1x type("image/webp"),
+        url("../img/news2_1x.jpg") 1x,
+        url("../img/news2_2x.webp") 2x type("image/webp"),
+        url("../img/news2_2x.jpg") 2x
+      );
   }
 
   &--slid3 {
     height: 330px;
 
-    background-image: image-set(
-      url("../img/news3_1x.webp") 1x type("image/webp"),
-      url("../img/news3_1x.jpg") 1x,
-      url("../img/news3_2x.webp") 2x type("image/webp"),
-      url("../img/news3_2x.jpg") 2x
-    );
+    background-image:
+      image-set(
+        url("../img/news3_1x.webp") 1x type("image/webp"),
+        url("../img/news3_1x.jpg") 1x,
+        url("../img/news3_2x.webp") 2x type("image/webp"),
+        url("../img/news3_2x.jpg") 2x
+      );
 
     @include media-tablet {
       display: flex;
     }
 
     @include media-desktop {
-      background-image: image-set(
-        url("../img/news3_desktop_1x.webp") 1x type("image/webp"),
-        url("../img/news3_desktop_1x.jpg") 1x,
-        url("../img/news3_desktop_2x.webp") 2x type("image/webp"),
-        url("../img/news3_desktop_2x.jpg") 2x
-      );
+      background-image:
+        image-set(
+          url("../img/news3_desktop_1x.webp") 1x type("image/webp"),
+          url("../img/news3_desktop_1x.jpg") 1x,
+          url("../img/news3_desktop_2x.webp") 2x type("image/webp"),
+          url("../img/news3_desktop_2x.jpg") 2x
+        );
     }
   }
 
   &--slid4 {
     height: 240px;
 
-    background-image: image-set(
-      url("../img/news4_1x.webp") 1x type("image/webp"),
-      url("../img/news4_1x.jpg") 1x,
-      url("../img/news4_2x.webp") 2x type("image/webp"),
-      url("../img/news4_2x.jpg") 2x
-    );
+    background-image:
+      image-set(
+        url("../img/news4_1x.webp") 1x type("image/webp"),
+        url("../img/news4_1x.jpg") 1x,
+        url("../img/news4_2x.webp") 2x type("image/webp"),
+        url("../img/news4_2x.jpg") 2x
+      );
 
     @include media-tablet {
       display: flex;
@@ -355,6 +362,7 @@
 
   &::after {
     content: "";
+
     @include angle;
 
     position: absolute;
@@ -450,12 +458,12 @@
 .news__slider {
   .swiper-slide {
     box-sizing: border-box;
-    width: round(286px); /* Базовая ширина для "остальных" слайдов */
-    transition: all 0.3s ease; /* Плавный переход */
+    width: round(286px);
+    transition: all 0.3s ease;
   }
 
   .swiper-slide-active {
     box-sizing: border-box;
-    width: round(604px); /* Ширина для первого (активного) слайда */
+    width: round(604px);
   }
 }

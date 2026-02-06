@@ -4,7 +4,7 @@ import 'swiper/css/grid';
 import 'swiper/css';
 
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
 
   const swiperNews = new Swiper('.news__slider', {
     modules: [Navigation, Scrollbar, Pagination, Grid],
@@ -20,20 +20,20 @@ document.addEventListener('DOMContentLoaded', function () {
     initialSlide: 0,
     grid: {
       rows: 2,
-      fill: "column"
+      fill: 'column'
     },
 
     on: {
       init: function (s) {
         if (window.innerWidth < 768) {
 
-          s.slides.forEach(slide => {
+          s.slides.forEach((slide) => {
             // Удаляем инлайновую высоту, чтобы работал CSS класс
             slide.style.height = '';
             slide.style.marginTop = '';
-            console.log("height = ''");
+            // console.log('height = \'\'');
           });
-        };
+        }
       },
     },
 
@@ -55,16 +55,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
       },
       1440: {
-            autoHeight: false,
+        autoHeight: false,
 
         initialSlide: 0,
         grid: false,
         watchSlidesVisibility: true,
-        slidesPerView: 'auto',      // Позволяет использовать ширину из CSS
-        spaceBetween: 32,           // Ваш отступ между слайдами
-        centeredSlides: false,      // Выравнивание по левому краю
-        normalizeSlideIndex: true,  // Умный пересчет активного индекса
-        watchSlidesProgress: true,  // Следит за изменением положения
+        slidesPerView: 'auto', // Позволяет использовать ширину из CSS
+        spaceBetween: 32, // Ваш отступ между слайдами
+        centeredSlides: false, // Выравнивание по левому краю
+        normalizeSlideIndex: true, // Умный пересчет активного индекса
+        watchSlidesProgress: true, // Следит за изменением положения
         resistanceRatio: 0,
 
         observer: true,
@@ -110,26 +110,18 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  swiperNews.on('init', function () {
-    console.log('Swiper инициализирован, translate:');
-    console.log(swiperNews.translate);
+  swiperNews.on('init', () => {
+    // console.log('Swiper инициализирован, translate:');
+    // console.log(swiperNews.translate);
 
     swiperNews.translate = 286;
     swiperNews.setTranslate(swiperNews.translate); // Важно использовать setTranslate!
-    console.log('Translate установлен вручную:', swiperNews.translate);
+    // console.log('Translate установлен вручную:', swiperNews.translate);
 
     swiperNews.update(); // Пересчитываем размеры
   });
 
-
-
-  swiperNews.on('slideChange', function () {
-    console.log('Swiper инициализирован, translate:');
-    console.log('Translate установлен вручную:', swiperNews.translate);
-
-  });
-
-  document.querySelector('.news__pagination-wrapper').addEventListener('click', function (e) {
+  document.querySelector('.news__pagination-wrapper').addEventListener('click', (e) => {
     const button = e.target.closest('.pagination');
     if (button) {
       const index = parseInt(button.getAttribute('data-index'));
@@ -137,5 +129,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-// export { initSwiperNews };

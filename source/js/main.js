@@ -7,7 +7,6 @@ import './form-valid.js';
 import './sliders/news-slider.js';
 
 
-
 import {initSwiperHero} from './sliders/hero-slider.js';
 initSwiperHero();
 
@@ -19,4 +18,3 @@ initSwiperReviews();
 
 import {initSwiperNewsTags } from './sliders/news-tabs-slider.js';
 initSwiperNewsTags();
-

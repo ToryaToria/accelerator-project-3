@@ -21,9 +21,7 @@
     transform: rotate(180deg);
   }
 
-  .button-arrow
-    .swiper-button-next-programs:focus-visible
-    &:not(:disabled):focus {
+  .button-arrow .swiper-button-next-programs:focus-visible &:not(:disabled):focus {
     outline: none;
   }
 

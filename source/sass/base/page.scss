@@ -16,7 +16,7 @@
   flex-direction: column;
 }
 
-.page__body:has(dialog[open]) {
+.page__body:has(.modal[open]) {
   overflow: hidden;
 }
 
