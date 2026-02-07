@@ -32,20 +32,32 @@
 }
 
 .nav__link {
+  &:focus-visible {
+    outline: 1px solid $color-white;
+    outline-offset: 5px;
+  }
+
   &:hover,
-  &:focus,
   &:active {
     color: $color-white;
   }
 }
 
 .nav__sublink {
-  @include font ($size: 16px, $line-height: 100%, $weight: 500, $color: $color-white-60);
+  @include font(
+    $size: 16px,
+    $line-height: 100%,
+    $weight: 500,
+    $color: $color-white-60
+  );
 
   text-decoration: none;
 
+  &:focus-visible {
+    outline: 1px solid $color-white;
+    outline-offset: 5px;
+  }
   &:hover,
-  &:focus,
   &:active {
     color: $color-white-90;
   }
@@ -70,8 +82,12 @@
     mask-image: url("../__spritemap#sprite-corner-view");
   }
 
+  &:focus-visible {
+    outline: 1px solid $color-white;
+    outline-offset: 5px;
+  }
+
   &:hover,
-  &:focus,
   &:active {
     color: $color-white;
 
