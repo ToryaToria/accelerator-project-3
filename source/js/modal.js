@@ -1,38 +1,51 @@
 const aboutBtn = document.getElementById('about-button');
-const body = document.body;
 const modal = document.querySelector('.modal');
 const buttonCloser = document.querySelector('.modal__btn-close');
 
-// const modalOverlay = document.querySelector('.page__modal');
-const isEscapeKey = (evt) => evt.key === 'Escape';
+const focusableElements = modal.querySelectorAll(
+  'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])');
+const firstFocusEl = focusableElements[0];
+const lastFocusEl = focusableElements[focusableElements.length - 1];
 
-const onDocumentClick = (evt) => {
-  if (evt.target === body) {
-    closeModal();
+const modalClose = () => {
+  modal.classList.add('modal--close');
+  setTimeout(() => {
+    modal.close();
+    modal.style.display = 'none';
+    modal.classList.remove('modal--close');
+  }, 500);
+};
+
+const trapFocus = (e) => {
+  if (e.key === 'Tab') {
+    if (e.shiftKey && document.activeElement === firstFocusEl) {
+      e.preventDefault();
+      lastFocusEl.focus();
+    } else if (!e.shiftKey && document.activeElement === lastFocusEl) {
+      e.preventDefault();
+      firstFocusEl.focus();
+    }
   }
 };
 
-const onDocumentKeydown = (evt) => {
-  if (isEscapeKey(evt)) {
-    closeModal();
+const handleModalClick = ({ currentTarget, target }) => {
+  const isClickedOnBackdrop = target === currentTarget;
+  if (isClickedOnBackdrop) {
+    modalClose();
   }
 };
 
 aboutBtn.addEventListener('click', () => {
-  modal.classList.toggle('modal--open');
-  body.classList.toggle('overlay');
-  document.addEventListener('keydown', onDocumentKeydown);
-  body.addEventListener('click', onDocumentClick);
-}
-);
-
-buttonCloser.addEventListener('click', () => {
-  closeModal();
+  modal.style.display = 'block';
+  setTimeout(() => {
+    modal.showModal();
+  }, 500);
 });
 
-function closeModal () {
-  modal.classList.remove('modal--open');
-  body.classList.remove('overlay');
-  document.removeEventListener('keydown', onDocumentKeydown);
-  body.removeEventListener('click', onDocumentClick);
-}
+buttonCloser.addEventListener('click', () => {
+  modalClose();
+});
+modal.addEventListener('click', handleModalClick);
+modal.addEventListener('keydown', (e) => {
+  trapFocus(e);
+});

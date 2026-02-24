@@ -16,12 +16,15 @@
   flex-direction: column;
 }
 
+.page__body:has(.modal[open]) {
+  overflow: hidden;
+}
 
 .page__main {
   /*  для стики-футера */
   flex-grow: 1;
 }
 
-.page__modal {
-  z-index: 15;
-}
+// .page__modal {
+//   z-index: 15;
+// }

@@ -13,7 +13,6 @@
   <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
 
-
   <link rel="stylesheet" href="./sass/vendor/nebo.css">
   <link rel="stylesheet" href="sass/style.scss">
 
@@ -41,67 +40,69 @@
       <nav class="header__nav nav" aria-label="основная навигация сайта">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#about">О проекте</a>
+            <a class="nav__link text-nav" href="#about" tabindex="-1">О проекте</a>
           </li>
 
-          <li class="nav__item">
-            <button class="nav__button nav__button--programs text-nav" type="button">Программы</button>
+          <li class="nav__item" data-has-children>
+            <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-programs"
+              aria-expanded="false">Программы</button>
 
-            <ul class="nav__sublist nav__sublist--programs">
+            <ul class="nav__sublist" id="nav-programs">
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#programs">Стажировки</a>
+                <a class="nav__sublink" href="#programs" tabindex="-1">Стажировки</a>
               </li>
 
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#">Волонтёрство</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Волонтёрство</a>
               </li>
 
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#">Учеба</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Учеба</a>
               </li>
 
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#">Религия</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Религия</a>
               </li>
             </ul>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#grant">как поехать</a>
+            <a class="nav__link text-nav" href="#grant" tabindex="-1">как поехать</a>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#reviews">отзывы</a>
+            <a class="nav__link text-nav" href="#reviews" tabindex="-1">отзывы</a>
           </li>
 
-          <li class="nav__item">
-            <button class="nav__button nav__button--news text-nav" type="button">новости</button>
+          <li class="nav__item" data-has-children>
+            <button class="nav__button text-nav" type="button" tabindex="-1" aria-controls="nav-news"
+              aria-expanded="false">новости</button>
 
-            <ul class="nav__sublist nav__sublist--news">
+            <ul class="nav__sublist" id="nav-news">
               <li class="nav__subitem">
-                <a class="nav__sublink" href="#news">Общее</a>
+                <a class="nav__sublink" href="#news" tabindex="-1">Общее</a>
               </li>
 
               <li class="nav__item">
-                <a class="nav__sublink" href="#">Волонтёрство</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Волонтёрство</a>
               </li>
 
               <li class="nav__item">
-                <a class="nav__sublink" href="#">Стажировки</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Стажировки</a>
               </li>
 
               <li class="nav__item">
-                <a class="nav__sublink" href="#">Карьера</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Карьера</a>
               </li>
 
               <li class="nav__item">
-                <a class="nav__sublink" href="#">Путешествия</a>
+                <a class="nav__sublink" href="#" tabindex="-1">Путешествия</a>
               </li>
             </ul>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link text-nav" href="#contacts">контакты</a>
+            <a class="nav__link text-nav" href="#contacts" tabindex="-1">контакты</a>
           </li>
         </ul>
       </nav>
@@ -134,7 +135,7 @@
                   </div>
 
                   <div class="hero__wrapper-link">
-                    <a class="hero__link button" href="#">
+                    <a class="hero__link button" href="#" tabindex="-1">
                       <span class="text-button">подробнее</span>
                       <span class="button__circle"></span>
                     </a>
@@ -150,8 +151,6 @@
               <div class="container hero__slid-content">
                 <h2 class="hero__title title-hero nebo nebo--tr">
                   Волонтёрские программы&nbsp;— внесите свой вклад в&nbsp;общество
-
-                  Волонтёрские программы&nbsp;— внесите свой вклад в&nbsp;общество
                 </h2>
 
                 <div class="hero__wrapper-text">
@@ -163,7 +162,7 @@
                   </div>
 
                   <div class="hero__wrapper-link">
-                    <a class="hero__link button" href="#">
+                    <a class="hero__link button" href="#" tabindex="-1">
                       <span class="text-button">подробнее</span>
                       <span class="button__circle"></span>
                     </a>
@@ -189,7 +188,7 @@
                   </div>
 
                   <div class="hero__wrapper-link">
-                    <a class="hero__link button" href="#">
+                    <a class="hero__link button" href="#" tabindex="-1">
                       <span class="text-button">подробнее</span>
                       <span class="button__circle"></span>
                     </a>
@@ -229,29 +228,35 @@
         <li class="about__item">
           <div class="about__content">
             <h4>Более 250 программ</h4>
-            <p>
-              учебных и&nbsp;рабочих, разной длительностью
-              от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года
-            </p>
+            <div>
+              <p>
+                учебных и&nbsp;рабочих, разной длительностью
+                от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года
+              </p>
+            </div>
           </div>
         </li>
 
         <li class="about__item">
           <div class="about__content">
             <h4>Более 3000 участников</h4>
-            <p>
-              уже&nbsp;успешно прошли программу от&nbsp;«Стажировка» и&nbsp;остались в&nbsp;разных странах
-            </p>
+            <div>
+              <p>
+                уже&nbsp;успешно прошли программу от&nbsp;«Стажировка» и&nbsp;остались в&nbsp;разных странах
+              </p>
+            </div>
           </div>
         </li>
 
         <li class="about__item">
           <div class="about__content">
             <h4>участники из&nbsp;60&nbsp;стран</h4>
-            <p>
-              студенты со&nbsp;всего мира приезжают на&nbsp;программу «Стажировки» от&nbsp;3&nbsp;месяцев
-              до&nbsp;1&nbsp;года
-            </p>
+            <div>
+              <p>
+                студенты со&nbsp;всего мира приезжают на&nbsp;программу «Стажировки» от&nbsp;3&nbsp;месяцев
+                до&nbsp;1&nbsp;года
+              </p>
+            </div>
           </div>
         </li>
 
@@ -260,9 +265,11 @@
             <h4>
               от&nbsp;4 200&nbsp;$ <br>до&nbsp;8 400&nbsp;$
             </h4>
-            <p>
-              грант всем участникам для&nbsp;комфортного прохождения программы
-            </p>
+            <div>
+              <p>
+                грант всем участникам для&nbsp;комфортного прохождения программы
+              </p>
+            </div>
           </div>
         </li>
       </ul>
@@ -300,7 +307,7 @@
                     </p>
                   </div>
 
-                  <a class="button-mini" href="#">
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Стажировки"</span>
                   </a>
                 </div>
@@ -317,7 +324,7 @@
                     <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества</p>
                   </div>
 
-                  <a class="button-mini" href="#">
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Волонтёрство"</span>
                   </a>
                 </div>
@@ -334,7 +341,7 @@
                     <p>Получите образование и&nbsp;измените своё будущее.</p>
                   </div>
 
-                  <a class="button-mini" href="#">
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Учёба"</span>
                   </a>
                 </div>
@@ -355,7 +362,7 @@
                     </p>
                   </div>
 
-                  <a class="button-mini" href="#">
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Стажировки"</span>
                   </a>
                 </div>
@@ -371,7 +378,7 @@
                     <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества</p>
                   </div>
 
-                  <a class="button-mini" href="#">
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Волонтёрство"</span>
                   </a>
                 </div>
@@ -388,7 +395,7 @@
                     <p>Получите образование и&nbsp;измените своё будущее.</p>
                   </div>
 
-                  <a class="button-mini" href="#">
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Учёба"</span>
                   </a>
                 </div>
@@ -492,70 +499,82 @@
           </ul>
         </div>
 
-
         <div class="news__slider swiper">
           <ul class="news__list swiper-wrapper">
-            <li class="news__item swiper-slide">
+            <li class="news__item news__item--1 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid1">
                 <time class="news__data text-data" datetime="2023-03-23">23/03/2023</time>
 
                 <h3 class="news__subtitle title-card">Интервью с&nbsp;участницей программы стажировки</h3>
-
-                <div class="news-text-wrapper">
-                  <p class="news__text-card text-card">
-                    Саша рассказывает, как&nbsp;попала в&nbsp;программу
-                    и&nbsp;как&nbsp;прошла
-                    6-месячная стажировка в&nbsp;ISOFound
-                  </p>
-
-                  <a class="button-mini" href="#">
+                <!-- <h2>слайд 1</h2> -->
+                <div class="news__text-wrapper">
+                  <div>
+                    <p class="news__text-card text-card">
+                      Саша рассказывает, как&nbsp;попала в&nbsp;программу
+                      и&nbsp;как&nbsp;прошла
+                      6-месячная стажировка в&nbsp;ISOFound
+                    </p>
+                  </div>
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Саша рассказывает"</span>
                   </a>
                 </div>
               </div>
             </li>
 
-            <li class="news__item swiper-slide">
+            <li class="news__item news__item--2 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid2">
 
                 <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
                 <h3 class="news__subtitle title-card">Путешествуем по&nbsp;миру</h3>
-                <div class="news-text-wrapper">
-                  <p class="news__text-card text-card">Какие места посещают
-                    наши студенты весной</p>
+                <!-- <h2>слайд 2</h2> -->
 
-                  <a class="button-mini" href="#">
+                <div class="news__text-wrapper">
+                  <div>
+                    <p class="news__text-card text-card">Какие места посещают
+                      наши студенты весной</p>
+                  </div>
+
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Какие места..."</span>
                   </a>
                 </div>
               </div>
             </li>
 
-            <li class="news__item swiper-slide">
+            <li class="news__item news__item--1 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid3">
 
                 <time class="news__data text-data" datetime="2023-03-17">17/03/2023</time>
                 <h3 class="news__subtitle title-card">Новая программа волонтёрства</h3>
-                <div class="news-text-wrapper">
-                  <p class="news__text-card text-card">Программа помощи детям
-                    длительностью 4&nbsp;месяца</p>
+                <!-- <h2>слайд 3</h2> -->
 
-                  <a class="button-mini" href="#">
+                <div class="news__text-wrapper">
+                  <div>
+                    <p class="news__text-card text-card">Программа помощи детям
+                      длительностью 4&nbsp;месяца</p>
+                  </div>
+
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Программа помощи..."</span>
                   </a>
                 </div>
               </div>
             </li>
 
-            <li class="news__item swiper-slide">
+            <li class="news__item news__item--2 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid4">
-
                 <time class="news__data text-data" datetime="2023-03-10">10/03/2023</time>
                 <h3 class="news__subtitle title-card">Построй свою карьеру</h3>
-                <div class="news-text-wrapper">
-                  <p class="news__text-card text-card">Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                <!-- <h2>слайд 4</h2> -->
 
-                  <a class="button-mini" href="#">
+                <div class="news__text-wrapper">
+                  <div>
+                    <p class="news__text-card text-card">Ведущие компании готовы трудоустроить выпускников стажировки
+                    </p>
+                  </div>
+
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "трудоустроить выпускников..."</span>
                   </a>
                 </div>
@@ -564,68 +583,83 @@
 
             <!-- дополнительные слайды -->
 
-            <li class="news__item swiper-slide">
+
+
+            <li class="news__item news__item--1 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid3">
 
                 <time class="news__data text-data" datetime="2023-03-17">17/03/2023</time>
                 <h3 class="news__subtitle title-card">Новая программа волонтёрства</h3>
-                <div class="news-text-wrapper">
-                  <p class="news__text-card text-card">Программа помощи детям
-                    длительностью 4&nbsp;месяца</p>
+                <!-- <h2>слайд 5</h2> -->
 
-                  <a class="button-mini" href="#">
+                <div class="news__text-wrapper">
+                  <div>
+                    <p class="news__text-card text-card">Программа помощи детям
+                      длительностью 4&nbsp;месяца</p>
+                  </div>
+
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Программа помощи..."</span>
                   </a>
                 </div>
               </div>
             </li>
 
-            <li class="news__item swiper-slide">
+            <li class="news__item news__item--2 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid4">
 
                 <time class="news__data text-data" datetime="2023-03-10">10/03/2023</time>
                 <h3 class="news__subtitle title-card">Построй свою карьеру</h3>
-                <div class="news-text-wrapper">
-                  <p class="news__text-card text-card">Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                <!-- <h2>слайд 6</h2> -->
 
-                  <a class="button-mini" href="#">
+                <div class="news__text-wrapper">
+                  <div>
+                    <p class="news__text-card text-card">Ведущие компании готовы трудоустроить выпускников стажировки
+                    </p>
+                  </div>
+
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "трудоустроить выпускников..."</span>
                   </a>
                 </div>
               </div>
             </li>
 
-            <li class="news__item swiper-slide">
+            <li class="news__item news__item--1 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid1">
-
                 <time class="news__data text-data" datetime="2023-03-23">23/03/2023</time>
-
                 <h3 class="news__subtitle title-card">Интервью с&nbsp;участницей программы стажировки</h3>
+                <!-- <h2>слайд 7</h2> -->
 
-                <div class="news-text-wrapper">
-                  <p class="news__text-card text-card">
-                    Саша рассказывает, как&nbsp;попала в&nbsp;программу
-                    и&nbsp;как&nbsp;прошла
-                    6-месячная стажировка в&nbsp;ISOFound
-                  </p>
+                <div class="news__text-wrapper">
+                  <div>
+                    <p class="news__text-card text-card">
+                      Саша рассказывает, как&nbsp;попала в&nbsp;программу
+                      и&nbsp;как&nbsp;прошла
+                      6-месячная стажировка в&nbsp;ISOFound
+                    </p>
+                  </div>
 
-                  <a class="button-mini" href="#">
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Саша рассказывает"</span>
                   </a>
                 </div>
               </div>
             </li>
 
-            <li class="news__item swiper-slide">
+            <li class="news__item news__item--2 swiper-slide">
               <div class="news__item-wrapper news__item-wrapper--slid2">
-
                 <time class="news__data text-data" datetime="2023-03-20">20/03/2023</time>
                 <h3 class="news__subtitle title-card">Путешествуй по&nbsp;миру</h3>
-                <div class="news-text-wrapper">
-                  <p class="news__text-card text-card">Какие места посещают
-                    наши студенты весной</p>
+                <!-- <h2>слайд 8</h2> -->
 
-                  <a class="button-mini" href="#">
+                <div class="news__text-wrapper">
+                  <div>
+                    <p class="news__text-card text-card">Какие места посещают
+                      наши студенты весной</p>
+                  </div>
+
+                  <a class="button-mini" href="#" tabindex="-1">
                     <span class="visually-hidden">перейти на стр. "Какие места..."</span>
                   </a>
                 </div>
@@ -638,21 +672,7 @@
           <button class="button-arrow button-arrow--left swiper-button-back-news" type="button" disabled>
             <span class="visually-hidden">назад</span>
           </button>
-
-          <ol class="news__pagination-wrapper swiper-pagination">
-            <li>
-              <button class="pagination  pagination--current" type="button">1</button>
-            </li>
-            <li>
-              <button class="pagination" type="button">2</button>
-            </li>
-            <li>
-              <button class="pagination" type="button">3</button>
-            </li>
-            <li>
-              <button class="pagination" type="button">4</button>
-            </li>
-          </ol>
+          <div class="news__pagination-wrapper"></div>
           <button class="button-arrow swiper-button-next-news" type="button">
             <span class="visually-hidden">вперед</span>
           </button>
@@ -665,100 +685,89 @@
         <div class="faq__container">
           <h2 class="faq__title title-section">Вопросы и&nbsp;ответы</h2>
           <ul class="faq__list">
-            <li class="faq__item" tabindex="0">
-              <div class="faq__wrapper">
-                <p class="faq__question title-faq">Кто&nbsp;организатор? Какие сроки у&nbsp;программы?</p>
-
-                <button class="button-plus" type="button">
-                  <span class="visually-hidden">открыть - закрыть вопрос</span>
-                </button>
-              </div>
-
-              <div class="faq__answer faq__content">
-                <p>
-                  Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями.
-                  Сроки программы обмена могут варьироваться от одного семестра до года.
-                </p>
-              </div>
-
+            <li class="faq__item">
+              <details class="faq__wrapper">
+                <summary class="faq__question title-faq">
+                  Кто&nbsp;организатор? Какие сроки у&nbsp;программы?
+                  <span class="button-plus"></span>
+                </summary>
+                <div class="faq__answer faq__content">
+                  <p>
+                    Организатором программы является проект «Стажировка» в сотрудничестве с образовательными
+                    учреждениями.
+                    Сроки программы обмена могут варьироваться от одного семестра до года.
+                  </p>
+                </div>
+              </details>
             </li>
 
-            <li class="faq__item" tabindex="0">
-              <div class="faq__wrapper">
-                <p class="faq__question title-faq">Что&nbsp;такое грант на&nbsp;обучение?</p>
+            <li class="faq__item">
+              <details class="faq__wrapper">
+                <summary class="faq__question title-faq">
+                  Что&nbsp;такое грант на&nbsp;обучение?
+                  <span class="button-plus"></span>
+                </summary>
 
-                <button class="button-plus" type="button">
-                  <span class="visually-hidden">открыть - закрыть вопрос</span>
-                </button>
-              </div>
-
-              <div class="faq__answer faq__content">
-                <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена
-                  студентами для оплаты учебных расходов.</p>
-              </div>
+                <div class="faq__answer faq__content">
+                  <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена
+                    студентами для оплаты учебных расходов.</p>
+                </div>
+              </details>
             </li>
 
-            <li class="faq__item faq__item--open" tabindex="0">
-              <div class="faq__wrapper">
-                <p class="faq__question faq__question--open title-faq">Как&nbsp;определяется стоимость программы?</p>
+            <li class="faq__item">
+              <details class="faq__wrapper" open>
+                <summary class="faq__question title-faq">
+                  Как&nbsp;определяется стоимость программы?
+                  <span class="button-plus"></span>
+                </summary>
 
-                <button class="faq__button button-plus button-plus--open" type="button">
-                  <span class="visually-hidden">открыть - закрыть вопрос</span>
-
-                </button>
-              </div>
-
-              <div class="faq__answer faq__answer--open faq__content">
-                <p>
-                  Полная стоимость определяется организаторами
-                  в&nbsp;зависимости от&nbsp;направления.
-                  В&nbsp;большинстве случаев грант «Стажировка» не&nbsp;покрывает полную стоимость программы,
-                  и&nbsp;поэтому предусматривается определённая доля личного участия.
-                </p>
-              </div>
+                <div class="faq__answer faq__content">
+                  <p>
+                    Полная стоимость определяется организаторами
+                    в&nbsp;зависимости от&nbsp;направления.
+                    В&nbsp;большинстве случаев грант «Стажировка» не&nbsp;покрывает полную стоимость программы,
+                    и&nbsp;поэтому предусматривается определённая доля личного участия.
+                  </p>
+                </div>
+              </details>
             </li>
 
-            <li class="faq__item" tabindex="0">
-              <div class="faq__wrapper">
-                <p class="faq__question  faq__question--padding-right title-faq">
+            <li class="faq__item">
+              <details class="faq__wrapper">
+                <summary class="faq__question  faq__question--padding-right title-faq">
                   Признаётся&nbsp;ли&nbsp;учёба в&nbsp;рамках проекта для дальнейшего обучения?
-                </p>
+                  <span class="button-plus"></span>
+                </summary>
 
-                <button class="faq__button button-plus" type="button">
-                  <span class="visually-hidden">открыть - закрыть вопрос</span>
-
-                </button>
-              </div>
-
-              <div class="faq__answer faq__content">
-                <p>
-                  Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей
-                  профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие
-                  университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.
-                </p>
-              </div>
+                <div class="faq__answer faq__content">
+                  <p>
+                    Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей
+                    профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того,
+                    многие
+                    университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.
+                  </p>
+                </div>
+              </details>
             </li>
 
-            <li class="faq__item" tabindex="0">
-              <div class="faq__wrapper">
-                <p class="faq__question title-faq">
+            <li class="faq__item">
+              <details class="faq__wrapper">
+                <summary class="faq__question faq__question--start title-faq">
                   Как&nbsp;выглядит полный процесс регистрации на&nbsp;программу «Стажировка»?
-                </p>
+                  <span class="button-plus"></span>
+                </summary>
 
-                <button class="button-plus" type="button">
-                  <span class="visually-hidden">открыть - закрыть вопрос</span>
-                </button>
-              </div>
-
-              <div class="faq__answer faq__content">
-                <p>
-                  Процесс регистрации на программу обмена включает выбор
-                  университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и
-                  предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки,
-                  обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно
-                  узнать позвонив в центр.
-                </p>
-              </div>
+                <div class="faq__answer faq__content">
+                  <p>
+                    Процесс регистрации на программу обмена включает выбор
+                    университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и
+                    предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки,
+                    обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно
+                    узнать позвонив в центр.
+                  </p>
+                </div>
+              </details>
             </li>
           </ul>
         </div>
@@ -1111,23 +1120,23 @@
           </a>
         </li>
       </ul>
-
     </div>
   </footer>
 
-  <div class="page__modal">
-    <div class="modal">
-      <button class="modal__btn-close" type="button">
-        <span class="visually-hidden">открыть - закрыть модальное окно</span>
+  <dialog class="modal" aria-modal="true" aria-label="форма запроса" aria-labelledby="dialog-title">
 
+    <div class="modal__wrapper">
+      <button class="modal__btn-close" type="button" value="close">
+        <span class="visually-hidden">закрыть модальное окно</span>
       </button>
-      <h2 class="modal__title">Напишите нам</h2>
+
+      <h2 class="modal__title" id="dialog-title">Напишите нам</h2>
       <p class="modal__text">
         Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;—
         мы&nbsp;на&nbsp;них&nbsp;ответим!
       </p>
 
-      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="dialog" autocomplete="off">
         <label class="form__label">
           <span class="form__text-field text-card">Имя</span>
           <input class="modal__field form__field" type="text" id="name-modal" name="name">
@@ -1163,13 +1172,13 @@
             данных</span>
         </label>
 
-        <button class="modal__button form__button button text-button" type="submit">
+        <button class="modal__button form__button button text-button" type="submit" value="submit">
           <span class="text-button">отправить</span>
           <span class="button__circle"></span>
         </button>
       </form>
     </div>
-  </div>
+  </dialog>
 
   <script type="module" src="js/main.js"></script>
 </body>

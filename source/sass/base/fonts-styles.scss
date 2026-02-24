@@ -77,12 +77,12 @@
 
   @include media-tablet {
     font-size: 20px;
-    line-height: 24px; 
+    line-height: 24px;
   }
 
   @include media-desktop {
     font-size: 24px;
-    line-height: 26px; 
+    line-height: 26px;
   }
 }
 
@@ -107,7 +107,7 @@
   text-transform: uppercase;
 }
 
-.title-faq { 
+.title-faq {
   @include font ($size: 16px, $line-height: 18px, $color: $color-title);
 
   @include media-tablet {
@@ -134,7 +134,7 @@
   }
 }
 
-.text-other { 
+.text-other {
   @include font ($size: 12px, $line-height: 14px);
 
   @include media-tablet {

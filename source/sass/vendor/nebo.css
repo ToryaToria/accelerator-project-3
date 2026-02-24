@@ -31,7 +31,7 @@
     radial-gradient(closest-side at center, #000 var(--_nb-smooth), transparent 100%),
     radial-gradient(farthest-side at var(--_nb-curve-pos), transparent var(--_nb-smooth), #000 100%);
 
-  --_nb-mask-size: 
+  --_nb-mask-size:
     100% calc(100% - var(--nb-h) - var(--nb-cor1-rh) - var(--nb-curve-rh) - var(--nb-cor2-rh)),
     calc(100% - var(--nb-cor1-rw)) calc(100% - var(--nb-h) - var(--nb-curve-rh) - var(--nb-cor2-rh)),
     calc(100% - var(--nb-w) - var(--nb-curve-rw) - var(--nb-cor1-rw)) calc(100% - var(--nb-cor2-rh)),
@@ -41,7 +41,7 @@
     calc(var(--nb-curve-rw) + 0.5px) calc(var(--nb-curve-rh) + 0.5px);
 
   /* Masks positions list */
-  --_nb-mask-position-tl: 
+  --_nb-mask-position-tl:
     100% 100%,
     100% 100%,
     100% 100%,
@@ -50,7 +50,7 @@
     calc(var(--nb-w) + var(--nb-cor1-rw) + var(--nb-curve-rw)) 0,
     calc(var(--nb-w) + var(--nb-cor1-rw)) calc(var(--nb-h) + var(--nb-cor2-rh));
 
-  --_nb-mask-position-tr: 
+  --_nb-mask-position-tr:
     0 100%,
     0 100%,
     0 100%,
@@ -59,7 +59,7 @@
     calc(100% - var(--nb-w) - var(--nb-curve-rw) - var(--nb-cor1-rw)) 0,
     calc(100% - var(--nb-w) - var(--nb-cor1-rw)) calc(var(--nb-h) + var(--nb-cor2-rh));
 
-  --_nb-mask-position-bl: 
+  --_nb-mask-position-bl:
     100% 0,
     100% 0,
     100% 0,
@@ -68,7 +68,7 @@
     calc(var(--nb-w) + var(--nb-curve-rw) + var(--nb-cor1-rw)) 100%,
     calc(var(--nb-w) + var(--nb-cor1-rw)) calc(100% - var(--nb-h) - var(--nb-cor2-rh));
 
-  --_nb-mask-position-br: 
+  --_nb-mask-position-br:
     0 0,
     0 0,
     0 0,

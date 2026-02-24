@@ -1,10 +1,6 @@
-// https://swiperjs.com/get-started#installation
 import Swiper from 'swiper';
 import { Navigation, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
-
 
 const initSwiperPrograms = () => {
   new Swiper('.programs__slider', {
@@ -49,15 +45,8 @@ const initSwiperPrograms = () => {
           dragSize: 394,
         },
       }
-    }
-
+    },
   });
-
-
-  // swiperPrograms.on('slideChange', () => {
-  //   console.log('slider change');
-  //   console.log(swiperPrograms.activeIndex);
-  // });
 };
 
 export { initSwiperPrograms };

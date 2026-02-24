@@ -1,14 +1,10 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
-
 import './main-menu.js';
 import './modal.js';
 
 import './accordion.js';
 import './phone-mask.js';
 import './form-valid.js';
+import './sliders/news-slider.js';
 
 
 import {initSwiperHero} from './sliders/hero-slider.js';
@@ -22,9 +18,3 @@ initSwiperReviews();
 
 import {initSwiperNewsTags } from './sliders/news-tabs-slider.js';
 initSwiperNewsTags();
-
-import {initSwiperNews } from './sliders/news-slider.js';
-initSwiperNews();
-
-// import { initSwiper } from './sliders/slider.js';
-// initSwiper();

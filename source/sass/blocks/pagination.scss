@@ -1,5 +1,5 @@
 .pagination {
-  @include font ($size: 14px, $line-height: 14px, $color: $color-accent-50);
+  @include font($size: 14px, $line-height: 14px, $color: $color-accent-50);
 
   box-sizing: border-box;
   display: block;
@@ -23,10 +23,12 @@
     height: 32px;
   }
 
-  &:not(:disabled):focus {
+  &:not(:disabled):focus-visible {
     background-color: $color-white;
     color: $color-accent;
     border-color: $color-accent;
+
+    outline: 1px solid $color-title;
   }
 
   &:not(:disabled):hover {

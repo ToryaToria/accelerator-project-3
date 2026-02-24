@@ -1,31 +1,37 @@
-.modal {
-  position: absolute;
-  z-index: 17;
-  left: 50%;
-  transform: translate(-50%);
-  top: 15px;
-
+.modal,
+.modal[open].modal--close {
   box-sizing: border-box;
   width: 290px;
-  padding: 20px 15px 40px;
+  padding: 0;
   background-color: $color-white;
+  border: none;
   border-radius: 16px;
-  flex-direction: column;
-  display: none;
+  margin: auto;
+
+  transition: 0.3s;
+  transform: translateX(calc(100% + 50px));
+
+  &::backdrop {
+    background-color: rgba(111, 110, 110, 0.4);
+  }
 
   @include media-tablet {
     width: 510px;
-    padding: 30px 30px 60px 80px;
-    top: 204px;
-  }
-
-  @include media-desktop {
-    top: 90px;
   }
 }
 
-.modal--open {
-  display: flex;
+.modal[open] {
+  display: block;
+  transition: 0.3s;
+  transform: translateX(0);
+}
+
+.modal__wrapper {
+  padding: 20px 15px 40px;
+
+  @include media-tablet {
+    padding: 30px 30px 60px 80px;
+  }
 }
 
 .modal__btn-close {
@@ -45,7 +51,12 @@
   align-items: center;
 
   &::after {
-    @include btn-icon($width: 16px, $height: 16px, $background-color: $color-accent, $mask-image: url("../../__spritemap#sprite-cross-view"));
+    @include btn-icon(
+      $width: 16px,
+      $height: 16px,
+      $background-color: $color-accent,
+      $mask-image: url("../__spritemap#sprite-cross-view")
+    );
 
     content: "";
     width: 16px;
@@ -59,8 +70,9 @@
     height: 22px;
   }
 
-  &:focus {
+  &:focus-visible {
     background-color: $color-overlay;
+    outline: 1px solid $color-title;
   }
 
   &:hover {
@@ -81,7 +93,7 @@
 }
 
 .modal__title {
-  @include font ($size: 18px, $line-height: 100%, $color: $color-accent);
+  @include font($size: 18px, $line-height: 100%, $color: $color-accent);
 
   margin: 0 20px 15px;
   text-align: center;
@@ -92,7 +104,7 @@
 }
 
 .modal__text {
-  @include font ($size: 14px, $line-height: 20px);
+  @include font($size: 14px, $line-height: 20px);
 
   margin: 0 20px 25px;
   text-align: center;
@@ -122,11 +134,14 @@
 
   color: $color-text-base;
 
-  &:not(:disabled):focus,
+  &:not(:disabled):focus-visible {
+    outline: 1px solid $color-title;
+  }
+
+  &:not(:disabled):focus-visible,
   &:not(:disabled):hover,
   &:not(:disabled):active {
     border-color: $color-text-base;
-    outline: none;
   }
 
   &:disabled {
@@ -159,19 +174,24 @@
   background-color: $color-white;
 }
 
-.modal__check:not(:disabled):focus + .modal__mark,
+.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible + .modal__mark,
+.modal__check:not(:disabled):focus-visible + .modal__mark {
+  outline: 3px solid $color-title;
+}
+
+.modal__check:not(:disabled):focus-visible + .modal__mark,
 .modal__check:not(:disabled):hover + .modal__mark {
   border: 1px solid $color-accent;
   cursor: pointer;
 }
 
-.modal__check[type="checkbox"]:checked:not(:disabled):focus + .modal__mark,
+.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible + .modal__mark,
 .modal__check[type="checkbox"]:checked:not(:disabled):hover + .modal__mark {
   border: 1px solid $color-accent;
   background-color: transparent;
 }
 
-.modal__check[type="checkbox"]:checked:not(:disabled):focus + .modal__mark::before,
+.modal__check[type="checkbox"]:checked:not(:disabled):focus-visible + .modal__mark::before,
 .modal__check[type="checkbox"]:checked:not(:disabled):hover + .modal__mark::before {
   background-color: $color-accent;
 }
@@ -196,7 +216,7 @@
 }
 
 .modal__approval {
-  @include font ($size: 12px, $line-height: 14px);
+  @include font($size: 12px, $line-height: 14px);
 
   color: $color-text-base;
 }

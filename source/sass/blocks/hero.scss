@@ -29,73 +29,91 @@
 
   &--slid1 {
     background-image:
-      image-set(url("../../img/hero1_mob_1x.webp") 1x type("image/webp"),
-      url("../..img/hero1_mob_1x.jpg") 1x,
-      url("../../img/hero1_mob_2x.webp") 2x type("image/webp"),
-      url("../../img/hero1_mob_2x.jpg") 2x);
+      image-set(
+        url("../img/hero1_mob_1x.webp") 1x type("image/webp"),
+        url("../img/hero1_mob_1x.jpg") 1x,
+        url("../img/hero1_mob_2x.webp") 2x type("image/webp"),
+        url("../img/hero1_mob_2x.jpg") 2x
+      );
 
     @include media-tablet {
       background-image:
-        image-set(url("../../img/hero1_tabl_1x.webp") 1x type("image/webp"),
-        url("../..img/hero1_tabl_1x.jpg") 1x,
-        url("../../img/hero1_tabl_2x.webp") 2x type("image/webp"),
-        url("../../img/hero1_tabl_2x.jpg") 2x);
+        image-set(
+          url("../img/hero1_tabl_1x.webp") 1x type("image/webp"),
+          url("../img/hero1_tabl_1x.jpg") 1x,
+          url("../img/hero1_tabl_2x.webp") 2x type("image/webp"),
+          url("../img/hero1_tabl_2x.jpg") 2x
+        );
     }
 
     @include media-desktop {
       background-image:
-        image-set(url("../../img/hero1_deskt_1x.webp") 1x type("image/webp"),
-        url("../..img/hero1_deskt_1x.jpg") 1x,
-        url("../../img/hero1_deskt_2x.webp") 2x type("image/webp"),
-        url("../../img/hero1_deskt_2x.jpg") 2x);
+        image-set(
+          url("../img/hero1_deskt_1x.webp") 1x type("image/webp"),
+          url("../img/hero1_deskt_1x.jpg") 1x,
+          url("../img/hero1_deskt_2x.webp") 2x type("image/webp"),
+          url("../img/hero1_deskt_2x.jpg") 2x
+        );
     }
   }
 
   &--slid2 {
     background-image:
-      image-set(url("../../img/hero2_mob_1x.webp") 1x type("image/webp"),
-      url("../..img/hero2_mob_1x.jpg") 1x,
-      url("../../img/hero2_mob_2x.webp") 2x type("image/webp"),
-      url("../../img/hero2_mob_2x.jpg") 2x);
+      image-set(
+        url("../img/hero2_mob_1x.webp") 1x type("image/webp"),
+        url("../img/hero2_mob_1x.jpg") 1x,
+        url("../img/hero2_mob_2x.webp") 2x type("image/webp"),
+        url("../img/hero2_mob_2x.jpg") 2x
+      );
 
     @include media-tablet {
       background-image:
-        image-set(url("../../img/hero2_tabl_1x.webp") 1x type("image/webp"),
-        url("../..img/hero2_tabl_1x.jpg") 1x,
-        url("../../img/hero2_tabl_2x.webp") 2x type("image/webp"),
-        url("../../img/hero2_tabl_2x.jpg") 2x);
+        image-set(
+          url("../img/hero2_tabl_1x.webp") 1x type("image/webp"),
+          url("../img/hero2_tabl_1x.jpg") 1x,
+          url("../img/hero2_tabl_2x.webp") 2x type("image/webp"),
+          url("../img/hero2_tabl_2x.jpg") 2x
+        );
     }
 
     @include media-desktop {
       background-image:
-        image-set(url("../../img/hero2_deskt_1x.webp") 1x type("image/webp"),
-        url("../..img/hero2_deskt_1x.jpg") 1x,
-        url("../../img/hero2_deskt_2x.webp") 2x type("image/webp"),
-        url("../../img/hero2_deskt_2x.jpg") 2x);
+        image-set(
+          url("../img/hero2_deskt_1x.webp") 1x type("image/webp"),
+          url("../img/hero2_deskt_1x.jpg") 1x,
+          url("../img/hero2_deskt_2x.webp") 2x type("image/webp"),
+          url("../img/hero2_deskt_2x.jpg") 2x
+        );
     }
   }
 
   &--slid3 {
     background-image:
-      image-set(url("../../img/hero3_mob_1x.webp") 1x type("image/webp"),
-      url("../..img/hero3_mob_1x.jpg") 1x,
-      url("../../img/hero3_mob_2x.webp") 2x type("image/webp"),
-      url("../../img/hero3_mob_2x.jpg") 2x);
+      image-set(
+        url("../img/hero3_mob_1x.webp") 1x type("image/webp"),
+        url("../img/hero3_mob_1x.jpg") 1x,
+        url("../img/hero3_mob_2x.webp") 2x type("image/webp"),
+        url("../img/hero3_mob_2x.jpg") 2x
+      );
 
     @include media-tablet {
       background-image:
-        image-set(url("../../img/hero3_tabl_1x.webp") 1x type("image/webp"),
-        url("../..img/hero1_tabl_3x.jpg") 1x,
-        url("../../img/hero3_tabl_2x.webp") 2x type("image/webp"),
-        url("../../img/hero3_tabl_2x.jpg") 2x);
+        image-set(
+          url("../img/hero3_tabl_1x.webp") 1x type("image/webp"),
+          url("../img/hero1_tabl_3x.jpg") 1x,
+          url("../img/hero3_tabl_2x.webp") 2x type("image/webp"),
+          url("../img/hero3_tabl_2x.jpg") 2x
+        );
     }
 
     @include media-desktop {
       background-image:
-        image-set(url("../../img/hero3_deskt_1x.webp") 1x type("image/webp"),
-        url("../..img/hero1_deskt_3x.jpg") 1x,
-        url("../../img/hero3_deskt_2x.webp") 2x type("image/webp"),
-        url("../../img/hero3_deskt_2x.jpg") 2x);
+        image-set(
+          url("../img/hero3_deskt_1x.webp") 1x type("image/webp"),
+          url("../img/hero1_deskt_3x.jpg") 1x,
+          url("../img/hero3_deskt_2x.webp") 2x type("image/webp"),
+          url("../img/hero3_deskt_2x.jpg") 2x
+        );
     }
   }
 
@@ -170,7 +188,7 @@
 
 .hero__content {
   p {
-    @include font ($size: 16px, $line-height: 20px);
+    @include font($size: 16px, $line-height: 20px);
 
     @include media-desktop {
       line-height: 26px;
@@ -242,7 +260,9 @@
   }
 
   @include media-tablet {
-    width: 268px;
+    // width: 268px;
+    width: auto;
+    max-width: 350px;
 
     padding: 0 40px 44px 30px;
     border-bottom-right-radius: 30px;
@@ -253,10 +273,6 @@
       right: -26px;
     }
   }
-
-  @include media-desktop {
-    width: 279px;
-  }
 }
 
 .hero__link {
@@ -266,7 +282,10 @@
 
   @include media-tablet {
     margin-top: 0;
-    width: 198px;
+
+    span {
+      word-break: break-all;
+    }
   }
 
   @include media-desktop {
@@ -310,16 +329,18 @@
   }
 }
 
+.hero__pagination-button:focus-visible {
+  background-color: $color-accent;
+  outline: 1px solid $color-title;
+}
+
 .hero__pagination-button:hover {
   background-color: $color-accent;
   opacity: 0.7;
   border: 2px solid #ffffff;
 }
 
-.hero__pagination-button:focus {
-  background-color: $color-accent;
-}
-
+.hero__pagination-button:active,
 .swiper-pagination-bullet-active {
   background-color: $color-active;
   border: 2px solid $color-active;

@@ -38,13 +38,18 @@
   padding-bottom: 3px;
   gap: 20px;
   background-color: $color-white;
-  transition: all 0.3s;
+
+  // transition: all 0.3s;
   min-width: 136px;
   max-width: min-content;
 
   @include media-tablet {
     padding-top: 4px;
     padding-bottom: 4px;
+  }
+
+  &:not(:disabled):focus-visible {
+    outline: 1px solid $color-title;
   }
 
   &:not(:disabled):hover {
@@ -114,8 +119,12 @@
   .button__menu::after {
     background-color: $color-accent;
 
-    @include btn-icon ($width: 20px, $height: 20px, $background-color: $color-accent,
-    $mask-image: url("../../__spritemap#sprite-cross-view"));
+    @include btn-icon(
+      $width: 20px,
+      $height: 20px,
+      $background-color: $color-accent,
+      $mask-image: url("../__spritemap#sprite-cross-view")
+    );
   }
 }
 
@@ -142,7 +151,12 @@
 }
 
 .header__menu-text {
-  @include font ($size: 14px, $line-height: 100%, $weight: 500, $color: $color-accent);
+  @include font(
+    $size: 14px,
+    $line-height: 100%,
+    $weight: 500,
+    $color: $color-accent
+  );
 
   text-transform: uppercase;
 }
@@ -156,13 +170,13 @@
   z-index: 15;
   margin-left: auto;
 
-  transition: all 0.3s;
+  // transition: all 0.3s;
   height: 0;
   opacity: 0;
 }
 
 .header__nav--open {
-  transition: all 0.3s;
+  // transition: all 0.3s;
   height: max-content;
   opacity: 1;
 }
